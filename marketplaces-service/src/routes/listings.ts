@@ -80,7 +80,7 @@ listingsRouter.get("/falabella/categories/:name/attributes", async (c) => {
   // Normaliza Options: { Option: [...] } → array plano
   const normalized = attrs.map((a) => {
     const raw = a.Options;
-    if (!raw || raw === "") return { ...a, Options: [] };
+    if (!raw || typeof raw === "string") return { ...a, Options: [] };
     const opt = (raw as { Option: unknown }).Option;
     const arr = Array.isArray(opt) ? opt : [opt];
     return { ...a, Options: arr };

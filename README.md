@@ -17,10 +17,11 @@ El proyecto está estructurado en microservicios modulares y utilidades de proce
 ├── agents-service/           # 🤖 Microservicio de Agentes de IA para WhatsApp (Trastienda)
 ├── marketplaces-service/     # 🛒 Microservicio de Integración y SEO de Marketplaces (Vitrina)
 ├── payments-service/         # 💳 Microservicio de Procesamiento de Pagos y Webhooks (Wompi)
+├── market-research-service/  # 📊 Microservicio de Inteligencia de Mercado y CatalogAI (API puerto 3004)
 ├── 05-crear-imagenes-flux/   # 🎨 Módulo de Generación y Ambientación de Imágenes IA (Flux / Atenea)
 ├── 06-quitar-fondo/          # ✂️ Módulo de Segmentación y Remoción Masiva de Fondos (WebGPU / WASM)
 ├── html-inpage-falabella/    # 📄 Módulo de Descripciones HTML inPage Falabella & VTEX (CatalogAI)
-├── estudios-de-mercado/     # 📊 Módulo de Estudios de Mercado & Inteligencia SEO (CatalogAI)
+├── estudios-de-mercado/     # 📊 Datasets de Estudios de Mercado & Informes SEO (CatalogAI)
 ├── web/                      # 🌐 Sitio público theadvantia.com (Astro, HTML estático para Hostinger)
 ├── CLAUDE.md                 # 📄 Guía de arquitectura y convenciones del sistema
 └── README.md                 # 📖 Documentación principal del repositorio
@@ -30,45 +31,50 @@ El proyecto está estructurado en microservicios modulares y utilidades de proce
 
 ## 📦 Componentes y Servicios
 
-### 1. 🤖 `agents-service` (Trastienda)
+### 1. 🤖 `agents-service` (Trastienda) — Puerto 3002
 Orquestación de agentes conversacionales sobre WhatsApp Business API (Hono / Node.js / TypeScript).
 - **Cobros (`collections`):** Gestión y seguimiento de cartera vencida con clientes.
 - **Cotizaciones (`quotes`):** Comparativas automatizadas de proveedores.
 - **Pedidos (`orders`):** Recepción e interpretación de pedidos en texto, audio o imágenes.
 
-### 2. 🛒 `marketplaces-service` (Vitrina)
+### 2. 🛒 `marketplaces-service` (Vitrina) — Puerto 3001
 Sincronización y optimización de publicaciones en canales e-commerce.
 - **Conectores integrados:** Mercado Libre, Falabella Seller Center, Amazon SP-API y Homecenter.
 - **CatalogAI Protocol:** Actualización y optimización SEO masiva de títulos, atributos y descripciones.
 
-### 3. 💳 `payments-service`
+### 3. 💳 `payments-service` — Puerto 3003
 Gestión de cobros, suscripciones y pasarela de pago local.
 - Integración con **Wompi** (Bancolombia, PSE, Nequi, Tarjetas).
 - Webhooks de confirmación y estado de transacciones.
 
-### 4. 🎨 `05-crear-imagenes-flux`
+### 4. 📊 `market-research-service` — Puerto 3004
+Microservicio de inteligencia de mercado, clustering multidimensional y análisis de demanda SEO para CatalogAI.
+- API REST para consulta y enriquecimiento de estudios de mercado en tiempo real.
+- Ingesta dinámica de reportes de Google Keyword Planner y SEMrush.
+
+### 5. 🎨 `05-crear-imagenes-flux`
 Generación de imágenes fotorrealistas de producto con ambientación y cambio de escena.
 - Motor **Flux / Gemini Flash Image** integrado con Falabella Atenea AI Studio.
 - Sistema de cola en Firestore (`flux_jobs`) y Worker local asistido por Playwright.
 
-### 5. ✂️ `06-quitar-fondo`
+### 6. ✂️ `06-quitar-fondo`
 Remoción de fondos masiva y privada ejecutada directamente en el navegador del cliente.
 - Inferencia ultrarrápida local mediante **WebGPU / WASM (ONNX Runtime)** y `@imgly/background-removal`.
 - Formatos de salida: Fondo blanco puro (`#FFFFFF`) para estándares de catálogo (Falabella), PNG transparente o color personalizado con empaquetado ZIP.
 
-### 6. 📄 `html-inpage-falabella`
+### 7. 📄 `html-inpage-falabella`
 Módulo de creación, SEO y validación de contenidos **inPage HTML** para Falabella y su adaptación responsive a **VTEX**.
 - **Protocolo Maestro CatalogAI:** Flujo de 9 pasos, Módulo 7 (parejas flotantes de imágenes), Adenda 3.5 (enriquecimiento aditivo SEO/FAQ) y Adenda 3.7 (versión responsive VTEX).
 - **Validador:** `python html-inpage-falabella/scripts/validar_html.py` para reglas HTML inPage (etiquetas permitidas, prohibidas, CDN `lh3.googleusercontent.com`, keywords y diferencias VTEX).
 - **Skill:** Configurada en `.agents/skills/catalogai-html-inpage/` para ejecución automatizada por agentes de IA.
 
-### 7. 📊 `estudios-de-mercado`
+### 8. 📊 `estudios-de-mercado`
 Módulo de investigación de palabras clave, análisis de tendencias de búsqueda e inteligencia de catálogo.
 - **Datasets:** Almacena datasets procesados en CSV y JSON (`estudios-de-mercado/data/`).
 - **Informes Analíticos:** Documentos consolidados de demanda por categorías y Quick Wins (`estudios-de-mercado/informes/`).
 - **Skill de IA:** Configurada en `.agents/skills/estudios-de-mercado-catalogai/` para procesamiento autónomo de nuevas exportaciones de Keyword Planner y SEMrush.
 
-### 8. 🌐 `web`
+### 9. 🌐 `web` (theadvantia.com) — Puerto 4321
 Sitio público y comercial de [theadvantia.com](https://theadvantia.com), construido con **Astro** como HTML estático.
 - Páginas de Vitrina, Trastienda, planes, blog, contacto y legales, con SEO, JSON-LD, GA4 y HubSpot.
 - Sitemap automático, `robots.txt` y `llms.txt`.
