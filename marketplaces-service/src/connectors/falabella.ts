@@ -54,10 +54,25 @@ async function call<T>(
   extra: Record<string, string> = {}
 ): Promise<T> {
   const url = buildUrl(action, creds, extra);
-  const res = await fetch(url, {
-    headers: { Accept: "application/json" },
-  });
+  const res = await fetch(url, { headers: { Accept: "application/json" } });
   if (!res.ok) throw new Error(`Falabella SC ${action} HTTP ${res.status}: ${await res.text()}`);
+  const json = (await res.json()) as { SuccessResponse?: { Body: T }; ErrorResponse?: { Head: { ErrorMessage: string } } };
+  if (json.ErrorResponse) throw new Error(`Falabella SC error: ${json.ErrorResponse.Head.ErrorMessage}`);
+  return json.SuccessResponse!.Body;
+}
+
+async function callPost<T>(
+  action: string,
+  creds: FalabellaCredentials,
+  xmlBody: string
+): Promise<T> {
+  const url = buildUrl(action, creds);
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/xml; charset=utf-8", Accept: "application/json" },
+    body: xmlBody,
+  });
+  if (!res.ok) throw new Error(`Falabella SC ${action} POST HTTP ${res.status}: ${await res.text()}`);
   const json = (await res.json()) as { SuccessResponse?: { Body: T }; ErrorResponse?: { Head: { ErrorMessage: string } } };
   if (json.ErrorResponse) throw new Error(`Falabella SC error: ${json.ErrorResponse.Head.ErrorMessage}`);
   return json.SuccessResponse!.Body;
@@ -194,7 +209,7 @@ export async function getCategorySuggestion(
   const body = await call<{ Categories: { Category: Array<{ CategoryId: string; CategoryName: string }> } }>(
     "GetCategorySuggestion",
     creds,
-    { Search: skuName }
+    { Search: skuName, Name: skuName }
   );
   return body.Categories.Category ?? [];
 }
@@ -224,7 +239,100 @@ export async function getOrders(
   return Array.isArray(raw) ? raw : [raw];
 }
 
-// Compatibilidad con la interfaz base Listing
+// --- Crear y actualizar productos --------------------------------------------
+
+export interface FalabellaNewProduct {
+  sellerSku: string;
+  name: string;
+  description: string;
+  brand: string;
+  primaryCategory: string;          // CategoryId obtenido de getCategoryTree
+  price: number;                    // COP, precio regular
+  salePrice?: number;               // COP, precio con descuento (opcional)
+  taxClass?: string;                // default "IVA19"
+  quantity: number;
+  images: string[];                 // URLs públicas de imágenes
+  attributes?: Array<{ feedName: string; value: string }>;  // según getCategoryAttributes
+}
+
+export interface FalabellaFeedStatus {
+  Feed: string;
+  Status: "Queued" | "Processing" | "Finished" | "Error";
+  Action: string;
+  CreationDate: string;
+  UpdatedDate: string;
+  TotalRecords: number;
+  ProcessedRecords: number;
+  FailedRecords: number;
+  FeedErrors: string | { Error: Array<{ Message: string; Code: string }> };
+}
+
+function toXml(product: FalabellaNewProduct): string {
+  const images = product.images.map((u) => `<Image>${u}</Image>`).join("\n        ");
+  const attrs = (product.attributes ?? [])
+    .map((a) => `<Attribute>\n          <FeedName>${a.feedName}</FeedName>\n          <Value>${a.value}</Value>\n        </Attribute>`)
+    .join("\n        ");
+
+  return `<?xml version="1.0" encoding="UTF-8" ?>
+<Request>
+  <Product>
+    <SellerSku>${product.sellerSku}</SellerSku>
+    <Name><![CDATA[${product.name}]]></Name>
+    <Description><![CDATA[${product.description}]]></Description>
+    <Brand>${product.brand}</Brand>
+    <PrimaryCategory>${product.primaryCategory}</PrimaryCategory>
+    <Price>${product.price}</Price>
+    <SalePrice>${product.salePrice ?? product.price}</SalePrice>
+    <TaxClass>${product.taxClass ?? "IVA19"}</TaxClass>
+    <Quantity>${product.quantity}</Quantity>
+    <Images>
+        ${images}
+    </Images>
+    ${attrs ? `<Attributes>\n        ${attrs}\n    </Attributes>` : ""}
+  </Product>
+</Request>`;
+}
+
+// Crea un producto en borrador. Devuelve el FeedId para consultar el estado.
+export async function createProduct(
+  creds: FalabellaCredentials,
+  product: FalabellaNewProduct
+): Promise<string> {
+  const body = await callPost<{ FeedId: string }>(
+    "ProductCreate",
+    creds,
+    toXml(product)
+  );
+  return body.FeedId;
+}
+
+// Actualiza un producto existente por SellerSku.
+export async function updateProduct(
+  creds: FalabellaCredentials,
+  product: Partial<FalabellaNewProduct> & { sellerSku: string }
+): Promise<string> {
+  const body = await callPost<{ FeedId: string }>(
+    "ProductUpdate",
+    creds,
+    toXml(product as FalabellaNewProduct)
+  );
+  return body.FeedId;
+}
+
+// Consulta el estado de procesamiento de un feed (crear/actualizar producto).
+export async function getFeedStatus(
+  creds: FalabellaCredentials,
+  feedId: string
+): Promise<FalabellaFeedStatus> {
+  const body = await call<{ FeedDetail: FalabellaFeedStatus }>(
+    "GetFeedStatus",
+    creds,
+    { FeedId: feedId }
+  );
+  return body.FeedDetail;
+}
+
+// --- Compatibilidad con la interfaz base Listing ----------------------------
 import type { Listing } from "../types/index.js";
 
 export async function getListing(

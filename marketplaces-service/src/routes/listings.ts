@@ -7,7 +7,11 @@ import {
   getCategoryAttributes,
   getCategorySuggestion,
   getOrders,
+  createProduct,
+  updateProduct,
+  getFeedStatus,
   type FalabellaCredentials,
+  type FalabellaNewProduct,
 } from "../connectors/falabella.js";
 
 export const listingsRouter = new Hono();
@@ -93,6 +97,32 @@ listingsRouter.get("/falabella/orders", async (c) => {
     offset: Number(c.req.query("offset") ?? 0),
   });
   return c.json({ count: orders.length, orders });
+});
+
+// POST /listings/falabella/products — crear producto en borrador
+// Body: { sellerSku, name, description, brand, primaryCategory, price, quantity, images[], attributes? }
+listingsRouter.post("/falabella/products", async (c) => {
+  const creds = falabellaCreds(c);
+  const data = await c.req.json<FalabellaNewProduct>();
+  const feedId = await createProduct(creds, data);
+  return c.json({ feedId, message: "Producto enviado a Falabella. Consulta el estado con GET /listings/falabella/feeds/:feedId" }, 202);
+});
+
+// PATCH /listings/falabella/products/:sku — actualizar producto existente
+listingsRouter.patch("/falabella/products/:sku", async (c) => {
+  const creds = falabellaCreds(c);
+  const { sku } = c.req.param();
+  const data = await c.req.json<Partial<FalabellaNewProduct>>();
+  const feedId = await updateProduct(creds, { sellerSku: sku, ...data });
+  return c.json({ feedId }, 202);
+});
+
+// GET /listings/falabella/feeds/:feedId — estado del proceso de creación/actualización
+listingsRouter.get("/falabella/feeds/:feedId", async (c) => {
+  const creds = falabellaCreds(c);
+  const { feedId } = c.req.param();
+  const status = await getFeedStatus(creds, feedId);
+  return c.json(status);
 });
 
 // Ruta legacy — mantiene compatibilidad con llamadas anteriores
