@@ -15,14 +15,10 @@ const modules = [
     category: 'market-research',
     tag: 'CATALOG-AI MARKET INTELLIGENCE',
     icon: '📊',
-    glowClass: 'amber-glow',
-    accentColor: '#F59E0B',
     status: 'Dataset 2026 Activo',
-    statusType: 'online',
     desc: 'Explora y desagrega la demanda real de búsqueda de compradores en Colombia por marcas, materiales, capacidades y dudas de salud para optimizar con CatalogAI.',
     href: '/estudios-de-mercado',
-    badges: ['Google Keyword Planner', 'Clusters Semánticos', 'Quick Wins 4 Ejes'],
-    actionText: 'Explorar Estudios'
+    badges: ['Google Keyword Planner', 'Clusters Semánticos', 'Quick Wins']
   },
   {
     id: 'crear-imagenes',
@@ -30,14 +26,10 @@ const modules = [
     category: 'images',
     tag: 'FLUX / ATENEA AI WORKER',
     icon: '🎨',
-    glowClass: 'gold-glow',
-    accentColor: '#B08D57',
     status: 'Engine Flash Activo',
-    statusType: 'online',
-    desc: 'Genera ambientaciones fotorrealistas en 4K y fondos comerciales conservando el 100% de la identidad de tu SKU con Gemini Flash Image y Atenea Studio.',
+    desc: 'Genera ambientaciones fotorrealistas en 4K y fondos publicitarios conservando el 100% de la identidad de tu SKU con Gemini Flash Image y Atenea Studio.',
     href: '/crear-imagenes',
-    badges: ['4K Fotorrealista', 'Gemini Flash Image', 'Falabella / MeLi Standard'],
-    actionText: 'Generar Imágenes'
+    badges: ['4K Fotorrealista', 'Gemini Flash Image', 'Falabella / MeLi Standard']
   },
   {
     id: 'quitar-fondo',
@@ -45,14 +37,10 @@ const modules = [
     category: 'images',
     tag: 'LOCAL AI · WEBGPU / WASM',
     icon: '✂️',
-    glowClass: 'green-glow',
-    accentColor: '#10B981',
     status: '100% Local Browser',
-    statusType: 'online',
     desc: 'Segmentación neuronal ultrarrápida ejecutada directamente en tu navegador sin subir imágenes a servidores. Salida a Fondo Blanco (#FFFFFF) o PNG Transparente.',
     href: '/quitar-fondo',
-    badges: ['ONNX WebGPU', 'Privacidad Total', 'Fondo Blanco #FFFFFF'],
-    actionText: 'Procesar Imágenes'
+    badges: ['ONNX WebGPU', 'Privacidad Total', 'Fondo Blanco #FFFFFF']
   },
   {
     id: 'descripcion-producto',
@@ -60,14 +48,10 @@ const modules = [
     category: 'catalog',
     tag: 'CATALOG-AI PROTOCOL',
     icon: '📝',
-    glowClass: 'blue-glow',
-    accentColor: '#3B82F6',
     status: 'Protocolo v4.2',
-    statusType: 'online',
     desc: 'Generador inteligente de títulos estructurados a 60 caracteres, viñetas persuasivas de alto impacto y atributos técnicos para el SEO de Mercado Libre y Falabella.',
     href: '/descripcion-producto',
-    badges: ['SEO 60 Caracteres', 'Bullet Points Persuasivos', 'Inyección Atributos'],
-    actionText: 'Generar Ficha SEO'
+    badges: ['SEO 60 Caracteres', 'Bullet Points Persuasivos', 'Inyección Atributos']
   },
   {
     id: 'marketplaces-sync',
@@ -75,151 +59,95 @@ const modules = [
     category: 'marketplaces',
     tag: 'VITRINA HUB CONNECTOR',
     icon: '🛒',
-    glowClass: 'purple-glow',
-    accentColor: '#8B5CF6',
     status: 'APIs Multicanal',
-    statusType: 'online',
     desc: 'Conexión y auditoría en tiempo real con las APIs de Mercado Libre, Falabella Seller Center, Amazon SP-API y Homecenter para publicar atributos y auditar salud.',
     href: '/marketplaces-sync',
-    badges: ['Mercado Libre API', 'Falabella Seller', 'Auditor de Salud SEO'],
-    actionText: 'Conectar Canales'
+    badges: ['Mercado Libre API', 'Falabella Seller', 'Auditor de Salud SEO']
   }
 ];
 ---
 
 <Base seo={seo} active="/aplicativos">
-  <main class="portal-wrapper">
+  <main class="portal-main">
 
-    <!-- Top Live Status Bar -->
-    <header class="status-ribbon">
-      <div class="wrap ribbon-content">
-        <div class="ribbon-left">
-          <span class="pulse-indicator"></span>
-          <span class="ribbon-title">ADVANTIA AI SUITE · ESPACIO DE TRABAJO</span>
-          <span class="ribbon-sep">/</span>
-          <span class="user-chip">👤 Sesión Activa</span>
+    <!-- Top Session Bar -->
+    <div class="session-bar">
+      <div class="wrap session-in">
+        <div class="session-info">
+          <span class="user-badge">👤 Acceso de equipo</span>
+          <span class="status-pill active">🟢 Sesión Activa</span>
         </div>
-        <div class="ribbon-right">
-          <span class="stat-pill"><strong class="pill-val">5</strong> Módulos Disponibles</span>
-          <span class="stat-pill"><strong class="pill-val">4</strong> Microservicios (:3001-:3004)</span>
+        <div class="session-right">
+          <span class="session-tag">5 Módulos Disponibles</span>
         </div>
       </div>
-    </header>
+    </div>
 
     <!-- Hero Header -->
-    <section class="portal-header">
-      <div class="wrap header-inner">
-        <div class="badge-capsule">
-          <span class="sparkle">✨</span>
-          <span>SUITE DE HERRAMIENTAS Y APLICATIVOS B2B</span>
+    <section class="portal-hero">
+      <div class="wrap">
+        <div class="portal-badge">
+          <span class="pulse-dot"></span>
+          ADVANTIA AI SUITE · PORTAL DE APLICATIVOS
         </div>
-        
-        <h1 class="header-headline">
-          Portal de <span class="gold-gradient-text">Aplicativos IA</span>
-        </h1>
-        
-        <p class="header-desc">
-          Accede a los módulos especializados de Vitrina y Trastienda para optimizar catálogos, procesar imágenes a escala y sincronizar canales de venta.
+        <h1 class="portal-title">Módulos & Herramientas IA</h1>
+        <p class="portal-subtitle">
+          Selecciona un aplicativo para abrir su espacio de trabajo y ejecutar optimizaciones de catálogo, generación visual o sincronización de canales.
         </p>
 
-        <!-- KPI Quick Metric Bar -->
-        <div class="kpi-grid">
-          <div class="kpi-item">
-            <span class="kpi-number">5</span>
-            <span class="kpi-label">Módulos Especializados</span>
-          </div>
-          <div class="kpi-item">
-            <span class="kpi-number">4</span>
-            <span class="kpi-label">Marketplaces Soportados</span>
-          </div>
-          <div class="kpi-item">
-            <span class="kpi-number">100%</span>
-            <span class="kpi-label">Privacidad & WebGPU</span>
-          </div>
-          <div class="kpi-item">
-            <span class="kpi-number">v4.2</span>
-            <span class="kpi-label">Protocolo CatalogAI</span>
-          </div>
-        </div>
-
-        <!-- Category Filter Tabs -->
-        <div class="filter-container">
-          <span class="filter-label">Filtrar por categoría:</span>
-          <div class="tabs-list" id="filterTabs">
-            <button class="tab-chip active" data-filter="all">Todos los Módulos (5)</button>
-            <button class="tab-chip" data-filter="market-research">📊 Estudios de Mercado</button>
-            <button class="tab-chip" data-filter="images">🎨 Imágenes & Visuales</button>
-            <button class="tab-chip" data-filter="catalog">📝 Catálogo & SEO</button>
-            <button class="tab-chip" data-filter="marketplaces">🛒 Marketplaces Sync</button>
-          </div>
+        <!-- Category Filters -->
+        <div class="filter-tabs" id="filterTabs">
+          <button class="tab-btn active" data-filter="all">Todos los Módulos (5)</button>
+          <button class="tab-btn" data-filter="market-research">📊 Estudios de Mercado</button>
+          <button class="tab-btn" data-filter="images">🎨 Imágenes & Visuales</button>
+          <button class="tab-btn" data-filter="catalog">📝 Catálogo & SEO</button>
+          <button class="tab-btn" data-filter="marketplaces">🛒 Marketplaces Sync</button>
         </div>
 
       </div>
     </section>
 
-    <!-- Main Apps Grid -->
-    <section class="portal-grid-wrap">
+    <!-- Apps Hub Grid -->
+    <section class="portal-grid-section">
       <div class="wrap">
-        <div class="cards-grid" id="appsGrid">
+        <div class="apps-hub-grid" id="appsGrid">
           {modules.map((mod) => (
-            <article class="app-card-wrapper" data-category={mod.category} id={`card-${mod.id}`}>
-              <a href={mod.href} class="app-card-link">
+            <a href={mod.href} class="module-card" data-category={mod.category} id={`card-${mod.id}`}>
+              <div class="card-inner">
                 
-                <!-- Card Header -->
-                <div class="card-head">
-                  <div class={`icon-badge ${mod.glowClass}`}>
-                    <span class="emoji-icon">{mod.icon}</span>
+                <div class="card-top">
+                  <div class="module-icon-box">
+                    <span class="module-emoji">{mod.icon}</span>
                   </div>
-                  <div class="status-badge-live">
-                    <span class="live-dot"></span>
-                    <span class="status-text">{mod.status}</span>
+                  <div class="card-status-badge">
+                    <span class="status-indicator"></span>
+                    <span>{mod.status}</span>
                   </div>
                 </div>
 
-                <!-- Card Body -->
-                <div class="card-body">
-                  <span class="category-eyebrow">{mod.tag}</span>
-                  <h2 class="card-heading">{mod.name}</h2>
-                  <p class="card-summary">{mod.desc}</p>
+                <div class="card-content">
+                  <span class="module-tag">{mod.tag}</span>
+                  <h2 class="module-title">{mod.name}</h2>
+                  <p class="module-desc">{mod.desc}</p>
                 </div>
 
-                <!-- Badges / Tags -->
-                <div class="badges-row">
-                  {mod.badges.map((badge) => (
-                    <span class="tag-pill">{badge}</span>
+                <div class="card-chips">
+                  {mod.badges.map((b) => (
+                    <span class="mini-chip">{b}</span>
                   ))}
                 </div>
 
-                <!-- Card Footer / CTA -->
-                <div class="card-action-bar">
-                  <span class="btn-action">
-                    <span class="btn-action-text">{mod.actionText}</span>
-                    <span class="btn-action-icon">→</span>
+                <div class="card-footer">
+                  <span class="open-btn">
+                    <span>Abrir Módulo</span>
+                    <span class="arrow-icon">→</span>
                   </span>
                 </div>
 
-              </a>
-            </article>
+              </div>
+            </a>
           ))}
         </div>
-
-        <!-- Microservices Health Monitor Strip -->
-        <aside class="services-monitor-card">
-          <div class="monitor-left">
-            <div class="monitor-icon">⚡</div>
-            <div class="monitor-text">
-              <strong>Arquitectura de Microservicios Advantia</strong>
-              <p>Conectores backend ejecutándose en Node.js, Hono & WebGPU para alta concurrencia e inferencia local.</p>
-            </div>
-          </div>
-          <div class="monitor-chips">
-            <div class="port-chip"><span class="dot-ok"></span> <code>:3001</code> Marketplaces</div>
-            <div class="port-chip"><span class="dot-ok"></span> <code>:3002</code> Agentes WhatsApp</div>
-            <div class="port-chip"><span class="dot-ok"></span> <code>:3003</code> Wompi Payments</div>
-            <div class="port-chip"><span class="dot-ok"></span> <code>:3004</code> Market Research</div>
-          </div>
-        </aside>
-
       </div>
     </section>
 
@@ -228,218 +156,123 @@ const modules = [
 
 <style is:global>
   /* ==========================================================================
-     ADVANTIA APLICATIVOS PORTAL · HIGH-CONTRAST DARK THEME STYLES
+     ADVANTIA · PORTAL DE APLICATIVOS (Colores Oficiales de Marca)
+     Fondo: #0B1F3A / #1E2761 · Acento: #B08D57 (Dorado) · Verde: #1BAF7A
      ========================================================================== */
 
-  .portal-wrapper {
-    background-color: #061121 !important;
-    background-image: 
-      radial-gradient(at 0% 0%, rgba(30, 39, 97, 0.6) 0px, transparent 50%),
-      radial-gradient(at 100% 0%, rgba(176, 141, 87, 0.15) 0px, transparent 50%),
-      radial-gradient(at 50% 100%, rgba(11, 31, 58, 0.8) 0px, transparent 50%) !important;
-    color: #F8FAFC !important;
+  .portal-main {
+    background: #0B1F3A !important;
+    color: #ffffff !important;
     min-height: 100vh;
-    padding-bottom: 80px;
+    padding-bottom: 90px;
     font-family: var(--font-body, system-ui, -apple-system, sans-serif);
   }
 
-  /* 1. TOP LIVE RIBBON */
-  .status-ribbon {
-    background: rgba(4, 11, 22, 0.75);
+  /* 1. TOP SESSION BAR */
+  .session-bar {
+    background: rgba(0, 0, 0, 0.45);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(12px);
-    padding: 10px 0;
+    padding: 12px 0;
   }
 
-  .ribbon-content {
+  .session-in {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
   }
 
-  .ribbon-left {
+  .session-info {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 14px;
   }
 
-  .pulse-indicator {
-    width: 8px;
-    height: 8px;
-    background: #10B981;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #10B981;
-    animation: portalPulse 2s infinite;
+  .user-badge {
+    font-size: 13px;
+    color: #d4d4d4 !important;
   }
 
-  @keyframes portalPulse {
-    0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6); }
-    70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
-  }
-
-  .ribbon-title {
-    font-size: 11.5px;
-    font-weight: 700;
-    color: #CBD5E1;
-    letter-spacing: 0.8px;
-  }
-
-  .ribbon-sep {
-    color: rgba(255, 255, 255, 0.2);
-  }
-
-  .user-chip {
+  .session-tag {
     font-size: 12px;
-    color: #94A3B8;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 3px 10px;
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #B08D57 !important;
+    font-weight: 600;
   }
 
-  .ribbon-right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .stat-pill {
-    font-size: 12px;
-    color: #94A3B8;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+  .status-pill {
+    font-size: 11px;
+    font-weight: 600;
     padding: 3px 10px;
     border-radius: 9999px;
+    background: rgba(27, 175, 122, 0.15);
+    color: #1BAF7A !important;
+    border: 1px solid rgba(27, 175, 122, 0.3);
   }
 
-  .pill-val {
-    color: #F8FAFC;
-    font-weight: 700;
-  }
-
-  /* 2. PORTAL HEADER */
-  .portal-header {
+  /* 2. PORTAL HERO */
+  .portal-hero {
+    background: radial-gradient(circle at 50% 0%, #1E2761 0%, #0B1F3A 75%);
     padding: 56px 0 36px 0;
     text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
-  .header-inner {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-
-  .badge-capsule {
+  .portal-badge {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(176, 141, 87, 0.12);
+    background: rgba(176, 141, 87, 0.15);
+    color: #B08D57 !important;
     border: 1px solid rgba(176, 141, 87, 0.3);
-    color: #E5C07B;
-    padding: 6px 16px;
+    padding: 6px 18px;
     border-radius: 9999px;
-    font-size: 11.5px;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.6px;
-    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
   }
 
-  .header-headline {
+  .pulse-dot {
+    width: 8px;
+    height: 8px;
+    background: #1BAF7A;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #1BAF7A;
+  }
+
+  .portal-title {
     font-family: var(--font-display, inherit);
-    font-size: 44px;
-    font-weight: 800;
-    color: #FFFFFF !important;
-    line-height: 1.15;
-    margin: 0 0 16px 0;
-    letter-spacing: -0.02em;
-  }
-
-  .gold-gradient-text {
-    background: linear-gradient(135deg, #FFF6E5 0%, #E5C07B 50%, #B08D57 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-  }
-
-  .header-desc {
-    font-size: 16.5px;
-    color: #94A3B8 !important;
-    line-height: 1.6;
-    max-width: 720px;
-    margin: 0 auto 36px auto;
-  }
-
-  /* 3. KPI METRIC GRID */
-  .kpi-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    margin: 0 auto 36px auto;
-    max-width: 820px;
+    font-size: 40px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin: 0 0 14px 0 !important;
+    letter-spacing: -0.5px;
   }
 
   @media (max-width: 768px) {
-    .kpi-grid {
-      grid-template-columns: repeat(2, 1fr);
+    .portal-title {
+      font-size: 28px !important;
     }
   }
 
-  .kpi-item {
-    background: rgba(15, 23, 42, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
-    padding: 14px 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    backdrop-filter: blur(8px);
+  .portal-subtitle {
+    max-width: 680px;
+    margin: 0 auto 32px auto;
+    font-size: 16px !important;
+    color: #cbd5e1 !important;
+    line-height: 1.6;
   }
 
-  .kpi-number {
-    font-size: 22px;
-    font-weight: 800;
-    color: #FFFFFF;
-    line-height: 1;
-    margin-bottom: 4px;
-  }
-
-  .kpi-label {
-    font-size: 11px;
-    color: #64748B;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-  }
-
-  /* 4. FILTER TABS */
-  .filter-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .filter-label {
-    font-size: 12px;
-    font-weight: 600;
-    color: #64748B;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  .tabs-list {
+  .filter-tabs {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
     flex-wrap: wrap;
   }
 
-  .tab-chip {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #94A3B8;
+  .tab-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #d4d4d4 !important;
     padding: 8px 18px;
     border-radius: 9999px;
     font-size: 13px;
@@ -448,138 +281,94 @@ const modules = [
     transition: all 0.2s ease;
   }
 
-  .tab-chip:hover {
-    background: rgba(255, 255, 255, 0.08);
-    color: #FFFFFF;
-    border-color: rgba(255, 255, 255, 0.2);
+  .tab-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.25);
   }
 
-  .tab-chip.active {
-    background: #B08D57;
-    color: #061121;
-    font-weight: 700;
-    border-color: #E5C07B;
-    box-shadow: 0 4px 14px rgba(176, 141, 87, 0.4);
+  .tab-btn.active {
+    background: #B08D57 !important;
+    color: #ffffff !important;
+    border-color: #B08D57 !important;
+    box-shadow: 0 4px 14px rgba(176, 141, 87, 0.35);
   }
 
-  /* 5. CARDS GRID */
-  .portal-grid-wrap {
-    padding-top: 32px;
+  /* 3. APPS GRID */
+  .portal-grid-section {
+    padding-top: 40px;
   }
 
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 24px;
-    margin-bottom: 40px;
+  .apps-hub-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)) !important;
+    gap: 24px !important;
   }
 
   @media (max-width: 640px) {
-    .cards-grid {
-      grid-template-columns: 1fr;
+    .apps-hub-grid {
+      grid-template-columns: 1fr !important;
     }
   }
 
-  /* 6. APP CARD COMPONENT */
-  .app-card-wrapper {
-    display: flex;
+  /* 4. MODULE CARD (Superficie limpia en paleta oficial) */
+  .module-card {
+    display: flex !important;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    background: #12213F !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 16px !important;
+    padding: 26px !important;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   }
 
-  .app-card-link {
+  .module-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(176, 141, 87, 0.6) !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 20px rgba(176, 141, 87, 0.15) !important;
+  }
+
+  .card-inner {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: #0D1B33 !important;
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
-    border-radius: 18px !important;
-    padding: 26px !important;
-    text-decoration: none !important;
-    color: inherit !important;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   }
 
-  .app-card-link::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: transparent;
-    transition: background 0.3s ease;
-  }
-
-  .app-card-link:hover {
-    transform: translateY(-4px);
-    background: #112242 !important;
-    border-color: rgba(229, 192, 123, 0.45) !important;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(176, 141, 87, 0.15) !important;
-  }
-
-  .app-card-link:hover::before {
-    background: linear-gradient(90deg, #B08D57, #E5C07B, #10B981);
-  }
-
-  /* CARD HEAD */
-  .card-head {
+  /* CARD TOP */
+  .card-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 18px;
   }
 
-  .icon-badge {
-    width: 54px;
-    height: 54px;
-    border-radius: 14px;
+  .module-icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    transition: transform 0.25s ease;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: transform 0.2s ease;
   }
 
-  .app-card-link:hover .icon-badge {
-    transform: scale(1.08);
+  .module-card:hover .module-icon-box {
+    transform: scale(1.06);
+    border-color: #B08D57;
   }
 
-  .emoji-icon {
+  .module-emoji {
     font-size: 26px;
     line-height: 1;
   }
 
-  /* ICON GLOWS */
-  .amber-glow {
-    background: rgba(245, 158, 11, 0.15);
-    border-color: rgba(245, 158, 11, 0.35);
-    box-shadow: 0 0 16px rgba(245, 158, 11, 0.2);
-  }
-  .gold-glow {
-    background: rgba(176, 141, 87, 0.15);
-    border-color: rgba(176, 141, 87, 0.35);
-    box-shadow: 0 0 16px rgba(176, 141, 87, 0.2);
-  }
-  .green-glow {
-    background: rgba(16, 185, 129, 0.15);
-    border-color: rgba(16, 185, 129, 0.35);
-    box-shadow: 0 0 16px rgba(16, 185, 129, 0.2);
-  }
-  .blue-glow {
-    background: rgba(59, 130, 246, 0.15);
-    border-color: rgba(59, 130, 246, 0.35);
-    box-shadow: 0 0 16px rgba(59, 130, 246, 0.2);
-  }
-  .purple-glow {
-    background: rgba(139, 92, 246, 0.15);
-    border-color: rgba(139, 92, 246, 0.35);
-    box-shadow: 0 0 16px rgba(139, 92, 246, 0.2);
-  }
-
-  .status-badge-live {
+  .card-status-badge {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -587,195 +376,110 @@ const modules = [
     font-weight: 600;
     padding: 4px 10px;
     border-radius: 9999px;
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #CBD5E1;
+    color: #d4d4d4 !important;
   }
 
-  .live-dot {
+  .status-indicator {
     width: 6px;
     height: 6px;
-    background: #10B981;
+    background: #1BAF7A;
     border-radius: 50%;
-    box-shadow: 0 0 6px #10B981;
+    box-shadow: 0 0 6px #1BAF7A;
   }
 
-  /* CARD BODY */
-  .card-body {
+  /* CARD CONTENT */
+  .card-content {
     flex-grow: 1;
     margin-bottom: 18px;
   }
 
-  .category-eyebrow {
+  .module-tag {
     font-size: 11px;
     font-weight: 700;
-    color: #E5C07B !important;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
+    color: #B08D57 !important;
+    letter-spacing: 0.5px;
     display: block;
     margin-bottom: 6px;
+    text-transform: uppercase;
   }
 
-  .card-heading {
+  .module-title {
     font-family: var(--font-display, inherit);
     font-size: 20px !important;
     font-weight: 700 !important;
-    color: #FFFFFF !important;
+    color: #ffffff !important;
     margin: 0 0 10px 0 !important;
     line-height: 1.3 !important;
-    transition: color 0.2s ease;
   }
 
-  .app-card-link:hover .card-heading {
-    color: #FFF6E5 !important;
-  }
-
-  .card-summary {
+  .module-desc {
     font-size: 13.5px !important;
-    color: #94A3B8 !important;
+    color: #cbd5e1 !important;
     line-height: 1.55 !important;
     margin: 0 !important;
   }
 
-  /* BADGES ROW */
-  .badges-row {
+  /* CHIPS */
+  .card-chips {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
-  .tag-pill {
+  .mini-chip {
     font-size: 11px;
-    background: rgba(15, 23, 42, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    color: #CBD5E1;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #cbd5e1 !important;
     padding: 3px 8px;
     border-radius: 6px;
   }
 
-  /* ACTION BAR */
-  .card-action-bar {
+  /* CARD FOOTER */
+  .card-footer {
     padding-top: 14px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
 
-  .btn-action {
+  .open-btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    color: #FFFFFF !important;
     font-size: 13px;
     font-weight: 700;
-    padding: 10px 14px;
-    border-radius: 9px;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 10px 16px;
+    border-radius: 8px;
     transition: all 0.2s ease;
   }
 
-  .btn-action-icon {
+  .arrow-icon {
     font-size: 15px;
     transition: transform 0.2s ease;
   }
 
-  .app-card-link:hover .btn-action {
-    background: #B08D57;
-    color: #061121 !important;
-    border-color: #E5C07B;
-    box-shadow: 0 4px 12px rgba(176, 141, 87, 0.35);
+  .module-card:hover .open-btn {
+    background: #B08D57 !important;
+    border-color: #B08D57 !important;
+    color: #ffffff !important;
   }
 
-  .app-card-link:hover .btn-action-icon {
+  .module-card:hover .arrow-icon {
     transform: translateX(4px);
-  }
-
-  /* 7. SERVICES MONITOR CARD */
-  .services-monitor-card {
-    background: rgba(13, 27, 51, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 14px;
-    padding: 18px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-    backdrop-filter: blur(10px);
-  }
-
-  .monitor-left {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    max-width: 500px;
-  }
-
-  .monitor-icon {
-    font-size: 24px;
-    background: rgba(245, 158, 11, 0.15);
-    width: 42px;
-    height: 42px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #F59E0B;
-    border: 1px solid rgba(245, 158, 11, 0.3);
-  }
-
-  .monitor-text strong {
-    font-size: 13.5px;
-    color: #FFFFFF;
-    display: block;
-    margin-bottom: 2px;
-  }
-
-  .monitor-text p {
-    font-size: 12px;
-    color: #94A3B8;
-    margin: 0;
-    line-height: 1.4;
-  }
-
-  .monitor-chips {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .port-chip {
-    font-size: 11.5px;
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 4px 10px;
-    border-radius: 6px;
-    color: #CBD5E1;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .port-chip code {
-    color: #E5C07B;
-    font-weight: 700;
-  }
-
-  .dot-ok {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #10B981;
-    box-shadow: 0 0 5px #10B981;
   }
 </style>
 
 <script is:inline>
   document.addEventListener('DOMContentLoaded', () => {
-    // Interactive Category Filter Tabs
-    const tabs = document.querySelectorAll('#filterTabs .tab-chip');
-    const cards = document.querySelectorAll('#appsGrid .app-card-wrapper');
+    // Category Filter Tabs
+    const tabs = document.querySelectorAll('#filterTabs .tab-btn');
+    const cards = document.querySelectorAll('#appsGrid .module-card');
 
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
