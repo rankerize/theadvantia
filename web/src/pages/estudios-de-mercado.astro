@@ -542,25 +542,86 @@ const seo = {
 
 <script is:inline src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<script is:inline>
+<script define:vars={{ allStudiesData }}>
   document.addEventListener('DOMContentLoaded', () => {
-    // Initialize Chart.js Instances
-    const initCharts = () => {
+    const STUDIES_BUNDLE = allStudiesData || {};
+    let currentCat = 'ollas';
+    let RAW_DATASET = STUDIES_BUNDLE['ollas'] || [];
+    let chartInstances = {};
+
+    const CATEGORY_META = {
+      ollas: {
+        name: 'Ollas, Sartenes & Menaje de Cocina',
+        brands: ['Imusa', 'Universal', 'Royal Prestige', 'Oster', 'Tramontina', 'Tefal', 'Ninja'],
+        brandCounts: [23800, 18600, 15400, 9200, 6200, 4800, 3900],
+        materials: ['Antiadherente', 'Acero Inoxidable', 'Hierro Fundido', 'Cerámica', 'Titanio', 'Barro/Peltre'],
+        materialCounts: [40, 28, 16, 10, 4, 2],
+        trendLabels: ['Ollas a Presión', 'Antiadherente', 'Hierro/Titanio (Emergentes)', 'Barro/Peltre'],
+        quickWins: ['Sartenes Titanio', 'Sartenes Ninja', 'Acero al Carbono', 'Sarten Tramontina', 'Olla Presión Oster', 'Olla Imusa Multi'],
+        quickWinYoY: [555, 467, 271, 233, 200, 177]
+      },
+      relojes: {
+        name: 'Relojes & Accesorios Hombre/Mujer',
+        brands: ['Casio', 'Rolex', 'Fossil', 'Invicta', 'Tissot', 'Diesel', 'Adidas'],
+        brandCounts: [33000, 27100, 18100, 14800, 12100, 9900, 8100],
+        materials: ['Acero Inoxidable', 'Oro/Plata', 'Cuero', 'Titanio', 'Silicona', 'Resina'],
+        materialCounts: [38, 25, 18, 10, 6, 3],
+        trendLabels: ['Smartwatches', 'Relojes Hombre Clásicos', 'Relojes Sumergibles', 'Relojes Mujer Lujo'],
+        quickWins: ['Smartwatch Militar', 'Reloj Deportivo Impermeable', 'Casio Vintage Dorado', 'Reloj Automático Titanio'],
+        quickWinYoY: [320, 240, 180, 150]
+      },
+      lenceria: {
+        name: 'Lencería, Brasieres & Ropa Interior',
+        brands: ['Leonisa', 'Bésame', 'Lili Pink', 'Chamela', 'Diane & Geordi', 'Gef'],
+        brandCounts: [49500, 33100, 27100, 18100, 14800, 12100],
+        materials: ['Encaje / Blonda', 'Algodón', 'Seda / Satín', 'Seamless / Sin Costuras', 'Microfibra / Lycra'],
+        materialCounts: [35, 30, 15, 12, 8],
+        trendLabels: ['Brasieres Strapless/Push Up', 'Fajas Moldeadoras', 'Bralettes Encaje', 'Pantis Sin Costuras'],
+        quickWins: ['Bralette de Encaje', 'Faja Reductora Invisible', 'Brasier Strapless Push Up', 'Cachetero Seamless'],
+        quickWinYoY: [410, 310, 220, 160]
+      },
+      abrigos: {
+        name: 'Abrigos, Chaquetas & Ropa de Invierno',
+        brands: ['The North Face', 'Columbia', 'Zara', 'Arturo Calle', 'Patagonia', 'Chevignon'],
+        brandCounts: [27100, 22200, 18100, 14800, 12100, 9900],
+        materials: ['Cuero Genuino', 'Plumas / Duvet', 'Lana / Paño', 'Impermeable / Térmico', 'Denim / Jean'],
+        materialCounts: [32, 28, 20, 14, 6],
+        trendLabels: ['Chaquetas Rompevientos', 'Abrigos Largos Paño', 'Parkas Térmicas', 'Chaquetas de Cuero'],
+        quickWins: ['Chaqueta Térmica Impermeable', 'Parka con Capota', 'Abrigo Trench Clásico', 'Bomber Jacket Cuero'],
+        quickWinYoY: [280, 210, 175, 140]
+      },
+      camisetas: {
+        name: 'Camisetas, Polos & Moda Deportiva',
+        brands: ['Adidas', 'Nike', 'Puma', 'Under Armour', 'Lacoste', 'Tommy Hilfiger'],
+        brandCounts: [60500, 49500, 27100, 22200, 18100, 14800],
+        materials: ['Algodón 100%', 'Dri-Fit / Poliéster', 'Piqué (Polos)', 'Oversize / Heavyweight'],
+        materialCounts: [45, 30, 15, 10],
+        trendLabels: ['Camisetas Selección Colombia', 'Camisetas Oversize', 'Polos Cuello Piqué', 'Camisetas Deportivas Gym'],
+        quickWins: ['Camiseta Selección Colombia 2026', 'Camiseta Oversize Estampada', 'Camiseta Gym Dry Fit', 'Polo Clásica Algodón'],
+        quickWinYoY: [620, 450, 310, 220]
+      }
+    };
+
+    // Initialize & Refresh Chart.js Instances
+    const updateCharts = (catId) => {
       if (typeof Chart === 'undefined') return;
 
       Chart.defaults.color = '#94a3b8';
       Chart.defaults.font.family = 'Inter, sans-serif';
 
-      // 1. Chart Time Series 4 Years (Line Chart)
+      const meta = CATEGORY_META[catId] || CATEGORY_META.ollas;
+
+      // 1. Chart Time Series 4 Years
       const ctxTimeSeries = document.getElementById('chartTimeSeries');
       if (ctxTimeSeries) {
-        new Chart(ctxTimeSeries, {
+        if (chartInstances.timeSeries) chartInstances.timeSeries.destroy();
+        chartInstances.timeSeries = new Chart(ctxTimeSeries, {
           type: 'line',
           data: {
             labels: ['Sep 22', 'Ene 23', 'May 23', 'Sep 23', 'Ene 24', 'May 24', 'Sep 24', 'Ene 25', 'May 25', 'Sep 25', 'Ene 26', 'Ago 26'],
             datasets: [
               {
-                label: 'Ollas a Presión / Express',
+                label: meta.trendLabels[0] || 'Línea Principal',
                 data: [18500, 19200, 20100, 21400, 22000, 21800, 23500, 24100, 23800, 24000, 24200, 24400],
                 borderColor: '#1BAF7A',
                 backgroundColor: 'rgba(27, 175, 122, 0.15)',
@@ -569,7 +630,7 @@ const seo = {
                 borderWidth: 3
               },
               {
-                label: 'Sartenes Antiadherentes / Teflón',
+                label: meta.trendLabels[1] || 'Línea Secundaria',
                 data: [12100, 12500, 13400, 14200, 15100, 16000, 16800, 17500, 18200, 19000, 19800, 20500],
                 borderColor: '#3b82f6',
                 backgroundColor: 'rgba(59, 130, 246, 0.1)',
@@ -578,22 +639,13 @@ const seo = {
                 borderWidth: 2
               },
               {
-                label: 'Hierro Fundido & Titanio (Emergentes 🚀)',
+                label: meta.trendLabels[2] || 'Línea Emergente 🚀',
                 data: [850, 1100, 1400, 1900, 2600, 3400, 4500, 5800, 7200, 8900, 10500, 12800],
                 borderColor: '#f59e0b',
                 backgroundColor: 'rgba(245, 158, 11, 0.1)',
                 fill: true,
                 tension: 0.3,
                 borderWidth: 3
-              },
-              {
-                label: 'Ollas de Barro & Peltre',
-                data: [2800, 2600, 2400, 2300, 2100, 1900, 1800, 1600, 1500, 1400, 1300, 1200],
-                borderColor: '#ef4444',
-                backgroundColor: 'transparent',
-                borderDash: [5, 5],
-                tension: 0.3,
-                borderWidth: 2
               }
             ]
           },
@@ -616,52 +668,28 @@ const seo = {
         });
       }
 
-      // 2. Chart 4-Axis Strategic Matrix (Bubble Chart)
-      // Axis 1 (X): Volume | Axis 2 (Y): YoY Growth % | Axis 3 (Bubble Size): Competition | Axis 4 (Color): Intent Category
+      // 2. Chart 4-Axis Matrix
       const ctx4Axis = document.getElementById('chart4Axis');
       if (ctx4Axis) {
-        new Chart(ctx4Axis, {
+        if (chartInstances.axis4) chartInstances.axis4.destroy();
+        const top5 = RAW_DATASET.slice(0, 8);
+        chartInstances.axis4 = new Chart(ctx4Axis, {
           type: 'bubble',
           data: {
             datasets: [
               {
-                label: 'Nomenclaturas Generales',
-                data: [
-                  { x: 12100, y: 22, r: 18, kw: 'olla a presion' },
-                  { x: 9900, y: 15, r: 16, kw: 'olla express' },
-                  { x: 2400, y: 21, r: 10, kw: 'olla pitadora' }
-                ],
+                label: 'Keywords de Alta Demanda',
+                data: top5.map(x => ({ x: x.vol, y: parseInt(x.yoy) || 10, r: Math.max(6, Math.min(22, Math.round(x.vol / 2000))), kw: x.kw })),
                 backgroundColor: 'rgba(27, 175, 122, 0.75)',
                 borderColor: '#1BAF7A'
               },
               {
-                label: 'Marcas Establecidas',
-                data: [
-                  { x: 23800, y: -19, r: 22, kw: 'imusa ollas' },
-                  { x: 18600, y: 0, r: 20, kw: 'universal ollas' },
-                  { x: 15400, y: -34, r: 18, kw: 'royal prestige' }
-                ],
-                backgroundColor: 'rgba(176, 141, 87, 0.75)',
-                borderColor: '#B08D57'
-              },
-              {
-                label: 'Quick Wins Alto Crecimiento 🚀',
-                data: [
-                  { x: 590, y: 233, r: 12, kw: 'sarten tramontina' },
-                  { x: 170, y: 555, r: 15, kw: 'sartenes titanio' },
-                  { x: 40, y: 467, r: 14, kw: 'sartenes ninja' }
-                ],
+                label: 'Quick Wins (+100% YoY) 🚀',
+                data: RAW_DATASET.filter(x => x.intent === 'quickwin' || x.yoy.startsWith('+5') || x.yoy.startsWith('+2')).slice(0, 5).map(x => ({
+                  x: x.vol, y: parseInt(x.yoy) || 150, r: 12, kw: x.kw
+                })),
                 backgroundColor: 'rgba(245, 158, 11, 0.85)',
                 borderColor: '#f59e0b'
-              },
-              {
-                label: 'Salud & FAQ Toxinas',
-                data: [
-                  { x: 110, y: -55, r: 8, kw: 'sartenes sin toxicos' },
-                  { x: 90, y: -56, r: 7, kw: 'teflon toxico' }
-                ],
-                backgroundColor: 'rgba(239, 68, 68, 0.75)',
-                borderColor: '#ef4444'
               }
             ]
           },
@@ -674,36 +702,30 @@ const seo = {
                 callbacks: {
                   label: (ctx) => {
                     const item = ctx.raw;
-                    return ` [${item.kw}] Vol: ${item.x.toLocaleString('es-CO')}/mes | Crecimiento: ${item.y}% | Dificultad: ${item.r}`;
+                    return ` [${item.kw}] Vol: ${item.x.toLocaleString('es-CO')}/mes | Crecimiento: ${item.y}%`;
                   }
                 }
               }
             },
             scales: {
-              x: {
-                type: 'logarithmic',
-                grid: { color: 'rgba(255, 255, 255, 0.05)' },
-                title: { display: true, text: 'Eje X: Volumen Mensual de Búsqueda (Escala Logarítmica)', color: '#94a3b8' }
-              },
-              y: {
-                grid: { color: 'rgba(255, 255, 255, 0.05)' },
-                title: { display: true, text: 'Eje Y: Crecimiento YoY (%)', color: '#94a3b8' }
-              }
+              x: { type: 'logarithmic', grid: { color: 'rgba(255, 255, 255, 0.05)' }, title: { display: true, text: 'Volumen Mensual (Escala Log)', color: '#94a3b8' } },
+              y: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, title: { display: true, text: 'Crecimiento YoY (%)', color: '#94a3b8' } }
             }
           }
         });
       }
 
-      // 3. Chart Brands (Bar Chart)
+      // 3. Chart Brands
       const ctxBrands = document.getElementById('chartBrands');
       if (ctxBrands) {
-        new Chart(ctxBrands, {
+        if (chartInstances.brands) chartInstances.brands.destroy();
+        chartInstances.brands = new Chart(ctxBrands, {
           type: 'bar',
           data: {
-            labels: ['Imusa', 'Universal', 'Royal Prestige', 'Oster', 'Tramontina', 'Tefal', 'B&D'],
+            labels: meta.brands,
             datasets: [{
               label: 'Búsquedas Mensuales',
-              data: [23800, 18600, 15400, 9200, 6200, 4800, 3900],
+              data: meta.brandCounts,
               backgroundColor: 'rgba(176, 141, 87, 0.85)',
               borderColor: '#B08D57',
               borderWidth: 1,
@@ -722,15 +744,16 @@ const seo = {
         });
       }
 
-      // 4. Chart Materials (Doughnut Chart)
+      // 4. Chart Materials
       const ctxMaterials = document.getElementById('chartMaterials');
       if (ctxMaterials) {
-        new Chart(ctxMaterials, {
+        if (chartInstances.materials) chartInstances.materials.destroy();
+        chartInstances.materials = new Chart(ctxMaterials, {
           type: 'doughnut',
           data: {
-            labels: ['Antiadherente', 'Acero Inoxidable', 'Hierro Fundido', 'Cerámica', 'Acero Quirúrgico', 'Barro/Peltre'],
+            labels: meta.materials,
             datasets: [{
-              data: [40, 28, 16, 10, 4, 2],
+              data: meta.materialCounts,
               backgroundColor: ['#1BAF7A', '#3b82f6', '#f59e0b', '#ec4899', '#8b5cf6', '#64748b'],
               borderWidth: 2,
               borderColor: '#09172A'
@@ -744,16 +767,17 @@ const seo = {
         });
       }
 
-      // 5. Chart YoY Quick Wins (Horizontal Bar Chart)
+      // 5. Chart YoY Quick Wins
       const ctxYoY = document.getElementById('chartYoY');
       if (ctxYoY) {
-        new Chart(ctxYoY, {
+        if (chartInstances.yoy) chartInstances.yoy.destroy();
+        chartInstances.yoy = new Chart(ctxYoY, {
           type: 'bar',
           data: {
-            labels: ['Sartenes Titanio', 'Sartenes Ninja', 'Acero al Carbono', 'Sarten Tramontina', 'Olla Presión Oster', 'Olla Imusa Multi'],
+            labels: meta.quickWins,
             datasets: [{
               label: 'Crecimiento YoY (%)',
-              data: [555, 467, 271, 233, 200, 177],
+              data: meta.quickWinYoY,
               backgroundColor: 'rgba(245, 158, 11, 0.85)',
               borderColor: '#f59e0b',
               borderWidth: 1,
@@ -772,43 +796,9 @@ const seo = {
           }
         });
       }
-
-      // 6. Chart Intent (Polar Area)
-      const ctxIntent = document.getElementById('chartIntent');
-      if (ctxIntent) {
-        new Chart(ctxIntent, {
-          type: 'polarArea',
-          data: {
-            labels: ['Transaccional / Compra', 'Búsqueda de Marca', 'Comparativa de Material', 'Consultas Salud / Toxicidad', 'Variaciones / Errores'],
-            datasets: [{
-              data: [65, 20, 8, 5, 2],
-              backgroundColor: [
-                'rgba(27, 175, 122, 0.75)',
-                'rgba(176, 141, 87, 0.75)',
-                'rgba(59, 130, 246, 0.75)',
-                'rgba(245, 158, 11, 0.75)',
-                'rgba(148, 163, 184, 0.5)'
-              ],
-              borderColor: '#09172A'
-            }]
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: { legend: { position: 'right', labels: { boxWidth: 12, font: { size: 10 } } } },
-            scales: { r: { grid: { color: 'rgba(255, 255, 255, 0.08)' }, ticks: { display: false } } }
-          }
-        });
-      }
     };
 
-    setTimeout(initCharts, 300);
-
-    // Embedded Multi-Category Datasets
-    const STUDIES_BUNDLE = allStudiesData || {};
-    let currentCat = 'ollas';
-    let RAW_DATASET = STUDIES_BUNDLE['ollas'] || [];
-
+    // Category Selector
     const catPickerBtns = document.querySelectorAll('#catPicker .picker-btn');
     catPickerBtns.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -816,6 +806,7 @@ const seo = {
         btn.classList.add('active');
         currentCat = btn.getAttribute('data-cat') || 'ollas';
         RAW_DATASET = STUDIES_BUNDLE[currentCat] || [];
+        updateCharts(currentCat);
         renderTable();
       });
     });
@@ -855,7 +846,7 @@ const seo = {
 
       const totalVol = filtered.reduce((acc, curr) => acc + curr.vol, 0);
       if (statVolume) statVolume.innerText = `${totalVol.toLocaleString('es-CO')}/mes`;
-      if (statCount) statCount.innerText = filtered.length;
+      if (statCount) statCount.innerText = `${filtered.length} Keywords`;
 
       if (filtered.length === 0) {
         emTableBody.innerHTML = `
@@ -930,6 +921,9 @@ const seo = {
     }
 
     // Initial render
-    renderTable();
+    setTimeout(() => {
+      updateCharts('ollas');
+      renderTable();
+    }, 200);
   });
 </script>
