@@ -26,8 +26,17 @@ Mercado objetivo: vendedores/distribuidores colombianos. Pasarela de pago: Wompi
 
 - **WhatsApp Business API** (Meta Cloud API o proveedor como Twilio/360dialog): canal principal de los agentes Trastienda.
 - **Mercado Libre API**: lectura de listings, actualización de atributos, métricas de visibilidad.
+- **Falabella Seller Center API**: base URL `https://sellercenter-api.falabella.com/`. Auth HMAC-SHA256 firmando valores URL-encoded. Credenciales por tenant vía headers `x-fala-user-id` / `x-fala-api-key`. Ver tabla de endpoints en `marketplaces-service/README.md`.
 - **Wompi**: checkout y webhooks de confirmación de pago.
 - **Google Sheets / Excel**: fuente de datos inicial de los pilotos Trastienda (sin integraciones ERP en la etapa de pilot).
+
+## Falabella API — Guía rápida para no repetir el reconocimiento
+
+Verificado el 2026-10-01 contra producción. Endpoints que **sí existen**:
+`GetProducts`, `GetContentScore`, `GetCategoryTree`, `GetCategoryAttributes`, `GetCategorySuggestion` (parámetro `Name=`, no `Search=`), `GetBrands`, `GetShipmentProviders`, `GetWarehouse`, `GetOrders`, `GetFailureReasons`, `GetFeedRawInput` (estado de feed con `FeedIdList=[id]`), `ProductCreate`, `ProductUpdate`.
+
+Endpoints que **no existen** (`E008: Invalid Action`):
+`GetFeedList`, `GetFeedStatus`, `GetFeedCount`, `GetProductItem`, `GetAccount`, `GetSeller`, `GetTransactions`.
 
 ## Convenciones que deben respetarse
 
