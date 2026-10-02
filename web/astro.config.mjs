@@ -13,7 +13,6 @@ const PRIORITY = {
   '/blog/ahorro-de-tiempo-con-ia-en-pymes': 0.7,
   '/blog/como-vender-en-amazon-desde-colombia': 0.7,
   '/nosotros': 0.6,
-  '/aplicativos': 0.6,
   '/politica-de-privacidad': 0.3,
 };
 
@@ -26,8 +25,8 @@ export default defineConfig({
   compressHTML: false,
   integrations: [
     sitemap({
-      // /gracias y /404 son noindex: no van al sitemap
-      filter: (page) => !/\/(gracias|404)$/.test(page.replace(/\/$/, '')),
+      // /gracias, /404 y el portal interno son noindex: no van al sitemap
+      filter: (page) => !/\/(gracias|404|aplicativos|estudios-de-mercado)$/.test(page.replace(/\/$/, '')),
       serialize(item) {
         const path = new URL(item.url).pathname.replace(/\.html$/, '').replace(/(.)\/$/, '$1');
         item.url = 'https://theadvantia.com' + path;

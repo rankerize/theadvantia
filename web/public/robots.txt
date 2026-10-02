@@ -8,6 +8,8 @@ User-agent: *
 Allow: /
 Disallow: /gracias
 Disallow: /404
+Disallow: /aplicativos
+Disallow: /estudios-de-mercado
 
 # --- Motores de respuesta IA (GEO) — se permiten ✅ ----------
 # Estos rastreadores citan fuentes y generan visibilidad en
@@ -50,9 +52,6 @@ User-agent: omgili
 Disallow: /
 
 User-agent: omgilibot
-Disallow: /
-
-User-agent: facebookexternalhit
 Disallow: /
 
 User-agent: Bytespider

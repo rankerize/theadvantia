@@ -91,3 +91,20 @@ ErrorDocument 404 /404.html
   AddType font/woff2 .woff2
   AddType application/vnd.openxmlformats-officedocument.spreadsheetml.sheet .xlsx
 </IfModule>
+
+# --- Portal interno: /aplicativos y /estudios-de-mercado piden usuario y clave ---
+# La clave vive en .htpasswd (hash apr1). Fuera de buscadores y sin cache compartida.
+<FilesMatch "^(aplicativos|estudios-de-mercado)\.html$">
+  AuthType Basic
+  AuthName "Portal ADVANTIA"
+  AuthUserFile /home/u917794390/domains/theadvantia.com/public_html/.htpasswd
+  Require valid-user
+  <IfModule mod_headers.c>
+    Header set X-Robots-Tag "noindex, nofollow"
+    Header set Cache-Control "private, no-store"
+  </IfModule>
+</FilesMatch>
+
+<Files ".htpasswd">
+  Require all denied
+</Files>

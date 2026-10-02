@@ -5,80 +5,24 @@ const seo = {
   title: 'Acceso Restringido | Portal de Aplicativos ADVANTIA',
   description: 'Ingreso al portal de microservicios y herramientas de IA de Advantia para usuarios autorizados.',
   canonical: 'https://theadvantia.com/aplicativos',
+  // Portal interno: protegido con usuario y clave en el servidor (.htaccess + .htpasswd)
+  robots: 'noindex, nofollow',
 };
 ---
 
 <Base seo={seo} active="/aplicativos">
   <main class="portal-main">
 
-    <!-- LOGIN GATE (Shown if not authenticated) -->
-    <div id="loginGate" class="login-container">
-      <div class="wrap">
-        <div class="login-card">
-          <div class="login-header">
-            <div class="lock-badge">🔒 ACCESO PRIVADO</div>
-            <img src="/img/advantia-logo-nav.png" alt="ADVANTIA" width="160" height="37" class="login-logo" />
-            <h1 class="login-title">Portal de Aplicativos & Suite IA</h1>
-            <p class="login-subtitle">
-              Ingresa tu correo autorizado para acceder a los microservicios de generación de contenido, remoción de fondo y sincronización de marketplaces.
-            </p>
-          </div>
-
-          <form id="loginForm" class="login-form">
-            <div class="form-group">
-              <label for="loginEmail">Correo Electrónico Autorizado</label>
-              <input 
-                type="email" 
-                id="loginEmail" 
-                placeholder="ejemplo@plurall.com / gmail.com / grovi-studio.com" 
-                required 
-                class="app-input" 
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="loginPass">Clave de Acceso (Opcional)</label>
-              <input 
-                type="password" 
-                id="loginPass" 
-                placeholder="••••••••" 
-                class="app-input" 
-              />
-            </div>
-
-            <!-- Error message container -->
-            <div id="loginError" class="alert-box error hidden">
-              <span>⚠️ Acceso Denegado. Este correo no cuenta con permisos autorizados.</span>
-            </div>
-
-            <!-- Success message container -->
-            <div id="loginSuccess" class="alert-box success hidden">
-              <span>✓ Credenciales validadas. Redirigiendo al portal...</span>
-            </div>
-
-            <button type="submit" class="app-btn btn-primary lg" id="btnLoginSubmit">
-              <span>🔐 Ingresar al Portal</span>
-            </button>
-          </form>
-
-          <div class="login-footer">
-            <small>Acceso restringido a cuentas autorizadas: <code>nicolas.navarro@plurall.com</code>, <code>jp.pardo135@gmail.com</code>, <code>cesar@grovi-studio.com</code>.</small>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PORTAL SUITE CONTENT (Shown when authenticated) -->
-    <div id="portalContent" class="portal-content hidden">
+    <!-- PORTAL SUITE CONTENT: el acceso lo controla el servidor con usuario y clave -->
+    <div id="portalContent" class="portal-content">
       
       <!-- Top Session Bar -->
       <div class="session-bar">
         <div class="wrap session-in">
           <div class="session-info">
-            <span class="user-badge">👤 Usuario Autorizado: <strong id="currentUserEmail">--</strong></span>
+            <span class="user-badge">👤 Acceso de equipo</span>
             <span class="status-pill active">🟢 Sesión Activa</span>
           </div>
-          <button class="logout-btn" id="btnLogout">Cerrar Sesión 🚪</button>
         </div>
       </div>
 
@@ -1008,72 +952,7 @@ const seo = {
 
 
 <script is:inline>
-  // List of authorized emails for access
-  const ALLOWED_EMAILS = [
-    'nicolas.navarro@plurall.com',
-    'jp.pardo135@gmail.com',
-    'cesar@grovi-studio.com'
-  ];
-
   document.addEventListener('DOMContentLoaded', () => {
-    const loginGate = document.getElementById('loginGate');
-    const portalContent = document.getElementById('portalContent');
-    const loginForm = document.getElementById('loginForm');
-    const loginEmail = document.getElementById('loginEmail');
-    const loginError = document.getElementById('loginError');
-    const loginSuccess = document.getElementById('loginSuccess');
-    const currentUserEmail = document.getElementById('currentUserEmail');
-    const btnLogout = document.getElementById('btnLogout');
-
-    // Check existing session
-    const checkSession = () => {
-      const savedEmail = localStorage.getItem('advantia_user_session');
-      if (savedEmail && ALLOWED_EMAILS.includes(savedEmail.toLowerCase().trim())) {
-        loginGate.classList.add('hidden');
-        portalContent.classList.remove('hidden');
-        if (currentUserEmail) currentUserEmail.innerText = savedEmail;
-      } else {
-        loginGate.classList.remove('hidden');
-        portalContent.classList.add('hidden');
-      }
-    };
-
-    // Run initial check
-    checkSession();
-
-    // Login Form Submit
-    if (loginForm) {
-      loginForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const inputVal = loginEmail.value.toLowerCase().trim();
-
-        if (ALLOWED_EMAILS.includes(inputVal)) {
-          loginError.classList.add('hidden');
-          loginSuccess.classList.remove('hidden');
-          
-          setTimeout(() => {
-            localStorage.setItem('advantia_user_session', inputVal);
-            checkSession();
-          }, 700);
-        } else {
-          loginSuccess.classList.add('hidden');
-          loginError.classList.remove('hidden');
-          loginError.querySelector('span').innerText = `⚠️ Acceso Denegado. El correo '${inputVal}' no cuenta con permisos autorizados.`;
-        }
-      });
-    }
-
-    // Logout
-    if (btnLogout) {
-      btnLogout.addEventListener('click', () => {
-        localStorage.removeItem('advantia_user_session');
-        loginEmail.value = '';
-        loginError.classList.add('hidden');
-        loginSuccess.classList.add('hidden');
-        checkSession();
-      });
-    }
-
     // Workspace Filter Tabs
     const tabs = document.querySelectorAll('#filterTabs .tab-btn');
     const cards = document.querySelectorAll('#appsGrid .app-card');
