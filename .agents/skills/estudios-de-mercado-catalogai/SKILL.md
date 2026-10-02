@@ -1,35 +1,44 @@
 ---
 name: estudios-de-mercado-catalogai
-description: Procesamiento de estudios de mercado, clustering semántico de palabras clave (Keyword Planner / SEMrush) e inteligencia de volumen de búsqueda para optimizaciones CatalogAI.
+description: Procesamiento de estudios de mercado, clustering semántico multidimensional (nomenclatura, marcas, materiales, capacidades, colores, salud/PFOA) e inteligencia de volumen de búsqueda para optimizaciones CatalogAI.
 ---
 
-# Skill de Estudios de Mercado & Inteligencia SEO — CatalogAI
+# Skill de Estudios de Mercado Multidimensional — CatalogAI
 
-Esta skill guía la ejecución de estudios de mercado por categorías, la segmentación en Topic Clusters y la identificación de Quick Wins para publicaciones en Falabella, Mercado Libre, Amazon y VTEX.
-
----
-
-## 📂 Recursos del Módulo en el Repositorio
-
-- **Directorio raíz del módulo:** `estudios-de-mercado/`
-- **Datasets en Data:** [estudios-de-mercado/data/](file:///Users/cesarandresjimenezarci/Documents/Advantia/estudios-de-mercado/data)
-  - `keywords_ollas_sartenes_2026.json`
-  - `keywords_ollas_sartenes_2026.csv`
-- **Informes Generados:** [estudios-de-mercado/informes/](file:///Users/cesarandresjimenezarci/Documents/Advantia/estudios-de-mercado/informes)
-  - `informe_estudio_mercado_ollas_sartenes_2026.md`
-- **Herramientas de Análisis:** `estudios-de-mercado/scripts/analizar_keywords.py`
+Esta skill establece el estándar de análisis multidimensional para investigar cómo los usuarios buscan un producto en e-commerce (Google Keyword Planner, SEMrush, Ahrefs, Mercado Libre).
 
 ---
 
-## 📋 Pasos para Procesar un Nuevo Estudio de Mercado
+## 🌐 Módulo Web Dedicado en el Repositorio
 
-1. **Recepción del Dataset:**
-   - Aceptar datos en formato CSV/TSV de Google Keyword Planner, SEMrush o Ahrefs.
-2. **Filtrado de Ruido:**
-   - Eliminar términos duplicados, marcas no competidoras e intenciones fuera de alcance.
-3. **Generación de Topic Clusters:**
-   - Agrupar por línea de producto, material (ej. *hierro fundido, acero inoxidable, cerámica*), capacidad (*1 a 50 litros*) y beneficio de salud (*libre de PFOA, sin tóxicos*).
-4. **Identificación de Quick Wins:**
-   - Aísla palabras clave con tasa de crecimiento YoY superior al **+100%**.
-5. **Conexión con CatalogAI inPage:**
-   - Mapear las palabras de mayor volumen al **Título (H1)**, **Bloques del Módulo 7** y **Sección FAQ para IA**.
+- **URL del Aplicativo:** [theadvantia.com/estudios-de-mercado](file:///Users/cesarandresjimenezarci/Documents/Advantia/web/src/pages/estudios-de-mercado.astro)
+- **Componente Portal:** `web/src/pages/aplicativos.astro` (`card-market-research`)
+- **Microservicio Backend:** `market-research-service` (Puerto 3004)
+- **Directorio de Datos & Informes:** `estudios-de-mercado/`
+  - `data/keywords_ollas_sartenes_2026.csv`
+  - `data/keywords_ollas_sartenes_2026.json`
+  - `informes/informe_estudio_mercado_ollas_sartenes_2026.md`
+
+---
+
+## 📌 Dimensiones Obligatorias de Desagregación
+
+Al procesar cualquier dataset de palabras clave, el análisis **debe clasificar cada término en al menos una de las siguientes 6 dimensiones**:
+
+1. **💬 Nomenclatura & Sinónimos:**
+   - Variaciones dialectales y errores ortográficos comunes (*ej: olla a presión vs. olla express vs. pitadora vs. hoya de presión*).
+2. **🏷️ Marcas & Competencia:**
+   - Búsquedas con intención directa de marca (*ej: Imusa, Universal, Royal Prestige, Tramontina, Oster, Tefal, Ninja, Le Creuset*).
+3. **🧱 Materiales & Tecnología:**
+   - Especificación técnica de construcción (*ej: acero inoxidable, acero quirúrgico 18/10, hierro fundido, cerámica, piedra volcánica, titanio, peltre, vidrio*).
+4. **📏 Capacidades, Diámetros & Tamaños:**
+   - Medidas operativas (*ej: 1 libra, 5 tazas, 2L, 4L, 6L, 7L, 10L, 50L industrial, 20 cm, 24 cm, 30 cm*).
+5. **🎨 Colores & Estética:**
+   - Búsquedas con preferencia de diseño (*ej: ollas negras, rosadas, blancas, rojas, cobre*).
+6. **🩺 Consultas de Salud, Toxicidad & FAQ IA:**
+   - Preguntas y objeciones de compra (*ej: "¿el teflón es tóxico?", "sartenes libres de PFOA y PTFE", "ventajas de la cerámica vs hierro fundido"*).
+
+---
+
+## 🚀 Identificación de Quick Wins
+Toda palabra clave con un **YoY Change ≥ +100%** se clasifica automáticamente como **Quick Win** y debe ser inyectada en el Título Principal y en los subtítulos del **Módulo 7 inPage**.

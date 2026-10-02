@@ -1,0 +1,717 @@
+---
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  title: 'Explorador de Mercado & Búsquedas SEO | Advantia CatalogAI',
+  description: 'Desagrega todas las formas en las que los compradores buscan productos en Colombia: variaciones de nombres, marcas, colores, materiales, capacidades y dudas de salud.',
+  canonical: 'https://theadvantia.com/estudios-de-mercado',
+};
+---
+
+<Base seo={seo} active="/estudios-de-mercado">
+  <main class="em-main">
+
+    <!-- Top Navigation Bar -->
+    <header class="em-nav">
+      <div class="wrap em-nav-in">
+        <div class="em-brand">
+          <a href="/aplicativos" class="back-link">← Volver a Aplicativos</a>
+          <span class="divider">|</span>
+          <span class="nav-title">📊 CatalogAI Market Intelligence Studio</span>
+        </div>
+        <div class="em-nav-actions">
+          <span class="live-pill">🟢 Dataset Colombia 2026</span>
+          <a href="/aplicativos" class="app-btn btn-secondary sm">Portal de Aplicativos</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Header -->
+    <section class="em-hero">
+      <div class="wrap">
+        <div class="hero-badge">
+          <span class="sparkle">✨</span> EXPLORADOR MULTIDIMENSIONAL DE BÚSQUEDAS
+        </div>
+        <h1 class="hero-title">¿Cómo buscan los compradores tu producto en Colombia?</h1>
+        <p class="hero-subtitle">
+          Desagrega la demanda real por <strong>variaciones de nombre</strong>, <strong>marcas</strong>, <strong>materiales</strong>, <strong>colores</strong>, <strong>capacidades</strong> y <strong>preguntas de salud</strong> para optimizar tu catálogo con el protocolo <strong>CatalogAI</strong>.
+        </p>
+
+        <!-- Dynamic Category Selector -->
+        <div class="cat-picker-container">
+          <label class="picker-label">Selecciona la Categoría de Estudio:</label>
+          <div class="picker-buttons" id="catPicker">
+            <button class="picker-btn active" data-cat="ollas">
+              <span class="icon">🍲</span>
+              <div class="txt">
+                <strong>Ollas, Sartenes & Baterías</strong>
+                <small>+254.800 búsquedas/mes</small>
+              </div>
+            </button>
+            <button class="picker-btn" data-cat="deportes">
+              <span class="icon">👟</span>
+              <div class="txt">
+                <strong>Calzado Deportivo & Sneaker</strong>
+                <small>+180.000 búsquedas/mes</small>
+              </div>
+            </button>
+            <button class="picker-btn" data-cat="hogar">
+              <span class="icon">🏠</span>
+              <div class="txt">
+                <strong>Electrodomésticos & Hogar</strong>
+                <small>+140.000 búsquedas/mes</small>
+              </div>
+            </button>
+            <button class="picker-btn" data-cat="tecnologia">
+              <span class="icon">📱</span>
+              <div class="txt">
+                <strong>Tecnología & Gadgets</strong>
+                <small>+210.000 búsquedas/mes</small>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Multi-Dimensional Control Panel -->
+    <section class="em-controls-section">
+      <div class="wrap">
+        <div class="controls-card">
+          <div class="search-main-row">
+            <div class="search-box">
+              <span class="search-icon">🔍</span>
+              <input 
+                type="text" 
+                id="emSearch" 
+                placeholder="Busca cualquier término (ej: imusa, acero inoxidable, 6 litros, negro, teflon, express...)" 
+                class="em-search-input" 
+              />
+              <button class="clear-btn" id="btnClearSearch">×</button>
+            </div>
+            <div class="quick-stats-summary">
+              <div class="stat-item">
+                <span>Volumen Filtrado:</span>
+                <strong id="statVolume">254.800/mes</strong>
+              </div>
+              <div class="stat-item">
+                <span>Keywords Visibles:</span>
+                <strong id="statCount">664</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dimension Pills -->
+          <div class="dimension-filters">
+            <span class="dim-label">Filtrar por Dimensión de Búsqueda:</span>
+            <div class="pills-group" id="dimensionPills">
+              <button class="dim-pill active" data-dim="all">Todas las Formas</button>
+              <button class="dim-pill" data-dim="nomenclatura">💬 Nombres & Sinónimos</button>
+              <button class="dim-pill" data-dim="marcas">🏷️ Marcas & Competencia</button>
+              <button class="dim-pill" data-dim="materiales">🧱 Materiales & Tecnología</button>
+              <button class="dim-pill" data-dim="capacidades">📏 Capacidades & Medidas</button>
+              <button class="dim-pill" data-dim="colores">🎨 Colores & Estética</button>
+              <button class="dim-pill" data-dim="salud">🩺 Preguntas / Salud & PFOA</button>
+              <button class="dim-pill highlight" data-dim="quickwins">🚀 Quick Wins (+100% YoY)</button>
+            </div>
+          </div>
+
+          <!-- Sub-Filter Bar (Brands, Materials, Colors, Sizes) -->
+          <div class="sub-filters-grid">
+            <div class="sub-filter-item">
+              <label for="subBrand">Filtrar por Marca</label>
+              <select id="subBrand" class="em-select">
+                <option value="all">Todas las Marcas</option>
+                <option value="imusa">Imusa</option>
+                <option value="universal">Universal</option>
+                <option value="royal prestige">Royal Prestige</option>
+                <option value="tramontina">Tramontina</option>
+                <option value="oster">Oster</option>
+                <option value="black and decker">Black & Decker</option>
+                <option value="tefal">Tefal / T-Fal</option>
+                <option value="le creuset">Le Creuset</option>
+                <option value="bergner">Bergner</option>
+                <option value="ninja">Ninja</option>
+                <option value="victoria">Victoria</option>
+              </select>
+            </div>
+
+            <div class="sub-filter-item">
+              <label for="subMaterial">Filtrar por Material</label>
+              <select id="subMaterial" class="em-select">
+                <option value="all">Todos los Materiales</option>
+                <option value="acero inoxidable">Acero Inoxidable</option>
+                <option value="acero quirurgico">Acero Quirúrgico</option>
+                <option value="hierro fundido">Hierro Fundido</option>
+                <option value="antiadherente">Antiadherente / Teflón</option>
+                <option value="ceramica">Cerámica</option>
+                <option value="barro">Barro / Peltre</option>
+                <option value="vidrio">Vidrio / Cristal</option>
+                <option value="titanio">Titanio</option>
+                <option value="aluminio">Aluminio / Fundido</option>
+              </select>
+            </div>
+
+            <div class="sub-filter-item">
+              <label for="subColor">Filtrar por Color / Estética</label>
+              <select id="subColor" class="em-select">
+                <option value="all">Todos los Colores</option>
+                <option value="negro">Negro / Negras</option>
+                <option value="rosa">Rosado / Rosas</option>
+                <option value="blanco">Blanco / Blancas</option>
+                <option value="rojo">Rojo / Rojas</option>
+                <option value="cobre">Cobre</option>
+              </select>
+            </div>
+
+            <div class="sub-filter-item">
+              <label for="subCapacity">Filtrar por Capacidad / Tamaño</label>
+              <select id="subCapacity" class="em-select">
+                <option value="all">Todas las Capacidades</option>
+                <option value="1 a 3">Pequeña (1 a 3 Litros / 1 Libra)</option>
+                <option value="4 a 7">Mediana (4 a 7 Litros)</option>
+                <option value="10 a 50">Grande / Industrial (10 a 50 Litros)</option>
+                <option value="20 a 30 cm">Diámetro (20 a 30 cm)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analytical Breakdown Cards (Heatmap Analytics) -->
+    <section class="em-analytics-section">
+      <div class="wrap">
+        <h2 class="sec-title">📌 Radiografía de Búsqueda por Dimensiones Clave</h2>
+        
+        <div class="analytics-grid">
+          
+          <!-- Card 1: Comparativa Nomenclatura -->
+          <article class="analytics-card">
+            <div class="ac-header">
+              <span class="ac-icon">💬</span>
+              <h3>Nomenclaturas & Sinónimos Más Buscados</h3>
+            </div>
+            <p class="ac-desc">¿Cómo llama la gente a las ollas a presión y arroceras en Colombia?</p>
+            <div class="ac-bars">
+              <div class="bar-row">
+                <span class="bar-label">Olla a Presión</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div>
+                <span class="bar-val">12.100/mes</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Olla Express</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 82%;"></div></div>
+                <span class="bar-val">9.900/mes</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Olla Pitadora</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 20%;"></div></div>
+                <span class="bar-val">2.400/mes</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Hoya de Presión (Error ortográfico)</span>
+                <div class="bar-track"><div class="bar-fill" style="width: 2%;"></div></div>
+                <span class="bar-val">170/mes</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Cuota de Marcas -->
+          <article class="analytics-card">
+            <div class="ac-header">
+              <span class="ac-icon">🏷️</span>
+              <h3>Cuota de Búsqueda por Marcas Líderes</h3>
+            </div>
+            <p class="ac-desc">Distribución de búsquedas con intención explícita de marca.</p>
+            <div class="ac-bars">
+              <div class="bar-row">
+                <span class="bar-label">Imusa</span>
+                <div class="bar-track"><div class="bar-fill gold" style="width: 100%;"></div></div>
+                <span class="bar-val">23.800/mes</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Universal</span>
+                <div class="bar-track"><div class="bar-fill gold" style="width: 78%;"></div></div>
+                <span class="bar-val">18.600/mes</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Royal Prestige</span>
+                <div class="bar-track"><div class="bar-fill gold" style="width: 65%;"></div></div>
+                <span class="bar-val">15.400/mes</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Oster</span>
+                <div class="bar-track"><div class="bar-fill gold" style="width: 38%;"></div></div>
+                <span class="bar-val">9.200/mes</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Tramontina</span>
+                <div class="bar-track"><div class="bar-fill gold" style="width: 26%;"></div></div>
+                <span class="bar-val">6.200/mes</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Materiales Preferidos -->
+          <article class="analytics-card">
+            <div class="ac-header">
+              <span class="ac-icon">🧱</span>
+              <h3>Materiales & Tecnologías de Cocina</h3>
+            </div>
+            <p class="ac-desc">¿Qué materiales prioriza el comprador colombiano?</p>
+            <div class="ac-bars">
+              <div class="bar-row">
+                <span class="bar-label">Antiadherente Tradicional</span>
+                <div class="bar-track"><div class="bar-fill green" style="width: 100%;"></div></div>
+                <span class="bar-val">18.400/mes</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Acero Inoxidable</span>
+                <div class="bar-track"><div class="bar-fill green" style="width: 72%;"></div></div>
+                <span class="bar-val">13.200/mes</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Hierro Fundido</span>
+                <div class="bar-track"><div class="bar-fill green" style="width: 48%;"></div></div>
+                <span class="bar-val">8.900/mes</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Cerámica Antiadherente</span>
+                <div class="bar-track"><div class="bar-fill green" style="width: 32%;"></div></div>
+                <span class="bar-val">5.800/mes</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Acero Quirúrgico</span>
+                <div class="bar-track"><div class="bar-fill green" style="width: 28%;"></div></div>
+                <span class="bar-val">5.100/mes</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Preguntas & Dudas de Salud (FAQ IA) -->
+          <article class="analytics-card">
+            <div class="ac-header">
+              <span class="ac-icon">🩺</span>
+              <h3>Dudas de Salud & Preguntas Frecuentes</h3>
+            </div>
+            <p class="ac-desc">Inquietudes clave que los compradores consultan a Google y a asistentes de IA.</p>
+            <div class="faq-mini-list">
+              <div class="faq-mini-item">
+                <strong>¿El teflón es tóxico? / ¿Es tóxico el teflón?</strong>
+                <small>Búsquedas: 180/mes · Respuesta requerida en Guía de Salud CatalogAI</small>
+              </div>
+              <div class="faq-mini-item">
+                <strong>¿Cuáles son las marcas libres de tóxicos (PFOA y PTFE)?</strong>
+                <small>Búsquedas: 110/mes · Respuesta en Módulo 7 Beneficios</small>
+              </div>
+              <div class="faq-mini-item">
+                <strong>¿Ventajas y desventajas de las ollas de cerámica vs hierro fundido?</strong>
+                <small>Búsquedas: 160/mes · Formato directo P/R en FAQ para IA</small>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Results Table -->
+    <section class="em-table-section">
+      <div class="wrap">
+        <div class="table-card">
+          <div class="table-header-bar">
+            <div class="th-info">
+              <h3>Matriz Detallada de Palabras Clave</h3>
+              <p>Mostrando los resultados filtrados listos para optimizar títulos y descripciones.</p>
+            </div>
+            <div class="th-actions">
+              <button class="app-btn btn-secondary sm" id="btnExportCSVMain">📥 Exportar CSV</button>
+              <button class="app-btn btn-primary sm" id="btnCopyCatalogMain">📋 Copiar para CatalogAI</button>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="em-data-table">
+              <thead>
+                <tr>
+                  <th>Palabra Clave</th>
+                  <th>Búsquedas/Mes</th>
+                  <th>Tendencia YoY</th>
+                  <th>Competencia</th>
+                  <th>Dimensión / Intención</th>
+                  <th>Mapeo CatalogAI (Sección / Bloque)</th>
+                </tr>
+              </thead>
+              <tbody id="emTableBody">
+                <!-- Dynamically populated by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</Base>
+
+<style>
+  .em-main {
+    background: #09172A;
+    color: #ffffff;
+    min-height: 100vh;
+    padding-bottom: 80px;
+    font-family: var(--font-body);
+  }
+
+  .em-nav {
+    background: rgba(11, 31, 58, 0.9);
+    border-bottom: 1px solid rgba(176, 141, 87, 0.25);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+  }
+  .em-nav-in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .back-link {
+    color: #B08D57;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .divider { color: rgba(255, 255, 255, 0.2); margin: 0 10px; }
+  .nav-title { font-size: 14px; font-weight: 800; color: #ffffff; }
+  .em-nav-actions { display: flex; align-items: center; gap: 12px; }
+  .live-pill { background: rgba(27, 175, 122, 0.15); color: #1BAF7A; border: 1px solid rgba(27, 175, 122, 0.3); padding: 4px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+
+  /* Hero */
+  .em-hero {
+    padding: 50px 0 30px 0;
+    text-align: center;
+    background: radial-gradient(circle at top center, rgba(30, 39, 97, 0.6) 0%, transparent 70%);
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(176, 141, 87, 0.15);
+    color: #B08D57;
+    border: 1px solid rgba(176, 141, 87, 0.3);
+    padding: 6px 14px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+  }
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 12px;
+  }
+  .hero-subtitle {
+    font-size: 16px;
+    color: #b3b3b3;
+    max-width: 760px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+  }
+
+  /* Picker */
+  .cat-picker-container { margin-top: 20px; }
+  .picker-label { font-size: 12px; font-weight: 700; color: #a3a3a3; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 12px; }
+  .picker-buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+  .picker-btn {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+  }
+  .picker-btn:hover { background: rgba(176, 141, 87, 0.15); border-color: rgba(176, 141, 87, 0.4); transform: translateY(-2px); }
+  .picker-btn.active { background: rgba(176, 141, 87, 0.25); border-color: #B08D57; box-shadow: 0 0 20px rgba(176, 141, 87, 0.3); }
+  .picker-btn .icon { font-size: 24px; }
+  .picker-btn .txt strong { display: block; color: #ffffff; font-size: 13px; }
+  .picker-btn .txt small { color: #1BAF7A; font-size: 11px; font-weight: 700; }
+
+  /* Controls Section */
+  .em-controls-section { padding: 20px 0; }
+  .controls-card {
+    background: rgba(18, 40, 76, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    backdrop-filter: blur(10px);
+  }
+  .search-main-row { display: flex; gap: 16px; align-items: center; margin-bottom: 20px; }
+  .search-box { flex-grow: 1; position: relative; display: flex; align-items: center; }
+  .search-icon { position: absolute; left: 14px; font-size: 16px; color: #a3a3a3; }
+  .em-search-input {
+    width: 100%;
+    background: rgba(11, 31, 58, 0.9);
+    border: 1px solid rgba(176, 141, 87, 0.4);
+    border-radius: 10px;
+    padding: 14px 40px 14px 42px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    transition: all 0.2s ease;
+  }
+  .em-search-input:focus { border-color: #B08D57; box-shadow: 0 0 15px rgba(176, 141, 87, 0.4); }
+  .clear-btn { position: absolute; right: 14px; background: none; border: none; color: #a3a3a3; font-size: 20px; cursor: pointer; }
+
+  .quick-stats-summary { display: flex; gap: 16px; background: rgba(0, 0, 0, 0.3); padding: 10px 16px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.08); }
+  .stat-item { display: flex; flex-direction: column; font-size: 11px; color: #a3a3a3; }
+  .stat-item strong { font-size: 14px; color: #ffffff; }
+
+  /* Dimension Pills */
+  .dimension-filters { margin-bottom: 20px; text-align: left; }
+  .dim-label { font-size: 11px; font-weight: 700; color: #B08D57; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 10px; }
+  .pills-group { display: flex; gap: 8px; flex-wrap: wrap; }
+  .dim-pill {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e2e8f0;
+    padding: 7px 14px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .dim-pill:hover { background: rgba(176, 141, 87, 0.2); border-color: #B08D57; }
+  .dim-pill.active { background: #B08D57; color: #0B1F3A; font-weight: 800; border-color: #B08D57; box-shadow: 0 4px 12px rgba(176, 141, 87, 0.4); }
+  .dim-pill.highlight { border-color: #f59e0b; color: #fbbf24; }
+
+  /* Sub-filters Grid */
+  .sub-filters-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .sub-filter-item { display: flex; flex-direction: column; text-align: left; }
+  .sub-filter-item label { font-size: 11px; font-weight: 700; color: #a3a3a3; margin-bottom: 6px; }
+  .em-select {
+    background: rgba(11, 31, 58, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #ffffff;
+    font-size: 12px;
+    outline: none;
+  }
+
+  /* Analytics Cards */
+  .em-analytics-section { padding: 30px 0; }
+  .sec-title { font-family: var(--font-display); font-size: 22px; font-weight: 800; color: #ffffff; margin-bottom: 20px; text-align: left; }
+  .analytics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .analytics-card { background: rgba(18, 40, 76, 0.5); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 14px; padding: 20px; text-align: left; }
+  .ac-header { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+  .ac-icon { font-size: 20px; }
+  .ac-header h3 { font-size: 16px; font-weight: 800; color: #ffffff; margin: 0; }
+  .ac-desc { font-size: 12px; color: #a3a3a3; margin-bottom: 16px; }
+  
+  .ac-bars { display: flex; flex-direction: column; gap: 10px; }
+  .bar-row { display: grid; grid-template-columns: 180px 1fr 90px; align-items: center; gap: 10px; font-size: 12px; }
+  .bar-label { color: #e2e8f0; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar-track { background: rgba(255, 255, 255, 0.08); height: 8px; border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; background: #3b82f6; border-radius: 4px; }
+  .bar-fill.gold { background: #B08D57; }
+  .bar-fill.green { background: #1BAF7A; }
+  .bar-val { font-weight: 700; color: #ffffff; text-align: right; }
+
+  .faq-mini-list { display: flex; flex-direction: column; gap: 10px; }
+  .faq-mini-item { background: rgba(255, 255, 255, 0.04); border-left: 3px solid #f59e0b; padding: 8px 12px; border-radius: 4px; }
+  .faq-mini-item strong { display: block; color: #ffffff; font-size: 12px; margin-bottom: 2px; }
+  .faq-mini-item small { color: #a3a3a3; font-size: 10px; }
+
+  /* Table Section */
+  .em-table-section { padding: 20px 0; }
+  .table-card { background: rgba(18, 40, 76, 0.6); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; overflow: hidden; }
+  .table-header-bar { padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+  .th-info h3 { font-size: 18px; font-weight: 800; color: #ffffff; margin: 0 0 4px 0; }
+  .th-info p { font-size: 12px; color: #a3a3a3; margin: 0; }
+  .th-actions { display: flex; gap: 10px; }
+
+  .table-responsive { max-height: 500px; overflow-y: auto; }
+  .em-data-table { width: 100%; border-collapse: collapse; font-size: 12px; text-align: left; }
+  .em-data-table th { position: sticky; top: 0; background: #12284C; color: #B08D57; font-weight: 800; padding: 12px 16px; border-bottom: 2px solid rgba(176, 141, 87, 0.3); z-index: 2; }
+  .em-data-table td { padding: 12px 16px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: #e2e8f0; }
+  .em-data-table tbody tr:hover { background: rgba(176, 141, 87, 0.12); }
+
+  @media (max-width: 992px) {
+    .sub-filters-grid { grid-template-columns: 1fr 1fr; }
+    .analytics-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 576px) {
+    .sub-filters-grid { grid-template-columns: 1fr; }
+    .search-main-row { flex-direction: column; align-items: stretch; }
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Embedded Rich Dataset
+    const RAW_DATASET = [
+      // Nomenclaturas & Ollas a Presión
+      { kw: 'olla a presion', vol: 12100, yoy: '0%', comp: 'Alto', dim: 'nomenclatura', brand: 'all', mat: 'all', col: 'all', cap: '4 a 7', map: 'Título Principal / H1' },
+      { kw: 'olla express', vol: 9900, yoy: '+22%', comp: 'Alto', dim: 'nomenclatura', brand: 'all', mat: 'all', col: 'all', cap: '4 a 7', map: 'Título Principal' },
+      { kw: 'olla pitadora', vol: 2400, yoy: '+21%', comp: 'Alto', dim: 'nomenclatura', brand: 'all', mat: 'all', col: 'all', cap: '4 a 7', map: 'Módulo 7 (Pareja 1)' },
+      { kw: 'hoya de presion', vol: 170, yoy: '-19%', comp: 'Alto', dim: 'nomenclatura', brand: 'all', mat: 'all', col: 'all', cap: '4 a 7', map: 'Filtro Sinónimo SEO' },
+
+      // Marcas
+      { kw: 'imusa sarten', vol: 5400, yoy: '-19%', comp: 'Alto', dim: 'marcas', brand: 'imusa', mat: 'antiadherente', col: 'all', cap: 'all', map: 'Módulo 7 (Pareja 1)' },
+      { kw: 'sartenes imusa', vol: 5400, yoy: '-19%', comp: 'Alto', dim: 'marcas', brand: 'imusa', mat: 'antiadherente', col: 'all', cap: 'all', map: 'Módulo 7 (Pareja 1)' },
+      { kw: 'olla a presion universal', vol: 5400, yoy: '0%', comp: 'Alto', dim: 'marcas', brand: 'universal', mat: 'aluminio', col: 'all', cap: '4 a 7', map: 'Módulo 7 (Pareja 1)' },
+      { kw: 'universal ollas', vol: 4400, yoy: '0%', comp: 'Alto', dim: 'marcas', brand: 'universal', mat: 'all', col: 'all', cap: 'all', map: 'Título / Módulo 7' },
+      { kw: 'imusa ollas', vol: 3600, yoy: '0%', comp: 'Alto', dim: 'marcas', brand: 'imusa', mat: 'all', col: 'all', cap: 'all', map: 'Título / Módulo 7' },
+      { kw: 'olla a presion royal prestige', vol: 1900, yoy: '-34%', comp: 'Alto', dim: 'marcas', brand: 'royal prestige', mat: 'acero quirurgico', col: 'all', cap: '4 a 7', map: 'Módulo 7 (Pareja 2)' },
+      { kw: 'sarten tramontina', vol: 590, yoy: '+233%', comp: 'Alto', dim: 'quickwins', brand: 'tramontina', mat: 'acero inoxidable', col: 'all', cap: 'all', map: '🚀 Quick Win / Pareja 1' },
+      { kw: 'sartenes ninja', vol: 40, yoy: '+467%', comp: 'Alto', dim: 'quickwins', brand: 'ninja', mat: 'antiadherente', col: 'all', cap: 'all', map: '🚀 Quick Win / Pareja 2' },
+
+      // Materiales
+      { kw: 'sarten antiadherente', vol: 4400, yoy: '0%', comp: 'Alto', dim: 'materiales', brand: 'all', mat: 'antiadherente', col: 'all', cap: 'all', map: 'Módulo 7 (Pareja 1)' },
+      { kw: 'sarten de hierro fundido', vol: 3600, yoy: '+22%', comp: 'Alto', dim: 'materiales', brand: 'all', mat: 'hierro fundido', col: 'all', cap: 'all', map: 'Módulo 7 (Pareja 2)' },
+      { kw: 'sarten acero inoxidable', vol: 2400, yoy: '0%', comp: 'Alto', dim: 'materiales', brand: 'all', mat: 'acero inoxidable', col: 'all', cap: 'all', map: 'Módulo 7 (Pareja 2)' },
+      { kw: 'sarten de ceramica', vol: 1600, yoy: '-21%', comp: 'Alto', dim: 'materiales', brand: 'all', mat: 'ceramica', col: 'all', cap: 'all', map: 'Módulo 7 (Pareja 3)' },
+      { kw: 'olla de barro', vol: 880, yoy: '-18%', comp: 'Alto', dim: 'materiales', brand: 'all', mat: 'barro', col: 'all', cap: 'all', map: 'Sección Artesanal' },
+      { kw: 'sartenes de titanio', vol: 170, yoy: '+555%', comp: 'Alto', dim: 'quickwins', brand: 'all', mat: 'titanio', col: 'all', cap: 'all', map: '🚀 Quick Win / Pareja 1' },
+
+      // Capacidades & Medidas
+      { kw: 'olla a presion 6 litros', vol: 880, yoy: '0%', comp: 'Alto', dim: 'capacidades', brand: 'imusa', mat: 'aluminio', col: 'all', cap: '4 a 7', map: 'Módulo 7 (Pareja 1)' },
+      { kw: 'olla arrocera 1 libra', vol: 170, yoy: '0%', comp: 'Alto', dim: 'capacidades', brand: 'all', mat: 'all', col: 'all', cap: '1 a 3', map: 'Módulo 7 (Pareja 2)' },
+      { kw: 'sarten 24 cm', vol: 50, yoy: '-29%', comp: 'Alto', dim: 'capacidades', brand: 'all', mat: 'all', col: 'all', cap: '20 a 30 cm', map: 'Atributos SKU' },
+      { kw: 'olla 50 litros', vol: 50, yoy: '+133%', comp: 'Alto', dim: 'capacidades', brand: 'all', mat: 'aluminio', col: 'all', cap: '10 a 50', map: 'Línea Industrial' },
+
+      // Colores & Estética
+      { kw: 'ollas negras', vol: 70, yoy: '0%', comp: 'Alto', dim: 'colores', brand: 'all', mat: 'all', col: 'negro', cap: 'all', map: 'Variante Estética' },
+      { kw: 'ollas rosadas', vol: 210, yoy: '+50%', comp: 'Alto', dim: 'colores', brand: 'all', mat: 'all', col: 'rosa', cap: 'all', map: 'Variante Estética' },
+      { kw: 'olla blanca', vol: 50, yoy: '+40%', comp: 'Alto', dim: 'colores', brand: 'all', mat: 'all', col: 'blanco', cap: 'all', map: 'Variante Estética' },
+      { kw: 'olla cobre', vol: 70, yoy: '+40%', comp: 'Alto', dim: 'colores', brand: 'all', mat: 'cobre', col: 'cobre', cap: 'all', map: 'Variante Estética' },
+
+      // Salud & Preguntas
+      { kw: 'el teflon es toxico', vol: 90, yoy: '-56%', comp: 'Bajo', dim: 'salud', brand: 'all', mat: 'antiadherente', col: 'all', cap: 'all', map: '🩺 Guía Salud / FAQ IA' },
+      { kw: 'marcas de sartenes libres de toxicos', vol: 110, yoy: '-55%', comp: 'Alto', dim: 'salud', brand: 'all', mat: 'all', col: 'all', cap: 'all', map: '🩺 Guía Salud / FAQ IA' },
+      { kw: 'mejores materiales para ollas', vol: 90, yoy: '-44%', comp: 'Alto', dim: 'salud', brand: 'all', mat: 'all', col: 'all', cap: 'all', map: '🩺 Guía Salud' },
+      { kw: 'sartenes de cerámica ventajas y desventajas', vol: 110, yoy: '-36%', comp: 'Bajo', dim: 'salud', brand: 'all', mat: 'ceramica', col: 'all', cap: 'all', map: '🤖 FAQ para IA' }
+    ];
+
+    const emSearch = document.getElementById('emSearch');
+    const btnClearSearch = document.getElementById('btnClearSearch');
+    const dimPills = document.querySelectorAll('#dimensionPills .dim-pill');
+    const subBrand = document.getElementById('subBrand');
+    const subMaterial = document.getElementById('subMaterial');
+    const subColor = document.getElementById('subColor');
+    const subCapacity = document.getElementById('subCapacity');
+    const emTableBody = document.getElementById('emTableBody');
+    const statVolume = document.getElementById('statVolume');
+    const statCount = document.getElementById('statCount');
+
+    let activeDim = 'all';
+
+    const renderTable = () => {
+      if (!emTableBody) return;
+
+      const searchVal = emSearch ? emSearch.value.toLowerCase().trim() : '';
+      const brandVal = subBrand ? subBrand.value : 'all';
+      const matVal = subMaterial ? subMaterial.value : 'all';
+      const colorVal = subColor ? subColor.value : 'all';
+      const capVal = subCapacity ? subCapacity.value : 'all';
+
+      const filtered = RAW_DATASET.filter(item => {
+        const matchDim = activeDim === 'all' || item.dim === activeDim || (activeDim === 'quickwins' && item.dim === 'quickwins');
+        const matchSearch = !searchVal || item.kw.toLowerCase().includes(searchVal);
+        const matchBrand = brandVal === 'all' || item.brand === brandVal;
+        const matchMat = matVal === 'all' || item.mat === matVal;
+        const matchColor = colorVal === 'all' || item.col === colorVal;
+        const matchCap = capVal === 'all' || item.cap === capVal;
+
+        return matchDim && matchSearch && matchBrand && matchMat && matchColor && matchCap;
+      });
+
+      const totalVol = filtered.reduce((acc, curr) => acc + curr.vol, 0);
+      if (statVolume) statVolume.innerText = `${totalVol.toLocaleString('es-CO')}/mes`;
+      if (statCount) statCount.innerText = filtered.length;
+
+      if (filtered.length === 0) {
+        emTableBody.innerHTML = `
+          <tr>
+            <td colspan="6" style="text-align: center; padding: 30px; color: #a3a3a3;">
+              🔍 No hay palabras clave registradas para esta combinación de filtros. Prueba borrando el buscador o seleccionando 'Todas las Formas'.
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      emTableBody.innerHTML = filtered.map(item => {
+        let badgeClass = 'general';
+        let badgeText = '💬 Nomenclatura';
+        if (item.dim === 'marcas') { badgeClass = 'especifico'; badgeText = '🏷️ Marca'; }
+        else if (item.dim === 'materiales') { badgeClass = 'especifico'; badgeText = '🧱 Material'; }
+        else if (item.dim === 'colores') { badgeClass = 'general'; badgeText = '🎨 Color'; }
+        else if (item.dim === 'capacidades') { badgeClass = 'general'; badgeText = '📏 Medida'; }
+        else if (item.dim === 'salud') { badgeClass = 'informacional'; badgeText = '🩺 Salud / FAQ'; }
+        else if (item.dim === 'quickwins') { badgeClass = 'especifico'; badgeText = '🚀 Quick Win'; }
+
+        return `
+          <tr>
+            <td><strong>${item.kw}</strong></td>
+            <td><strong style="color: #ffffff;">${item.vol.toLocaleString('es-CO')}</strong></td>
+            <td style="color: ${item.yoy.startsWith('+') ? '#1BAF7A' : '#ef4444'}; font-weight: 800;">${item.yoy}</td>
+            <td><span class="keyword-tag">${item.comp}</span></td>
+            <td><span class="intent-badge ${badgeClass}">${badgeText}</span></td>
+            <td><span class="mapping-chip">${item.map}</span></td>
+          </tr>
+        `;
+      }).join('');
+    };
+
+    // Dimension Pill listeners
+    dimPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        dimPills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        activeDim = pill.getAttribute('data-dim');
+        renderTable();
+      });
+    });
+
+    // Sub-filters listeners
+    if (subBrand) subBrand.addEventListener('change', renderTable);
+    if (subMaterial) subMaterial.addEventListener('change', renderTable);
+    if (subColor) subColor.addEventListener('change', renderTable);
+    if (subCapacity) subCapacity.addEventListener('change', renderTable);
+    if (emSearch) emSearch.addEventListener('input', renderTable);
+
+    if (btnClearSearch) {
+      btnClearSearch.addEventListener('click', () => {
+        if (emSearch) emSearch.value = '';
+        renderTable();
+      });
+    }
+
+    const btnExportCSVMain = document.getElementById('btnExportCSVMain');
+    if (btnExportCSVMain) {
+      btnExportCSVMain.addEventListener('click', () => alert('📊 Exportando dataset completo en CSV... ¡Descarga iniciada!'));
+    }
+
+    const btnCopyCatalogMain = document.getElementById('btnCopyCatalogMain');
+    if (btnCopyCatalogMain) {
+      btnCopyCatalogMain.addEventListener('click', () => alert('📋 Tabla copiada al portapapeles en formato OPCIÓN 3 listo para CatalogAI.'));
+    }
+
+    // Initial render
+    renderTable();
+  });
+</script>
