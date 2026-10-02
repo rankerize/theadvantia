@@ -1,0 +1,1148 @@
+---
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  title: 'Portal de Aplicativos | ADVANTIA Suite de IA',
+  description: 'Accede a los microservicios y herramientas de IA de Advantia: Generador de imágenes Flux, Remoción de fondo WebGPU, Optimización de descripciones CatalogAI y Sincronizador de Marketplaces.',
+  canonical: 'https://theadvantia.com/aplicativos',
+};
+---
+
+<Base seo={seo} active="/aplicativos">
+  <main class="portal-main">
+    <!-- Hero Header -->
+    <section class="portal-hero">
+      <div class="wrap">
+        <div class="portal-badge">
+          <span class="pulse-dot"></span>
+          ADVANTIA AI SUITE · ACCESO A APLICATIVOS
+        </div>
+        <h1 class="portal-title">Portal de Herramientas & Microservicios IA</h1>
+        <p class="portal-subtitle">
+          Explora y ejecuta nuestras soluciones independientes diseñadas para optimizar el contenido visual,
+          los títulos SEO de catálogo y la sincronización multicanal para tu e-commerce.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="filter-tabs" id="filterTabs">
+          <button class="tab-btn active" data-filter="all">Todos los Módulos (4)</button>
+          <button class="tab-btn" data-filter="images">🎨 Imágenes & Visuales</button>
+          <button class="tab-btn" data-filter="catalog">📝 Catálogo & SEO</button>
+          <button class="tab-btn" data-filter="marketplaces">🛒 Marketplaces Sync</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apps Grid & Workspaces -->
+    <section class="portal-grid-section">
+      <div class="wrap">
+        <div class="apps-grid" id="appsGrid">
+          
+          <!-- App 1: Crear Imagen Flux -->
+          <article class="app-card" data-category="images" id="card-flux">
+            <div class="card-header">
+              <div class="app-icon gold-glow">🎨</div>
+              <div class="card-titles">
+                <span class="app-tag">FLUX / ATENEA AI WORKER</span>
+                <h3>Crear Imágenes de Producto (Flux AI)</h3>
+              </div>
+              <span class="status-pill active">🟢 Servicio Activo</span>
+            </div>
+            <p class="card-desc">
+              Genera ambientaciones fotorrealistas, cambios de escena y fondos publicitarios de alta definición para tus SKUs utilizando el modelo Flux y Falabella Atenea AI Studio.
+            </p>
+
+            <div class="workspace-box">
+              <div class="ws-header">
+                <h4>Espacio de Trabajo: Ambientación de Producto</h4>
+                <span class="engine-badge">Engine: Gemini 3.1 Flash Image</span>
+              </div>
+              
+              <div class="ws-body">
+                <div class="form-group">
+                  <label for="fluxPrompt">Prompt de Ambientación</label>
+                  <input type="text" id="fluxPrompt" value="Mesa de madera estilo nórdico con luz solar suave filtrada por plantas, 4k fotorrealista" class="app-input" />
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group half">
+                    <label>Relación de Aspecto</label>
+                    <select id="fluxAspect" class="app-select">
+                      <option value="1:1">1:1 Cuadrado (Catálogo)</option>
+                      <option value="4:5" selected>4:5 Móvil (Falabella/MeLi)</option>
+                      <option value="16:9">16:9 Banner Publicitario</option>
+                    </select>
+                  </div>
+                  <div class="form-group half">
+                    <label>Presets Rápidos</label>
+                    <select id="fluxPreset" class="app-select">
+                      <option value="estudio">Marmol & Sombras Botánicas</option>
+                      <option value="nordico" selected>Mesa de Madera & Luz Natural</option>
+                      <option value="minimalista">Fondo Podio Neutro Minimalista</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button class="app-btn btn-primary" id="btnGenFlux">
+                  <span>⚡ Generar Ambientación IA</span>
+                </button>
+
+                <!-- Output Canvas Preview -->
+                <div class="preview-stage" id="fluxStage">
+                  <div class="placeholder-content" id="fluxPlaceholder">
+                    <span class="sparkle-icon">✨</span>
+                    <p>Haz clic en "Generar Ambientación IA" para simular la renderización con el worker.</p>
+                  </div>
+                  <div class="result-box hidden" id="fluxResult">
+                    <div class="img-frame">
+                      <div class="simulated-image" id="simulatedImg">
+                        <div class="prod-badge">PRODUCTO PRESERVADO</div>
+                        <div class="scene-overlay">AMBIENTACIÓN FLUX AI</div>
+                      </div>
+                    </div>
+                    <div class="result-meta">
+                      <span class="tag-success">✓ 100% SKU Preservado</span>
+                      <span class="tag-info">Res: 1200x1500 px</span>
+                      <button class="app-btn btn-secondary sm" onclick="alert('Descargando imagen procesada...')">📥 Descargar HD</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- App 2: Quitar Fondo WebGPU -->
+          <article class="app-card" data-category="images" id="card-bg">
+            <div class="card-header">
+              <div class="app-icon green-glow">✂️</div>
+              <div class="card-titles">
+                <span class="app-tag">LOCAL AI · WEBGPU / WASM</span>
+                <h3>Quitar Fondo Masivo (Zero-Server)</h3>
+              </div>
+              <span class="status-pill active">🟢 100% Local Browser</span>
+            </div>
+            <p class="card-desc">
+              Segmentación neuronal ultrarrápida que ejecuta modelos ONNX directamente en tu navegador. Elimina fondos sin enviar imágenes a ningún servidor externo.
+            </p>
+
+            <div class="workspace-box">
+              <div class="ws-header">
+                <h4>Espacio de Trabajo: Remoción de Fondo</h4>
+                <span class="engine-badge">ONNX Runtime WebGPU</span>
+              </div>
+
+              <div class="ws-body">
+                <!-- Dropzone -->
+                <div class="dropzone" id="dropzoneBg">
+                  <div class="dz-message">
+                    <span class="dz-icon">📁</span>
+                    <p>Arrastra aquí tus fotos de producto o <strong>haz clic para examinar</strong></p>
+                    <span class="dz-hint">Admite JPG, PNG, WEBP · Procesamiento masivo disponible</span>
+                  </div>
+                  <input type="file" id="fileInputBg" accept="image/*" class="hidden-file" />
+                </div>
+
+                <div class="form-row margin-top">
+                  <div class="form-group half">
+                    <label>Fondo de Salida</label>
+                    <div class="segmented-control" id="bgModeControl">
+                      <button class="seg-btn active" data-mode="white">⚪ Blanco Puro (#FFF)</button>
+                      <button class="seg-btn" data-mode="transparent">🏁 Transparente</button>
+                    </div>
+                  </div>
+                  <div class="form-group half">
+                    <label>Margen / Padding Perimetral: <span id="paddingVal">8%</span></label>
+                    <input type="range" id="paddingRange" min="0" max="20" value="8" class="app-range" />
+                  </div>
+                </div>
+
+                <button class="app-btn btn-primary" id="btnProcessBg">
+                  <span>✂️ Procesar Remoción de Fondo</span>
+                </button>
+
+                <div class="preview-stage" id="bgStage">
+                  <div class="placeholder-content" id="bgPlaceholder">
+                    <p>Carga una imagen o procesa la de demostración para ver el lienzo Falabella Blanco Puro.</p>
+                  </div>
+                  <div class="result-box hidden" id="bgResult">
+                    <div class="bg-demo-canvas" id="canvasBgPreview">
+                      <div class="centered-product">
+                        <div class="shoe-silhouette">👟 TENIS RUNNING</div>
+                      </div>
+                    </div>
+                    <div class="result-meta">
+                      <span class="tag-success">✓ Estándar Falabella #FFFFFF</span>
+                      <span class="tag-info">Margen: 8%</span>
+                      <button class="app-btn btn-secondary sm" onclick="alert('Descargando ZIP con recortes...')">📦 Descargar ZIP</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- App 3: Descripción de Producto CatalogAI -->
+          <article class="app-card" data-category="catalog" id="card-desc">
+            <div class="card-header">
+              <div class="app-icon blue-glow">📝</div>
+              <div class="card-titles">
+                <span class="app-tag">CATALOG-AI PROTOCOL</span>
+                <h3>Descripción de Producto & Títulos SEO</h3>
+              </div>
+              <span class="status-pill active">🟢 Servicio Activo</span>
+            </div>
+            <p class="card-desc">
+              Generador masivo de títulos optimizados, viñetas persuasivas de valor y atributos estructurados con algoritmos orientados al SEO de Mercado Libre, Falabella y Amazon.
+            </p>
+
+            <div class="workspace-box">
+              <div class="ws-header">
+                <h4>Espacio de Trabajo: Optimización CatalogAI</h4>
+                <span class="engine-badge">Protocolo: CatalogAI v4.2</span>
+              </div>
+
+              <div class="ws-body">
+                <div class="form-group">
+                  <label for="prodTitleInput">Título Actual o Nombre de Producto</label>
+                  <input type="text" id="prodTitleInput" value="Tenis deportivos para hombre color negro marca Runflex" class="app-input" />
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group half">
+                    <label>Categoría Principal</label>
+                    <input type="text" id="prodCategory" value="Deportes y Calzado" class="app-input" />
+                  </div>
+                  <div class="form-group half">
+                    <label>Canal Destino</label>
+                    <select id="targetMarketplace" class="app-select">
+                      <option value="mercadolibre">Mercado Libre (SEO Max)</option>
+                      <option value="falabella">Falabella Seller Center</option>
+                      <option value="amazon">Amazon SP-API Listing</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Atributos Clave (Separados por coma)</label>
+                  <input type="text" id="prodAttrs" value="Suela antideslizante, malla transpirable, amortiguación EVA, talla 39-43" class="app-input" />
+                </div>
+
+                <button class="app-btn btn-primary" id="btnOptimizeDesc">
+                  <span>🚀 Generar Título & Descripción CatalogAI</span>
+                </button>
+
+                <div class="preview-stage" id="descStage">
+                  <div class="placeholder-content" id="descPlaceholder">
+                    <p>Ingresa los datos de tu producto y haz clic para generar el paquete de contenido SEO.</p>
+                  </div>
+                  <div class="result-box hidden" id="descResult">
+                    <div class="catalog-output">
+                      <div class="output-item">
+                        <span class="out-label">TÍTULO OPTIMIZADO (60/60 caracteres SEO)</span>
+                        <div class="out-value highlight" id="outTitle">Tenis Deportivos Hombre Runflex Transpirables Suela Antideslizante</div>
+                      </div>
+                      <div class="output-item">
+                        <span class="out-label">VIÑETAS PERSUASIVAS (BULLET POINTS)</span>
+                        <ul class="out-bullets" id="outBullets">
+                          <li><strong>MÁXIMA TRANSPIRABILIDAD:</strong> Malla técnica con flujo de aire continuo para entrenamientos de alto rendimiento.</li>
+                          <li><strong>AMORTIGUACIÓN EVA:</strong> Absorción de impactos superior que protege articulaciones en carreras y caminatas largas.</li>
+                          <li><strong>SUELA TRACCIÓN TOTAL:</strong> Compuesto de goma antideslizante diseñado para agarre seguro en asfalto y gimnasio.</li>
+                        </ul>
+                      </div>
+                      <div class="output-badges">
+                        <span class="score-badge">CatalogAI Score: 99/100</span>
+                        <span class="keyword-tag">#TenisDeportivos</span>
+                        <span class="keyword-tag">#SuelaAntideslizante</span>
+                        <span class="keyword-tag">#CalzadoHombre</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- App 4: Marketplaces Service -->
+          <article class="app-card" data-category="marketplaces" id="card-mp">
+            <div class="card-header">
+              <div class="app-icon purple-glow">🛒</div>
+              <div class="card-titles">
+                <span class="app-tag">VITRINA HUB CONNECTOR</span>
+                <h3>Marketplaces Sync & Channel Connector</h3>
+              </div>
+              <span class="status-pill active">🟢 APIs en Línea</span>
+            </div>
+            <p class="card-desc">
+              Conexión directa con las APIs oficiales de Mercado Libre, Falabella, Amazon SP-API y Homecenter para auditar, sincronizar y publicar atributos masivamente.
+            </p>
+
+            <div class="workspace-box">
+              <div class="ws-header">
+                <h4>Espacio de Trabajo: Matriz de Canales & Publicaciones</h4>
+                <span class="engine-badge">Port: 3001 (marketplaces-service)</span>
+              </div>
+
+              <div class="ws-body">
+                <!-- Channel Status Grid -->
+                <div class="channels-matrix">
+                  <div class="channel-chip connected">
+                    <span class="ch-icon">💛</span>
+                    <div class="ch-info">
+                      <strong>Mercado Libre API</strong>
+                      <small>Sincronización activa (24 SKUs)</small>
+                    </div>
+                    <span class="ch-badge">Conectado</span>
+                  </div>
+
+                  <div class="channel-chip connected">
+                    <span class="ch-icon">💚</span>
+                    <div class="ch-info">
+                      <strong>Falabella Seller Center</strong>
+                      <small>Atributos validados (18 SKUs)</small>
+                    </div>
+                    <span class="ch-badge">Conectado</span>
+                  </div>
+
+                  <div class="channel-chip syncing">
+                    <span class="ch-icon">🧡</span>
+                    <div class="ch-info">
+                      <strong>Amazon SP-API</strong>
+                      <small>Sincronizando feeds...</small>
+                    </div>
+                    <span class="ch-badge warning">En Cola</span>
+                  </div>
+
+                  <div class="channel-chip connected">
+                    <span class="ch-icon">💙</span>
+                    <div class="ch-info">
+                      <strong>Homecenter / Sodimac</strong>
+                      <small>Catálogo actualizado</small>
+                    </div>
+                    <span class="ch-badge">Conectado</span>
+                  </div>
+                </div>
+
+                <div class="form-group margin-top">
+                  <label for="skuLookup">Consultar Publicación por SKU o Item ID</label>
+                  <div class="input-with-button">
+                    <input type="text" id="skuLookup" value="MCO-984210492" class="app-input" />
+                    <button class="app-btn btn-secondary" id="btnCheckListing">🔎 Auditar Listing</button>
+                  </div>
+                </div>
+
+                <div class="preview-stage" id="mpStage">
+                  <div class="result-box" id="mpResult">
+                    <div class="audit-card">
+                      <div class="audit-header">
+                        <span class="sku-title">SKU: MCO-984210492 · Mercado Libre Colombia</span>
+                        <span class="audit-score">Salud SEO: 96%</span>
+                      </div>
+                      <div class="audit-details">
+                        <div class="detail-row">
+                          <span>Título Publicado:</span>
+                          <strong>Tenis Deportivos Hombre Runflex Transpirables</strong>
+                        </div>
+                        <div class="detail-row">
+                          <span>Calidad de Atributos:</span>
+                          <span class="tag-success">✓ 14/14 Atributos Requeridos Llenos</span>
+                        </div>
+                        <div class="detail-row">
+                          <span>Imágenes Principales:</span>
+                          <span class="tag-success">✓ Fondo Blanco #FFFFFF Cumplido</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style>
+  /* Base Portal Styles */
+  .portal-main {
+    background: #0B1F3A;
+    color: #ffffff;
+    min-height: 100vh;
+    padding-bottom: 80px;
+    font-family: var(--font-body);
+  }
+
+  .portal-hero {
+    background: radial-gradient(circle at 50% 0%, #1E2761 0%, #0B1F3A 70%);
+    padding: 60px 0 40px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .portal-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(176, 141, 87, 0.15);
+    color: #B08D57;
+    border: 1px solid rgba(176, 141, 87, 0.3);
+    padding: 6px 16px;
+    border-radius: 9999px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+
+  .pulse-dot {
+    width: 8px;
+    height: 8px;
+    background: #1BAF7A;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #1BAF7A;
+  }
+
+  .portal-title {
+    font-family: var(--font-display);
+    font-size: 42px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+  }
+
+  .portal-subtitle {
+    max-width: 720px;
+    margin: 0 auto 36px auto;
+    font-size: 18px;
+    color: #b3b3b3;
+    line-height: 1.6;
+  }
+
+  /* Filter Tabs */
+  .filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .tab-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #d4d4d4;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .tab-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+  }
+
+  .tab-btn.active {
+    background: #B08D57;
+    color: #ffffff;
+    border-color: #B08D57;
+    box-shadow: 0 4px 14px rgba(176, 141, 87, 0.4);
+  }
+
+  /* Portal Grid Section */
+  .portal-grid-section {
+    padding-top: 40px;
+  }
+
+  .apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+    gap: 32px;
+  }
+
+  @media (max-width: 768px) {
+    .apps-grid {
+      grid-template-columns: 1fr;
+    }
+    .portal-title {
+      font-size: 32px;
+    }
+  }
+
+  /* App Card */
+  .app-card {
+    background: rgba(30, 39, 97, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 28px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+  }
+
+  .app-card:hover {
+    border-color: rgba(176, 141, 87, 0.4);
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .app-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+
+  .gold-glow { box-shadow: 0 0 16px rgba(176, 141, 87, 0.3); }
+  .green-glow { box-shadow: 0 0 16px rgba(27, 175, 122, 0.3); }
+  .blue-glow { box-shadow: 0 0 16px rgba(30, 39, 97, 0.6); }
+  .purple-glow { box-shadow: 0 0 16px rgba(138, 43, 226, 0.4); }
+
+  .card-titles {
+    flex-grow: 1;
+  }
+
+  .app-tag {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #B08D57;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+
+  .card-titles h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .status-pill {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    background: rgba(27, 175, 122, 0.15);
+    color: #1BAF7A;
+    border: 1px solid rgba(27, 175, 122, 0.3);
+  }
+
+  .card-desc {
+    color: #b3b3b3;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  /* Workspace Box */
+  .workspace-box {
+    background: rgba(11, 31, 58, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .ws-header {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .ws-header h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #d4d4d4;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+  }
+
+  .engine-badge {
+    font-size: 11px;
+    color: #838383;
+    font-family: var(--font-mono);
+  }
+
+  .ws-body {
+    padding: 20px;
+  }
+
+  /* Form controls */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #d4d4d4;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 12px;
+  }
+
+  .form-group.half {
+    flex: 1;
+  }
+
+  .margin-top {
+    margin-top: 14px;
+  }
+
+  .app-input, .app-select {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+
+  .app-input:focus, .app-select:focus {
+    border-color: #B08D57;
+  }
+
+  .app-select option {
+    background: #0B1F3A;
+    color: #ffffff;
+  }
+
+  .app-range {
+    width: 100%;
+    accent-color: #B08D57;
+  }
+
+  .input-with-button {
+    display: flex;
+    gap: 8px;
+  }
+
+  /* Buttons */
+  .app-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #1E2761 0%, #B08D57 100%);
+    color: #ffffff;
+  }
+
+  .btn-primary:hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.18);
+  }
+
+  .btn-secondary.sm {
+    width: auto;
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+
+  /* Dropzone */
+  .dropzone {
+    border: 2px dashed rgba(176, 141, 87, 0.4);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    background: rgba(176, 141, 87, 0.04);
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  .dropzone:hover {
+    background: rgba(176, 141, 87, 0.08);
+  }
+
+  .dz-icon {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .dz-message p {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+
+  .dz-hint {
+    font-size: 12px;
+    color: #838383;
+  }
+
+  .hidden-file {
+    display: none;
+  }
+
+  /* Segmented control */
+  .segmented-control {
+    display: flex;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 3px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .seg-btn {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #b3b3b3;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .seg-btn.active {
+    background: #1E2761;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Preview Stages & Results */
+  .preview-stage {
+    margin-top: 16px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .placeholder-content {
+    text-align: center;
+    color: #838383;
+    font-size: 13px;
+  }
+
+  .sparkle-icon {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .result-box {
+    width: 100%;
+  }
+
+  .result-box.hidden {
+    display: none;
+  }
+
+  /* Simulated Image Output */
+  .img-frame {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #1E2761;
+    margin-bottom: 12px;
+  }
+
+  .simulated-image {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1E2761 0%, #B08D57 60%, #1BAF7A 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .prod-badge {
+    background: rgba(0, 0, 0, 0.6);
+    color: #1BAF7A;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    align-self: flex-start;
+  }
+
+  .scene-overlay {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 16px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .result-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  /* Tags */
+  .tag-success {
+    background: rgba(27, 175, 122, 0.15);
+    color: #1BAF7A;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  .tag-info {
+    background: rgba(255, 255, 255, 0.1);
+    color: #d4d4d4;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  /* BG Removal Canvas Demo */
+  .bg-demo-canvas {
+    width: 100%;
+    height: 140px;
+    background: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    box-shadow: inset 0 0 0 1px #e9ebf0;
+  }
+
+  .shoe-silhouette {
+    background: #1E2761;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 16px 28px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  /* CatalogAI Output Styling */
+  .catalog-output {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .out-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #B08D57;
+    letter-spacing: 0.5px;
+  }
+
+  .out-value.highlight {
+    background: rgba(176, 141, 87, 0.12);
+    border-left: 3px solid #B08D57;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  .out-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+    color: #d4d4d4;
+  }
+
+  .out-bullets li {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 6px 10px;
+    border-radius: 4px;
+  }
+
+  .output-badges {
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+    align-items: center;
+  }
+
+  .score-badge {
+    background: #1BAF7A;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  .keyword-tag {
+    font-size: 11px;
+    color: #b3b3b3;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  /* Channel Matrix */
+  .channels-matrix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .channel-chip {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ch-icon {
+    font-size: 20px;
+  }
+
+  .ch-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ch-info strong {
+    font-size: 12px;
+    color: #ffffff;
+  }
+
+  .ch-info small {
+    font-size: 10px;
+    color: #838383;
+  }
+
+  .ch-badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(27, 175, 122, 0.15);
+    color: #1BAF7A;
+  }
+
+  .ch-badge.warning {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+  }
+
+  .audit-card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: left;
+  }
+
+  .audit-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+
+  .sku-title {
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .audit-score {
+    color: #1BAF7A;
+    font-weight: 800;
+  }
+
+  .audit-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+  }
+
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    color: #b3b3b3;
+  }
+
+  .detail-row strong {
+    color: #ffffff;
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Filter Tabs Interactivity
+    const tabs = document.querySelectorAll('#filterTabs .tab-btn');
+    const cards = document.querySelectorAll('#appsGrid .app-card');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const filter = tab.getAttribute('data-filter');
+        cards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 2. Flux Image Gen Simulation
+    const btnFlux = document.getElementById('btnGenFlux');
+    const fluxPlaceholder = document.getElementById('fluxPlaceholder');
+    const fluxResult = document.getElementById('fluxResult');
+    const fluxPrompt = document.getElementById('fluxPrompt');
+
+    if (btnFlux) {
+      btnFlux.addEventListener('click', () => {
+        btnFlux.disabled = true;
+        btnFlux.innerText = '⚡ Procesando con Flux AI Worker...';
+        
+        setTimeout(() => {
+          fluxPlaceholder.classList.add('hidden');
+          fluxResult.classList.remove('hidden');
+          btnFlux.disabled = false;
+          btnFlux.innerText = '⚡ Generar Ambientación IA';
+        }, 1200);
+      });
+    }
+
+    // 3. BG Removal Simulation
+    const btnBg = document.getElementById('btnProcessBg');
+    const bgPlaceholder = document.getElementById('bgPlaceholder');
+    const bgResult = document.getElementById('bgResult');
+    const dropzoneBg = document.getElementById('dropzoneBg');
+    const fileInputBg = document.getElementById('fileInputBg');
+    const paddingRange = document.getElementById('paddingRange');
+    const paddingVal = document.getElementById('paddingVal');
+    const canvasBgPreview = document.getElementById('canvasBgPreview');
+    const bgModeBtns = document.querySelectorAll('#bgModeControl .seg-btn');
+
+    if (dropzoneBg && fileInputBg) {
+      dropzoneBg.addEventListener('click', () => fileInputBg.click());
+    }
+
+    if (paddingRange && paddingVal) {
+      paddingRange.addEventListener('input', (e) => {
+        paddingVal.innerText = `${e.target.value}%`;
+      });
+    }
+
+    if (bgModeBtns) {
+      bgModeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          bgModeBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const mode = btn.getAttribute('data-mode');
+          if (canvasBgPreview) {
+            canvasBgPreview.style.background = mode === 'white' ? '#ffffff' : 'repeating-conic-gradient(#e9ebf0 0% 25%, #ffffff 0% 50%) 50% / 16px 16px';
+          }
+        });
+      });
+    }
+
+    if (btnBg) {
+      btnBg.addEventListener('click', () => {
+        btnBg.disabled = true;
+        btnBg.innerText = '✂️ Procesando WebGPU ONNX local...';
+        
+        setTimeout(() => {
+          if (bgPlaceholder) bgPlaceholder.classList.add('hidden');
+          if (bgResult) bgResult.classList.remove('hidden');
+          btnBg.disabled = false;
+          btnBg.innerText = '✂️ Procesar Remoción de Fondo';
+        }, 800);
+      });
+    }
+
+    // 4. CatalogAI Desc Simulation
+    const btnDesc = document.getElementById('btnOptimizeDesc');
+    const descPlaceholder = document.getElementById('descPlaceholder');
+    const descResult = document.getElementById('descResult');
+    const prodTitleInput = document.getElementById('prodTitleInput');
+    const outTitle = document.getElementById('outTitle');
+
+    if (btnDesc) {
+      btnDesc.addEventListener('click', () => {
+        btnDesc.disabled = true;
+        btnDesc.innerText = '🚀 Aplicando Protocolo CatalogAI...';
+
+        setTimeout(() => {
+          if (descPlaceholder) descPlaceholder.classList.add('hidden');
+          if (descResult) descResult.classList.remove('hidden');
+          if (outTitle && prodTitleInput) {
+            outTitle.innerText = `${prodTitleInput.value} Transpirables Suela Antideslizante (SEO Max)`;
+          }
+          btnDesc.disabled = false;
+          btnDesc.innerText = '🚀 Generar Título & Descripción CatalogAI';
+        }, 1000);
+      });
+    }
+
+    // 5. Marketplaces Check
+    const btnCheckListing = document.getElementById('btnCheckListing');
+    if (btnCheckListing) {
+      btnCheckListing.addEventListener('click', () => {
+        alert('Auditando publicación MCO-984210492 en tiempo real vía marketplaces-service... ¡Salud 96% OK!');
+      });
+    }
+  });
+</script>
