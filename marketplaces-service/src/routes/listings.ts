@@ -76,8 +76,16 @@ listingsRouter.get("/falabella/categories/:name/attributes", async (c) => {
   const creds = falabellaCreds(c);
   const { name } = c.req.param();
   const attrs = await getCategoryAttributes(creds, decodeURIComponent(name));
-  const required = attrs.filter((a) => a.IsMandatory === 1);
-  return c.json({ total: attrs.length, required: required.length, attributes: attrs });
+  const required = attrs.filter((a) => String(a.isMandatory) === "1");
+  // Normaliza Options: { Option: [...] } → array plano
+  const normalized = attrs.map((a) => {
+    const raw = a.Options;
+    if (!raw || raw === "") return { ...a, Options: [] };
+    const opt = (raw as { Option: unknown }).Option;
+    const arr = Array.isArray(opt) ? opt : [opt];
+    return { ...a, Options: arr };
+  });
+  return c.json({ total: attrs.length, required: required.length, attributes: normalized });
 });
 
 // GET /listings/falabella/categories/suggest?q=nombre+del+producto
@@ -128,8 +136,14 @@ listingsRouter.get("/falabella/orders", async (c) => {
 listingsRouter.post("/falabella/products", async (c) => {
   const creds = falabellaCreds(c);
   const data = await c.req.json<FalabellaNewProduct>();
-  const feedId = await createProduct(creds, data);
-  return c.json({ feedId, message: "Producto enviado a Falabella. Consulta el estado con GET /listings/falabella/feeds/:feedId" }, 202);
+  const result = await createProduct(creds, data);
+  return c.json({
+    requestId: result.id,
+    warnings: result.warnings ?? [],
+    message: result.warnings?.length
+      ? "Producto enviado con advertencias. Verifica los campos en WarningDetail."
+      : "Producto creado exitosamente en Falabella Seller Center.",
+  }, 202);
 });
 
 // PATCH /listings/falabella/products/:sku — actualizar producto existente
@@ -137,8 +151,8 @@ listingsRouter.patch("/falabella/products/:sku", async (c) => {
   const creds = falabellaCreds(c);
   const { sku } = c.req.param();
   const data = await c.req.json<Partial<FalabellaNewProduct>>();
-  const feedId = await updateProduct(creds, { sellerSku: sku, ...data });
-  return c.json({ feedId }, 202);
+  const result = await updateProduct(creds, { sellerSku: sku, ...data });
+  return c.json({ requestId: result.id, warnings: result.warnings ?? [] }, 202);
 });
 
 // GET /listings/falabella/feeds/:feedId — estado del proceso de creación/actualización

@@ -65,7 +65,7 @@ async function callPost<T>(
   action: string,
   creds: FalabellaCredentials,
   xmlBody: string
-): Promise<T> {
+): Promise<T & { _requestId?: string; _warnings?: Array<{ Field: string; Message: string }> }> {
   const url = buildUrl(action, creds);
   const res = await fetch(url, {
     method: "POST",
@@ -73,9 +73,27 @@ async function callPost<T>(
     body: xmlBody,
   });
   if (!res.ok) throw new Error(`Falabella SC ${action} POST HTTP ${res.status}: ${await res.text()}`);
-  const json = (await res.json()) as { SuccessResponse?: { Body: T }; ErrorResponse?: { Head: { ErrorMessage: string } } };
+  const json = (await res.json()) as {
+    SuccessResponse?: {
+      Head: { RequestId: string };
+      Body: T | "" | { WarningDetail: Array<{ Field: string; Message: string }> };
+    };
+    ErrorResponse?: { Head: { ErrorMessage: string } };
+  };
   if (json.ErrorResponse) throw new Error(`Falabella SC error: ${json.ErrorResponse.Head.ErrorMessage}`);
-  return json.SuccessResponse!.Body;
+  const sr = json.SuccessResponse!;
+  const body = sr.Body;
+  const requestId = sr.Head?.RequestId;
+  // Body vacío ("") = éxito sin FeedId — ocurre en ProductCreate exitoso
+  if (body === "" || body === null || body === undefined) {
+    return { _requestId: requestId } as T & { _requestId?: string };
+  }
+  // Body con WarningDetail = parcialmente aceptado (faltan atributos de variación)
+  const warnings = (body as { WarningDetail?: Array<{ Field: string; Message: string }> }).WarningDetail;
+  if (warnings) {
+    return { _requestId: requestId, _warnings: warnings } as T & { _requestId?: string; _warnings?: Array<{ Field: string; Message: string }> };
+  }
+  return { ...body as T, _requestId: requestId };
 }
 
 // --- Tipos de respuesta ------------------------------------------------------
@@ -111,15 +129,16 @@ export interface FalabellaCategoryAttribute {
   Name: string;
   FeedName: string;
   GlobalIdentifier: string;
-  IsMandatory: number;    // 1 = requerido
-  IsGlobalAttribute: number;
+  isMandatory: string;    // "1" = requerido (la API devuelve string, no number)
+  IsGlobalAttribute: string;
   Description: string;
   ProductType: string;
   InputType: string;
   AttributeType: string;
   ExampleValue: string;
   MaxLength: string;
-  Options?: Array<{ GlobalIdentifier: string; Name: string }>;
+  // Falabella envía Options como { Option: [...] } cuando hay opciones, o "" cuando no hay
+  Options?: { Option: Array<{ GlobalIdentifier: string; Name: string; isDefault: string; id: string }> | { GlobalIdentifier: string; Name: string; isDefault: string; id: string } } | "";
 }
 
 export interface FalabellaOrder {
@@ -206,22 +225,30 @@ export async function getCategorySuggestion(
   creds: FalabellaCredentials,
   skuName: string
 ): Promise<{ CategoryId: string; CategoryName: string }[]> {
-  const body = await call<{ Categories: { Category: Array<{ CategoryId: string; CategoryName: string }> } }>(
-    "GetCategorySuggestion",
-    creds,
-    { Name: skuName }
-  );
-  return body.Categories.Category ?? [];
+  const body = await call<{
+    SuggestedCategory?: { CategoryId: string; CategoryName: string; SuggestedCategory?: string };
+    Categories?: { Category: Array<{ CategoryId: string; CategoryName: string }> };
+  }>("GetCategorySuggestion", creds, { Name: skuName });
+  // Falabella devuelve un objeto único SuggestedCategory, no un array
+  if (body.SuggestedCategory) return [body.SuggestedCategory];
+  return body.Categories?.Category ?? [];
 }
 
 export async function getBrands(
   creds: FalabellaCredentials
 ): Promise<Array<{ BrandId: string; Name: string; GlobalIdentifier: string }>> {
-  const body = await call<{ Brands: { Brand: Array<{ BrandId: string; Name: string; GlobalIdentifier: string }> } }>(
+  // Falabella devuelve Brands como array de { Brand: {...} }, no como un array plano
+  const body = await call<{ Brands: Array<{ Brand: { BrandId: string; Name: string; GlobalIdentifier: string } }> | { Brand: Array<{ BrandId: string; Name: string; GlobalIdentifier: string }> } }>(
     "GetBrands",
     creds
   );
-  return body.Brands.Brand ?? [];
+  const raw = body.Brands;
+  if (!raw) return [];
+  // Formato A: [{ Brand: {...} }, ...]
+  if (Array.isArray(raw)) return raw.map((b) => (b as { Brand: { BrandId: string; Name: string; GlobalIdentifier: string } }).Brand);
+  // Formato B: { Brand: [...] }
+  const inner = (raw as { Brand: Array<{ BrandId: string; Name: string; GlobalIdentifier: string }> }).Brand;
+  return Array.isArray(inner) ? inner : [inner];
 }
 
 export async function getShipmentProviders(
@@ -272,7 +299,11 @@ export interface FalabellaNewProduct {
   taxClass?: string;                // default "IVA19"
   quantity: number;
   images: string[];                 // URLs públicas de imágenes
-  attributes?: Array<{ feedName: string; value: string }>;  // según getCategoryAttributes
+  // Atributos de variación: van como elementos XML directos (no dentro de <Attributes>)
+  color?: string;                   // ej: "Dorado"
+  colorBasico?: string;             // ej: "Dorado"
+  talla?: string;                   // ej: "Talla única"
+  attributes?: Array<{ feedName: string; value: string }>;  // atributos no-variación
 }
 
 export interface FalabellaFeedStatus {
@@ -287,56 +318,79 @@ export interface FalabellaFeedStatus {
   FeedErrors: string | { Error: Array<{ Message: string; Code: string }> };
 }
 
+function escXml(v: string): string {
+  return v.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
 function toXml(product: FalabellaNewProduct): string {
-  const images = product.images.map((u) => `<Image>${u}</Image>`).join("\n        ");
+  const images = product.images.map((u) => `<Image><![CDATA[${u}]]></Image>`).join("\n        ");
+  // Atributos normales (no-variación): van dentro de <Attributes>
   const attrs = (product.attributes ?? [])
-    .map((a) => `<Attribute>\n          <FeedName>${a.feedName}</FeedName>\n          <Value>${a.value}</Value>\n        </Attribute>`)
+    .map((a) => `<Attribute>\n          <FeedName>${escXml(a.feedName)}</FeedName>\n          <Value><![CDATA[${a.value}]]></Value>\n        </Attribute>`)
     .join("\n        ");
+  const salePrice = product.salePrice ?? product.price;
+  // Atributos de variación: van como elementos directos del <Product> (no dentro de <Attributes>)
+  const variantFields = [
+    product.color ? `<Color><![CDATA[${product.color}]]></Color>` : "",
+    product.colorBasico ? `<ColorBasico><![CDATA[${product.colorBasico}]]></ColorBasico>` : "",
+    product.talla ? `<Talla><![CDATA[${product.talla}]]></Talla>` : "",
+  ].filter(Boolean).join("\n    ");
 
   return `<?xml version="1.0" encoding="UTF-8" ?>
 <Request>
   <Product>
-    <SellerSku>${product.sellerSku}</SellerSku>
+    <SellerSku>${escXml(product.sellerSku)}</SellerSku>
     <Name><![CDATA[${product.name}]]></Name>
     <Description><![CDATA[${product.description}]]></Description>
-    <Brand>${product.brand}</Brand>
+    <Brand><![CDATA[${product.brand}]]></Brand>
     <PrimaryCategory>${product.primaryCategory}</PrimaryCategory>
     <Price>${product.price}</Price>
-    <SalePrice>${product.salePrice ?? product.price}</SalePrice>
+    <SalePrice>${salePrice}</SalePrice>
     <TaxClass>${product.taxClass ?? "IVA19"}</TaxClass>
     <Quantity>${product.quantity}</Quantity>
+    ${variantFields}
     <Images>
         ${images}
     </Images>
+    <BusinessUnits>
+      <BusinessUnit>
+        <OperatorCode>faco</OperatorCode>
+        <Active>1</Active>
+        <Price>${product.price}</Price>
+        <SalePrice>${salePrice}</SalePrice>
+        <SaleStartDate></SaleStartDate>
+        <SaleEndDate></SaleEndDate>
+      </BusinessUnit>
+    </BusinessUnits>
     ${attrs ? `<Attributes>\n        ${attrs}\n    </Attributes>` : ""}
   </Product>
 </Request>`;
 }
 
-// Crea un producto en borrador. Devuelve el FeedId para consultar el estado.
+// Crea un producto en borrador. Devuelve el FeedId o RequestId para rastreo.
 export async function createProduct(
   creds: FalabellaCredentials,
   product: FalabellaNewProduct
-): Promise<string> {
-  const body = await callPost<{ FeedId: string }>(
+): Promise<{ id: string; warnings?: Array<{ Field: string; Message: string }> }> {
+  const body = await callPost<{ FeedId?: string }>(
     "ProductCreate",
     creds,
     toXml(product)
   );
-  return body.FeedId;
+  return { id: body.FeedId ?? body._requestId ?? "unknown", warnings: body._warnings };
 }
 
 // Actualiza un producto existente por SellerSku.
 export async function updateProduct(
   creds: FalabellaCredentials,
   product: Partial<FalabellaNewProduct> & { sellerSku: string }
-): Promise<string> {
-  const body = await callPost<{ FeedId: string }>(
+): Promise<{ id: string; warnings?: Array<{ Field: string; Message: string }> }> {
+  const body = await callPost<{ FeedId?: string }>(
     "ProductUpdate",
     creds,
     toXml(product as FalabellaNewProduct)
   );
-  return body.FeedId;
+  return { id: body.FeedId ?? body._requestId ?? "unknown", warnings: body._warnings };
 }
 
 // Consulta el estado de un feed vía GetFeedRawInput.
