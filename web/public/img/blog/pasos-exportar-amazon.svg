@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif">
+  <rect width="1200" height="680" fill="#F8F9FA"/>
+
+  <!-- Linea de tiempo en S: la segunda fila se lee de derecha a izquierda -->
+  <path d="M220 140H980" stroke="#DCC9A8" stroke-width="4"/>
+  <path d="M980 140c150 0 150 250 0 250" fill="none" stroke="#DCC9A8" stroke-width="4"/>
+  <path d="M980 390H220" stroke="#DCC9A8" stroke-width="4"/>
+
+  <g fill="#FFFFFF" stroke="#1E2761" stroke-width="4">
+    <circle cx="220" cy="140" r="46"/><circle cx="600" cy="140" r="46"/><circle cx="980" cy="140" r="46"/>
+    <circle cx="980" cy="390" r="46"/><circle cx="600" cy="390" r="46"/>
+  </g>
+  <circle cx="220" cy="390" r="46" fill="#1E2761"/>
+
+  <g fill="none" stroke="#1E2761" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- producto -->
+    <path d="M220 118l20 10v24l-20 10-20-10v-24zM200 128l20 10 20-10M220 138v24"/>
+    <!-- requisitos -->
+    <path d="M586 118h28v44h-28zM594 132h12M594 144h12"/>
+    <!-- FBA o FBM -->
+    <path d="M980 162v-18M980 144l-16-16M980 144l16-16M958 128h12M990 128h12"/>
+    <!-- exportacion -->
+    <path d="M956 400h30v-22h-30zM986 386h12l8 8v6h-20"/><circle cx="966" cy="404" r="4"/><circle cx="994" cy="404" r="4"/>
+    <!-- impuestos -->
+    <path d="M586 368h28v44l-5-4-5 4-4-4-5 4-5-4-4 4zM594 382h12M594 394h12"/>
+  </g>
+  <!-- fichas -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="216" cy="386" r="14"/><path d="M226 396l12 12"/>
+  </g>
+
+  <g font-size="26" font-weight="700" fill="#1E2761" text-anchor="middle">
+    <text x="220" y="222">Producto</text><text x="600" y="222">Requisitos</text><text x="980" y="222">FBA o FBM</text>
+    <text x="980" y="472">Logística de</text><text x="600" y="472">Impuestos en</text><text x="220" y="472">Fichas que</text>
+  </g>
+  <g font-size="26" font-weight="700" fill="#1E2761" text-anchor="middle">
+    <text x="220" y="254">exportable</text><text x="600" y="254">y cuenta</text><text x="980" y="254">con números</text>
+    <text x="980" y="504">exportación</text><text x="600" y="504">dos países</text><text x="220" y="504">compiten</text>
+  </g>
+
+  <rect x="120" y="566" width="960" height="84" rx="20" fill="#FFFFFF" stroke="#E8E8E8" stroke-width="2"/>
+  <text x="600" y="618" font-size="24" fill="#3D4457" text-anchor="middle">Primero estar en regla. Solo entonces, fichas que el comprador encuentre.</text>
+</svg>

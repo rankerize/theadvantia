@@ -1,0 +1,17 @@
+{
+  "name": "theadvantia",
+  "type": "module",
+  "version": "7.11.0",
+  "private": true,
+  "description": "Sitio web de ADVANTIA (theadvantia.com) en Astro",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.3.5"
+  }
+}

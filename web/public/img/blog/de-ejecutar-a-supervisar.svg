@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif">
+  <rect width="1200" height="500" fill="#F8F9FA"/>
+
+  <!-- Antes: ejecuta -->
+  <rect x="60" y="60" width="480" height="380" rx="24" fill="#FFFFFF" stroke="#E8E8E8" stroke-width="2"/>
+  <g fill="none" stroke="#1E2761" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="300" cy="250" r="30"/><path d="M246 348c4-34 26-54 54-54s50 20 54 54"/>
+  </g>
+  <!-- tareas encima de la persona, desordenadas -->
+  <g stroke="#1E2761" stroke-width="3" fill="#FFFFFF">
+    <rect x="110" y="110" width="110" height="66" rx="12" transform="rotate(-8 165 143)"/>
+    <rect x="250" y="92" width="110" height="66" rx="12" transform="rotate(5 305 125)"/>
+    <rect x="392" y="118" width="110" height="66" rx="12" transform="rotate(-4 447 151)"/>
+    <rect x="96" y="236" width="110" height="66" rx="12" transform="rotate(6 151 269)"/>
+    <rect x="398" y="236" width="110" height="66" rx="12" transform="rotate(-7 453 269)"/>
+  </g>
+  <g fill="none" stroke="#1E2761" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M140 136h50M140 152h34" transform="rotate(-8 165 143)"/>
+    <path d="M288 112c0-6 5-10 17-10s17 4 17 10-5 10-17 10l-10 6v-6c-4-2-7-5-7-10z" transform="rotate(5 305 125)"/>
+    <path d="M428 138h38v26l-6-4-6 4-6-4-6 4-6-4-8 4z" transform="rotate(-4 447 151)"/>
+    <path d="M136 258l15-8 15 8v18l-15 8-15-8zM136 258l15 8 15-8M151 266v18" transform="rotate(6 151 269)"/>
+    <path d="M436 256h34v28h-34zM436 266h34M448 256v28" transform="rotate(-7 453 269)"/>
+  </g>
+  <text x="300" y="404" font-size="28" font-weight="700" fill="#1E2761" text-anchor="middle">Ejecuta cada tarea</text>
+
+  <!-- Flecha -->
+  <path d="M566 250h58M608 232l18 18-18 18" fill="none" stroke="#B08D57" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Despues: supervisa -->
+  <rect x="660" y="60" width="480" height="380" rx="24" fill="#FFFFFF" stroke="#E8E8E8" stroke-width="2"/>
+  <!-- flujo ordenado que pasa por el agente -->
+  <g stroke="#1E2761" stroke-width="3" fill="#FFFFFF">
+    <rect x="696" y="100" width="92" height="50" rx="12"/>
+    <rect x="696" y="166" width="92" height="50" rx="12"/>
+    <rect x="696" y="232" width="92" height="50" rx="12"/>
+  </g>
+  <g fill="none" stroke="#1E2761" stroke-width="3" stroke-linecap="round">
+    <path d="M716 118h44M716 132h28M716 184h44M716 198h28M716 250h44M716 264h28"/>
+  </g>
+  <path d="M796 125h40M796 191h40M796 257h40" fill="none" stroke="#B3B3B3" stroke-width="3" stroke-linecap="round"/>
+  <rect x="842" y="108" width="120" height="166" rx="18" fill="#1E2761"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="874" y="156" width="56" height="44" rx="10"/><path d="M902 142v14M888 178h0M916 178h0"/>
+  </g>
+  <text x="902" y="248" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">Agente</text>
+  <path d="M970 191h34" fill="none" stroke="#B3B3B3" stroke-width="3" stroke-linecap="round"/>
+  <!-- persona que revisa y aprueba -->
+  <g fill="none" stroke="#1E2761" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="1060" cy="170" r="26"/><path d="M1014 258c4-30 22-46 46-46s42 16 46 46"/>
+  </g>
+  <circle cx="1098" cy="134" r="20" fill="#1BAF7A"/>
+  <path d="M1089 134l6 6 11-12" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="900" y="360" font-size="28" font-weight="700" fill="#1E2761" text-anchor="middle">Supervisa y aprueba</text>
+  <text x="900" y="400" font-size="21" fill="#646464" text-anchor="middle">excepciones y casos límite</text>
+</svg>

@@ -1,0 +1,69 @@
+---
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  "title": "Gracias por tu solicitud | ADVANTIA",
+  "description": "Recibimos tu solicitud. Elige el horario de tu sesión de 20 minutos con ADVANTIA.",
+  "canonical": "https://theadvantia.com/gracias",
+  "robots": "noindex, follow",
+  "og": {
+    "type": "website",
+    "site_name": "ADVANTIA",
+    "title": "Gracias por tu solicitud | ADVANTIA",
+    "description": "Recibimos tu información. Elige el horario de tu sesión de 20 minutos.",
+    "locale": "es_CO",
+    "url": "https://theadvantia.com/gracias",
+    "image": "https://theadvantia.com/og-image.jpg",
+    "image:width": "1200",
+    "image:height": "630"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Gracias por tu solicitud | ADVANTIA",
+    "description": "Recibimos tu información. Elige el horario de tu sesión de 20 minutos.",
+    "image": "https://theadvantia.com/og-image.jpg"
+  }
+};
+
+const jsonLd = [];
+---
+<Base seo={seo} jsonLd={jsonLd}>
+<header class="hero hero-doc">
+  <div class="wrap" style="max-width:820px">
+    <span class="status status-green"><svg width="12" height="12" aria-hidden="true"><use href="#i-tick"></use></svg>Solicitud recibida</span>
+    <h1 style="margin-top:20px">Gracias por tu solicitud</h1>
+    <p class="lead">Recibimos tu información. Para avanzar, elige el horario que mejor te convenga para tu sesión de 20 minutos.</p>
+  </div>
+</header>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap" style="max-width:900px">
+    <div class="card card-lg">
+      <div class="card-head">
+        <span class="svc-icon"><svg aria-hidden="true"><use href="#i-clock"></use></svg></span>
+        <h3>Elige tu horario</h3>
+      </div>
+
+      <div class="booking">
+        <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/nicolas-navarro7?embed=true"></div>
+        <script is:inline type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:24px">
+      <article class="card">
+        <span class="svc-icon sm ink"><svg aria-hidden="true"><use href="#i-search"></use></svg></span>
+        <h3 style="margin-top:12px">Vitrina · Marketplaces</h3>
+        <p style="margin-top:8px">Cómo posicionamos tus productos en Mercado Libre, Falabella y Amazon.</p>
+        <p style="margin-top:14px"><a class="tlink" href="/marketplaces">Ver la línea<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></p>
+      </article>
+      <article class="card">
+        <span class="svc-icon sm ink"><svg aria-hidden="true"><use href="#i-chat"></use></svg></span>
+        <h3 style="margin-top:12px">Trastienda · Distribuidoras</h3>
+        <p style="margin-top:8px">Agentes de IA que cobran, cotizan y toman pedidos por WhatsApp.</p>
+        <p style="margin-top:14px"><a class="tlink" href="/distribuidoras">Ver la línea<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></p>
+      </article>
+    </div>
+  </div>
+</section>
+</Base>

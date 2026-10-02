@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  "title": "Página no encontrada | ADVANTIA",
+  "description": "La página que buscas no existe o fue movida.",
+  "robots": "noindex, follow"
+};
+
+const jsonLd = [];
+---
+<Base seo={seo} jsonLd={jsonLd}>
+<header class="hero hero-doc">
+  <div class="wrap" style="max-width:820px">
+    <span class="eyebrow">Error 404</span>
+    <h1>Esta página no existe o fue movida.</h1>
+    <p class="lead">Puede que el enlace esté roto o que la dirección haya cambiado. Estas son las dos líneas de ADVANTIA.</p>
+
+    <div class="places" style="max-width:720px">
+      <a class="place" href="/marketplaces">
+        <span class="where"><svg aria-hidden="true"><use href="#i-search"></use></svg>La vitrina</span>
+        <h3>Ir a Vitrina · Marketplaces</h3>
+        <p>Posicionamiento en Mercado Libre, Falabella y Amazon.</p>
+        <span class="go">Ver la línea<svg aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+      </a>
+      <a class="place" href="/distribuidoras">
+        <span class="where"><svg aria-hidden="true"><use href="#i-chat"></use></svg>La trastienda</span>
+        <h3>Ir a Trastienda · Distribuidoras</h3>
+        <p>Agentes de IA que cobran, cotizan y toman pedidos por WhatsApp.</p>
+        <span class="go">Ver la línea<svg aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+      </a>
+    </div>
+
+    <p style="margin-top:32px"><a class="tlink" href="/">Volver al inicio<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></p>
+  </div>
+</header>
+</Base>

@@ -1,0 +1,93 @@
+# ==========================================================================
+# ADVANTIA - Apache / Hostinger
+# URLs limpias, HTTPS, compresion y cache
+# ==========================================================================
+
+Options -Indexes
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # --- HTTPS ---
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # --- www hacia dominio raiz ---
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+  # --- /index.html hacia la raiz ---
+  RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+  RewriteRule ^ / [L,R=301]
+
+  # --- cualquier .html hacia su URL limpia ---
+  RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+  RewriteRule ^ /%1 [L,R=301]
+
+  # --- El sitemap ahora lo genera Astro (sitemap-index.xml); el nombre anterior redirige ---
+  RewriteRule ^sitemap\.xml$ /sitemap-index.xml [L,R=301]
+
+  # --- /blog sirve blog.html aunque exista la carpeta blog/ ---
+  # (la regla general de abajo excluye directorios y /blog daria 403)
+  RewriteRule ^blog/?$ blog.html [L]
+
+  # --- la URL limpia sirve el .html correspondiente ---
+  # (tambien /blog/slug -> blog/slug.html)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}\.html -f
+  RewriteRule ^(.+?)/?$ $1.html [L]
+</IfModule>
+
+ErrorDocument 404 /404.html
+
+# --- Compresion ---
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+  AddOutputFilterByType DEFLATE application/json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# --- Cache ---
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault                          "access plus 1 month"
+  ExpiresByType text/html                 "access plus 0 seconds"
+  ExpiresByType text/css                  "access plus 1 year"
+  ExpiresByType application/javascript    "access plus 1 year"
+  ExpiresByType image/png                 "access plus 1 year"
+  ExpiresByType image/jpeg                "access plus 1 year"
+  ExpiresByType image/svg+xml             "access plus 1 year"
+  ExpiresByType image/x-icon              "access plus 1 year"
+  ExpiresByType video/mp4                 "access plus 1 year"
+  ExpiresByType video/webm                "access plus 1 year"
+  ExpiresByType font/woff2                "access plus 1 year"
+  # Plantilla descargable: cache corta para que una version nueva llegue pronto
+  ExpiresByType application/vnd.openxmlformats-officedocument.spreadsheetml.sheet "access plus 1 day"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|png|jpe?g|svg|ico|mp4|webm|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.xlsx$">
+    Header set Content-Disposition "attachment"
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# --- Tipos MIME ---
+<IfModule mod_mime.c>
+  AddType video/webm .webm
+  AddType video/mp4 .mp4
+  AddType image/svg+xml .svg
+  AddType font/woff2 .woff2
+  AddType application/vnd.openxmlformats-officedocument.spreadsheetml.sheet .xlsx
+</IfModule>

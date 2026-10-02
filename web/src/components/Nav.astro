@@ -1,0 +1,19 @@
+---
+// Navegacion principal. `active` marca el item de la pagina actual.
+interface Props { active?: string }
+const { active } = Astro.props;
+const cls = (href: string) => (href === active ? 'nav-item is-active' : 'nav-item');
+---
+<nav class="nav"><div class="wrap nav-in">
+    <a class="brand" href="/"><img src="/img/advantia-logo-nav.png" alt="ADVANTIA" width="137" height="32"></a>
+    <div class="nav-menu" id="navMenu">
+      <a class={cls('/marketplaces')} href="/marketplaces"><b>Vitrina</b> <i>· Marketplaces</i></a>
+      <a class={cls('/distribuidoras')} href="/distribuidoras"><b>Trastienda</b> <i>· Distribuidoras</i></a>
+      <a class={cls('/#planes')} href="/#planes"><b>Planes</b></a>
+      <a class={cls('/blog')} href="/blog"><b>Blog</b></a>
+      <a class={cls('/nosotros')} href="/nosotros"><b>Nosotros</b></a>
+      <a class={cls('/contacto')} href="/contacto"><b>Contacto</b></a>
+      <div class="nav-actions"><a class="btn btn-fill" href="/contacto">Agenda tu Diagnóstico</a></div>
+    </div>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div></nav>

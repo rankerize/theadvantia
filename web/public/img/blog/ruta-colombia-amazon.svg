@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif">
+  <rect width="1200" height="630" fill="#F8F9FA"/>
+
+  <!-- Ruta -->
+  <path d="M190 360C300 170 480 170 600 280" fill="none" stroke="#B08D57" stroke-width="5" stroke-dasharray="14 12" stroke-linecap="round"/>
+  <path d="M600 280C720 390 900 390 1010 360" fill="none" stroke="#B08D57" stroke-width="5" stroke-dasharray="14 12" stroke-linecap="round"/>
+
+  <!-- Avion sobre el primer tramo -->
+  <g transform="translate(392 204) rotate(12)" fill="#1E2761">
+    <path d="M-34 0l20-6 14-26h10l-6 24 26-4 8-10h8l-4 16 4 16h-8l-8-10-26-4 6 24H0l-14-26z"/>
+  </g>
+  <!-- Camion sobre el segundo tramo -->
+  <g transform="translate(804 358)" fill="none" stroke="#1E2761" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-40-26h46v36h-46z"/><path d="M6-14h20l14 14v10H6"/><circle cx="-26" cy="16" r="7"/><circle cx="24" cy="16" r="7"/>
+  </g>
+
+  <!-- Nodo origen -->
+  <circle cx="190" cy="360" r="78" fill="#FFFFFF" stroke="#1E2761" stroke-width="4"/>
+  <g fill="none" stroke="#1E2761" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M190 390s-30-30-30-52a30 30 0 0160 0c0 22-30 52-30 52z"/><circle cx="190" cy="338" r="10"/>
+  </g>
+  <text x="190" y="486" font-size="30" font-weight="700" fill="#1E2761" text-anchor="middle">Colombia</text>
+  <text x="190" y="522" font-size="22" fill="#646464" text-anchor="middle">tu bodega</text>
+
+  <!-- Nodo centro logistico -->
+  <circle cx="600" cy="280" r="84" fill="#1E2761"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M556 318v-50l44-26 44 26v50z"/><path d="M578 318v-32h44v32M578 298h44"/>
+  </g>
+  <text x="600" y="412" font-size="30" font-weight="700" fill="#1E2761" text-anchor="middle">Centro logístico</text>
+  <text x="600" y="448" font-size="22" fill="#646464" text-anchor="middle">en el país de destino</text>
+
+  <!-- Nodo comprador -->
+  <circle cx="1010" cy="360" r="78" fill="#FFFFFF" stroke="#1E2761" stroke-width="4"/>
+  <g fill="none" stroke="#1E2761" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M976 350l34-28 34 28M984 344v38h52v-38"/><path d="M1002 382v-20h16v20"/>
+  </g>
+  <text x="1010" y="486" font-size="30" font-weight="700" fill="#1E2761" text-anchor="middle">Comprador</text>
+  <text x="1010" y="522" font-size="22" fill="#646464" text-anchor="middle">recibe en días</text>
+</svg>

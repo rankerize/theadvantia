@@ -1,0 +1,68 @@
+---
+// Plantilla comun: head (SEO, Open Graph, JSON-LD, GA4), sprite, nav, footer y scripts.
+import Sprite from '../components/Sprite.astro';
+import Announce from '../components/Announce.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import { VERSION, GA_ID, HUBSPOT_PORTAL, FONTS, GOOGLE_SITE_VERIFICATION } from '../config';
+
+interface Seo {
+  title: string;
+  description: string;
+  canonical?: string;
+  robots?: string;
+  og?: Record<string, string>;
+  article?: Record<string, string>;
+  twitter?: Record<string, string>;
+  preloadImage?: string;
+}
+interface Props {
+  seo: Seo;
+  jsonLd?: object[];
+  active?: string;
+  announce?: boolean;
+}
+const { seo, jsonLd = [], active, announce = false } = Astro.props;
+const og = seo.og ?? {};
+const article = seo.article ?? {};
+const twitter = seo.twitter ?? {};
+const gaInit = `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '${GA_ID}');`;
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+{Astro.url.pathname.replace(/(index)?(\.html)?$/, '') === '/' && <meta name="google-site-verification" content={GOOGLE_SITE_VERIFICATION} />}
+<!-- Google tag (gtag.js) · GA4 -->
+<script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+<script is:inline set:html={gaInit}></script>
+<title>{seo.title}</title>
+<meta name="description" content={seo.description}>
+{seo.canonical && <link rel="canonical" href={seo.canonical}>}
+{seo.robots && <meta name="robots" content={seo.robots}>}
+{Object.entries(og).map(([k, v]) => <meta property={`og:${k}`} content={v}>)}
+{Object.entries(article).map(([k, v]) => <meta property={`article:${k}`} content={v}>)}
+{Object.entries(twitter).map(([k, v]) => <meta name={`twitter:${k}`} content={v}>)}
+<link rel="icon" type="image/png" href="/img/advantia-favicon-512.png">
+<link rel="apple-touch-icon" href="/img/advantia-apple-touch-icon.png">
+{jsonLd.map((data) => <script is:inline type="application/ld+json" set:html={JSON.stringify(data)}></script>)}
+{seo.preloadImage && <link rel="preload" as="image" href={seo.preloadImage} fetchpriority="high">}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href={FONTS} rel="stylesheet">
+<link rel="stylesheet" href={`/style.css?v=${VERSION}`}>
+</head>
+<body>
+<Sprite />
+{announce && <Announce />}
+<Nav active={active} />
+<slot />
+<Footer />
+<script is:inline src={`/app.js?v=${VERSION}`}></script>
+<!-- Start of HubSpot Embed Code -->
+<script is:inline type="text/javascript" id="hs-script-loader" async defer src={`//js.hs-scripts.com/${HUBSPOT_PORTAL}.js`}></script>
+<!-- End of HubSpot Embed Code -->
+</body>
+</html>

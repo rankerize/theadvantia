@@ -1,0 +1,140 @@
+---
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  "title": "Contacto · Agenda o paga tu Diagnóstico | ADVANTIA",
+  "description": "Agenda una sesión de 20 minutos o paga tu Diagnóstico de $1.200.000, abonable al plan que elijas. Vitrina en marketplaces y trastienda con agentes de IA.",
+  "canonical": "https://theadvantia.com/contacto",
+  "robots": "index, follow",
+  "og": {
+    "type": "website",
+    "site_name": "ADVANTIA",
+    "title": "Contacto · Agenda o paga tu Diagnóstico | ADVANTIA",
+    "description": "Agenda una sesión de 20 minutos o paga tu Diagnóstico de $1.200.000, abonable al plan que elijas. Vitrina en marketplaces y trastienda con agentes de IA.",
+    "locale": "es_CO",
+    "url": "https://theadvantia.com/contacto",
+    "image": "https://theadvantia.com/og-image.jpg",
+    "image:width": "1200",
+    "image:height": "630"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Contacto · Agenda o paga tu Diagnóstico | ADVANTIA",
+    "description": "Agenda una sesión de 20 minutos o paga tu Diagnóstico de $1.200.000, abonable al plan que elijas. Vitrina en marketplaces y trastienda con agentes de IA.",
+    "image": "https://theadvantia.com/og-image.jpg"
+  }
+};
+
+const jsonLd = [];
+---
+<Base seo={seo} jsonLd={jsonLd} active="/contacto" announce>
+<header class="hero" data-nav="Hablemos">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Hablemos</span>
+      <div class="rule-gold"></div>
+      <h1>Veámoslo funcionar <span class="kw">con tus datos.</span></h1>
+      <p class="lead" style="max-width:520px">Agenda 20 minutos y te mostramos en vivo tu alcance SEO real, un agente operando con tu información y el plan de piloto de dos semanas.</p>
+      <ol class="num-list" style="margin-top:28px">
+        <li><span class="n">01</span><span>Confirmamos por WhatsApp</span></li>
+        <li><span class="n">02</span><span>Revisamos tus datos reales</span></li>
+        <li><span class="n">03</span><span>Te mostramos el diagnóstico en vivo</span></li>
+      </ol>
+      <div class="hero-cta" style="margin-top:32px">
+        <a href="#contactForm" class="btn btn-fill btn-lg btn-conic">Agenda tu Diagnóstico</a>
+      </div>
+    </div>
+    <div class="mark-slot">
+      <svg class="brand-mark" viewBox="0 0 420 260" role="img" aria-label="Composición gráfica de marca ADVANTIA">
+          <g fill="none" stroke-width="1.5">
+            <circle cx="210" cy="130" r="122" stroke="#e8e8e8"/>
+            <circle cx="210" cy="130" r="88" stroke="#e8e8e8"/>
+            <circle cx="210" cy="130" r="54" stroke="#d4d4d4"/>
+          </g>
+          <path d="M210 8a122 122 0 0 1 122 122" fill="none" stroke="#B08D57" stroke-width="3" stroke-linecap="round"/>
+          <path d="M210 42a88 88 0 0 1 88 88" fill="none" stroke="#d4d4d4" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="210" cy="130" r="9" fill="#1E2761"/>
+        </svg>
+    </div>
+  </div>
+</header>
+
+<section class="section card-band" data-nav="Agenda">
+  <div class="wrap">
+    <div class="contact-grid" data-stagger>
+      <div class="rise">
+        <ul class="checks" style="margin-bottom:32px">
+          <li><svg aria-hidden="true"><use href="#i-check"></use></svg><span>Tu <b>alcance SEO real</b> en marketplace y dónde está el tráfico que dejas sobre la mesa</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"></use></svg><span>Un <b>agente cobrando o cotizando</b> con tu información</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"></use></svg><span>El <b>plan de piloto de dos semanas</b>, con alcance cerrado</span></li>
+        </ul>
+
+        <div class="pay" style="margin-bottom:24px">
+          <span class="status status-neutral">Diagnóstico · $1.200.000 COP</span>
+          <h3>Agenda o paga directo</h3>
+          <p>Si ya lo tienes decidido, paga tu Diagnóstico en línea. El valor es abonable al plan que elijas.</p>
+          <div class="pay-actions">
+            <a class="btn btn-fill btn-stack" href="https://checkout.wompi.co/l/ghY2Wa"
+               target="_blank" rel="noopener noreferrer"><span class="btn-stack-main">Pagar mi Diagnóstico</span><span class="btn-stack-sub">$1.200.000 COP</span></a>
+            <a class="btn btn-ghost" href="#contactForm" data-scroll>Agendar mi Diagnóstico</a>
+          </div>
+          <p class="pay-note">Pago seguro con Wompi · Tarjetas, PSE, Nequi y Botón Bancolombia</p>
+        </div>
+
+        <div class="card card-lg card-lead" style="padding:20px">
+          <div class="embed" data-base-width="1100">
+            <iframe src="assets/diagnostico_mapa_keywords.html" loading="lazy"
+                    title="Mapa interactivo de palabras clave del diagnóstico ADVANTIA"></iframe>
+            <img class="media-static" src="assets/diagnostico_mapa_keywords_poster.jpg" width="1100" height="560"
+                 alt="Mapa de palabras clave del diagnóstico ADVANTIA">
+          </div>
+          <div class="embed-hint">
+            <span class="status status-neutral"><svg width="10" height="10" aria-hidden="true"><use href="#i-drag"></use></svg>Interactivo</span>
+            <span class="meta">Esto es lo que verás en tu diagnóstico</span>
+          </div>
+        </div>
+
+        <div class="pay" style="margin-top:24px">
+          <span class="status status-neutral">Piloto · 2 semanas</span>
+          <h3>Pruébalo con tus datos reales</h3>
+          <p>Activamos un agente con tu información. Si funciona, continúas. Si no, no pierdes.</p>
+          <a class="btn btn-fill" href="#contactForm" data-scroll>Agendar mi Diagnóstico</a>
+        </div>
+      </div>
+
+      <form class="form" id="contactForm">
+        <div class="form-head">
+          <span class="icon-tile"><svg aria-hidden="true"><use href="#i-clock"></use></svg></span>
+          <div>
+            <strong style="display:block;font-size:15px">Agenda una conversación</strong>
+            <span class="meta">Sesión de 20 minutos</span>
+          </div>
+        </div>
+        <input type="hidden" name="access_key" value="07596798-d73a-4ef8-92fd-f08288821cc9">
+        <input type="hidden" name="subject" value="Nuevo contacto desde theadvantia.com">
+        <input type="checkbox" name="botcheck" style="display:none">
+        <input type="hidden" name="utm_source" value=""><input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value=""><input type="hidden" name="utm_term" value="">
+        <input type="hidden" name="utm_content" value=""><input type="hidden" name="pagina_origen" value="">
+        <div class="field"><label for="name">Nombre</label><input id="name" name="name" type="text" placeholder="Tu nombre" required></div>
+        <div class="field"><label for="email">Correo corporativo</label><input id="email" name="email" type="email" placeholder="nombre@tuempresa.com" required></div>
+        <div class="field"><label for="phone">WhatsApp</label><input id="phone" name="phone" type="tel" placeholder="+57 300 000 0000" required></div>
+        <div class="field"><label for="empresa">Empresa</label><input id="empresa" name="empresa" type="text" placeholder="Nombre de tu empresa"></div>
+        <div class="field"><label for="linea">Línea de interés</label>
+          <select id="linea" name="linea" required>
+            <option value="" disabled selected>Elige una línea</option>
+            <option value="Vitrina · Marketplaces">Vitrina · Marketplaces</option>
+            <option value="Trastienda · Distribuidoras">Trastienda · Distribuidoras</option>
+          </select>
+        </div>
+        <label class="consent" for="consent">
+          <input type="checkbox" id="consent" name="autorizacion" value="Sí, autorizo" required>
+          <span>Acepto la <a href="/politica-de-privacidad" target="_blank" rel="noopener">Política de Tratamiento de Datos Personales</a> de ADVANTIA.</span>
+        </label>
+        <button type="submit" class="btn btn-fill" disabled>Agendar conversación</button>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+</Base>

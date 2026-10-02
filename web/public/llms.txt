@@ -1,0 +1,33 @@
+# ADVANTIA
+
+> ADVANTIA es un estudio de IA aplicada en Colombia con dos líneas de negocio: la Vitrina (SEO para marketplaces: que tus productos aparezcan en Mercado Libre, Falabella, Amazon y Homecenter) y la Trastienda (agentes de IA por WhatsApp que cobran cartera, toman pedidos y cotizan con proveedores).
+
+Todo el trabajo se mide con cuatro KPIs: Alcance SEO, CTR, visitas orgánicas y conversión. Cada proyecto empieza con un Diagnóstico pago, abonable al plan que se elija. Sitio en español de Colombia.
+
+## Líneas de negocio
+
+- [Vitrina · Marketplaces](https://theadvantia.com/marketplaces): Marketplace Content Intelligence. Optimización de títulos, atributos y fichas con datos reales de búsqueda para posicionar productos en el buscador interno de Mercado Libre, Falabella, Amazon y Homecenter.
+- [Trastienda · Distribuidoras](https://theadvantia.com/distribuidoras): agentes de IA sobre WhatsApp para distribuidoras: cobranza de cartera, toma de pedidos y cotizaciones a proveedores. Empieza con un piloto pagado de dos semanas con datos reales.
+
+## Planes (COP)
+
+- Diagnóstico: $1.200.000, pago único, abonable al plan que elijas.
+- Esencial: $1.725.000 al mes.
+- Crecimiento: $3.680.000 al mes.
+- Catálogo: $7.475.000 al mes.
+- Enterprise: desde $10.350.000 al mes.
+
+Detalle de cada plan: https://theadvantia.com/#planes
+
+## Guías del blog
+
+- [Los 5 errores al publicar en Mercado Libre que le cuestan dinero a tu empresa](https://theadvantia.com/blog/errores-al-publicar-en-mercado-libre): títulos, ficha técnica, inventario, margen y reputación.
+- [Calculadora de ahorro de horas con IA para tu PyME](https://theadvantia.com/blog/ahorro-de-tiempo-con-ia-en-pymes): fórmula horas × personas × costo por hora × 52 semanas, con calculadora interactiva.
+- [Cómo vender en Amazon desde Colombia](https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia): requisitos, FBA o FBM, logística de exportación, impuestos y fichas.
+
+## Empresa y contacto
+
+- [Nosotros](https://theadvantia.com/nosotros): equipo fundador y forma de trabajo.
+- [Contacto](https://theadvantia.com/contacto): agenda una sesión de 20 minutos o paga el Diagnóstico en línea.
+- [Política de Tratamiento de Datos Personales](https://theadvantia.com/politica-de-privacidad)
+- LinkedIn: https://www.linkedin.com/company/theadvantia/

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif">
+  <rect width="1200" height="630" fill="#F8F9FA"/>
+  <!-- Buscador -->
+  <rect x="150" y="64" width="900" height="88" rx="44" fill="#FFFFFF" stroke="#E8E8E8" stroke-width="2"/>
+  <g fill="none" stroke="#1E2761" stroke-width="4" stroke-linecap="round">
+    <circle cx="207" cy="104" r="17"/>
+    <path d="M220 117l14 14"/>
+  </g>
+  <text x="256" y="120" font-size="34" font-weight="600" fill="#1E2761">termo acero inoxidable</text>
+  <circle cx="1004" cy="108" r="30" fill="#1E2761"/>
+  <path d="M990 108h26M1006 97l11 11-11 11" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Resultado visible 1 -->
+  <g>
+    <rect x="150" y="196" width="280" height="370" rx="20" fill="#FFFFFF" stroke="#E8E8E8" stroke-width="2"/>
+    <rect x="176" y="222" width="228" height="170" rx="14" fill="#F3EADC"/>
+    <g fill="none" stroke="#1E2761" stroke-width="4" stroke-linejoin="round">
+      <rect x="272" y="244" width="36" height="18" rx="5"/>
+      <rect x="258" y="266" width="64" height="108" rx="18"/>
+      <path d="M258 300h64"/>
+    </g>
+    <text x="176" y="436" font-size="27" font-weight="700" fill="#1E2761">Termo acero</text>
+    <text x="176" y="470" font-size="27" font-weight="700" fill="#1E2761">inoxidable</text>
+    <rect x="176" y="500" width="150" height="40" rx="20" fill="#E6F7F0"/>
+    <path d="M194 520l7 7 13-14" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="224" y="529" font-size="22" font-weight="600" fill="#0F6B4C">Aparece</text>
+  </g>
+
+  <!-- Resultado visible 2 -->
+  <g>
+    <rect x="460" y="196" width="280" height="370" rx="20" fill="#FFFFFF" stroke="#E8E8E8" stroke-width="2"/>
+    <rect x="486" y="222" width="228" height="170" rx="14" fill="#F3EADC"/>
+    <g fill="none" stroke="#1E2761" stroke-width="4" stroke-linejoin="round">
+      <rect x="582" y="244" width="36" height="18" rx="5"/>
+      <rect x="566" y="266" width="68" height="108" rx="14"/>
+      <path d="M566 330h68"/>
+    </g>
+    <text x="486" y="436" font-size="27" font-weight="700" fill="#1E2761">Termo térmico</text>
+    <text x="486" y="470" font-size="27" font-weight="700" fill="#1E2761">de acero</text>
+    <rect x="486" y="500" width="150" height="40" rx="20" fill="#E6F7F0"/>
+    <path d="M504 520l7 7 13-14" fill="none" stroke="#1BAF7A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="534" y="529" font-size="22" font-weight="600" fill="#0F6B4C">Aparece</text>
+  </g>
+
+  <!-- Producto invisible -->
+  <g>
+    <rect x="770" y="196" width="280" height="370" rx="20" fill="#FFFFFF" stroke="#B3B3B3" stroke-width="2" stroke-dasharray="10 8"/>
+    <g opacity="0.4">
+      <rect x="796" y="222" width="228" height="170" rx="14" fill="#E9EBF0"/>
+      <g fill="none" stroke="#1E2761" stroke-width="4" stroke-linejoin="round">
+        <rect x="892" y="244" width="36" height="18" rx="5"/>
+        <rect x="878" y="266" width="64" height="108" rx="18"/>
+      </g>
+      <text x="796" y="436" font-size="27" font-weight="700" fill="#1E2761">Botella</text>
+      <text x="796" y="470" font-size="27" font-weight="700" fill="#1E2761">Buffer</text>
+    </g>
+    <path d="M812 376L1008 238" stroke="#B08D57" stroke-width="5" stroke-linecap="round"/>
+    <rect x="796" y="500" width="166" height="40" rx="20" fill="#FFFFFF" stroke="#B08D57" stroke-width="2"/>
+    <g fill="none" stroke="#B08D57" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M812 520c6-8 14-12 22-12s16 4 22 12c-6 8-14 12-22 12s-16-4-22-12z"/>
+      <path d="M814 534l40-28"/>
+    </g>
+    <text x="864" y="529" font-size="22" font-weight="600" fill="#8A6B3C">Invisible</text>
+  </g>
+</svg>

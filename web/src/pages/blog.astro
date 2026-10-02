@@ -1,0 +1,142 @@
+---
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  "title": "Blog de marketplaces y automatización B2B | ADVANTIA",
+  "description": "Guías prácticas y paso a paso para vender más en Mercado Libre, Falabella y Amazon desde Colombia, y para medir cuánto tiempo le ahorra la IA a tu PyME.",
+  "canonical": "https://theadvantia.com/blog",
+  "robots": "index, follow",
+  "og": {
+    "type": "website",
+    "site_name": "ADVANTIA",
+    "title": "Blog de marketplaces y automatización B2B | ADVANTIA",
+    "description": "Guías prácticas y paso a paso para vender más en Mercado Libre, Falabella y Amazon desde Colombia, y para medir cuánto tiempo le ahorra la IA a tu PyME.",
+    "locale": "es_CO",
+    "url": "https://theadvantia.com/blog",
+    "image": "https://theadvantia.com/og-image.jpg",
+    "image:width": "1200",
+    "image:height": "630"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Blog de marketplaces y automatización B2B | ADVANTIA",
+    "description": "Guías prácticas y paso a paso para vender más en Mercado Libre, Falabella y Amazon desde Colombia, y para medir cuánto tiempo le ahorra la IA a tu PyME.",
+    "image": "https://theadvantia.com/og-image.jpg"
+  }
+};
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog de ADVANTIA",
+    "url": "https://theadvantia.com/blog",
+    "description": "Guías prácticas y paso a paso para vender más en Mercado Libre, Falabella y Amazon desde Colombia, y para medir cuánto tiempo le ahorra la IA a tu PyME.",
+    "inLanguage": "es-CO",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ADVANTIA",
+      "url": "https://theadvantia.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://theadvantia.com/img/advantia-logo-completo.png"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/theadvantia/"
+      ]
+    },
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Los 5 errores al publicar en Mercado Libre que le cuestan dinero a tu empresa",
+        "url": "https://theadvantia.com/blog/errores-al-publicar-en-mercado-libre",
+        "datePublished": "2026-09-27T09:00:00-05:00",
+        "dateModified": "2026-09-27T09:00:00-05:00",
+        "author": {
+          "@type": "Person",
+          "name": "Nicolás Navarro",
+          "url": "https://theadvantia.com/nosotros"
+        },
+        "image": "https://theadvantia.com/img/blog/og/errores-al-publicar-en-mercado-libre.jpg"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Calculadora de ahorro de horas con IA para tu PyME: cómo medir lo que hoy se hace a mano",
+        "url": "https://theadvantia.com/blog/ahorro-de-tiempo-con-ia-en-pymes",
+        "datePublished": "2026-09-27T09:00:00-05:00",
+        "dateModified": "2026-09-27T09:00:00-05:00",
+        "author": {
+          "@type": "Person",
+          "name": "Nicolás Navarro",
+          "url": "https://theadvantia.com/nosotros"
+        },
+        "image": "https://theadvantia.com/img/blog/og/ahorro-de-tiempo-con-ia-en-pymes.jpg"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Cómo vender en Amazon desde Colombia: guía operativa para marcas y distribuidores",
+        "url": "https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia",
+        "datePublished": "2026-09-27T09:00:00-05:00",
+        "dateModified": "2026-09-27T09:00:00-05:00",
+        "author": {
+          "@type": "Person",
+          "name": "Nicolás Navarro",
+          "url": "https://theadvantia.com/nosotros"
+        },
+        "image": "https://theadvantia.com/img/blog/og/como-vender-en-amazon-desde-colombia.jpg"
+      }
+    ]
+  }
+];
+---
+<Base seo={seo} jsonLd={jsonLd} active="/blog">
+<main>
+<header class="hero hero-doc">
+  <div class="wrap">
+    <span class="eyebrow">Vitrina · Trastienda</span>
+    <h1>Blog</h1>
+    <p class="lead">Guías prácticas para que tus productos aparezcan en los marketplaces y para que la operación corra sola.</p>
+    <div class="blog-filter" role="group" aria-label="Filtrar artículos por línea">
+      <button type="button" class="tag" data-filter="todos" aria-pressed="true">Todos</button>
+      <button type="button" class="tag" data-filter="vitrina" aria-pressed="false">Vitrina</button>
+      <button type="button" class="tag" data-filter="trastienda" aria-pressed="false">Trastienda</button>
+    </div>
+    <p class="sr-only" id="blogCount" aria-live="polite"></p>
+  </div>
+</header>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="grid-3 post-grid" id="postGrid">
+      <article class="card post-card is-vitrina" data-cat="vitrina">
+        <div class="post-cover" aria-hidden="true"><svg><use href="#i-search"></use></svg></div>
+        <div class="post-card-body">
+          <div class="post-meta"><span class="status status-neutral">Vitrina</span><span class="post-meta-txt">27 de septiembre de 2026 · 7 min de lectura</span></div>
+          <h2><a href="/blog/errores-al-publicar-en-mercado-libre">Los 5 errores al publicar en Mercado Libre que le cuestan dinero a tu empresa</a></h2>
+          <p class="post-excerpt">Los errores al publicar en Mercado Libre más costosos no son los evidentes. Son títulos que nadie busca, inventarios que no se sincronizan, márgenes calculados sin comisiones ni envío, fichas incompletas y una reputación que se descuida. Corregirlos es la diferencia entre una publicación que vende sola y una que consume presupuesto sin retorno.</p>
+          <span class="post-author">Nicolás Navarro</span>
+        </div>
+      </article>
+      <article class="card post-card is-trastienda" data-cat="trastienda">
+        <div class="post-cover" aria-hidden="true"><svg><use href="#i-chat"></use></svg></div>
+        <div class="post-card-body">
+          <div class="post-meta"><span class="status status-neutral">Trastienda</span><span class="post-meta-txt">27 de septiembre de 2026 · 7 min de lectura</span></div>
+          <h2><a href="/blog/ahorro-de-tiempo-con-ia-en-pymes">Calculadora de ahorro de horas con IA para tu PyME: cómo medir lo que hoy se hace a mano</a></h2>
+          <p class="post-excerpt">El ahorro de tiempo con IA en PyMEs se calcula con una fórmula simple: horas semanales por tarea, multiplicadas por las personas que la hacen, por el costo real de la hora y por 52 semanas. El resultado es el costo anual de una tarea repetitiva, y la base para decidir si vale la pena automatizarla.</p>
+          <span class="post-author">Nicolás Navarro</span>
+        </div>
+      </article>
+      <article class="card post-card is-vitrina" data-cat="vitrina">
+        <div class="post-cover" aria-hidden="true"><svg><use href="#i-search"></use></svg></div>
+        <div class="post-card-body">
+          <div class="post-meta"><span class="status status-neutral">Vitrina</span><span class="post-meta-txt">27 de septiembre de 2026 · 8 min de lectura</span></div>
+          <h2><a href="/blog/como-vender-en-amazon-desde-colombia">Cómo vender en Amazon desde Colombia: guía operativa para marcas y distribuidores</a></h2>
+          <p class="post-excerpt">Para vender en Amazon desde Colombia necesitas una cuenta de vendedor profesional en el marketplace de destino (normalmente Estados Unidos), un documento de identidad válido, una tarjeta de crédito internacional, una cuenta para recibir pagos en dólares y un producto con permiso de exportación. La logística se resuelve con FBA o FBM, y la carga tributaria en ambos países con un contador que conozca exportación de bienes.</p>
+          <span class="post-author">Nicolás Navarro</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+</Base>

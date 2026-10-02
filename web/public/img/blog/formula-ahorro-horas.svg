@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif">
+  <rect width="1200" height="630" fill="#F8F9FA"/>
+  <text x="600" y="108" font-size="34" font-weight="700" fill="#1E2761" text-anchor="middle">Costo anual de una tarea repetitiva</text>
+
+  <g fill="#FFFFFF" stroke="#E8E8E8" stroke-width="2">
+    <rect x="40" y="170" width="180" height="280" rx="20"/>
+    <rect x="270" y="170" width="180" height="280" rx="20"/>
+    <rect x="500" y="170" width="180" height="280" rx="20"/>
+    <rect x="730" y="170" width="180" height="280" rx="20"/>
+  </g>
+  <rect x="960" y="170" width="200" height="280" rx="20" fill="#1E2761"/>
+
+  <g fill="none" stroke="#1E2761" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- reloj -->
+    <circle cx="130" cy="256" r="34"/><path d="M130 236v22l15 10"/>
+    <!-- personas -->
+    <circle cx="344" cy="240" r="14"/><path d="M318 290c2-16 12-26 26-26s24 10 26 26"/>
+    <circle cx="382" cy="246" r="11"/><path d="M372 268c4-3 7-4 10-4 12 0 20 9 22 24"/>
+    <!-- costo por hora -->
+    <rect x="552" y="228" width="76" height="52" rx="8"/><circle cx="590" cy="254" r="11"/><path d="M566 240v0M614 268v0"/>
+    <!-- calendario -->
+    <rect x="786" y="226" width="68" height="64" rx="8"/><path d="M786 246h68M804 216v18M836 216v18"/>
+    <path d="M804 264h0M820 264h0M836 264h0M804 278h0M820 278h0"/>
+  </g>
+  <g fill="none" stroke="#B08D57" stroke-width="4" stroke-linecap="round">
+    <ellipse cx="1060" cy="236" rx="36" ry="12"/>
+    <path d="M1024 236v18c0 7 16 12 36 12s36-5 36-12v-18"/>
+    <path d="M1024 254v18c0 7 16 12 36 12s36-5 36-12v-18"/>
+  </g>
+
+  <g font-size="27" font-weight="700" fill="#1E2761" text-anchor="middle">
+    <text x="130" y="356">Horas</text><text x="130" y="390">por semana</text>
+    <text x="360" y="356">Personas</text><text x="360" y="390">en la tarea</text>
+    <text x="590" y="356">Costo</text><text x="590" y="390">por hora</text>
+    <text x="820" y="356">Semanas</text><text x="820" y="390">del año</text>
+  </g>
+  <g font-size="27" font-weight="700" fill="#B08D57" text-anchor="middle">
+    <text x="1060" y="356">Costo</text><text x="1060" y="390">anual</text>
+  </g>
+
+  <g font-size="52" font-weight="600" fill="#838383" text-anchor="middle">
+    <text x="245" y="328">×</text><text x="475" y="328">×</text><text x="705" y="328">×</text><text x="935" y="328">=</text>
+  </g>
+
+  <text x="600" y="530" font-size="24" fill="#646464" text-anchor="middle">Con el tiempo medido en una semana normal y el costo total de la hora para la empresa</text>
+</svg>

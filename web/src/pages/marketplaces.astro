@@ -1,0 +1,331 @@
+---
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  "title": "SEO para Mercado Libre, Falabella y Amazon | ADVANTIA",
+  "description": "SEO para Mercado Libre, Falabella y Amazon con datos reales de búsqueda. Títulos y fichas que convierten categorías sin tráfico en venta orgánica.",
+  "canonical": "https://theadvantia.com/marketplaces",
+  "robots": "index, follow",
+  "og": {
+    "type": "website",
+    "site_name": "ADVANTIA",
+    "title": "SEO para Mercado Libre, Falabella y Amazon | ADVANTIA",
+    "description": "SEO para Mercado Libre, Falabella y Amazon con datos reales de búsqueda. Títulos y fichas que convierten categorías sin tráfico en venta orgánica.",
+    "locale": "es_CO",
+    "url": "https://theadvantia.com/marketplaces",
+    "image": "https://theadvantia.com/og-image.jpg",
+    "image:width": "1200",
+    "image:height": "630"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "SEO para Mercado Libre, Falabella y Amazon | ADVANTIA",
+    "description": "SEO para Mercado Libre, Falabella y Amazon con datos reales de búsqueda. Títulos y fichas que convierten categorías sin tráfico en venta orgánica.",
+    "image": "https://theadvantia.com/og-image.jpg"
+  }
+};
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Marketplace Content Intelligence",
+    "serviceType": "Posicionamiento de productos en marketplaces",
+    "provider": {
+      "@type": "Organization",
+      "name": "ADVANTIA",
+      "url": "https://theadvantia.com/"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Colombia"
+    },
+    "description": "Optimizacion de titulos, atributos y fichas para subir el Alcance SEO de tu catalogo y generar venta organica en Mercado Libre, Falabella y Amazon.",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Sellers y marcas en marketplaces"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es el content intelligence de marketplace?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es la optimización sistemática del contenido de tus publicaciones (títulos, atributos, fichas e imágenes) para que el buscador interno de Mercado Libre, Falabella o Amazon las posicione orgánicamente. Lo medimos con cuatro KPIs: alcance SEO, CTR, visitas orgánicas y conversión."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿En cuánto tiempo se ven resultados de posicionamiento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende de la categoría y de la competencia en cada marketplace. Medimos Alcance SEO, CTR, visitas orgánicas y conversión desde la línea base del Diagnóstico, y reportamos su evolución cada mes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Sobre qué marketplaces trabajan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mercado Libre, Falabella, Amazon y Homecenter. El método de optimización de contenido aplica al buscador interno de cada plataforma."
+        }
+      }
+    ]
+  }
+];
+---
+<Base seo={seo} jsonLd={jsonLd} active="/marketplaces" announce>
+<header class="hero" data-nav="Inicio">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Marketplace Content Intelligence</span>
+      <h1 class="hero-h1">Posicionamiento en Mercado Libre, Falabella y Amazon</h1>
+      <p class="hero-claim">Categorías sin tráfico, convertidas en <span class="kw">venta orgánica.</span></p>
+      <p class="lead">Tus productos arriba en Mercado Libre, Falabella y Amazon, vendiendo sin depender de la pauta.</p>
+      <div class="scene" style="margin-top:26px" role="img" aria-label="Una búsqueda de termo acero inoxidable 1 litro devuelve tres resultados genéricos y tu producto no aparece">
+        <div class="scene-search">
+          <svg aria-hidden="true"><use href="#i-search"></use></svg>termo acero inoxidable 1 litro
+        </div>
+        <ul class="scene-results">
+          <li><span class="dot"></span><span class="stack"><span class="line" style="width:72%;display:block"></span><span class="sub" style="width:44%;display:block"></span></span></li>
+          <li><span class="dot"></span><span class="stack"><span class="line" style="width:64%;display:block"></span><span class="sub" style="width:38%;display:block"></span></span></li>
+          <li><span class="dot"></span><span class="stack"><span class="line" style="width:78%;display:block"></span><span class="sub" style="width:30%;display:block"></span></span></li>
+        </ul>
+        <div class="scene-out">
+          <span class="name">Botella Buffer 1L</span>
+          <span class="scene-tag">tu producto, invisible</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="/contacto" class="btn btn-fill btn-lg btn-conic">Agenda tu Diagnóstico</a>
+        <a href="#servicios" class="tlink">Ver las tres líneas<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+      </div>
+      <div class="tag-row hero-tags">
+        <span class="tag">SEO de Marketplace</span><span class="tag">Content Factory</span>
+        <span class="tag">Estrategia de Canal</span>
+      </div>
+    </div>
+
+    <div class="shot">
+      <div class="browser">
+        <div class="browser-bar"><i></i><i></i><i></i>
+          <span class="browser-url">falabella.com.co · ficha publicada</span>
+        </div>
+        <div class="browser-body">
+          <video data-demo muted loop playsinline preload="none"
+                 poster="assets/ficha_falabella_poster.jpg" width="1200" height="760"
+                 aria-label="Recorrido en scroll de una ficha de producto publicada en Falabella y optimizada por ADVANTIA">
+            <source src="assets/ficha_falabella_scroll.webm" type="video/webm">
+            <source src="assets/ficha_falabella_scroll.mp4" type="video/mp4">
+          </video>
+          <img class="media-static" src="assets/ficha_falabella_poster.jpg" width="1200" height="760"
+               alt="Ficha de producto publicada en Falabella y optimizada por ADVANTIA">
+        </div>
+      </div>
+      <div class="shot-caption">
+        <span class="status status-green"><svg width="10" height="10" aria-hidden="true"><use href="#i-check"></use></svg>En vivo</span>
+        <span class="meta">Ficha real publicada en Falabella</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="servicios" data-nav="Qué hacemos">
+  <div class="wrap">
+    <div class="section-head rise">
+      <span class="eyebrow">Qué hacemos</span>
+      <h2>Tres líneas de servicio, un solo objetivo: tráfico que es tuyo.</h2>
+      <p class="lead">Se pueden contratar por separado, pero se potencian juntas: el diagnóstico dice qué producir y la estrategia dice dónde.</p>
+    </div>
+
+    <article class="card card-lg card-lead rise" style="margin-bottom:24px">
+      <div class="card-head">
+        <span class="svc-icon"><svg aria-hidden="true"><use href="#i-search"></use></svg></span>
+        <h3>SEO de Marketplace</h3>
+        <span class="status status-navy">Producto de entrada</span>
+      </div>
+      <p>Auditamos y optimizamos tus publicaciones para que escalen en el buscador interno de cada plataforma. El diagnóstico arranca con el mapa de palabras clave de tu categoría.</p>
+      <div class="embed" data-base-width="1100" style="margin-top:20px">
+        <iframe src="assets/diagnostico_mapa_keywords.html" loading="lazy"
+                title="Mapa interactivo de palabras clave del diagnóstico ADVANTIA"></iframe>
+        <img class="media-static" src="assets/diagnostico_mapa_keywords_poster.jpg" width="1100" height="560"
+             alt="Mapa de palabras clave del diagnóstico ADVANTIA">
+      </div>
+      <div class="embed-hint">
+        <span class="status status-neutral"><svg width="10" height="10" aria-hidden="true"><use href="#i-drag"></use></svg>Interactivo</span>
+        <span class="meta">Arrastra los nodos · pasa el cursor para ver cada keyword</span>
+      </div>
+      <ul class="flist">
+        <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Keywords por categoría</li>
+        <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Títulos, atributos y fichas</li>
+        <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Mapa de alcance vs. competidores</li>
+      </ul>
+    </article>
+
+    <div class="grid-2" data-stagger>
+      <article class="card card-lg rise">
+        <div class="card-head">
+          <span class="svc-icon"><svg aria-hidden="true"><use href="#i-layers"></use></svg></span>
+          <h3>Content Factory</h3>
+          <span class="status status-neutral">Producción</span>
+        </div>
+        <p>Contenido a escala (texto, imagen y video) alineado a lo que el algoritmo y el comprador premian.</p>
+        <ul class="flist">
+          <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Fichas y A+ content</li>
+          <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Activos visuales por SKU</li>
+          <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Pipeline mensual</li>
+        </ul>
+      </article>
+      <article class="card card-lg rise">
+        <div class="card-head">
+          <span class="svc-icon"><svg aria-hidden="true"><use href="#i-compass"></use></svg></span>
+          <h3>Estrategia de Canal</h3>
+          <span class="status status-neutral">Dirección</span>
+        </div>
+        <p>Para que el contenido se traduzca en decisiones de surtido, pricing y mix de plataformas.</p>
+        <ul class="flist">
+          <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Priorización de SKUs</li>
+          <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Menos dependencia de pauta</li>
+          <li><svg aria-hidden="true"><use href="#i-check"></use></svg>Reporte sobre los 4 KPIs</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section card-band" id="como-se-mide" data-nav="Cómo se mide">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Cómo se mide</span>
+      <h2>Cuatro métricas, nada de vanidad.</h2>
+      <p class="lead">No reportamos impresiones ni likes. Reportamos las cuatro métricas que deciden si tu catálogo vende: cuánto de la demanda de tu categoría alcanzas, cuántos hacen clic, cuántos llegan y cuántos compran.</p>
+    </div>
+    <div class="measure">
+      <article class="card card-lg">
+        <div class="card-head">
+          <span class="svc-icon"><svg aria-hidden="true"><use href="#i-search"></use></svg></span>
+          <h3>El embudo</h3>
+        </div>
+        <p>De la búsqueda a la venta, revisado mes a mes.</p>
+        <div class="funnel" role="img" aria-label="Embudo de cuatro métricas: alcance SEO, CTR, visitas y conversión">
+          <div class="funnel-step"><span class="label">Alcance SEO</span><span class="bar"></span></div>
+          <div class="funnel-step"><span class="label">CTR</span><span class="bar"></span></div>
+          <div class="funnel-step"><span class="label">Visitas</span><span class="bar"></span></div>
+          <div class="funnel-step"><span class="label">Conversión</span><span class="bar"></span></div>
+        </div>
+      </article>
+      <article class="card card-lg">
+        <div class="card-head">
+          <span class="svc-icon"><svg aria-hidden="true"><use href="#i-chart"></use></svg></span>
+          <h3>Qué recibes</h3>
+        </div>
+        <p>El mismo formato cada mes, para que la comparación sea justa.</p>
+        <ul class="gains">
+          <li><span class="dot"></span>Reporte mensual sobre las cuatro métricas</li>
+          <li><span class="dot"></span>Mapa de alcance frente a tus competidores</li>
+          <li><span class="dot"></span>Priorización de SKUs para el mes siguiente</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="productos" data-nav="Productos">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Productos de la línea</span>
+      <h2>Lo que puedes contratar hoy, y lo que viene.</h2>
+    </div>
+    <div class="prods">
+      <article class="prod">
+        <span class="stage stage-now">Hoy</span>
+        <span class="svc-icon sm ink"><svg aria-hidden="true"><use href="#i-search"></use></svg></span>
+        <h4>Diagnóstico y optimización de fichas</h4>
+        <p style="margin-top:8px;font-size:15px;color:var(--body-ink)">Auditoría de alcance, mapa de keywords y reescritura de títulos, atributos y fichas.</p>
+        <p style="margin-top:14px"><a class="tlink" href="/contacto">Hablemos<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></p>
+      </article>
+      <article class="prod">
+        <span class="stage stage-next">Luego</span>
+        <span class="svc-icon sm ink"><svg aria-hidden="true"><use href="#i-chart"></use></svg></span>
+        <h4>Panel de seguimiento de los cuatro KPIs</h4>
+        <p style="margin-top:8px;font-size:15px;color:var(--body-ink)">El embudo de tu catálogo actualizado, sin esperar al reporte del mes.</p>
+        <p style="margin-top:14px"><a class="tlink" href="/contacto">Hablemos<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></p>
+      </article>
+      <article class="prod">
+        <span class="stage stage-later">Después</span>
+        <span class="svc-icon sm ink"><svg aria-hidden="true"><use href="#i-layers"></use></svg></span>
+        <h4>CatalogAI autoservicio</h4>
+        <p style="margin-top:8px;font-size:15px;color:var(--body-ink)">El protocolo de optimización aplicado por tu propio equipo.</p>
+        <p style="margin-top:14px"><a class="tlink" href="/contacto">Hablemos<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></p>
+      </article>
+    </div>
+    <p class="prods-note">Las etiquetas indican madurez del producto, no disponibilidad.</p>
+  </div>
+</section>
+
+<section class="section card-band" data-nav="Preguntas frecuentes">
+  <div class="wrap">
+    <div class="section-head rise">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Sobre posicionamiento en marketplaces.</h2>
+    </div>
+    <div class="faq rise">
+      <details>
+        <summary><span class="n">01</span>¿Qué es el content intelligence de marketplace?<span class="sign">+</span></summary>
+        <p>Es la optimización sistemática del contenido de tus publicaciones (títulos, atributos, fichas e imágenes) para que el buscador interno de Mercado Libre, Falabella o Amazon las posicione orgánicamente. Lo medimos con cuatro KPIs: alcance SEO, CTR, visitas orgánicas y conversión.</p>
+      </details>
+      <details>
+        <summary><span class="n">02</span>¿En cuánto tiempo se ven resultados de posicionamiento?<span class="sign">+</span></summary>
+        <p>Depende de la categoría y de la competencia en cada marketplace. Medimos Alcance SEO, CTR, visitas orgánicas y conversión desde la línea base del Diagnóstico, y reportamos su evolución cada mes.</p>
+      </details>
+      <details>
+        <summary><span class="n">03</span>¿Sobre qué marketplaces trabajan?<span class="sign">+</span></summary>
+        <p>Mercado Libre, Falabella, Amazon y Homecenter. El método de optimización de contenido aplica al buscador interno de cada plataforma.</p>
+      </details>
+    </div>
+    <div class="mark-slot" style="margin-top:40px"><svg class="brand-mark" viewBox="0 0 420 260" role="img" aria-label="Composición gráfica de marca ADVANTIA">
+          <g fill="none" stroke-width="1.5">
+            <circle cx="210" cy="130" r="122" stroke="#e8e8e8"/>
+            <circle cx="210" cy="130" r="88" stroke="#e8e8e8"/>
+            <circle cx="210" cy="130" r="54" stroke="#d4d4d4"/>
+          </g>
+          <path d="M210 8a122 122 0 0 1 122 122" fill="none" stroke="#B08D57" stroke-width="3" stroke-linecap="round"/>
+          <path d="M210 42a88 88 0 0 1 88 88" fill="none" stroke="#d4d4d4" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="210" cy="130" r="9" fill="#1E2761"/>
+        </svg></div>
+    <!-- guias:inicio · bloque generado por _tools/build_blog.py, no editar a mano -->
+    <div class="related-guides">
+      <div class="section-head">
+        <span class="eyebrow">Blog</span>
+        <h2 class="h-sm">Guías relacionadas</h2>
+      </div>
+      <div class="grid-2 post-grid">
+        <article class="card post-card is-vitrina" data-cat="vitrina">
+        <div class="post-cover" aria-hidden="true"><svg><use href="#i-search"></use></svg></div>
+        <div class="post-card-body">
+          <div class="post-meta"><span class="status status-neutral">Vitrina</span><span class="post-meta-txt">27 de septiembre de 2026 · 7 min de lectura</span></div>
+          <h3><a href="/blog/errores-al-publicar-en-mercado-libre">Los 5 errores al publicar en Mercado Libre que le cuestan dinero a tu empresa</a></h3>
+          <p class="post-excerpt">Los errores al publicar en Mercado Libre más costosos no son los evidentes. Son títulos que nadie busca, inventarios que no se sincronizan, márgenes calculados sin comisiones ni envío, fichas incompletas y una reputación que se descuida. Corregirlos es la diferencia entre una publicación que vende sola y una que consume presupuesto sin retorno.</p>
+          <span class="post-author">Nicolás Navarro</span>
+        </div>
+      </article>
+        <article class="card post-card is-vitrina" data-cat="vitrina">
+        <div class="post-cover" aria-hidden="true"><svg><use href="#i-search"></use></svg></div>
+        <div class="post-card-body">
+          <div class="post-meta"><span class="status status-neutral">Vitrina</span><span class="post-meta-txt">27 de septiembre de 2026 · 8 min de lectura</span></div>
+          <h3><a href="/blog/como-vender-en-amazon-desde-colombia">Cómo vender en Amazon desde Colombia: guía operativa para marcas y distribuidores</a></h3>
+          <p class="post-excerpt">Para vender en Amazon desde Colombia necesitas una cuenta de vendedor profesional en el marketplace de destino (normalmente Estados Unidos), un documento de identidad válido, una tarjeta de crédito internacional, una cuenta para recibir pagos en dólares y un producto con permiso de exportación. La logística se resuelve con FBA o FBM, y la carga tributaria en ambos países con un contador que conozca exportación de bienes.</p>
+          <span class="post-author">Nicolás Navarro</span>
+        </div>
+      </article>
+      </div>
+    </div>
+    <!-- guias:fin -->
+    <p style="margin-top:32px"><a class="btn btn-fill" href="/contacto">Agenda tu Diagnóstico</a></p>
+  </div>
+</section>
+</Base>

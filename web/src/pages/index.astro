@@ -1,0 +1,519 @@
+---
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  "title": "ADVANTIA | SEO para marketplaces y agentes de IA",
+  "description": "Posicionamos tus productos en Mercado Libre, Falabella y Amazon, y automatizamos cobros, pedidos y cotizaciones por WhatsApp con agentes de IA.",
+  "canonical": "https://theadvantia.com/",
+  "robots": "index, follow",
+  "og": {
+    "type": "website",
+    "site_name": "ADVANTIA",
+    "title": "ADVANTIA | SEO para marketplaces y agentes de IA",
+    "description": "Posicionamos tus productos en Mercado Libre, Falabella y Amazon, y automatizamos cobros, pedidos y cotizaciones por WhatsApp con agentes de IA.",
+    "locale": "es_CO",
+    "url": "https://theadvantia.com/",
+    "image": "https://theadvantia.com/og-image.jpg",
+    "image:width": "1200",
+    "image:height": "630"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "ADVANTIA | SEO para marketplaces y agentes de IA",
+    "description": "Posicionamos tus productos en Mercado Libre, Falabella y Amazon, y automatizamos cobros, pedidos y cotizaciones por WhatsApp con agentes de IA.",
+    "image": "https://theadvantia.com/og-image.jpg"
+  },
+  "preloadImage": "assets/ficha_falabella_poster.jpg"
+};
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ADVANTIA",
+    "alternateName": "ADVANTIA Colombia",
+    "url": "https://theadvantia.com/",
+    "logo": "https://theadvantia.com/img/advantia-logo-completo.png",
+    "description": "Content intelligence para marketplaces y agentes de IA para distribuidoras en Colombia.",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Colombia"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "nicolas.navarro@theadvantia.com",
+        "areaServed": "CO",
+        "availableLanguage": [
+          "es"
+        ]
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/theadvantia/"
+    ],
+    "knowsAbout": [
+      "SEO para marketplaces",
+      "Mercado Libre",
+      "Falabella",
+      "Amazon",
+      "Agentes de IA",
+      "Automatización por WhatsApp"
+    ]
+  }
+];
+---
+<Base seo={seo} jsonLd={jsonLd} announce>
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="inicio" data-nav="Inicio">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Marketplace Intelligence · Agentes de IA · Colombia</span>
+      <h1>Te encuentran.<br><span class="kw">Y la operación corre sola.</span></h1>
+      <p class="lead">Una empresa que vende productos pierde plata en dos lugares. ADVANTIA arregla los dos con datos reales e inteligencia artificial.</p>
+
+      <div class="places">
+        <a class="place" href="/marketplaces">
+          <span class="where"><svg aria-hidden="true"><use href="#i-search"></use></svg>La vitrina</span>
+          <h3>Marketplaces</h3>
+          <p>Posicionamiento en Mercado Libre, Falabella y Amazon.</p>
+          <span class="go">Ver la línea<svg aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+        </a>
+        <a class="place" href="/distribuidoras">
+          <span class="where"><svg aria-hidden="true"><use href="#i-chat"></use></svg>La trastienda</span>
+          <h3>Distribuidoras</h3>
+          <p>Agentes de IA que cobran, cotizan y toman pedidos por WhatsApp.</p>
+          <span class="go">Ver la línea<svg aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+        </a>
+      </div>
+
+      <div class="hero-cta">
+        <a href="/contacto" class="btn btn-fill btn-lg btn-conic">Agenda tu Diagnóstico</a>
+        <a href="#dos-lugares" class="tlink" data-scroll>Ver cómo funciona<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+      </div>
+    </div>
+
+    <div class="shot">
+      <div class="browser">
+        <div class="browser-bar"><i></i><i></i><i></i>
+          <span class="browser-url">falabella.com.co · ficha publicada</span>
+        </div>
+        <div class="browser-body">
+          <video data-demo muted loop playsinline preload="none"
+                 poster="assets/ficha_falabella_poster.jpg" width="1200" height="760"
+                 aria-label="Recorrido en scroll de una ficha de producto publicada en Falabella y optimizada por ADVANTIA">
+            <source src="assets/ficha_falabella_scroll.webm" type="video/webm">
+            <source src="assets/ficha_falabella_scroll.mp4" type="video/mp4">
+          </video>
+          <img class="media-static" src="assets/ficha_falabella_poster.jpg" width="1200" height="760"
+               alt="Ficha de producto publicada en Falabella y optimizada por ADVANTIA">
+        </div>
+      </div>
+      <div class="shot-caption">
+        <span class="status status-green"><svg width="12" height="12" aria-hidden="true"><use href="#i-tick"></use></svg>En vivo</span>
+        <span class="meta">Ficha real publicada en Falabella</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== MARKETPLACES ===================== -->
+<section class="trust" id="donde-operamos" data-nav="Dónde operamos">
+  <div class="wrap">
+    <span class="meta">Marketplaces donde operamos</span>
+  </div>
+  <div class="marquee" aria-label="Falabella, Mercado Libre, Amazon y Homecenter">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span><svg aria-hidden="true"><use href="#i-tick"></use></svg>Falabella</span><i aria-hidden="true"></i>
+        <span><svg aria-hidden="true"><use href="#i-tick"></use></svg>Mercado Libre</span><i aria-hidden="true"></i>
+        <span><svg aria-hidden="true"><use href="#i-tick"></use></svg>Amazon</span><i aria-hidden="true"></i>
+        <span><svg aria-hidden="true"><use href="#i-tick"></use></svg>Homecenter</span><i aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DOS LUGARES ===================== -->
+<section class="section" id="dos-lugares" data-nav="Dos lugares">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">La tesis</span>
+      <h2>Dos problemas distintos. Un mismo motor.</h2>
+      <p class="lead">La vitrina es donde el cliente debería encontrarte y no te encuentra. La trastienda es donde tu equipo gasta el día haciendo a mano lo que una máquina haría sola.</p>
+    </div>
+
+    <article class="place-block block-light">
+      <div class="block-head">
+        <span class="eyebrow">01 · La vitrina</span>
+        <span class="status status-navy">Marketplaces</span>
+      </div>
+      <h3>Vendes en Mercado Libre o Falabella. Alguien busca tu producto. No aparece.</h3>
+
+      <div class="scene" role="img" aria-label="Una búsqueda de termo acero inoxidable 1 litro devuelve tres resultados genéricos y tu producto no aparece">
+        <div class="scene-search">
+          <svg aria-hidden="true"><use href="#i-search"></use></svg>termo acero inoxidable 1 litro
+        </div>
+        <ul class="scene-results">
+          <li><span class="dot"></span><span class="stack"><span class="line" style="width:72%;display:block"></span><span class="sub" style="width:44%;display:block"></span></span></li>
+          <li><span class="dot"></span><span class="stack"><span class="line" style="width:64%;display:block"></span><span class="sub" style="width:38%;display:block"></span></span></li>
+          <li><span class="dot"></span><span class="stack"><span class="line" style="width:78%;display:block"></span><span class="sub" style="width:30%;display:block"></span></span></li>
+        </ul>
+        <div class="scene-out">
+          <span class="name">Botella Buffer 1L</span>
+          <span class="scene-tag">tu producto, invisible</span>
+        </div>
+      </div>
+
+      <div class="why">
+        <div>
+          <h4>Por qué pasa</h4>
+          <p>El buscador del marketplace no lee tu catálogo como tú lo escribiste. Lee títulos, atributos y fichas. Si están incompletos o no usan las palabras que la gente teclea, tu producto queda fuera de los resultados aunque sea el mejor de la categoría.</p>
+        </div>
+        <div>
+          <h4>Qué hace ADVANTIA</h4>
+          <p>Levantamos el mapa de palabras clave real de tu categoría, reescribimos títulos, atributos y fichas con el Protocolo CatalogAI v3.4, y medimos si el producto sube. Publicamos la ficha y le hacemos seguimiento.</p>
+        </div>
+      </div>
+
+      <div class="browser">
+        <div class="browser-bar"><i></i><i></i><i></i>
+          <span class="browser-url">falabella.com.co · ficha publicada</span>
+        </div>
+        <div class="browser-body">
+          <video data-demo muted loop playsinline preload="none"
+                 poster="assets/ficha_falabella_poster.jpg" width="1200" height="760"
+                 aria-label="Ficha de producto optimizada por ADVANTIA, publicada en Falabella">
+            <source src="assets/ficha_falabella_scroll.webm" type="video/webm">
+            <source src="assets/ficha_falabella_scroll.mp4" type="video/mp4">
+          </video>
+          <img class="media-static" src="assets/ficha_falabella_poster.jpg" width="1200" height="760"
+               alt="Ficha de producto optimizada por ADVANTIA, publicada en Falabella">
+        </div>
+      </div>
+      <div class="shot-caption" style="justify-content:flex-start">
+        <span class="status status-green"><svg width="12" height="12" aria-hidden="true"><use href="#i-tick"></use></svg>En vivo</span>
+        <span class="meta">Una ficha que sí aparece</span>
+      </div>
+
+      <figure class="graph-block">
+        <div class="embed" data-base-width="1100" data-fit="cover">
+          <iframe src="assets/diagnostico_mapa_keywords.html" loading="lazy"
+                  title="Mapa interactivo de palabras clave del diagnóstico ADVANTIA"></iframe>
+          <img class="media-static" src="assets/diagnostico_mapa_keywords_poster.jpg" width="1100" height="560"
+               alt="Mapa de palabras clave del diagnóstico ADVANTIA">
+        </div>
+        <figcaption class="embed-hint">
+          <span class="status status-neutral">Interactivo</span>
+          <span class="meta">Arrastra los nodos · pasa el cursor para ver cada keyword</span>
+        </figcaption>
+      </figure>
+
+      <p class="meta" style="margin-top:40px">Productos de esta línea</p>
+      <div class="prods">
+        <article class="prod">
+          <span class="stage stage-now">Hoy</span>
+          <h4>Diagnóstico y optimización de fichas</h4>
+        </article>
+        <article class="prod">
+          <span class="stage stage-next">Luego</span>
+          <h4>Panel de seguimiento de los cuatro KPIs</h4>
+        </article>
+        <article class="prod">
+          <span class="stage stage-later">Después</span>
+          <h4>CatalogAI autoservicio</h4>
+        </article>
+      </div>
+      <p class="prods-note">Las etiquetas indican madurez del producto, no disponibilidad.</p>
+
+      <p class="block-foot"><a class="tlink" href="/marketplaces">Ver la línea completa<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></p>
+    </article>
+
+    <article class="place-block block-dark dark-panel on-dark">
+      <div class="block-head">
+        <span class="eyebrow">02 · La trastienda</span>
+        <span class="status status-neutral">Distribuidoras</span>
+      </div>
+      <h3>Eres una distribuidora. Tres personas pasan el día al teléfono. Y aun así todo se demora.</h3>
+
+      <div class="chores">
+        <div class="chore">
+          <svg aria-hidden="true"><use href="#i-invoice"></use></svg>
+          <h4>Cobrar</h4>
+          <p>Llamar cliente por cliente para recordar facturas vencidas.</p>
+        </div>
+        <div class="chore">
+          <svg aria-hidden="true"><use href="#i-box"></use></svg>
+          <h4>Tomar pedidos</h4>
+          <p>Transcribir a mano lo que llega por chat, audio o foto.</p>
+        </div>
+        <div class="chore">
+          <svg aria-hidden="true"><use href="#i-tag"></use></svg>
+          <h4>Cotizar</h4>
+          <p>Escribir a cada proveedor y armar la comparación en una hoja.</p>
+        </div>
+      </div>
+
+      <div class="shift">
+        <div class="shift-card">
+          <span class="meta">Hoy, una persona</span>
+          <p>2 a 3 días para cerrar una cotización.</p>
+        </div>
+        <div class="shift-arrow"><svg aria-hidden="true"><use href="#i-arrow"></use></svg></div>
+        <div class="shift-card is-after">
+          <span class="meta">Con un agente de IA</span>
+          <p>Minutos, y una tabla comparativa lista.</p>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:center;margin-bottom:16px">
+        <div class="phone">
+          <div class="phone-screen">
+            <video data-demo muted loop playsinline preload="none" width="1120" height="1720"
+                   aria-label="Agente de IA cotizando por WhatsApp y devolviendo una tabla comparativa de proveedores">
+              <source src="assets/demo_agente_cotizador.webm" type="video/webm">
+              <source src="assets/demo_agente_cotizador.mp4" type="video/mp4">
+            </video>
+            <img class="media-static" src="assets/demo_agente_cotizador_poster.jpg" width="560" height="860"
+                 alt="Agente de IA cotizando por WhatsApp y devolviendo una tabla comparativa de proveedores">
+          </div>
+        </div>
+      </div>
+      <div class="shot-caption" style="justify-content:center">
+        <span class="meta">El agente cotizador, operando sobre WhatsApp</span>
+      </div>
+
+      <div class="why">
+        <div>
+          <h4>Por qué pasa</h4>
+          <p>La operación vive en WhatsApp y en hojas de cálculo. Cada cobro, cada pedido y cada cotización dependen de que alguien se acuerde, escriba y haga seguimiento. El día se va en eso.</p>
+        </div>
+        <div>
+          <h4>Qué hace ADVANTIA</h4>
+          <p>Conectamos un agente de IA al canal donde ya está tu operación. Cobra con mensajes progresivos, interpreta pedidos por texto, audio o foto, y cotiza a toda tu base de proveedores devolviendo la comparación lista.</p>
+        </div>
+      </div>
+
+      <p class="meta" style="margin-top:40px">Productos de esta línea</p>
+      <div class="prods">
+        <article class="prod">
+          <span class="stage stage-now">Hoy</span>
+          <h4>Agente de cobranza</h4>
+        </article>
+        <article class="prod">
+          <span class="stage stage-next">Luego</span>
+          <h4>Agente cotizador</h4>
+        </article>
+        <article class="prod">
+          <span class="stage stage-later">Después</span>
+          <h4>Agente de pedidos</h4>
+        </article>
+      </div>
+      <p class="prods-note">Las etiquetas indican madurez del producto, no disponibilidad: los tres son contratables hoy.</p>
+
+      <p class="block-foot"><a class="tlink" href="/distribuidoras">Ver la línea completa<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></p>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== CÓMO SE MIDE ===================== -->
+<section class="section card-band" id="como-se-mide" data-nav="Cómo se mide">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Cómo se mide</span>
+      <h2>Cada línea se mide con sus propios números. Si no mejoran, no sirvió.</h2>
+    </div>
+    <div class="measure">
+      <article class="card card-lg">
+        <div class="card-head">
+          <span class="svc-icon"><svg aria-hidden="true"><use href="#i-search"></use></svg></span>
+          <h3>La vitrina</h3>
+        </div>
+        <p>El embudo que revisamos mes a mes, de la búsqueda a la venta.</p>
+        <div class="funnel" role="img" aria-label="Embudo de cuatro métricas: alcance SEO, CTR, visitas y conversión">
+          <div class="funnel-step"><span class="label">Alcance SEO</span><span class="bar"></span></div>
+          <div class="funnel-step"><span class="label">CTR</span><span class="bar"></span></div>
+          <div class="funnel-step"><span class="label">Visitas</span><span class="bar"></span></div>
+          <div class="funnel-step"><span class="label">Conversión</span><span class="bar"></span></div>
+        </div>
+      </article>
+      <article class="card card-lg">
+        <div class="card-head">
+          <span class="svc-icon"><svg aria-hidden="true"><use href="#i-chat"></use></svg></span>
+          <h3>La trastienda</h3>
+        </div>
+        <p>Lo que se libera cuando el trabajo manual deja de depender de una persona.</p>
+        <ul class="gains">
+          <li><span class="dot"></span>Horas de trabajo manual recuperadas</li>
+          <li><span class="dot"></span>Cartera cobrada a tiempo</li>
+          <li><span class="dot"></span>Tiempo de respuesta al cliente</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PLANES ===================== -->
+<section class="section" id="planes" data-nav="Planes">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Planes</span>
+      <h2>Empiezas por el diagnóstico y avanzas solo si funciona.</h2>
+      <p class="lead">Del Diagnóstico a Catálogo son planes de la línea Vitrina. La Trastienda se cotiza dentro de Enterprise o por separado.</p>
+    </div>
+    <div class="ladder">
+      <div class="plan">
+        <div class="plan-top">
+          <span class="svc-icon sm"><svg aria-hidden="true"><use href="#i-search"></use></svg></span>
+          <span class="status status-neutral">Punto de partida</span>
+        </div>
+        <div class="pname">Diagnóstico</div>
+        <div class="price">$1.200.000</div>
+        <div class="terms">COP · pago único</div>
+        <div class="pnote">Abonable al plan que elijas</div>
+        <ul class="plan-feats">
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Auditoría de Alcance SEO real de tu catálogo actual</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Análisis de mercado de tu categoría con datos reales de Google</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Mapa de keywords y competidores</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Plan de acción priorizado por SKU</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Presentación de resultados en vivo</span></li>
+        </ul>
+        <a class="btn btn-fill" href="/contacto">Agendar</a>
+      </div>
+      <div class="plan">
+        <div class="plan-top">
+          <span class="svc-icon sm"><svg aria-hidden="true"><use href="#i-layers"></use></svg></span>
+        </div>
+        <div class="pname">Esencial</div>
+        <div class="price">$1.725.000</div>
+        <div class="terms">COP / mes</div>
+        <ul class="plan-feats">
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>20 SKUs optimizados al mes (título, ficha HTML y atributos)</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>1 marketplace</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Protocolo CatalogAI v3.4 completo por SKU</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Reporte mensual sobre los cuatro KPIs</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Revisiones de contenido incluidas</span></li>
+        </ul>
+        <a class="btn btn-ghost" href="/contacto">Hablemos</a>
+      </div>
+      <div class="plan plan-lead">
+        <div class="plan-top">
+          <span class="svc-icon sm"><svg aria-hidden="true"><use href="#i-chart"></use></svg></span>
+          <span class="status status-navy">Más Popular</span>
+        </div>
+        <div class="pname">Crecimiento</div>
+        <div class="price">$3.680.000</div>
+        <div class="terms">COP / mes</div>
+        <ul class="plan-feats">
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>50 SKUs optimizados al mes</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Hasta 2 marketplaces</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Todo lo de Esencial</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Análisis de categoría trimestral</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Priorización de SKUs por oportunidad de venta orgánica</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Reunión mensual de resultados</span></li>
+        </ul>
+        <a class="btn btn-fill" href="/contacto">Hablemos</a>
+      </div>
+      <div class="plan">
+        <div class="plan-top">
+          <span class="svc-icon sm"><svg aria-hidden="true"><use href="#i-box"></use></svg></span>
+        </div>
+        <div class="pname">Catálogo</div>
+        <div class="price">$7.475.000</div>
+        <div class="terms">COP / mes</div>
+        <ul class="plan-feats">
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Hasta 120 SKUs optimizados al mes</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Todos los marketplaces donde operas</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Todo lo de Crecimiento</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Panel de seguimiento de los cuatro KPIs</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Gestión de imágenes optimizadas</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Contacto directo por WhatsApp</span></li>
+        </ul>
+        <a class="btn btn-ghost" href="/contacto">Hablemos</a>
+      </div>
+      <div class="plan">
+        <div class="plan-top">
+          <span class="svc-icon sm"><svg aria-hidden="true"><use href="#i-shield"></use></svg></span>
+        </div>
+        <div class="pname">Enterprise</div>
+        <div class="price"><span class="price-pre">desde</span>$10.350.000</div>
+        <div class="terms">COP / mes · suscripción</div>
+        <ul class="plan-feats">
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Volumen y alcance a medida</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Todo lo de Catálogo</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Agentes de IA sobre WhatsApp: cobros, pedidos y cotizaciones</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Integración con tu operación</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Acuerdo de nivel de servicio</span></li>
+          <li><svg aria-hidden="true"><use href="#i-tick"></use></svg><span>Equipo dedicado</span></li>
+        </ul>
+        <a class="btn btn-ghost" href="/contacto">Hablemos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section class="section card-band" id="contacto" data-nav="Contacto">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Hablemos</span>
+      <h2>¿Listo para que tus datos trabajen por ti?</h2>
+      <p class="lead">Agenda 20 minutos. Te mostramos resultados en vivo, con tu información.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <ul class="checks" style="margin-bottom:32px">
+          <li><svg aria-hidden="true"><use href="#i-check"></use></svg><span>Tu <b>alcance SEO real</b> en marketplace y dónde está el tráfico que dejas sobre la mesa</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"></use></svg><span>Un <b>agente cobrando o cotizando</b> con tu información</span></li>
+          <li><svg aria-hidden="true"><use href="#i-check"></use></svg><span>El <b>plan de piloto de dos semanas</b>, con alcance cerrado</span></li>
+        </ul>
+        <div class="pay">
+          <span class="status status-neutral">Diagnóstico · $1.200.000 COP</span>
+          <h3>Empieza por el diagnóstico</h3>
+          <p>Auditamos tu alcance SEO real y te entregamos el plan de acción. El valor es abonable al plan que elijas.</p>
+          <div class="pay-actions">
+            <a class="btn btn-fill btn-stack" href="https://checkout.wompi.co/l/ghY2Wa"
+               target="_blank" rel="noopener noreferrer"><span class="btn-stack-main">Pagar mi Diagnóstico</span><span class="btn-stack-sub">$1.200.000 COP</span></a>
+            <a class="btn btn-ghost" href="#contactForm" data-scroll>Agendar mi Diagnóstico</a>
+          </div>
+          <p class="pay-note">Pago seguro con Wompi · Tarjetas, PSE, Nequi y Botón Bancolombia</p>
+        </div>
+      </div>
+
+      <form class="form" id="contactForm">
+        <div class="form-head">
+          <span class="icon-tile"><svg aria-hidden="true"><use href="#i-clock"></use></svg></span>
+          <div>
+            <strong style="display:block;font-size:15px">Agenda una conversación</strong>
+            <span class="meta">Sesión de 20 minutos</span>
+          </div>
+        </div>
+        <input type="hidden" name="access_key" value="07596798-d73a-4ef8-92fd-f08288821cc9">
+        <input type="hidden" name="subject" value="Nuevo contacto desde theadvantia.com">
+        <input type="checkbox" name="botcheck" style="display:none">
+        <input type="hidden" name="utm_source" value=""><input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value=""><input type="hidden" name="utm_term" value="">
+        <input type="hidden" name="utm_content" value=""><input type="hidden" name="pagina_origen" value="">
+        <div class="field"><label for="name">Nombre</label><input id="name" name="name" type="text" placeholder="Tu nombre" required></div>
+        <div class="field"><label for="email">Correo corporativo</label><input id="email" name="email" type="email" placeholder="nombre@tuempresa.com" required></div>
+        <div class="field"><label for="phone">WhatsApp</label><input id="phone" name="phone" type="tel" placeholder="+57 300 000 0000" required></div>
+        <div class="field"><label for="empresa">Empresa</label><input id="empresa" name="empresa" type="text" placeholder="Nombre de tu empresa"></div>
+        <div class="field"><label for="linea">Línea de interés</label>
+          <select id="linea" name="linea" required>
+            <option value="" disabled selected>Elige una línea</option>
+            <option value="Vitrina · Marketplaces">Vitrina · Marketplaces</option>
+            <option value="Trastienda · Distribuidoras">Trastienda · Distribuidoras</option>
+          </select>
+        </div>
+        <label class="consent" for="consent">
+          <input type="checkbox" id="consent" name="autorizacion" value="Sí, autorizo" required>
+          <span>Acepto la <a href="/politica-de-privacidad" target="_blank" rel="noopener">Política de Tratamiento de Datos Personales</a> de ADVANTIA.</span>
+        </label>
+        <button type="submit" class="btn btn-fill" disabled>Agendar conversación</button>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+</Base>

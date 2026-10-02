@@ -1,0 +1,262 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const seo = {
+  "title": "Cómo vender en Amazon desde Colombia: guía operativa",
+  "description": "Cómo vender en Amazon desde Colombia: requisitos, cuenta, FBA vs FBM, logística de exportación e impuestos para marcas y distribuidores que quieren escalar.",
+  "canonical": "https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia",
+  "robots": "index, follow",
+  "og": {
+    "type": "article",
+    "site_name": "ADVANTIA",
+    "title": "Cómo vender en Amazon desde Colombia: guía operativa",
+    "description": "Cómo vender en Amazon desde Colombia: requisitos, cuenta, FBA vs FBM, logística de exportación e impuestos para marcas y distribuidores que quieren escalar.",
+    "locale": "es_CO",
+    "url": "https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia",
+    "image": "https://theadvantia.com/img/blog/og/como-vender-en-amazon-desde-colombia.jpg",
+    "image:width": "1200",
+    "image:height": "675"
+  },
+  "article": {
+    "published_time": "2026-09-27T09:00:00-05:00",
+    "modified_time": "2026-09-27T09:00:00-05:00",
+    "author": "Nicolás Navarro",
+    "section": "Vitrina"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Cómo vender en Amazon desde Colombia: guía operativa",
+    "description": "Cómo vender en Amazon desde Colombia: requisitos, cuenta, FBA vs FBM, logística de exportación e impuestos para marcas y distribuidores que quieren escalar.",
+    "image": "https://theadvantia.com/img/blog/og/como-vender-en-amazon-desde-colombia.jpg"
+  }
+};
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cómo vender en Amazon desde Colombia: guía operativa para marcas y distribuidores",
+    "description": "Cómo vender en Amazon desde Colombia: requisitos, cuenta, FBA vs FBM, logística de exportación e impuestos para marcas y distribuidores que quieren escalar.",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://theadvantia.com/img/blog/og/como-vender-en-amazon-desde-colombia.jpg",
+      "width": 1200,
+      "height": 675
+    },
+    "datePublished": "2026-09-27T09:00:00-05:00",
+    "dateModified": "2026-09-27T09:00:00-05:00",
+    "author": {
+      "@type": "Person",
+      "name": "Nicolás Navarro",
+      "url": "https://theadvantia.com/nosotros"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ADVANTIA",
+      "url": "https://theadvantia.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://theadvantia.com/img/advantia-logo-completo.png"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/theadvantia/"
+      ]
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia"
+    },
+    "url": "https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia",
+    "inLanguage": "es-CO",
+    "articleSection": "Vitrina",
+    "wordCount": 1436
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://theadvantia.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://theadvantia.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Vender en Amazon desde Colombia",
+        "item": "https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cómo vender en Amazon desde Colombia",
+    "description": "Cómo vender en Amazon desde Colombia: requisitos, cuenta, FBA vs FBM, logística de exportación e impuestos para marcas y distribuidores que quieren escalar.",
+    "image": "https://theadvantia.com/img/blog/og/como-vender-en-amazon-desde-colombia.jpg",
+    "inLanguage": "es-CO",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Verifica que el producto sea exportable y vendible en Amazon",
+        "text": "Confirma que el producto se puede exportar y que su categoría está abierta en Amazon antes de invertir en inventario.",
+        "url": "https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia#paso-1"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Reúne los requisitos para vender en Amazon",
+        "text": "Ten listos los documentos, la tarjeta de crédito internacional y la cuenta para recibir pagos en dólares antes de iniciar el registro.",
+        "url": "https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia#paso-2"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Elige entre FBA y FBM",
+        "text": "Para vender con volumen, FBA suele ser el modelo que funciona; decide con una hoja de margen por SKU.",
+        "url": "https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia#paso-3"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Resuelve la logística de exportación",
+        "text": "La exportación exige registro de exportador, documentación completa, agente de aduanas y un importador en Estados Unidos, propio o a través del operador logístico.",
+        "url": "https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia#paso-4"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Ordena la parte tributaria en los dos países",
+        "text": "Contrata desde el primer día un contador con experiencia en exportación de bienes.",
+        "url": "https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia#paso-5"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 6,
+        "name": "Construye fichas que compitan",
+        "text": "Construye las fichas con los términos que el comprador escribe en inglés y mide el Alcance SEO antes y después.",
+        "url": "https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia#paso-6"
+      }
+    ]
+  }
+];
+---
+<Base seo={seo} jsonLd={jsonLd} active="/blog">
+<main>
+<header class="post-head">
+  <div class="wrap">
+    <nav class="post-crumb" aria-label="Ruta de navegación"><ol><li><a href="/">Inicio</a></li><li><a href="/blog">Blog</a></li><li aria-current="page">Vender en Amazon desde Colombia</li></ol></nav>
+    <span class="status status-neutral"><svg width="12" height="12" aria-hidden="true"><use href="#i-search"></use></svg>Vitrina · Marketplaces</span>
+    <h1>Cómo vender en Amazon desde Colombia: guía operativa para marcas y distribuidores</h1>
+    <p class="post-byline"><span>Por <b>Nicolás Navarro</b></span><span aria-hidden="true">·</span><time datetime="2026-09-27">27 de septiembre de 2026</time><span aria-hidden="true">·</span><span>8 min de lectura</span></p>
+  </div>
+</header>
+
+<div class="wrap post-layout">
+  <div class="post-main">
+    <figure class="post-fig post-fig-hero"><img src="/img/blog/ruta-colombia-amazon.svg" alt="como vender en amazon desde colombia" width="1200" height="630" role="img" fetchpriority="high"></figure>
+    <article class="post-body">
+    <p class="post-answer">Para vender en Amazon desde Colombia necesitas una cuenta de vendedor profesional en el marketplace de destino (normalmente Estados Unidos), un documento de identidad válido, una tarjeta de crédito internacional, una cuenta para recibir pagos en dólares y un producto con permiso de exportación. La logística se resuelve con FBA o FBM, y la carga tributaria en ambos países con un contador que conozca exportación de bienes.</p>
+    <nav class="toc toc-inline" aria-label="Pasos de la guía"><span class="meta">En esta guía</span><ol><li><a href="#paso-1">Paso 1. Verifica que el producto sea exportable y vendible en Amazon</a></li><li><a href="#paso-2">Paso 2. Reúne los requisitos para vender en Amazon</a></li><li><a href="#paso-3">Paso 3. Elige entre FBA y FBM</a></li><li><a href="#paso-4">Paso 4. Resuelve la logística de exportación</a></li><li><a href="#paso-5">Paso 5. Ordena la parte tributaria en los dos países</a></li><li><a href="#paso-6">Paso 6. Construye fichas que compitan</a></li></ol></nav>
+    <p>Amazon acepta vendedores registrados en Colombia. Ese no es el obstáculo. El obstáculo real está en tres decisiones que la mayoría de las empresas toma tarde: qué modelo logístico usar, cómo estructurar la operación tributaria, y cómo construir fichas que compitan en un mercado donde el comprador busca en inglés y compara con cientos de alternativas.</p>
+    <p>Esta guía está pensada para gerentes de marcas y distribuidores colombianos que ya venden en marketplaces locales y evalúan internacionalizar el catálogo. Va en el orden en que hay que tomar las decisiones.</p>
+    <figure class="post-fig"><img src="/img/blog/pasos-exportar-amazon.svg" alt="pasos para exportar a amazon" width="1200" height="680" role="img" loading="lazy" decoding="async"></figure>
+    <h2 id="paso-1">Paso 1: verifica que el producto sea exportable y vendible en Amazon</h2>
+    <p>Antes de abrir la cuenta, responde dos preguntas.</p>
+    <p><strong>¿El producto se puede exportar desde Colombia?</strong> La mayoría de bienes de consumo sí. Pero alimentos, cosméticos, suplementos, productos con baterías de litio y algunos textiles tienen requisitos sanitarios, de etiquetado o de certificación en el país de destino. Verifica con la Cámara de Comercio y con <a href="https://procolombia.co" target="_blank" rel="noopener">ProColombia</a>, que tiene programas específicos para exportadores a marketplaces.</p>
+    <p><strong>¿La categoría está abierta en Amazon?</strong> Algunas categorías requieren aprobación previa (lo que Amazon llama categorías restringidas o <em>gated</em>). Suplementos, juguetes en temporada, joyería y ciertos productos para bebés son ejemplos habituales. Revisa la lista vigente en <a href="https://sell.amazon.com" target="_blank" rel="noopener">Seller Central</a> antes de invertir en inventario.</p>
+    <p>Si tienes marca propia, evalúa desde el inicio registrarla en la oficina de marcas del país de destino (en Estados Unidos, la <a href="https://www.uspto.gov" target="_blank" rel="noopener">USPTO</a>). Sin ese registro no puedes acceder a Brand Registry, que es lo que te da control sobre tus fichas, contenido A+ y protección contra revendedores no autorizados.</p>
+    <p class="post-short"><strong>En corto: confirma que el producto se puede exportar y que su categoría está abierta en Amazon antes de invertir en inventario.</strong></p>
+    <h2 id="paso-2">Paso 2: reúne los requisitos para vender en Amazon</h2>
+    <p>Los <strong>requisitos para vender en Amazon</strong> como empresa colombiana son documentales y financieros:</p>
+    <ul><li><strong>Documento de identidad</strong> del representante legal: pasaporte o cédula, según lo que acepte el marketplace de destino.</li><li><strong>Información de la empresa:</strong> razón social, NIT, dirección y datos de contacto verificables.</li><li><strong>Tarjeta de crédito internacional</strong> activa, para el cobro de la suscripción y los cargos de la cuenta.</li><li><strong>Cuenta para recibir pagos.</strong> Amazon deposita en dólares. Los vendedores colombianos suelen usar un servicio de pagos internacionales que emita una cuenta en Estados Unidos y transfiera a Colombia, o una cuenta bancaria en el exterior si la empresa ya la tiene.</li><li><strong>Número de teléfono</strong> para verificación.</li><li><strong>Formulario tributario</strong> para no residentes de Estados Unidos (la entrevista fiscal de Seller Central te guía; para empresas extranjeras es normalmente el W-8BEN-E).</li></ul>
+    <p>El plan profesional tiene una tarifa mensual fija más comisiones por venta que varían según la categoría. Consulta la tarifa vigente directamente en Seller Central antes de proyectar márgenes; cambia con cierta frecuencia.</p>
+    <p>Un consejo práctico: prepara todos los documentos antes de iniciar el registro. La verificación de identidad puede pedir documentos adicionales y una videollamada, y las cuentas que quedan a medias suelen tener problemas después.</p>
+    <p class="post-short"><strong>En corto: ten listos los documentos, la tarjeta de crédito internacional y la cuenta para recibir pagos en dólares antes de iniciar el registro.</strong></p>
+    <h2 id="paso-3">Paso 3: elige entre FBA y FBM</h2>
+    <div class="table-scroll table-sticky" role="region" aria-label="Comparación entre FBA y FBM" tabindex="0"><table><thead><tr><th scope="col">Criterio</th><th scope="col">FBA</th><th scope="col">FBM</th></tr></thead><tbody><tr><th scope="row">Quién almacena y despacha</th><td>Amazon, desde sus centros en EE. UU.</td><td>Tú, desde Colombia o bodega propia</td></tr><tr><th scope="row">Elegibilidad Prime</th><td>Sí</td><td>Prácticamente inviable desde Colombia</td></tr><tr><th scope="row">Tiempo de entrega</th><td>Días</td><td>Semanas, envío internacional</td></tr><tr><th scope="row">Devoluciones</th><td>Las gestiona Amazon</td><td>Las gestionas tú</td></tr><tr><th scope="row">Costos principales</th><td>Almacenamiento y gestión por unidad</td><td>Envío internacional por pedido</td></tr><tr><th scope="row">Conviene para</th><td>Rotación y volumen</td><td>Alto valor, bajo volumen o nicho</td></tr></tbody></table></div>
+    <p>Esta es la decisión operativa más importante, y conviene tomarla con números.</p>
+    <p><strong>FBM (Fulfilled by Merchant).</strong> Tú almacenas, empacas y despachas cada pedido desde Colombia o desde una bodega tercerizada. Controlas todo el proceso, pero el tiempo de entrega internacional, el costo del envío individual y la gestión de devoluciones hacen que sea difícil competir con vendedores locales. Funciona para productos de alto valor, bajo volumen o muy especializados.</p>
+    <p><strong>FBA (Fulfilled by Amazon).</strong> Envías inventario en volumen a los centros logísticos de Amazon en el país de destino. Amazon almacena, despacha, atiende al cliente y gestiona devoluciones. El producto queda elegible para Prime, lo que en la práctica define si un comprador estadounidense te considera o no.</p>
+    <p>Para la mayoría de las empresas colombianas que quieren volumen, <strong>Amazon FBA desde Colombia</strong> es el modelo que funciona. Sus costos son tarifas de almacenamiento por volumen y tiempo, tarifas de gestión por unidad, y el envío internacional del lote hasta el centro logístico.</p>
+    <p><strong>Cómo decidir:</strong> arma una hoja por SKU con precio de venta esperado, comisión de categoría, tarifa FBA estimada según dimensiones y peso, costo de exportación por unidad y tasa de devolución. Si el margen no aguanta FBA, probablemente el producto no es para Amazon Estados Unidos, o necesita un precio distinto.</p>
+    <p class="post-short"><strong>En corto: para vender con volumen, FBA suele ser el modelo que funciona; decide con una hoja de margen por SKU.</strong></p>
+    <h2 id="paso-4">Paso 4: resuelve la logística de exportación</h2>
+    <p><strong>Exportar a Amazon desde Colombia</strong> implica una operación de comercio exterior en regla.</p>
+    <ul><li><strong>Registro como exportador</strong> ante la <a href="https://www.dian.gov.co" target="_blank" rel="noopener">DIAN</a> y el RUT actualizado con la actividad de exportación.</li><li><strong>Documentación de la exportación:</strong> factura comercial, lista de empaque, declaración de exportación, y los certificados que exija el producto.</li><li><strong>Agente de aduanas</strong> para la salida de Colombia y, según el Incoterm, para la entrada en destino. Para FBA, Amazon no actúa como importador: necesitas un importador registrado en Estados Unidos o un servicio logístico que lo asuma.</li><li><strong>Etiquetado FBA:</strong> cada unidad debe llevar el código que Amazon asigna, y las cajas deben cumplir sus especificaciones de empaque. Muchos exportadores contratan una bodega intermedia en Estados Unidos que recibe, etiqueta y reenvía a Amazon, lo que simplifica las incidencias.</li></ul>
+    <p>Un operador logístico con experiencia en marketplaces te ahorra meses de aprendizaje. Pide referencias de otros exportadores colombianos antes de contratar.</p>
+    <p class="post-short"><strong>En corto: la exportación exige registro de exportador, documentación completa, agente de aduanas y un importador en Estados Unidos, propio o a través del operador logístico.</strong></p>
+    <h2 id="paso-5">Paso 5: ordena la parte tributaria en los dos países</h2>
+    <p>Aquí no hay atajos, y el consejo es uno: contador con experiencia en exportación de bienes desde el primer día, no cuando llegue la primera declaración.</p>
+    <p>Los temas que debe resolver contigo son, en Colombia, el tratamiento del IVA en exportaciones y la documentación que soporta ese tratamiento, la facturación electrónica de ventas al exterior y la conciliación de los pagos que llegan de Amazon con las ventas declaradas. En Estados Unidos, el impuesto a las ventas es recaudado y remitido por Amazon en la mayoría de los estados bajo las normas de facilitador de marketplace, pero el impuesto sobre la renta federal y las obligaciones de una empresa extranjera con inventario en el país dependen de tu estructura y del tratado vigente. Es el punto donde más empresas cometen errores caros.</p>
+    <p class="post-short"><strong>En corto: contrata desde el primer día un contador con experiencia en exportación de bienes.</strong></p>
+    <h2 id="paso-6">Paso 6: construye fichas que compitan</h2>
+    <p>Todo lo anterior es requisito para estar. Lo que decide si vendes es la ficha.</p>
+    <p>El comprador de Amazon Estados Unidos busca en inglés, con términos que rara vez coinciden con la traducción literal de tu catálogo. Un título construido con las palabras que ese comprador realmente escribe puede multiplicar la visibilidad del mismo producto frente a uno traducido desde el español.</p>
+    <p>Aplica <a href="/blog/errores-al-publicar-en-mercado-libre">la misma lógica que funciona en marketplaces locales</a>, con más rigor:</p>
+    <ul><li>Investiga los términos de búsqueda reales del mercado de destino con datos de volumen, no con suposiciones.</li><li>Estructura el título como busca el comprador: tipo de producto, diferenciador, marca, especificación.</li><li>Completa todos los atributos y usa los bullets para responder objeciones antes de que aparezcan.</li><li>Si tienes Brand Registry, invierte en contenido A+ y en imágenes que expliquen el uso, no solo el producto.</li><li>Mide el <strong><a href="/marketplaces">Alcance SEO</a></strong> de cada ficha antes y después de optimizarla, y ajusta con datos.</li></ul>
+    <p class="post-short"><strong>En corto: construye las fichas con los términos que el comprador escribe en inglés y mide el Alcance SEO antes y después.</strong></p>
+    <h2 id="la-secuencia-que-funciona">La secuencia que funciona</h2>
+    <p>Producto exportable y categoría abierta. Cuenta con documentos completos. Modelo logístico decidido con una hoja de margen por SKU. Operador logístico y contador con experiencia en exportación. Y solo entonces, fichas construidas con datos reales del mercado de destino.</p>
+    <p>Las empresas que fallan en Amazon casi nunca fallan por el registro. Fallan por entrar con márgenes que no aguantan FBA, con estructura tributaria improvisada, o con fichas traducidas que nadie encuentra.</p>
+    <h2 id="antes-de-exportar-mide-si-tu-catalogo-esta-listo">Antes de exportar, mide si tu catálogo está listo</h2>
+    <p>En ADVANTIA trabajamos con marcas y distribuidores que venden en Falabella, Mercado Libre y Amazon. Nuestro <strong><a href="/#planes">Diagnóstico</a></strong> mide el Alcance SEO real de tu catálogo con datos verificados de búsqueda, identifica qué productos tienen tracción para competir en un nuevo marketplace y entrega el plan de contenido priorizado por SKU. Es el punto de partida correcto antes de invertir en inventario internacional.</p>
+    <p>Y si la operación de exportación va a sumar cotizaciones a proveedores, seguimiento de pagos y pedidos que hoy se gestionan a mano, nuestros agentes de IA sobre WhatsApp absorben ese trabajo sin sumar personas al equipo.</p>
+    <p><strong>Agenda tu Diagnóstico en theadvantia.com.</strong> El valor es abonable al plan que elijas, y en 20 minutos te mostramos con tus datos qué productos tienen sentido para Amazon y cuáles no.</p>
+    </article>
+    <section class="card card-lg card-lead post-cta" aria-label="Agenda tu Diagnóstico">
+      <span class="eyebrow">Diagnóstico</span>
+      <h2 class="post-cta-q">¿Quieres saber cuánto tráfico está perdiendo tu catálogo?</h2>
+      <a class="btn btn-fill btn-lg" href="/contacto">Agendar Diagnóstico<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+    </section>
+  </div>
+  <aside class="post-aside" aria-label="Barra lateral">
+    <div class="post-aside-in">
+      <nav class="toc toc-aside" aria-label="Pasos de la guía, navegación lateral"><span class="meta">En esta guía</span><ol><li><a href="#paso-1">Paso 1. Verifica que el producto sea exportable y vendible en Amazon</a></li><li><a href="#paso-2">Paso 2. Reúne los requisitos para vender en Amazon</a></li><li><a href="#paso-3">Paso 3. Elige entre FBA y FBM</a></li><li><a href="#paso-4">Paso 4. Resuelve la logística de exportación</a></li><li><a href="#paso-5">Paso 5. Ordena la parte tributaria en los dos países</a></li><li><a href="#paso-6">Paso 6. Construye fichas que compitan</a></li></ol></nav>
+      <div class="card aside-cta">
+        <span class="eyebrow">Diagnóstico</span>
+        <p class="aside-cta-q">¿Quieres saber cuánto tráfico está perdiendo tu catálogo?</p>
+        <a class="btn btn-fill" href="/contacto">Agendar Diagnóstico</a>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<section class="section read-more" aria-labelledby="sigue-leyendo">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Blog</span>
+      <h2 class="h-sm" id="sigue-leyendo">Sigue leyendo</h2>
+    </div>
+    <div class="grid-2 post-grid">
+      <article class="card post-card is-vitrina" data-cat="vitrina">
+        <div class="post-cover" aria-hidden="true"><svg><use href="#i-search"></use></svg></div>
+        <div class="post-card-body">
+          <div class="post-meta"><span class="status status-neutral">Vitrina</span><span class="post-meta-txt">27 de septiembre de 2026 · 7 min de lectura</span></div>
+          <h3><a href="/blog/errores-al-publicar-en-mercado-libre">Los 5 errores al publicar en Mercado Libre que le cuestan dinero a tu empresa</a></h3>
+          <p class="post-excerpt">Los errores al publicar en Mercado Libre más costosos no son los evidentes. Son títulos que nadie busca, inventarios que no se sincronizan, márgenes calculados sin comisiones ni envío, fichas incompletas y una reputación que se descuida. Corregirlos es la diferencia entre una publicación que vende sola y una que consume presupuesto sin retorno.</p>
+          <span class="post-author">Nicolás Navarro</span>
+        </div>
+      </article>
+      <article class="card post-card is-trastienda" data-cat="trastienda">
+        <div class="post-cover" aria-hidden="true"><svg><use href="#i-chat"></use></svg></div>
+        <div class="post-card-body">
+          <div class="post-meta"><span class="status status-neutral">Trastienda</span><span class="post-meta-txt">27 de septiembre de 2026 · 7 min de lectura</span></div>
+          <h3><a href="/blog/ahorro-de-tiempo-con-ia-en-pymes">Calculadora de ahorro de horas con IA para tu PyME: cómo medir lo que hoy se hace a mano</a></h3>
+          <p class="post-excerpt">El ahorro de tiempo con IA en PyMEs se calcula con una fórmula simple: horas semanales por tarea, multiplicadas por las personas que la hacen, por el costo real de la hora y por 52 semanas. El resultado es el costo anual de una tarea repetitiva, y la base para decidir si vale la pena automatizarla.</p>
+          <span class="post-author">Nicolás Navarro</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+</Base>

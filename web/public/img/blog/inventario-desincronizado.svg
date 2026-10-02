@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif">
+  <rect width="1200" height="560" fill="#F8F9FA"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse">
+      <path d="M1 1l10 5-10 5" fill="none" stroke="#1E2761" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Canal A -->
+  <rect x="80" y="170" width="260" height="200" rx="20" fill="#FFFFFF" stroke="#E8E8E8" stroke-width="2"/>
+  <g fill="none" stroke="#1E2761" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M160 236h100l10 28H150z"/>
+    <path d="M158 264v46h84v-46"/>
+    <path d="M196 310v-26h28v26"/>
+  </g>
+  <text x="210" y="350" font-size="30" font-weight="700" fill="#1E2761" text-anchor="middle">Canal A</text>
+
+  <!-- Canal B -->
+  <rect x="860" y="170" width="260" height="200" rx="20" fill="#FFFFFF" stroke="#E8E8E8" stroke-width="2"/>
+  <g fill="none" stroke="#1E2761" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="945" y="226" width="90" height="70" rx="8"/>
+    <path d="M945 244h90"/>
+    <path d="M972 318h36M990 296v22"/>
+  </g>
+  <text x="990" y="350" font-size="30" font-weight="700" fill="#1E2761" text-anchor="middle">Canal B</text>
+
+  <!-- Flechas de venta hacia el mismo stock -->
+  <path d="M350 270h120" fill="none" stroke="#1E2761" stroke-width="4" stroke-dasharray="12 10" marker-end="url(#ah)"/>
+  <path d="M850 270H730" fill="none" stroke="#1E2761" stroke-width="4" stroke-dasharray="12 10" marker-end="url(#ah)"/>
+  <rect x="362" y="206" width="96" height="36" rx="18" fill="#FFFFFF" stroke="#E8E8E8" stroke-width="2"/>
+  <text x="410" y="231" font-size="20" font-weight="600" fill="#1E2761" text-anchor="middle">venta</text>
+  <rect x="742" y="206" width="96" height="36" rx="18" fill="#FFFFFF" stroke="#E8E8E8" stroke-width="2"/>
+  <text x="790" y="231" font-size="20" font-weight="600" fill="#1E2761" text-anchor="middle">venta</text>
+
+  <!-- Stock unico -->
+  <rect x="480" y="150" width="240" height="240" rx="24" fill="#1E2761"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M600 206l58 30v64l-58 30-58-30v-64z"/>
+    <path d="M542 236l58 30 58-30"/>
+    <path d="M600 266v64"/>
+  </g>
+  <text x="600" y="370" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle">Stock único</text>
+
+  <!-- Alerta -->
+  <circle cx="712" cy="158" r="30" fill="#B08D57"/>
+  <path d="M712 142v20" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="712" cy="174" r="3.5" fill="#FFFFFF"/>
+
+  <rect x="470" y="440" width="260" height="52" rx="26" fill="#FFFFFF" stroke="#B08D57" stroke-width="2"/>
+  <text x="600" y="474" font-size="24" font-weight="600" fill="#8A6B3C" text-anchor="middle">Sin sincronizar</text>
+</svg>

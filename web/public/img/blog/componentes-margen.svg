@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif">
+  <rect width="1200" height="560" fill="#F8F9FA"/>
+  <defs>
+    <clipPath id="bar"><rect x="100" y="200" width="1000" height="130" rx="22"/></clipPath>
+  </defs>
+
+  <text x="100" y="118" font-size="34" font-weight="700" fill="#1E2761">Precio de venta</text>
+  <path d="M100 160v-14h1000v14" fill="none" stroke="#B3B3B3" stroke-width="3" stroke-linejoin="round"/>
+
+  <g clip-path="url(#bar)">
+    <rect x="100" y="200" width="300" height="130" fill="#1E2761"/>
+    <rect x="400" y="200" width="220" height="130" fill="#3E4A8A"/>
+    <rect x="620" y="200" width="190" height="130" fill="#8D94BD"/>
+    <rect x="810" y="200" width="290" height="130" fill="#B08D57"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-width="4">
+    <path d="M400 200v130M620 200v130M810 200v130"/>
+  </g>
+
+  <!-- Iconos lineales dentro de cada tramo -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M232 247h-18a8 8 0 00-8 8v20a8 8 0 008 8h18"/><path d="M226 265h40M254 253l12 12-12 12"/>
+    <path d="M478 246h40v38h-40zM518 258h18l10 12v14h-28"/><circle cx="490" cy="288" r="6"/><circle cx="534" cy="288" r="6"/>
+    <path d="M734 250a22 22 0 10 6 20"/><path d="M742 244v14h-14"/>
+    <circle cx="955" cy="265" r="22"/><path d="M945 266l7 7 13-14"/>
+  </g>
+
+  <!-- Etiquetas -->
+  <g font-size="28" font-weight="700" fill="#1E2761">
+    <circle cx="110" cy="394" r="10" fill="#1E2761"/><text x="132" y="404">Comisión</text>
+    <circle cx="410" cy="394" r="10" fill="#3E4A8A"/><text x="432" y="404">Envío</text>
+    <circle cx="630" cy="394" r="10" fill="#8D94BD"/><text x="652" y="404">Devoluciones</text>
+    <circle cx="880" cy="394" r="10" fill="#B08D57"/><text x="902" y="404">Margen real</text>
+  </g>
+  <g font-size="21" fill="#646464">
+    <text x="132" y="440">según categoría</text>
+    <text x="432" y="440">si lo cubres tú</text>
+    <text x="652" y="440">tasa de la categoría</text>
+    <text x="902" y="440">lo que queda</text>
+  </g>
+</svg>

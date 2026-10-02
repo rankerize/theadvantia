@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" font-family="'Plus Jakarta Sans','Segoe UI',Arial,sans-serif">
+  <rect width="1200" height="560" fill="#F8F9FA"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="11" markerHeight="11" orient="auto">
+      <path d="M1 1l10 5-10 5" fill="none" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <g fill="none" stroke="#B3B3B3" stroke-width="3" marker-end="url(#ah)">
+    <path d="M208 220h86"/><path d="M438 220h86"/><path d="M668 220h86"/><path d="M898 220h86"/>
+  </g>
+
+  <g fill="#FFFFFF" stroke="#1E2761" stroke-width="4">
+    <circle cx="140" cy="220" r="64"/>
+    <circle cx="370" cy="220" r="64"/>
+    <circle cx="830" cy="220" r="64"/>
+    <circle cx="1060" cy="220" r="64"/>
+  </g>
+  <circle cx="600" cy="220" r="64" fill="#1E2761"/>
+
+  <g fill="none" stroke="#1E2761" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 1 lista -->
+    <path d="M122 196h40M122 220h40M122 244h40"/><path d="M110 196h0M110 220h0M110 244h0"/>
+    <!-- 2 cronometro -->
+    <circle cx="370" cy="226" r="26"/><path d="M370 210v16l10 8M362 186h16M370 186v14"/>
+    <!-- 4 alerta -->
+    <path d="M830 190l30 52h-60z"/><path d="M830 208v16"/><path d="M830 234h0"/>
+    <!-- 5 balanza -->
+    <path d="M1060 186v66M1040 252h40M1028 200h64"/><path d="M1028 200l-14 28h28zM1092 200l-14 28h28z"/>
+  </g>
+  <!-- 3 formula -->
+  <g fill="none" stroke="#B08D57" stroke-width="4" stroke-linecap="round">
+    <path d="M580 200l40 40M620 200l-40 40"/>
+  </g>
+
+  <g font-size="26" font-weight="700" fill="#1E2761" text-anchor="middle">
+    <text x="140" y="340">Identifica</text><text x="140" y="374">las tareas</text>
+    <text x="370" y="340">Mide el</text><text x="370" y="374">tiempo real</text>
+    <text x="600" y="340">Aplica la</text><text x="600" y="374">fórmula</text>
+    <text x="830" y="340">Suma el</text><text x="830" y="374">costo oculto</text>
+    <text x="1060" y="340">Compara con</text><text x="1060" y="374">automatizar</text>
+  </g>
+  <g font-size="20" fill="#646464" text-anchor="middle">
+    <text x="140" y="414">repetitivas, con reglas</text>
+    <text x="370" y="414">una semana normal</text>
+    <text x="600" y="414">costo anual</text>
+    <text x="830" y="414">errores y demoras</text>
+    <text x="1060" y="414">retorno en meses</text>
+  </g>
+</svg>

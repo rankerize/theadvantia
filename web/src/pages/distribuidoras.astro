@@ -1,0 +1,298 @@
+---
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  "title": "Agentes de IA por WhatsApp para distribuidoras | ADVANTIA",
+  "description": "Agentes de IA que cobran cartera, toman pedidos y cotizan con proveedores por WhatsApp, las 24 horas. Tu equipo supervisa en vez de ejecutar.",
+  "canonical": "https://theadvantia.com/distribuidoras",
+  "robots": "index, follow",
+  "og": {
+    "type": "website",
+    "site_name": "ADVANTIA",
+    "title": "Agentes de IA por WhatsApp para distribuidoras | ADVANTIA",
+    "description": "Agentes de IA que cobran cartera, toman pedidos y cotizan con proveedores por WhatsApp, las 24 horas. Tu equipo supervisa en vez de ejecutar.",
+    "locale": "es_CO",
+    "url": "https://theadvantia.com/distribuidoras",
+    "image": "https://theadvantia.com/og-image.jpg",
+    "image:width": "1200",
+    "image:height": "630"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Agentes de IA por WhatsApp para distribuidoras | ADVANTIA",
+    "description": "Agentes de IA que cobran cartera, toman pedidos y cotizan con proveedores por WhatsApp, las 24 horas. Tu equipo supervisa en vez de ejecutar.",
+    "image": "https://theadvantia.com/og-image.jpg"
+  }
+};
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Agentes de IA por WhatsApp para distribuidoras",
+    "serviceType": "Automatizacion de cobranza, pedidos y cotizaciones",
+    "provider": {
+      "@type": "Organization",
+      "name": "ADVANTIA",
+      "url": "https://theadvantia.com/"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Colombia"
+    },
+    "description": "Agentes de inteligencia artificial que cobran la cartera, toman pedidos y cotizan por WhatsApp para distribuidoras y comercializadoras.",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Distribuidoras y comercializadoras mayoristas"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cómo funciona un agente de IA de cobranza por WhatsApp?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Se conecta a tu cartera (Excel, Google Sheets o tu sistema), identifica facturas vencidas y conversa con cada cliente por WhatsApp con mensajes progresivos. Registra promesas de pago y entrega un tablero de seguimiento, operando 24/7."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué necesito para empezar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un export de tu cartera, pedidos o catálogo en Excel o Google Sheets. Iniciamos con un piloto pagado de dos semanas con tus datos reales."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tengo que integrar mi sistema?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No hace falta una integración compleja. El agente trabaja a partir de un export y opera sobre WhatsApp Business, el canal donde ya está tu operación."
+        }
+      }
+    ]
+  }
+];
+---
+<Base seo={seo} jsonLd={jsonLd} active="/distribuidoras" announce>
+<header class="hero" data-nav="Inicio">
+  <div class="wrap hero-grid hero-grid-phone">
+    <div class="hero-copy">
+      <span class="eyebrow">Agentes de IA para distribuidoras</span>
+      <h1 class="hero-h1">Agentes de IA por WhatsApp para distribuidoras</h1>
+      <p class="hero-claim">Tu distribuidora, en <span class="kw">piloto automático.</span></p>
+      <p class="lead">Agentes de IA que cobran la cartera, toman pedidos y cotizan por WhatsApp 24/7, sin que tengas que estar encima.</p>
+      <ul class="checks">
+        <li><svg aria-hidden="true"><use href="#i-check"></use></svg><span><b>Cobranza, pedidos y cotizaciones</b> más reactivación de clientes</span></li>
+        <li><svg aria-hidden="true"><use href="#i-check"></use></svg><span><b>Sin integraciones complejas:</b> arrancas con un export de Excel</span></li>
+        <li><svg aria-hidden="true"><use href="#i-check"></use></svg><span><b>Piloto pagado de dos semanas</b> con tus datos reales</span></li>
+      </ul>
+      <div class="hero-cta">
+        <a href="/contacto" class="btn btn-fill btn-lg btn-conic">Quiero mi piloto</a>
+        <a href="#suite" class="tlink">Ver los agentes<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+      </div>
+      <div class="tag-row hero-tags">
+        <span class="tag">WhatsApp Business</span><span class="tag">Excel</span><span class="tag">Google Sheets</span>
+      </div>
+    </div>
+
+    <div class="shot shot-phone">
+      <div class="phone">
+        <div class="phone-screen">
+          <video data-demo muted loop playsinline preload="none" width="1120" height="1720"
+                 aria-label="Agente de IA cotizando por WhatsApp y devolviendo una tabla comparativa de proveedores">
+            <source src="assets/demo_agente_cotizador.webm" type="video/webm">
+            <source src="assets/demo_agente_cotizador.mp4" type="video/mp4">
+          </video>
+          <img class="media-static" src="assets/demo_agente_cotizador_poster.jpg" width="560" height="860"
+               alt="Agente de IA cotizando por WhatsApp y devolviendo una tabla comparativa de proveedores">
+        </div>
+      </div>
+      <div class="shot-caption" style="justify-content:center">
+        <span class="status status-green"><svg width="10" height="10" aria-hidden="true"><use href="#i-check"></use></svg>Demo real</span>
+        <span class="meta">Agente cotizador operando sobre WhatsApp</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section card-band" id="suite" data-nav="Los agentes">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Productos de la línea</span>
+      <h2>Tres agentes. Cada uno se lleva un trabajo del día.</h2>
+      <p class="lead">Activas el que más te duele hoy y sumas los demás cuando quieras. Todos trabajan donde ya está tu operación: WhatsApp.</p>
+    </div>
+    <div class="prods">
+      <article class="prod">
+        <span class="stage stage-now">Hoy</span>
+        <span class="svc-icon sm ink"><svg aria-hidden="true"><use href="#i-invoice"></use></svg></span>
+        <h4>Agente de cobranza</h4>
+        <p style="margin-top:8px;font-size:15px;color:var(--body-ink)">Identifica facturas vencidas y cobra con mensajes progresivos, 24/7, con tablero de seguimiento.</p>
+        <p style="margin-top:14px"><a class="tlink" href="/contacto">Hablemos<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></p>
+      </article>
+      <article class="prod">
+        <span class="stage stage-next">Luego</span>
+        <span class="svc-icon sm ink"><svg aria-hidden="true"><use href="#i-tag"></use></svg></span>
+        <h4>Agente cotizador</h4>
+        <p style="margin-top:8px;font-size:15px;color:var(--body-ink)">Cotiza a toda tu base de proveedores y devuelve la tabla comparativa lista.</p>
+        <p style="margin-top:14px"><a class="tlink" href="/contacto">Hablemos<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></p>
+      </article>
+      <article class="prod">
+        <span class="stage stage-later">Después</span>
+        <span class="svc-icon sm ink"><svg aria-hidden="true"><use href="#i-box"></use></svg></span>
+        <h4>Agente de pedidos</h4>
+        <p style="margin-top:8px;font-size:15px;color:var(--body-ink)">Interpreta pedidos por texto, audio o foto y los deja listos para despacho.</p>
+        <p style="margin-top:14px"><a class="tlink" href="/contacto">Hablemos<svg aria-hidden="true"><use href="#i-arrow"></use></svg></a></p>
+      </article>
+    </div>
+    <p class="prods-note">Las etiquetas indican madurez del producto, no disponibilidad: los tres son contratables hoy.</p>
+
+    <div class="why" style="margin-top:48px">
+      <div>
+        <h4>Por qué pasa</h4>
+        <p>La operación vive en WhatsApp y en hojas de cálculo. Cada cobro, cada pedido y cada cotización dependen de que alguien se acuerde, escriba y haga seguimiento.</p>
+      </div>
+      <div>
+        <h4>Qué hace ADVANTIA</h4>
+        <p>Conectamos un agente al canal que ya usas. Arrancas con un export de Excel o Google Sheets y ves todo en un tablero.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="como-se-mide" data-nav="Cómo se mide">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Cómo se mide</span>
+      <h2>Lo que se libera cuando el trabajo manual deja de depender de una persona.</h2>
+    </div>
+    <div class="measure">
+      <article class="card card-lg">
+        <div class="card-head">
+          <span class="svc-icon"><svg aria-hidden="true"><use href="#i-clock"></use></svg></span>
+          <h3>Antes y después</h3>
+        </div>
+        <p>El mismo trabajo, medido en tiempo de respuesta.</p>
+        <ul class="gains">
+          <li><span class="dot"></span>Hoy, una persona: 2 a 3 días para cerrar una cotización</li>
+          <li><span class="dot"></span>Con un agente de IA: minutos, y una tabla comparativa lista</li>
+        </ul>
+      </article>
+      <article class="card card-lg">
+        <div class="card-head">
+          <span class="svc-icon"><svg aria-hidden="true"><use href="#i-chart"></use></svg></span>
+          <h3>Qué seguimos</h3>
+        </div>
+        <p>Las tres señales que dicen si la operación mejoró.</p>
+        <ul class="gains">
+          <li><span class="dot"></span>Horas de trabajo manual recuperadas</li>
+          <li><span class="dot"></span>Cartera cobrada a tiempo</li>
+          <li><span class="dot"></span>Tiempo de respuesta al cliente</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" data-nav="Piloto">
+  <div class="wrap">
+    <div class="dark-panel on-dark rise">
+      <img class="dark-logo" src="img/advantia-logo-nav-blanco.png" alt="ADVANTIA" width="111" height="26">
+      <span class="eyebrow">Cómo empezamos</span>
+      <h2 class="h-lg" style="margin-top:16px">Piloto pagado de bajo riesgo.</h2>
+      <div class="dark-rule"></div>
+      <div class="mark-slot" style="margin-top:24px"><svg class="brand-mark" viewBox="0 0 420 260" role="img" aria-label="Composición gráfica de marca ADVANTIA">
+          <g fill="none" stroke-width="1.5">
+            <circle cx="210" cy="130" r="122" stroke="rgba(255,255,255,.18)"/>
+            <circle cx="210" cy="130" r="88" stroke="rgba(255,255,255,.18)"/>
+            <circle cx="210" cy="130" r="54" stroke="rgba(255,255,255,.26)"/>
+          </g>
+          <path d="M210 8a122 122 0 0 1 122 122" fill="none" stroke="#B08D57" stroke-width="3" stroke-linecap="round"/>
+          <path d="M210 42a88 88 0 0 1 88 88" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="210" cy="130" r="9" fill="#ffffff"/>
+        </svg></div>
+      <p style="max-width:620px;margin-top:24px">Activamos un agente con tu información real. Dos semanas, alcance cerrado y una decisión al final: continúas o no. Conectas un export de Excel o Google Sheets, el agente opera por WhatsApp y tú ves todo en un tablero.</p>
+      <div class="dark-grid" data-stagger>
+        <div class="rise">
+          <span class="n">Día 1</span>
+          <h3>Entregas tu export</h3>
+          <p>Cartera, pedidos o catálogo en Excel o Google Sheets.</p>
+        </div>
+        <div class="rise">
+          <span class="n">Día 3</span>
+          <h3>Agente operando</h3>
+          <p>Trabajando sobre WhatsApp Business con tus datos reales.</p>
+        </div>
+        <div class="rise">
+          <span class="n">Día 14</span>
+          <h3>Decides</h3>
+          <p>Si funciona, continúas. Si no, no pierdes.</p>
+        </div>
+      </div>
+      <!-- Pago online: cuando la pasarela esté lista, el botón de pago va aquí,
+           a la izquierda del CTA de agendar, con la fila .pay-modes debajo. -->
+      <div style="margin-top:40px;display:flex;gap:16px;flex-wrap:wrap;align-items:center">
+        <a class="btn btn-fill btn-lg" href="/contacto">Agendar mi Diagnóstico</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" data-nav="Preguntas frecuentes">
+  <div class="wrap">
+    <div class="section-head rise">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Sobre los agentes de IA.</h2>
+    </div>
+    <div class="faq rise">
+      <details>
+        <summary><span class="n">01</span>¿Cómo funciona un agente de IA de cobranza por WhatsApp?<span class="sign">+</span></summary>
+        <p>Se conecta a tu cartera (Excel, Google Sheets o tu sistema), identifica facturas vencidas y conversa con cada cliente por WhatsApp con mensajes progresivos. Registra promesas de pago y entrega un tablero de seguimiento, operando 24/7.</p>
+      </details>
+      <details>
+        <summary><span class="n">02</span>¿Qué necesito para empezar?<span class="sign">+</span></summary>
+        <p>Un export de tu cartera, pedidos o catálogo en Excel o Google Sheets. Iniciamos con un piloto pagado de dos semanas con tus datos reales.</p>
+      </details>
+      <details>
+        <summary><span class="n">03</span>¿Tengo que integrar mi sistema?<span class="sign">+</span></summary>
+        <p>No hace falta una integración compleja. El agente trabaja a partir de un export y opera sobre WhatsApp Business, el canal donde ya está tu operación.</p>
+      </details>
+    </div>
+    <div class="mark-slot" style="margin-top:40px"><svg class="brand-mark" viewBox="0 0 420 260" role="img" aria-label="Composición gráfica de marca ADVANTIA">
+          <g fill="none" stroke-width="1.5">
+            <circle cx="210" cy="130" r="122" stroke="#e8e8e8"/>
+            <circle cx="210" cy="130" r="88" stroke="#e8e8e8"/>
+            <circle cx="210" cy="130" r="54" stroke="#d4d4d4"/>
+          </g>
+          <path d="M210 8a122 122 0 0 1 122 122" fill="none" stroke="#B08D57" stroke-width="3" stroke-linecap="round"/>
+          <path d="M210 42a88 88 0 0 1 88 88" fill="none" stroke="#d4d4d4" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="210" cy="130" r="9" fill="#1E2761"/>
+        </svg></div>
+    <!-- guias:inicio · bloque generado por _tools/build_blog.py, no editar a mano -->
+    <div class="related-guides">
+      <div class="section-head">
+        <span class="eyebrow">Blog</span>
+        <h2 class="h-sm">Guías relacionadas</h2>
+      </div>
+      <div class="grid-2 post-grid">
+        <article class="card post-card is-trastienda" data-cat="trastienda">
+        <div class="post-cover" aria-hidden="true"><svg><use href="#i-chat"></use></svg></div>
+        <div class="post-card-body">
+          <div class="post-meta"><span class="status status-neutral">Trastienda</span><span class="post-meta-txt">27 de septiembre de 2026 · 7 min de lectura</span></div>
+          <h3><a href="/blog/ahorro-de-tiempo-con-ia-en-pymes">Calculadora de ahorro de horas con IA para tu PyME: cómo medir lo que hoy se hace a mano</a></h3>
+          <p class="post-excerpt">El ahorro de tiempo con IA en PyMEs se calcula con una fórmula simple: horas semanales por tarea, multiplicadas por las personas que la hacen, por el costo real de la hora y por 52 semanas. El resultado es el costo anual de una tarea repetitiva, y la base para decidir si vale la pena automatizarla.</p>
+          <span class="post-author">Nicolás Navarro</span>
+        </div>
+      </article>
+      </div>
+    </div>
+    <!-- guias:fin -->
+    <p style="margin-top:32px"><a class="btn btn-fill" href="/contacto">Quiero mi piloto</a></p>
+  </div>
+</section>
+</Base>
