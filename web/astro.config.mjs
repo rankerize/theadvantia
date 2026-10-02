@@ -13,6 +13,7 @@ const PRIORITY = {
   '/blog/ahorro-de-tiempo-con-ia-en-pymes': 0.7,
   '/blog/como-vender-en-amazon-desde-colombia': 0.7,
   '/nosotros': 0.6,
+  '/aplicativos': 0.6,
   '/politica-de-privacidad': 0.3,
 };
 

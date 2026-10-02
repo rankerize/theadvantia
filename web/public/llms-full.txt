@@ -1,0 +1,162 @@
+# ADVANTIA — Versión extendida para modelos de lenguaje
+
+> Esta es la versión completa de la documentación de ADVANTIA para consumo por modelos de lenguaje de gran tamaño (LLMs). Contiene toda la información disponible en el sitio web theadvantia.com. Versión resumida disponible en https://theadvantia.com/llms.txt
+
+## Identidad
+
+- **Nombre comercial:** ADVANTIA
+- **URL:** https://theadvantia.com
+- **País de operación:** Colombia
+- **Idioma del sitio:** Español (Colombia)
+- **Modelo de negocio:** B2B SaaS — servicios de IA aplicada para vendedores en marketplaces y distribuidoras
+- **LinkedIn:** https://www.linkedin.com/company/theadvantia/
+
+## Propuesta de valor
+
+ADVANTIA resuelve dos problemas concretos de empresas colombianas:
+
+1. **Invisibilidad en marketplaces:** Los productos no aparecen en las primeras posiciones de Mercado Libre, Falabella, Amazon u Homecenter porque los títulos, atributos y fichas no están optimizados para el algoritmo de búsqueda interno de cada plataforma.
+
+2. **Operación manual en distribuidoras:** Cobros, pedidos y cotizaciones se hacen a mano por WhatsApp y hojas de cálculo, consumiendo horas de trabajo repetitivo que la IA puede automatizar.
+
+La propuesta se resume en: *"Te encuentran. Y la operación corre sola."*
+
+---
+
+## Línea 1: Vitrina — SEO para marketplaces
+
+**URL:** https://theadvantia.com/marketplaces
+
+### Qué hace
+
+Optimiza catálogos de productos para mejorar el posicionamiento orgánico en el buscador interno de:
+- Mercado Libre Colombia (MCO)
+- Falabella Colombia
+- Amazon (marketplace estadounidense, vendedores colombianos)
+- Homecenter Colombia
+
+### Metodología — protocolo CatalogAI
+
+1. **Auditoría SEO de catálogo:** diagnóstico del estado actual de títulos, atributos, imágenes y descripciones.
+2. **Keyword research con datos reales:** análisis de términos de búsqueda con volumen y competencia en cada plataforma.
+3. **Reescritura de fichas:** títulos optimizados (incluye categoría, marca, modelo, especificaciones clave), atributos completos, descripción orientada a conversión.
+4. **Contenido visual A+:** imágenes de producto con ambientación, infografías de características, video de producto.
+5. **Estrategia de canal:** priorización de SKUs por plataforma según margen, rotación y competencia.
+
+### KPIs que mide
+
+- Alcance SEO (impresiones en búsqueda interna de cada marketplace)
+- CTR (clicks / impresiones)
+- Visitas orgánicas al listing
+- Conversión (ventas / visitas)
+
+Reportes mensuales con mapas de posicionamiento competitivo por SKU.
+
+### Planes Vitrina (precios en COP, sin IVA)
+
+| Plan | Precio | Incluye |
+|---|---|---|
+| Diagnóstico | $1.200.000 único | Auditoría completa del catálogo, abonable al plan que se elija |
+| Esencial | $1.725.000 / mes | Hasta 50 SKUs, 1 marketplace |
+| Crecimiento | $3.680.000 / mes | Hasta 150 SKUs, 2 marketplaces, contenido visual básico |
+| Catálogo | $7.475.000 / mes | SKUs ilimitados, 4 marketplaces, A+ content, video |
+| Enterprise | desde $10.350.000 / mes | Proyectos a medida, integración API, SLA dedicado |
+
+---
+
+## Línea 2: Trastienda — Agentes de IA para distribuidoras
+
+**URL:** https://theadvantia.com/distribuidoras
+
+### Qué hace
+
+Despliega agentes conversacionales de IA sobre WhatsApp Business API que automatizan tres procesos operativos clave para distribuidoras:
+
+### Agente 1: Cobros
+
+- Identifica facturas vencidas en la base de datos del cliente
+- Inicia conversaciones de recuperación de cartera por WhatsApp de forma progresiva
+- Opera 24/7 sin intervención humana
+- Escala a representante humano cuando el cliente lo solicita
+- Dashboard con estado de cobranza en tiempo real
+
+### Agente 2: Cotizaciones
+
+- Recibe solicitudes de cotización por WhatsApp (texto o archivo)
+- Consulta la base de proveedores del cliente
+- Devuelve tabla comparativa de precios lista para decisión
+- Tiempo de respuesta: minutos vs. horas del proceso manual
+
+### Agente 3: Pedidos
+
+- Interpreta solicitudes de compra por texto, audio o imagen (fotos de listas escritas a mano)
+- Valida disponibilidad de stock
+- Prepara el pedido para despacho
+- Se integra con el ERP o Excel/Google Sheets del cliente
+
+### Flujo de onboarding (piloto pagado)
+
+- **Día 1:** cliente entrega export de Excel o Google Sheets con sus datos (clientes, facturas, proveedores, catálogo)
+- **Día 3:** agente operativo con datos reales del cliente
+- **Día 14:** decisión de continuar o no con el plan mensual
+
+No se requieren integraciones ERP en la etapa de piloto.
+
+### KPIs que mide
+
+- Horas de trabajo manual recuperadas
+- Porcentaje de cartera cobrada a tiempo
+- Tiempo de respuesta al cliente (minutos vs. horas previas)
+
+---
+
+## Blog — contenido de referencia
+
+### Los 5 errores al publicar en Mercado Libre que le cuestan dinero a tu empresa
+**URL:** https://theadvantia.com/blog/errores-al-publicar-en-mercado-libre
+
+Los cinco errores más comunes de vendedores colombianos en Mercado Libre:
+1. Títulos sin las palabras clave que usa el comprador (la plataforma no indexa por sinónimos)
+2. Ficha técnica incompleta (los atributos vacíos penalizan el ranking)
+3. Inventario desincronizado (listing pausado = cero visibilidad)
+4. Margen no calculado antes de publicar (comisiones + envío + devoluciones)
+5. Reputación descuidada (una métrica de envíos tardíos baja todo el catálogo)
+
+### Calculadora de ahorro de horas con IA para tu PyME
+**URL:** https://theadvantia.com/blog/ahorro-de-tiempo-con-ia-en-pymes
+
+Fórmula para calcular el ahorro potencial de automatizar con IA:
+`Ahorro anual = Horas × Personas × Costo hora × 52 semanas`
+
+Incluye calculadora interactiva descargable en Excel. Casos de uso cuantificados para cobros, cotizaciones y pedidos en distribuidoras colombianas.
+
+### Cómo vender en Amazon desde Colombia paso a paso
+**URL:** https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia
+
+Guía completa para vendedores colombianos que quieren exportar a Amazon.com:
+- Requisitos de registro (cuenta de vendedor, cuenta bancaria internacional, documentos)
+- FBA (Fulfillment by Amazon) vs. FBM (por cuenta propia): comparativa de costos y tiempos
+- Logística de exportación desde Colombia: agentes de carga, zonas francas, couriers
+- Impuestos: IVA, retención en la fuente, declaración de renta por ventas internacionales
+- Optimización de fichas: diferencias vs. Mercado Libre (idioma inglés, competencia global, A9 algorithm)
+
+---
+
+## Contacto y conversión
+
+**Página de contacto:** https://theadvantia.com/contacto
+
+Dos acciones disponibles:
+1. **Agendar sesión de diagnóstico:** videollamada de 20 minutos para evaluar el caso del cliente
+2. **Pagar el Diagnóstico en línea:** pago de $1.200.000 COP a través de Wompi (tarjeta débito/crédito, PSE, Nequi, Botón Bancolombia)
+
+---
+
+## Información técnica del sitio
+
+- **Framework:** Astro (SSG — Static Site Generation)
+- **Hosting:** Hostinger (HTML estático)
+- **Sitemap:** https://theadvantia.com/sitemap-index.xml
+- **robots.txt:** https://theadvantia.com/robots.txt
+- **llms.txt:** https://theadvantia.com/llms.txt (versión resumida)
+- **llms-full.txt:** https://theadvantia.com/llms-full.txt (este archivo)

@@ -1,5 +1,65 @@
+# ============================================================
+#  robots.txt — theadvantia.com
+#  Actualizado: 2026-10-01
+# ============================================================
+
+# --- Rastreadores web generales ------------------------------
 User-agent: *
 Allow: /
 Disallow: /gracias
+Disallow: /404
 
+# --- Motores de respuesta IA (GEO) — se permiten ✅ ----------
+# Estos rastreadores citan fuentes y generan visibilidad en
+# ChatGPT, Perplexity, Claude, Gemini y Copilot.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# --- Rastreadores de datos / entrenamiento — se bloquean ❌ --
+# Solo cosechan datos sin generar tráfico ni visibilidad.
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+User-agent: facebookexternalhit
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# --- Sitemap -------------------------------------------------
 Sitemap: https://theadvantia.com/sitemap-index.xml
