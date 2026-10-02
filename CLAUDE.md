@@ -54,7 +54,11 @@ El repositorio contiene los siguientes microservicios y módulos:
 3. **`payments-service`**: Microservicio Hono (Node.js/TypeScript) para integración con Wompi checkout y webhooks.
 4. **`05-crear-imagenes-flux`**: Módulo de ambientación de imágenes IA con Flux / Atenea Worker + Firestore Queue.
 5. **`06-quitar-fondo`**: Módulo de remoción masiva de fondo con WebGPU / WASM en el navegador.
-6. **`web`**: Sitio público theadvantia.com en Astro (HTML estático para Hostinger). Contenido en español de Colombia, sin guion largo, montos completos en COP (`$1.200.000`) y "Mercado Libre" separado; ver `web/README.md`.
+6. **`html-inpage-falabella`**: Módulo de especificación y generación de descripciones HTML **inPage** para Falabella (Colombia, Chile, Perú) y VTEX según el protocolo **CatalogAI** (Protocolo Maestro v3.4, Módulo 7 y Adendas v3.5-v3.7). Incluye script de validación `validar_html.py` y skill en `.agents/skills/catalogai-html-inpage/`.
+7. **`estudios-de-mercado`**: Módulo de inteligencia SEO, datasets de demanda (CSV/JSON), clustering por categorías e informes analíticos CatalogAI. Incluye skill en `.agents/skills/estudios-de-mercado-catalogai/`.
+8. **`web`**: Sitio público theadvantia.com en Astro (HTML estático para Hostinger). Contenido en español de Colombia, sin guion largo, montos completos en COP (`$1.200.000`) y "Mercado Libre" separado; ver `web/README.md`.
 
 Ver `README.md` para más detalles de arquitectura y ejecución.
+
+
 

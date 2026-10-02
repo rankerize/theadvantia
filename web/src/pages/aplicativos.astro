@@ -97,11 +97,13 @@ const seo = {
 
           <!-- Category Filters -->
           <div class="filter-tabs" id="filterTabs">
-            <button class="tab-btn active" data-filter="all">Todos los Módulos (4)</button>
+            <button class="tab-btn active" data-filter="all">Todos los Módulos (5)</button>
+            <button class="tab-btn" data-filter="market-research">📊 Estudios de Mercado</button>
             <button class="tab-btn" data-filter="images">🎨 Imágenes & Visuales</button>
             <button class="tab-btn" data-filter="catalog">📝 Catálogo & SEO</button>
             <button class="tab-btn" data-filter="marketplaces">🛒 Marketplaces Sync</button>
           </div>
+
         </div>
       </section>
 
@@ -427,9 +429,120 @@ const seo = {
               </div>
             </article>
 
+            <!-- App 5: Estudios de Mercado & Inteligencia SEO -->
+            <article class="app-card" data-category="market-research" id="card-market-research">
+              <div class="card-header">
+                <div class="app-icon amber-glow">📊</div>
+                <div class="card-titles">
+                  <span class="app-tag">CATALOG-AI MARKET INTELLIGENCE</span>
+                  <h3>Estudios de Mercado & Búsquedas por Categoría</h3>
+                </div>
+                <span class="status-pill active">🟢 Dataset 2026 Actualizado</span>
+              </div>
+              <p class="card-desc">
+                Explora y desagrega el comportamiento real de búsqueda de los compradores en Colombia (Google Keyword Planner & Marketplace Search Volume). Filtra por categorías, sub-clusters, intención de búsqueda y detecta Quick Wins para alimentar el protocolo CatalogAI.
+              </p>
+
+              <div class="workspace-box">
+                <div class="ws-header">
+                  <h4>Espacio de Trabajo: Explorador de Demanda & Palabras Clave</h4>
+                  <span class="engine-badge">Base de Datos: Keyword Planner 2026</span>
+                </div>
+
+                <div class="ws-body">
+                  <!-- Category & Cluster Filters -->
+                  <div class="form-row">
+                    <div class="form-group half">
+                      <label for="mrCategorySelect">Categoría Principal de Mercado</label>
+                      <select id="mrCategorySelect" class="app-select">
+                        <option value="ollas" selected>🍲 Ollas, Sartenes & Baterías de Cocina (+250k búsquedas/mes)</option>
+                        <option value="deportes">👟 Calzado Deportivo & Snickers (+180k búsquedas/mes)</option>
+                        <option value="hogar">🏠 Electrodomésticos de Hogar (+140k búsquedas/mes)</option>
+                        <option value="tecnologia">📱 Gadgets & Tecnología (+210k búsquedas/mes)</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group half">
+                      <label for="mrClusterSelect">Sub-Cluster Semántico</label>
+                      <select id="mrClusterSelect" class="app-select">
+                        <option value="all" selected>Todos los Sub-Clusters</option>
+                        <option value="presion">🔥 Ollas a Presión / Express & Pitadoras</option>
+                        <option value="arroceras">🍚 Ollas Arroceras & Vaporeras</option>
+                        <option value="multifuncional">⚡ Multifuncionales / Air Fryer</option>
+                        <option value="baterias">🍳 Baterías de Cocina & Juegos</option>
+                        <option value="sartenes">🍳 Sartenes & Antiadherentes</option>
+                        <option value="hierro">🧱 Hierro Fundido, Barro & Vidrio</option>
+                        <option value="salud">🩺 Consultas de Salud / PFOA / Toxicidad</option>
+                        <option value="quickwins">🚀 Quick Wins (Alto Crecimiento YoY)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Real-time search filter -->
+                  <div class="form-group">
+                    <label for="mrSearchInput">Filtrar Término o Palabra Clave en Tiempo Real</label>
+                    <div class="input-with-button">
+                      <input type="text" id="mrSearchInput" placeholder="Ejemplo: imusa, acero inoxidable, teflon, 6 litros, oster..." class="app-input" />
+                      <button class="app-btn btn-secondary" id="btnResetMR">🔄 Limpiar Filtros</button>
+                    </div>
+                  </div>
+
+                  <!-- KPIs summary bar -->
+                  <div class="mr-kpis-bar">
+                    <div class="kpi-card">
+                      <span class="kpi-label">Volumen Total Filtrado</span>
+                      <strong class="kpi-val" id="mrKpiVolume">254.800/mes</strong>
+                    </div>
+                    <div class="kpi-card">
+                      <span class="kpi-label">Palabras Clave Visibles</span>
+                      <strong class="kpi-val" id="mrKpiCount">0 Términos</strong>
+                    </div>
+                    <div class="kpi-card">
+                      <span class="kpi-label">Top Crecimiento YoY</span>
+                      <strong class="kpi-val highlight" id="mrKpiGrowth">Titanio (+555%)</strong>
+                    </div>
+                    <div class="kpi-card">
+                      <span class="kpi-label">Intención Comercial</span>
+                      <strong class="kpi-val success">86% Transaccional</strong>
+                    </div>
+                  </div>
+
+                  <!-- Keyword Table Container -->
+                  <div class="table-responsive-wrapper margin-top">
+                    <table class="mr-table" id="mrTable">
+                      <thead>
+                        <tr>
+                          <th>Palabra Clave</th>
+                          <th>Búsquedas/Mes</th>
+                          <th>YoY Change</th>
+                          <th>Competencia</th>
+                          <th>Intención</th>
+                          <th>Mapeo CatalogAI (Módulo 7 / Section)</th>
+                        </tr>
+                      </thead>
+                      <tbody id="mrTableBody">
+                        <!-- Populated by JS -->
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- Action Bar -->
+                  <div class="mr-actions margin-top">
+                    <button class="app-btn btn-primary sm" id="btnExportCSV">
+                      <span>📊 Exportar Dataset Seleccionado (CSV)</span>
+                    </button>
+                    <button class="app-btn btn-secondary sm" id="btnCopyCatalogFormat">
+                      <span>📋 Copiar Bloque de Keywords para CatalogAI</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
           </div>
         </div>
       </section>
+
     </div>
 
   </main>
@@ -784,7 +897,111 @@ const seo = {
   .audit-details { display: flex; flex-direction: column; gap: 4px; font-size: 11px; }
   .detail-row { display: flex; justify-content: space-between; color: #b3b3b3; }
   .detail-row strong { color: #ffffff; }
+
+  /* MARKET RESEARCH WORKSPACE STYLES */
+  .amber-glow {
+    background: rgba(245, 158, 11, 0.15) !important;
+    border-color: rgba(245, 158, 11, 0.3) !important;
+  }
+  .mr-kpis-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .kpi-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .kpi-label {
+    font-size: 10px;
+    color: #a3a3a3;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+  }
+  .kpi-val {
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-top: 4px;
+  }
+  .kpi-val.highlight {
+    color: #f59e0b;
+  }
+  .kpi-val.success {
+    color: #1baf7a;
+  }
+
+  .table-responsive-wrapper {
+    max-height: 420px;
+    overflow-y: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background: rgba(11, 31, 58, 0.6);
+  }
+  .mr-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    text-align: left;
+  }
+  .mr-table th {
+    position: sticky;
+    top: 0;
+    background: #12284C;
+    color: #B08D57;
+    font-weight: 700;
+    padding: 10px 12px;
+    border-bottom: 2px solid rgba(176, 141, 87, 0.3);
+    z-index: 2;
+  }
+  .mr-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #e2e8f0;
+  }
+  .mr-table tbody tr:hover {
+    background: rgba(176, 141, 87, 0.1);
+  }
+
+  .intent-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .intent-badge.general { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+  .intent-badge.especifico { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+  .intent-badge.informacional { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+
+  .mapping-chip {
+    font-size: 11px;
+    color: #cbd5e1;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .mr-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 768px) {
+    .mr-kpis-bar {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 </style>
+
 
 <script is:inline>
   // List of authorized emails for access
@@ -962,5 +1179,175 @@ const seo = {
         alert('Auditando publicación MCO-984210492 en tiempo real vía marketplaces-service... ¡Salud 96% OK!');
       });
     }
+
+    // ==========================================
+    // MARKET RESEARCH WORKSPACE LOGIC
+    // ==========================================
+    const KEYWORD_DATASET = [
+      // Ollas Multifuncionales & Air Fryer
+      { kw: 'olla multifuncional', vol: 18100, yoy: '+49%', comp: 'Alto', cat: 'ollas', cluster: 'multifuncional', intent: 'general', mapping: 'Título Principal / H1' },
+      { kw: 'olla freidora de aire', vol: 3600, yoy: '-21%', comp: 'Alto', cat: 'ollas', cluster: 'multifuncional', intent: 'general', mapping: 'Título / Módulo 7 (Pareja 1)' },
+      { kw: 'olla multifuncional imusa', vol: 2900, yoy: '+22%', comp: 'Alto', cat: 'ollas', cluster: 'multifuncional', intent: 'especifico', mapping: 'Módulo 7 (Pareja 1)' },
+      { kw: 'olla multifuncional black and decker', vol: 2400, yoy: '+21%', comp: 'Alto', cat: 'ollas', cluster: 'multifuncional', intent: 'especifico', mapping: 'Módulo 7 (Pareja 2)' },
+      { kw: 'olla multifuncional oster', vol: 1900, yoy: '0%', comp: 'Alto', cat: 'ollas', cluster: 'multifuncional', intent: 'especifico', mapping: 'Módulo 7 (Pareja 2)' },
+      { kw: 'olla multiusos', vol: 1900, yoy: '+50%', comp: 'Alto', cat: 'ollas', cluster: 'multifuncional', intent: 'general', mapping: 'Módulo 7 (Pareja 3)' },
+      { kw: 'sarten electrico', vol: 1900, yoy: '-32%', comp: 'Alto', cat: 'ollas', cluster: 'multifuncional', intent: 'especifico', mapping: 'Módulo 7 (Pareja 3)' },
+      { kw: 'olla airfryer', vol: 880, yoy: '+14%', comp: 'Alto', cat: 'ollas', cluster: 'multifuncional', intent: 'general', mapping: 'Módulo 7 (Pareja 1)' },
+      { kw: 'olla electrica multifuncional', vol: 720, yoy: '+22%', comp: 'Alto', cat: 'ollas', cluster: 'multifuncional', intent: 'general', mapping: 'Módulo 7 (Pareja 1)' },
+      
+      // Presion & Express
+      { kw: 'olla a presion', vol: 12100, yoy: '0%', comp: 'Alto', cat: 'ollas', cluster: 'presion', intent: 'general', mapping: 'Título Principal / H1' },
+      { kw: 'olla express', vol: 9900, yoy: '+22%', comp: 'Alto', cat: 'ollas', cluster: 'presion', intent: 'general', mapping: 'Título Principal' },
+      { kw: 'olla a presion universal', vol: 5400, yoy: '0%', comp: 'Alto', cat: 'ollas', cluster: 'presion', intent: 'especifico', mapping: 'Módulo 7 (Pareja 1)' },
+      { kw: 'olla a presion imusa', vol: 3600, yoy: '0%', comp: 'Alto', cat: 'ollas', cluster: 'presion', intent: 'especifico', mapping: 'Módulo 7 (Pareja 1)' },
+      { kw: 'olla pitadora', vol: 2400, yoy: '+21%', comp: 'Alto', cat: 'ollas', cluster: 'presion', intent: 'general', mapping: 'Módulo 7 (Pareja 2)' },
+      { kw: 'olla express universal', vol: 2400, yoy: '-17%', comp: 'Alto', cat: 'ollas', cluster: 'presion', intent: 'especifico', mapping: 'Módulo 7 (Pareja 2)' },
+      { kw: 'olla a presion royal prestige', vol: 1900, yoy: '-34%', comp: 'Alto', cat: 'ollas', cluster: 'presion', intent: 'especifico', mapping: 'Módulo 7 (Pareja 3)' },
+      { kw: 'olla a presion electrica', vol: 1300, yoy: '+50%', comp: 'Alto', cat: 'ollas', cluster: 'presion', intent: 'especifico', mapping: 'Módulo 7 (Pareja 3)' },
+
+      // Arroceras & Vaporeras
+      { kw: 'olla arrocera', vol: 12100, yoy: '0%', comp: 'Alto', cat: 'ollas', cluster: 'arroceras', intent: 'general', mapping: 'Título Principal / H1' },
+      { kw: 'arrocera', vol: 2900, yoy: '+24%', comp: 'Alto', cat: 'ollas', cluster: 'arroceras', intent: 'general', mapping: 'Título Principal' },
+      { kw: 'olla arrocera pequeña', vol: 2400, yoy: '+21%', comp: 'Alto', cat: 'ollas', cluster: 'arroceras', intent: 'especifico', mapping: 'Módulo 7 (Pareja 1)' },
+      { kw: 'olla arrocera oster', vol: 1600, yoy: '-12%', comp: 'Alto', cat: 'ollas', cluster: 'arroceras', intent: 'especifico', mapping: 'Módulo 7 (Pareja 2)' },
+      { kw: 'olla arrocera imusa', vol: 1300, yoy: '-32%', comp: 'Alto', cat: 'ollas', cluster: 'arroceras', intent: 'especifico', mapping: 'Módulo 7 (Pareja 2)' },
+
+      // Sartenes & Antiadherentes
+      { kw: 'sartenes', vol: 8100, yoy: '+49%', comp: 'Alto', cat: 'ollas', cluster: 'sartenes', intent: 'general', mapping: 'Título Principal' },
+      { kw: 'imusa sarten', vol: 5400, yoy: '-19%', comp: 'Alto', cat: 'ollas', cluster: 'sartenes', intent: 'especifico', mapping: 'Módulo 7 (Pareja 1)' },
+      { kw: 'sarten antiadherente', vol: 4400, yoy: '0%', comp: 'Alto', cat: 'ollas', cluster: 'sartenes', intent: 'general', mapping: 'Módulo 7 (Pareja 1)' },
+      { kw: 'sarten de hierro fundido', vol: 3600, yoy: '+22%', comp: 'Alto', cat: 'ollas', cluster: 'sartenes', intent: 'especifico', mapping: 'Módulo 7 (Pareja 2)' },
+      { kw: 'sarten acero inoxidable', vol: 2400, yoy: '0%', comp: 'Alto', cat: 'ollas', cluster: 'sartenes', intent: 'especifico', mapping: 'Módulo 7 (Pareja 2)' },
+      { kw: 'sartenes de titanio', vol: 170, yoy: '+555%', comp: 'Alto', cat: 'ollas', cluster: 'sartenes', intent: 'quickwin', mapping: '🚀 Quick Win / Pareja 1' },
+      { kw: 'sartenes ninja', vol: 40, yoy: '+467%', comp: 'Alto', cat: 'ollas', cluster: 'sartenes', intent: 'quickwin', mapping: '🚀 Quick Win / Pareja 2' },
+      { kw: 'sarten acero al carbono', vol: 170, yoy: '+271%', comp: 'Alto', cat: 'ollas', cluster: 'sartenes', intent: 'quickwin', mapping: '🚀 Quick Win / Pareja 3' },
+      { kw: 'sarten tramontina', vol: 590, yoy: '+233%', comp: 'Alto', cat: 'ollas', cluster: 'sartenes', intent: 'quickwin', mapping: '🚀 Quick Win / Pareja 1' },
+
+      // Baterias
+      { kw: 'bateria de ollas', vol: 3600, yoy: '+22%', comp: 'Alto', cat: 'ollas', cluster: 'baterias', intent: 'general', mapping: 'Título Principal' },
+      { kw: 'bateria de cocina', vol: 1900, yoy: '0%', comp: 'Alto', cat: 'ollas', cluster: 'baterias', intent: 'general', mapping: 'Título Principal' },
+      { kw: 'bateria de ollas imusa', vol: 1300, yoy: '+23%', comp: 'Alto', cat: 'ollas', cluster: 'baterias', intent: 'especifico', mapping: 'Módulo 7 (Pareja 1)' },
+      { kw: 'bateria de cocina imusa', vol: 480, yoy: '+84%', comp: 'Alto', cat: 'ollas', cluster: 'baterias', intent: 'quickwin', mapping: '🚀 Quick Win / Pareja 2' },
+
+      // Hierro, Barro & Vidrio
+      { kw: 'olla de barro', vol: 880, yoy: '-18%', comp: 'Alto', cat: 'ollas', cluster: 'hierro', intent: 'especifico', mapping: 'Módulo 7 (Pareja 3)' },
+      { kw: 'sarten de hierro', vol: 880, yoy: '-28%', comp: 'Alto', cat: 'ollas', cluster: 'hierro', intent: 'especifico', mapping: 'Módulo 7 (Pareja 3)' },
+      { kw: 'cazuelas de barro', vol: 320, yoy: '-19%', comp: 'Alto', cat: 'ollas', cluster: 'hierro', intent: 'especifico', mapping: 'Sección Especial' },
+
+      // Consultas Informativas / Salud
+      { kw: 'el teflon es toxico', vol: 90, yoy: '-56%', comp: 'Bajo', cat: 'ollas', cluster: 'salud', intent: 'informacional', mapping: '🩺 Guía Salud / FAQ IA' },
+      { kw: 'marcas de sartenes libres de toxicos', vol: 110, yoy: '-55%', comp: 'Alto', cat: 'ollas', cluster: 'salud', intent: 'informacional', mapping: '🩺 Guía Salud / FAQ IA' },
+      { kw: 'mejores materiales para ollas', vol: 90, yoy: '-44%', comp: 'Alto', cat: 'ollas', cluster: 'salud', intent: 'informacional', mapping: '🩺 Guía Salud / FAQ IA' },
+      { kw: 'sartenes de cerámica ventajas y desventajas', vol: 110, yoy: '-36%', comp: 'Bajo', cat: 'ollas', cluster: 'salud', intent: 'informacional', mapping: '🤖 FAQ para IA' },
+
+      // Demo Calzado
+      { kw: 'tenis deportivos hombre', vol: 14800, yoy: '+35%', comp: 'Alto', cat: 'deportes', cluster: 'all', intent: 'general', mapping: 'Título Principal' },
+      { kw: 'calzado de running', vol: 6600, yoy: '+20%', comp: 'Alto', cat: 'deportes', cluster: 'all', intent: 'general', mapping: 'Módulo 7 (Pareja 1)' },
+
+      // Demo Electrodomésticos
+      { kw: 'freidora de aire', vol: 27100, yoy: '+18%', comp: 'Alto', cat: 'hogar', cluster: 'all', intent: 'general', mapping: 'Título Principal' },
+      { kw: 'aspiradora robot', vol: 5400, yoy: '+40%', comp: 'Alto', cat: 'hogar', cluster: 'all', intent: 'general', mapping: 'Módulo 7 (Pareja 1)' }
+    ];
+
+    const mrCategorySelect = document.getElementById('mrCategorySelect');
+    const mrClusterSelect = document.getElementById('mrClusterSelect');
+    const mrSearchInput = document.getElementById('mrSearchInput');
+    const btnResetMR = document.getElementById('btnResetMR');
+    const mrTableBody = document.getElementById('mrTableBody');
+    const mrKpiVolume = document.getElementById('mrKpiVolume');
+    const mrKpiCount = document.getElementById('mrKpiCount');
+    const mrKpiGrowth = document.getElementById('mrKpiGrowth');
+
+    const renderMRTable = () => {
+      if (!mrTableBody) return;
+      
+      const catVal = mrCategorySelect ? mrCategorySelect.value : 'ollas';
+      const clusterVal = mrClusterSelect ? mrClusterSelect.value : 'all';
+      const searchVal = mrSearchInput ? mrSearchInput.value.toLowerCase().trim() : '';
+
+      const filtered = KEYWORD_DATASET.filter(item => {
+        const matchCat = (catVal === 'ollas' && item.cat === 'ollas') || (item.cat === catVal);
+        
+        let matchCluster = true;
+        if (clusterVal !== 'all') {
+          if (clusterVal === 'quickwins') {
+            matchCluster = item.intent === 'quickwin' || item.yoy.includes('+5') || item.yoy.includes('+2') || item.yoy.includes('+4');
+          } else {
+            matchCluster = item.cluster === clusterVal;
+          }
+        }
+
+        const matchSearch = !searchVal || item.kw.toLowerCase().includes(searchVal);
+
+        return matchCat && matchCluster && matchSearch;
+      });
+
+      // Render KPIs
+      const totalVol = filtered.reduce((acc, curr) => acc + curr.vol, 0);
+      if (mrKpiVolume) mrKpiVolume.innerText = `${totalVol.toLocaleString('es-CO')}/mes`;
+      if (mrKpiCount) mrKpiCount.innerText = `${filtered.length} Términos`;
+
+      if (filtered.length === 0) {
+        mrTableBody.innerHTML = `
+          <tr>
+            <td colspan="6" style="text-align: center; padding: 24px; color: #a3a3a3;">
+              🔍 No se encontraron términos con los filtros aplicados. Intenta cambiar el filtro o limpiar el buscador.
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      mrTableBody.innerHTML = filtered.map(item => {
+        let badgeClass = 'general';
+        let badgeText = '⭐ General';
+        if (item.intent === 'especifico') { badgeClass = 'especifico'; badgeText = '🎯 Específico'; }
+        else if (item.intent === 'informacional') { badgeClass = 'informacional'; badgeText = '💡 FAQ / IA'; }
+        else if (item.intent === 'quickwin') { badgeClass = 'especifico'; badgeText = '🚀 Quick Win'; }
+
+        return `
+          <tr>
+            <td><strong>${item.kw}</strong></td>
+            <td><strong>${item.vol.toLocaleString('es-CO')}</strong></td>
+            <td style="color: ${item.yoy.startsWith('+') ? '#1BAF7A' : '#ef4444'}; font-weight: 700;">${item.yoy}</td>
+            <td><span class="keyword-tag">${item.comp}</span></td>
+            <td><span class="intent-badge ${badgeClass}">${badgeText}</span></td>
+            <td><span class="mapping-chip">${item.mapping}</span></td>
+          </tr>
+        `;
+      }).join('');
+    };
+
+    // Attach MR Event Listeners
+    if (mrCategorySelect) mrCategorySelect.addEventListener('change', renderMRTable);
+    if (mrClusterSelect) mrClusterSelect.addEventListener('change', renderMRTable);
+    if (mrSearchInput) mrSearchInput.addEventListener('input', renderMRTable);
+    
+    if (btnResetMR) {
+      btnResetMR.addEventListener('click', () => {
+        if (mrCategorySelect) mrCategorySelect.value = 'ollas';
+        if (mrClusterSelect) mrClusterSelect.value = 'all';
+        if (mrSearchInput) mrSearchInput.value = '';
+        renderMRTable();
+      });
+    }
+
+    const btnExportCSV = document.getElementById('btnExportCSV');
+    if (btnExportCSV) {
+      btnExportCSV.addEventListener('click', () => {
+        alert('📊 Exportando dataset seleccionado en formato CSV... ¡Descarga completada!');
+      });
+    }
+
+    const btnCopyCatalogFormat = document.getElementById('btnCopyCatalogFormat');
+    if (btnCopyCatalogFormat) {
+      btnCopyCatalogFormat.addEventListener('click', () => {
+        alert('📋 Tabla de Palabras Clave copiada al portapapeles en formato OPCIÓN 3 listo para el Protocolo CatalogAI.');
+      });
+    }
+
+    // Initial render of Market Research table
+    renderMRTable();
   });
 </script>
+

@@ -19,6 +19,8 @@ El proyecto está estructurado en microservicios modulares y utilidades de proce
 ├── payments-service/         # 💳 Microservicio de Procesamiento de Pagos y Webhooks (Wompi)
 ├── 05-crear-imagenes-flux/   # 🎨 Módulo de Generación y Ambientación de Imágenes IA (Flux / Atenea)
 ├── 06-quitar-fondo/          # ✂️ Módulo de Segmentación y Remoción Masiva de Fondos (WebGPU / WASM)
+├── html-inpage-falabella/    # 📄 Módulo de Descripciones HTML inPage Falabella & VTEX (CatalogAI)
+├── estudios-de-mercado/     # 📊 Módulo de Estudios de Mercado & Inteligencia SEO (CatalogAI)
 ├── web/                      # 🌐 Sitio público theadvantia.com (Astro, HTML estático para Hostinger)
 ├── CLAUDE.md                 # 📄 Guía de arquitectura y convenciones del sistema
 └── README.md                 # 📖 Documentación principal del repositorio
@@ -54,11 +56,25 @@ Remoción de fondos masiva y privada ejecutada directamente en el navegador del 
 - Inferencia ultrarrápida local mediante **WebGPU / WASM (ONNX Runtime)** y `@imgly/background-removal`.
 - Formatos de salida: Fondo blanco puro (`#FFFFFF`) para estándares de catálogo (Falabella), PNG transparente o color personalizado con empaquetado ZIP.
 
-### 6. 🌐 `web`
+### 6. 📄 `html-inpage-falabella`
+Módulo de creación, SEO y validación de contenidos **inPage HTML** para Falabella y su adaptación responsive a **VTEX**.
+- **Protocolo Maestro CatalogAI:** Flujo de 9 pasos, Módulo 7 (parejas flotantes de imágenes), Adenda 3.5 (enriquecimiento aditivo SEO/FAQ) y Adenda 3.7 (versión responsive VTEX).
+- **Validador:** `python html-inpage-falabella/scripts/validar_html.py` para reglas HTML inPage (etiquetas permitidas, prohibidas, CDN `lh3.googleusercontent.com`, keywords y diferencias VTEX).
+- **Skill:** Configurada en `.agents/skills/catalogai-html-inpage/` para ejecución automatizada por agentes de IA.
+
+### 7. 📊 `estudios-de-mercado`
+Módulo de investigación de palabras clave, análisis de tendencias de búsqueda e inteligencia de catálogo.
+- **Datasets:** Almacena datasets procesados en CSV y JSON (`estudios-de-mercado/data/`).
+- **Informes Analíticos:** Documentos consolidados de demanda por categorías y Quick Wins (`estudios-de-mercado/informes/`).
+- **Skill de IA:** Configurada en `.agents/skills/estudios-de-mercado-catalogai/` para procesamiento autónomo de nuevas exportaciones de Keyword Planner y SEMrush.
+
+### 8. 🌐 `web`
 Sitio público y comercial de [theadvantia.com](https://theadvantia.com), construido con **Astro** como HTML estático.
 - Páginas de Vitrina, Trastienda, planes, blog, contacto y legales, con SEO, JSON-LD, GA4 y HubSpot.
 - Sitemap automático, `robots.txt` y `llms.txt`.
 - Se publica en Hostinger: `npm run build` dentro de `web/` y se sube el contenido de `web/dist/` a `public_html`. Ver `web/README.md`.
+
+
 
 ---
 
