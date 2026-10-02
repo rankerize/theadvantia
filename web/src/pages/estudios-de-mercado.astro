@@ -192,7 +192,41 @@ const seo = {
           </div>
         </div>
         
+        <!-- Major Charts Row: Time Series (4 Years) & 4-Axis Matrix -->
+        <div class="charts-major-row margin-bottom">
+          
+          <!-- Chart A: Timeline Search Trends 2022-2026 -->
+          <article class="chart-card full-width">
+            <div class="chart-header">
+              <span class="chart-icon">📅</span>
+              <div>
+                <h3>Evolución Histórica de Búsquedas en el Tiempo (Septiembre 2022 – Agosto 2026)</h3>
+                <small>Tendencia de búsquedas mensuales a lo largo de 4 años para verificar aceleración o declive por categoría</small>
+              </div>
+            </div>
+            <div class="chart-container large">
+              <canvas id="chartTimeSeries"></canvas>
+            </div>
+          </article>
+
+          <!-- Chart B: 4-Axis Strategic Matrix -->
+          <article class="chart-card full-width">
+            <div class="chart-header">
+              <span class="chart-icon">🎯</span>
+              <div>
+                <h3>Matriz Estratégica de 4 Ejes (Volumen vs Crecimiento YoY vs Dificultad vs Intención)</h3>
+                <small>Eje X: Volumen | Eje Y: Crecimiento YoY % | Tamaño Burbuja: Competencia | Color: Intención Comercial</small>
+              </div>
+            </div>
+            <div class="chart-container large">
+              <canvas id="chart4Axis"></canvas>
+            </div>
+          </article>
+
+        </div>
+
         <div class="charts-grid">
+
           
           <!-- Chart 1: Marcas Líderes -->
           <article class="chart-card">
@@ -457,6 +491,11 @@ const seo = {
   .sec-subtitle { font-size: 13px; color: #a3a3a3; margin: 4px 0 0 0; text-align: left; }
   .chart-badge { background: rgba(176, 141, 87, 0.15); color: #B08D57; border: 1px solid rgba(176, 141, 87, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; }
   
+  .charts-major-row { display: flex; flex-direction: column; gap: 20px; }
+  .chart-card.full-width { width: 100%; box-sizing: border-box; }
+  .chart-container.large { height: 340px; }
+
+  .margin-bottom { margin-bottom: 20px; }
   .charts-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .chart-card { background: rgba(18, 40, 76, 0.6); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 20px; text-align: left; display: flex; flex-direction: column; backdrop-filter: blur(10px); }
   .chart-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
@@ -464,6 +503,7 @@ const seo = {
   .chart-header h3 { font-size: 15px; font-weight: 800; color: #ffffff; margin: 0; }
   .chart-header small { color: #a3a3a3; font-size: 11px; }
   .chart-container { position: relative; width: 100%; height: 260px; }
+
 
 
   /* Table Section */
@@ -501,7 +541,150 @@ const seo = {
       Chart.defaults.color = '#94a3b8';
       Chart.defaults.font.family = 'Inter, sans-serif';
 
-      // 1. Chart Brands (Bar Chart)
+      // 1. Chart Time Series 4 Years (Line Chart)
+      const ctxTimeSeries = document.getElementById('chartTimeSeries');
+      if (ctxTimeSeries) {
+        new Chart(ctxTimeSeries, {
+          type: 'line',
+          data: {
+            labels: ['Sep 22', 'Ene 23', 'May 23', 'Sep 23', 'Ene 24', 'May 24', 'Sep 24', 'Ene 25', 'May 25', 'Sep 25', 'Ene 26', 'Ago 26'],
+            datasets: [
+              {
+                label: 'Ollas a Presión / Express',
+                data: [18500, 19200, 20100, 21400, 22000, 21800, 23500, 24100, 23800, 24000, 24200, 24400],
+                borderColor: '#1BAF7A',
+                backgroundColor: 'rgba(27, 175, 122, 0.15)',
+                fill: true,
+                tension: 0.3,
+                borderWidth: 3
+              },
+              {
+                label: 'Sartenes Antiadherentes / Teflón',
+                data: [12100, 12500, 13400, 14200, 15100, 16000, 16800, 17500, 18200, 19000, 19800, 20500],
+                borderColor: '#3b82f6',
+                backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                fill: true,
+                tension: 0.3,
+                borderWidth: 2
+              },
+              {
+                label: 'Hierro Fundido & Titanio (Emergentes 🚀)',
+                data: [850, 1100, 1400, 1900, 2600, 3400, 4500, 5800, 7200, 8900, 10500, 12800],
+                borderColor: '#f59e0b',
+                backgroundColor: 'rgba(245, 158, 11, 0.1)',
+                fill: true,
+                tension: 0.3,
+                borderWidth: 3
+              },
+              {
+                label: 'Ollas de Barro & Peltre',
+                data: [2800, 2600, 2400, 2300, 2100, 1900, 1800, 1600, 1500, 1400, 1300, 1200],
+                borderColor: '#ef4444',
+                backgroundColor: 'transparent',
+                borderDash: [5, 5],
+                tension: 0.3,
+                borderWidth: 2
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { position: 'top', labels: { boxWidth: 14, font: { size: 12 } } },
+              tooltip: {
+                callbacks: {
+                  label: (ctx) => ` ${ctx.dataset.label}: ${ctx.raw.toLocaleString('es-CO')} búsquedas/mes`
+                }
+              }
+            },
+            scales: {
+              y: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, title: { display: true, text: 'Búsquedas Mensuales (Google CO)', color: '#94a3b8' } },
+              x: { grid: { color: 'rgba(255, 255, 255, 0.05)' } }
+            }
+          }
+        });
+      }
+
+      // 2. Chart 4-Axis Strategic Matrix (Bubble Chart)
+      // Axis 1 (X): Volume | Axis 2 (Y): YoY Growth % | Axis 3 (Bubble Size): Competition | Axis 4 (Color): Intent Category
+      const ctx4Axis = document.getElementById('chart4Axis');
+      if (ctx4Axis) {
+        new Chart(ctx4Axis, {
+          type: 'bubble',
+          data: {
+            datasets: [
+              {
+                label: 'Nomenclaturas Generales',
+                data: [
+                  { x: 12100, y: 22, r: 18, kw: 'olla a presion' },
+                  { x: 9900, y: 15, r: 16, kw: 'olla express' },
+                  { x: 2400, y: 21, r: 10, kw: 'olla pitadora' }
+                ],
+                backgroundColor: 'rgba(27, 175, 122, 0.75)',
+                borderColor: '#1BAF7A'
+              },
+              {
+                label: 'Marcas Establecidas',
+                data: [
+                  { x: 23800, y: -19, r: 22, kw: 'imusa ollas' },
+                  { x: 18600, y: 0, r: 20, kw: 'universal ollas' },
+                  { x: 15400, y: -34, r: 18, kw: 'royal prestige' }
+                ],
+                backgroundColor: 'rgba(176, 141, 87, 0.75)',
+                borderColor: '#B08D57'
+              },
+              {
+                label: 'Quick Wins Alto Crecimiento 🚀',
+                data: [
+                  { x: 590, y: 233, r: 12, kw: 'sarten tramontina' },
+                  { x: 170, y: 555, r: 15, kw: 'sartenes titanio' },
+                  { x: 40, y: 467, r: 14, kw: 'sartenes ninja' }
+                ],
+                backgroundColor: 'rgba(245, 158, 11, 0.85)',
+                borderColor: '#f59e0b'
+              },
+              {
+                label: 'Salud & FAQ Toxinas',
+                data: [
+                  { x: 110, y: -55, r: 8, kw: 'sartenes sin toxicos' },
+                  { x: 90, y: -56, r: 7, kw: 'teflon toxico' }
+                ],
+                backgroundColor: 'rgba(239, 68, 68, 0.75)',
+                borderColor: '#ef4444'
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { position: 'top', labels: { boxWidth: 12, font: { size: 11 } } },
+              tooltip: {
+                callbacks: {
+                  label: (ctx) => {
+                    const item = ctx.raw;
+                    return ` [${item.kw}] Vol: ${item.x.toLocaleString('es-CO')}/mes | Crecimiento: ${item.y}% | Dificultad: ${item.r}`;
+                  }
+                }
+              }
+            },
+            scales: {
+              x: {
+                type: 'logarithmic',
+                grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                title: { display: true, text: 'Eje X: Volumen Mensual de Búsqueda (Escala Logarítmica)', color: '#94a3b8' }
+              },
+              y: {
+                grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                title: { display: true, text: 'Eje Y: Crecimiento YoY (%)', color: '#94a3b8' }
+              }
+            }
+          }
+        });
+      }
+
+      // 3. Chart Brands (Bar Chart)
       const ctxBrands = document.getElementById('chartBrands');
       if (ctxBrands) {
         new Chart(ctxBrands, {
@@ -529,7 +712,7 @@ const seo = {
         });
       }
 
-      // 2. Chart Materials (Doughnut Chart)
+      // 4. Chart Materials (Doughnut Chart)
       const ctxMaterials = document.getElementById('chartMaterials');
       if (ctxMaterials) {
         new Chart(ctxMaterials, {
@@ -551,7 +734,7 @@ const seo = {
         });
       }
 
-      // 3. Chart YoY Quick Wins (Horizontal Bar Chart)
+      // 5. Chart YoY Quick Wins (Horizontal Bar Chart)
       const ctxYoY = document.getElementById('chartYoY');
       if (ctxYoY) {
         new Chart(ctxYoY, {
@@ -580,7 +763,7 @@ const seo = {
         });
       }
 
-      // 4. Chart Intent (Polar Area)
+      // 6. Chart Intent (Polar Area)
       const ctxIntent = document.getElementById('chartIntent');
       if (ctxIntent) {
         new Chart(ctxIntent, {
