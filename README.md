@@ -19,6 +19,7 @@ El proyecto está estructurado en microservicios modulares y utilidades de proce
 ├── payments-service/         # 💳 Microservicio de Procesamiento de Pagos y Webhooks (Wompi)
 ├── 05-crear-imagenes-flux/   # 🎨 Módulo de Generación y Ambientación de Imágenes IA (Flux / Atenea)
 ├── 06-quitar-fondo/          # ✂️ Módulo de Segmentación y Remoción Masiva de Fondos (WebGPU / WASM)
+├── web/                      # 🌐 Sitio público theadvantia.com (Astro, HTML estático para Hostinger)
 ├── CLAUDE.md                 # 📄 Guía de arquitectura y convenciones del sistema
 └── README.md                 # 📖 Documentación principal del repositorio
 ```
@@ -53,6 +54,12 @@ Remoción de fondos masiva y privada ejecutada directamente en el navegador del 
 - Inferencia ultrarrápida local mediante **WebGPU / WASM (ONNX Runtime)** y `@imgly/background-removal`.
 - Formatos de salida: Fondo blanco puro (`#FFFFFF`) para estándares de catálogo (Falabella), PNG transparente o color personalizado con empaquetado ZIP.
 
+### 6. 🌐 `web`
+Sitio público y comercial de [theadvantia.com](https://theadvantia.com), construido con **Astro** como HTML estático.
+- Páginas de Vitrina, Trastienda, planes, blog, contacto y legales, con SEO, JSON-LD, GA4 y HubSpot.
+- Sitemap automático, `robots.txt` y `llms.txt`.
+- Se publica en Hostinger: `npm run build` dentro de `web/` y se sube el contenido de `web/dist/` a `public_html`. Ver `web/README.md`.
+
 ---
 
 ## 🛠️ Stack Tecnológico Global
@@ -72,7 +79,7 @@ Remoción de fondos masiva y privada ejecutada directamente en el navegador del 
 - npm / pnpm / yarn
 
 ### Ejecutar un servicio en desarrollo
-Navega a cualquiera de los microservicios (`agents-service`, `marketplaces-service`, `payments-service`) e instala dependencias:
+Navega a cualquiera de los microservicios (`agents-service`, `marketplaces-service`, `payments-service`) o al sitio (`web`) e instala dependencias:
 
 ```bash
 cd agents-service
