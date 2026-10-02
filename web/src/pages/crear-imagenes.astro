@@ -2,43 +2,53 @@
 import Base from '../layouts/Base.astro';
 
 const seo = {
-  title: 'Crear Imágenes de Producto con Flux AI | Advantia',
-  description: 'Genera ambientaciones fotorrealistas, cambios de escena y fondos publicitarios de alta definición para tus SKUs con Flux y Falabella Atenea AI Studio.',
+  title: 'Creador de Imágenes Ambientadas (IA) | ADVANTIA',
+  description: 'Genera fotografías profesionales para tus productos en escenarios reales en segundos con IA (Flux · Atenea).',
   canonical: 'https://theadvantia.com/crear-imagenes',
   robots: 'noindex, nofollow',
 };
 ---
 
 <Base seo={seo} active="/aplicativos">
+  <!-- External Libraries -->
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script is:inline src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script is:inline src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+  <script is:inline src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
   <main class="mod-main">
 
-    <!-- Top Nav -->
+    <!-- Top Navigation Bar -->
     <header class="mod-nav">
       <div class="wrap mod-nav-in">
         <div class="mod-brand">
           <a href="/aplicativos" class="back-link">← Volver a Aplicativos</a>
           <span class="divider">|</span>
-          <span class="nav-title">🎨 Flux AI · Ambientación de Producto</span>
+          <span class="nav-title">🎨 Flux AI · Atenea AI Studio Worker</span>
         </div>
         <div class="mod-nav-actions">
-          <span class="live-pill">🟢 Engine: Gemini Flash Image</span>
+          <div id="fluxConnectionBadge" class="connection-badge">
+            <span class="status-dot"></span>
+            <span class="status-txt">Verificando conexión...</span>
+          </div>
           <a href="/aplicativos" class="mod-btn btn-secondary sm">Portal de Aplicativos</a>
         </div>
       </div>
     </header>
 
-    <!-- Hero -->
+    <!-- Hero Header -->
     <section class="mod-hero">
       <div class="wrap">
-        <div class="hero-badge"><span class="pulse-dot"></span> FLUX / ATENEA AI WORKER</div>
-        <h1 class="hero-title">Crear Imágenes de Producto (Flux AI)</h1>
+        <div class="hero-badge"><span class="pulse-dot"></span> FLUX / ATENEA AI WORKER · FALABELLA SUITE</div>
+        <h1 class="hero-title">Creador de Imágenes Ambientadas (IA)</h1>
         <p class="hero-subtitle">
-          Genera ambientaciones fotorrealistas, cambios de escena y fondos publicitarios de alta definición para tus SKUs. El producto original se preserva al 100% — solo se reemplaza el entorno.
+          Genera ambientaciones fotográficas profesionales para tus productos en segundos con IA. El producto original se preserva al 100% — solo se ambienta el entorno.
         </p>
         <div class="hero-chips">
           <span class="chip">⚡ Gemini 3.1 Flash Image</span>
-          <span class="chip">🖼️ Resolución 4K</span>
-          <span class="chip">✅ Estándar Falabella/MeLi</span>
+          <span class="chip">🖼️ Resolución 4K / 2K</span>
+          <span class="chip">🎯 Preservación 100% SKU</span>
+          <span class="chip">🛍️ Estándar Falabella & MeLi</span>
         </div>
       </div>
     </section>
@@ -46,337 +56,1324 @@ const seo = {
     <!-- Main Workspace -->
     <section class="mod-workspace">
       <div class="wrap-wide">
-        <div class="ws-grid">
+        
+        <!-- Grid Layout: Left Controls + Right Results -->
+        <div class="flux-workspace-grid">
 
-          <!-- LEFT: Controls -->
-          <div class="ws-panel controls-panel">
-            <div class="panel-header">
-              <h2>Configuración de Ambientación</h2>
-              <span class="panel-tag">Motor: Flux v1.1 Pro</span>
-            </div>
+          <!-- LEFT COLUMN: Controls -->
+          <div class="flux-controls-col">
 
-            <div class="form-group">
-              <label for="fluxPrompt">Prompt de Ambientación</label>
-              <textarea id="fluxPrompt" rows="3" class="mod-input mod-textarea" placeholder="Describe el ambiente: materiales, iluminación, estilo fotográfico...">Mesa de madera estilo nórdico con luz solar suave filtrada por plantas verdes, fotografía de producto 4K fotorrealista, bokeh background</textarea>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group half">
-                <label>Relación de Aspecto</label>
-                <select id="fluxAspect" class="mod-select">
-                  <option value="1:1">1:1 Cuadrado (Catálogo)</option>
-                  <option value="4:5" selected>4:5 Móvil (Falabella/MeLi)</option>
-                  <option value="16:9">16:9 Banner Publicitario</option>
-                  <option value="9:16">9:16 Story/Reel</option>
-                </select>
+            <!-- 1. Imagen del Producto -->
+            <div class="ws-card">
+              <div class="card-step-title">1. Imagen del Producto</div>
+              
+              <!-- Source mode pills -->
+              <div class="source-pills">
+                <button type="button" class="source-btn active" data-source="upload">📁 Subir Fotos</button>
+                <button type="button" class="source-btn" data-source="sku">🛒 SKU Falabella</button>
               </div>
-              <div class="form-group half">
-                <label>Número de Variaciones</label>
-                <select id="fluxVariants" class="mod-select">
-                  <option value="1" selected>1 imagen</option>
-                  <option value="2">2 variaciones</option>
-                  <option value="4">4 variaciones</option>
-                </select>
+
+              <!-- Upload Source -->
+              <div id="panelUpload" class="source-panel">
+                <div id="fluxDropZone" class="dropzone-box">
+                  <div id="fluxDropZoneContent">
+                    <span class="dz-ico">📥</span>
+                    <p class="dz-title">Haz clic o arrastra fotos aquí</p>
+                    <p class="dz-sub">Soporta JPG, PNG, WEBP (hasta 4 imágenes)</p>
+                  </div>
+                  <input type="file" id="fluxFileInput" multiple accept="image/png,image/jpeg,image/webp" class="file-hidden-input" />
+                </div>
+                <div id="fluxManualPreview" class="manual-preview-grid"></div>
+              </div>
+
+              <!-- SKU Source -->
+              <div id="panelSku" class="source-panel hidden">
+                <div class="form-row">
+                  <div class="form-group flex-2">
+                    <label for="fluxSkuInput">SKU o Link de Falabella</label>
+                    <input type="text" id="fluxSkuInput" placeholder="Ej: 145748659..." class="mod-input" />
+                  </div>
+                  <div class="form-group flex-1">
+                    <label for="fluxCountry">País</label>
+                    <select id="fluxCountry" class="mod-select">
+                      <option value="co" selected>🇨🇴 Colombia</option>
+                      <option value="cl">🇨🇱 Chile</option>
+                      <option value="pe">🇵🇪 Perú</option>
+                    </select>
+                  </div>
+                </div>
+                <div id="fluxSkuPreview" class="sku-preview-container"></div>
+              </div>
+
+            </div>
+
+            <!-- 2. Encuadre y Variaciones -->
+            <div class="ws-card">
+              <div class="card-step-title">2. Encuadre y Variaciones</div>
+
+              <div class="config-row">
+                <div class="form-group half">
+                  <label>Proporción (Aspect Ratio)</label>
+                  <div class="pills-group" id="aspectPills">
+                    <label><input type="radio" name="fluxAspect" value="1:1" checked /><span>1:1</span></label>
+                    <label><input type="radio" name="fluxAspect" value="4:5" /><span>4:5</span></label>
+                    <label><input type="radio" name="fluxAspect" value="3:4" /><span>3:4</span></label>
+                    <label><input type="radio" name="fluxAspect" value="16:9" /><span>16:9</span></label>
+                    <label><input type="radio" name="fluxAspect" value="9:16" /><span>9:16</span></label>
+                  </div>
+                </div>
+
+                <div class="form-group half">
+                  <label>Cantidad de Variaciones</label>
+                  <div class="pills-group" id="qtyPills">
+                    <label><input type="radio" name="fluxQty" value="1" /><span>1</span></label>
+                    <label><input type="radio" name="fluxQty" value="2" checked /><span>2</span></label>
+                    <label><input type="radio" name="fluxQty" value="3" /><span>3</span></label>
+                    <label><input type="radio" name="fluxQty" value="4" /><span>4</span></label>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="form-group">
-              <label>Presets de Escena Rápidos</label>
-              <div class="presets-grid" id="presetsGrid">
-                <button class="preset-btn active" data-prompt="Mesa de madera estilo nórdico, luz solar suave filtrada por plantas, 4K fotorrealista">
-                  <span class="preset-icon">🌿</span>
-                  <strong>Madera & Luz Natural</strong>
-                  <small>Estilo nórdico orgánico</small>
-                </button>
-                <button class="preset-btn" data-prompt="Superficie de mármol blanco con sombras botánicas suaves, estudio de fotografía profesional, minimalista 4K">
-                  <span class="preset-icon">🪨</span>
-                  <strong>Mármol & Botánica</strong>
-                  <small>Lujo minimalista</small>
-                </button>
-                <button class="preset-btn" data-prompt="Podio neutro gris claro, iluminación difusa de estudio, fondo blanco puro para catálogo, sombra suave">
-                  <span class="preset-icon">📦</span>
-                  <strong>Estudio Neutro</strong>
-                  <small>Catálogo estándar</small>
-                </button>
-                <button class="preset-btn" data-prompt="Escena publicitaria urbana, noche con luces de ciudad bokeh, producto en primer plano con contraste dramático">
-                  <span class="preset-icon">🌃</span>
-                  <strong>Urbano Nocturno</strong>
-                  <small>Impacto dramático</small>
-                </button>
-              </div>
+            <!-- 3. Prompt y Presets -->
+            <div class="ws-card">
+              <div class="card-step-title">3. Descripción de la Escena (Prompt)</div>
+              
+              <!-- Presets Pills -->
+              <div class="presets-row" id="fluxPresetsRow"></div>
+
+              <textarea 
+                id="fluxPrompt" 
+                rows="3" 
+                class="mod-input mod-textarea" 
+                placeholder="Ej: Mesa de madera estilo nórdico con luz natural suave, fondo desenfocado con plantas verdes, fotografía de producto 4K..."
+              >Mesa de madera estilo nórdico con luz solar suave filtrada por plantas verdes, fotografía de producto 4K fotorrealista, iluminación de estudio difusa, bokeh de fondo suave</textarea>
             </div>
 
-            <div class="form-group">
-              <label for="fluxImageUpload">Imagen del Producto (Opcional — para Preservar SKU)</label>
-              <div class="dropzone-sm" id="fluxDropzone">
-                <span>📸 Arrastra tu foto de producto o haz clic para cargar</span>
-                <input type="file" id="fluxImageUpload" accept="image/*" style="display:none" />
-              </div>
-            </div>
-
-            <button class="mod-btn btn-primary full" id="btnGenFlux">
-              ⚡ Generar Ambientación Flux AI
+            <!-- Botón Generar -->
+            <button type="button" id="fluxGenerateBtn" class="mod-btn btn-primary full-btn">
+              <span>✨ Generar Ambientación</span>
             </button>
 
-            <div class="info-box">
-              <strong>⚠️ Modo Demo</strong> — Este workspace simula el flujo del worker. En producción, las solicitudes se envían al worker de Atenea AI Studio via <code>fluxImages.js</code> y los resultados se guardan en Firestore (<code>flux_jobs</code>).
+            <!-- Progress Bar -->
+            <div id="fluxProgressContainer" class="progress-box hidden">
+              <span id="fluxStatusMsg" class="progress-status-msg">Enviando tarea al worker...</span>
+              <div class="progress-track">
+                <div id="fluxProgressBar" class="progress-fill"></div>
+              </div>
             </div>
+
           </div>
 
-          <!-- RIGHT: Output -->
-          <div class="ws-panel output-panel">
-            <div class="panel-header">
-              <h2>Resultado de Ambientación</h2>
-              <span class="panel-tag" id="outputStatus">En espera...</span>
+          <!-- RIGHT COLUMN: Results Stage -->
+          <div class="flux-results-col">
+
+            <!-- Header Resultados -->
+            <div class="results-header">
+              <div id="fluxResultCount" class="results-count-text">0 imágenes generadas</div>
+              <button type="button" id="fluxDownloadAll" class="mod-btn btn-secondary sm hidden">
+                <span>⬇️ Descargar ZIP</span>
+              </button>
             </div>
 
-            <div class="output-stage" id="fluxOutputStage">
-              <div class="placeholder-state" id="fluxPlaceholder">
-                <div class="ph-icon">✨</div>
-                <p>Configura el prompt y haz clic en <strong>Generar Ambientación</strong> para ver el resultado simulado del worker de Flux AI.</p>
-              </div>
+            <!-- Grid de Resultados -->
+            <div id="fluxResultsGrid" class="results-gallery-grid"></div>
 
-              <div class="result-state hidden" id="fluxResult">
-                <div class="result-gallery" id="fluxGallery">
-                  <!-- Populated by JS -->
-                </div>
-                <div class="result-actions">
-                  <button class="mod-btn btn-secondary" onclick="alert('Descargando imágenes HD en ZIP...')">📥 Descargar todas las imágenes</button>
-                  <button class="mod-btn btn-secondary" onclick="alert('Subiendo a Falabella Seller Center...')">🛒 Subir a Falabella</button>
-                  <button class="mod-btn btn-secondary" onclick="alert('Subiendo a Mercado Libre...')">💛 Subir a MeLi</button>
-                </div>
-              </div>
+            <!-- Estado Vacío -->
+            <div id="fluxEmptyState" class="empty-state-box">
+              <div class="empty-icon">🖼️</div>
+              <h3>Sube una foto o ingresa un SKU para generar</h3>
+              <p>Las ambientaciones en alta definición aparecerán aquí.</p>
+            </div>
 
-              <div class="loading-state hidden" id="fluxLoading">
-                <div class="spinner"></div>
-                <p id="fluxLoadingText">Enviando tarea al worker Atenea AI Studio...</p>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" id="fluxProgress"></div>
+            <!-- Historial de Generaciones -->
+            <div id="fluxHistoryPanel" class="history-panel">
+              <div class="history-head">
+                <div class="history-title">
+                  🕐 Historial de Sesión
+                  <span id="fluxHistoryCount" class="history-badge">0</span>
                 </div>
+                <button type="button" id="btnHistoryClear" class="history-clear-btn">🗑 Limpiar</button>
+              </div>
+              <div id="fluxHistoryList" class="history-items-list">
+                <p class="history-empty-msg">Las generaciones aparecerán aquí</p>
               </div>
             </div>
 
-            <!-- Job History -->
-            <div class="job-history">
-              <div class="jh-header">
-                <h3>Historial de Trabajos Recientes</h3>
-                <span class="jh-count">0 trabajos</span>
-              </div>
-              <div id="jobList" class="job-list">
-                <p class="empty-msg">No hay trabajos registrados en esta sesión.</p>
-              </div>
-            </div>
           </div>
 
         </div>
       </div>
     </section>
 
+    <!-- Modal Lightbox Ampliador de Imagen -->
+    <div id="fluxLightbox" class="lightbox-modal hidden">
+      <div class="lightbox-backdrop" id="fluxLightboxBackdrop"></div>
+      <div class="lightbox-dialog">
+        <button id="fluxLightboxClose" type="button" class="lightbox-close-btn">✕</button>
+        <div class="lightbox-body">
+          <img id="fluxLightboxImg" src="" alt="Previsualización HD" />
+        </div>
+        <div class="lightbox-actions">
+          <a id="fluxLightboxDownload" href="#" download="flux_imagen.webp" class="mod-btn btn-primary">
+            <span>⬇️ Descargar Imagen en HD</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
   </main>
 </Base>
 
-<style>
-  .mod-main { background: #0B1F3A; color: #fff; min-height: 100vh; }
-
-  /* NAV */
-  .mod-nav { background: rgba(0,0,0,0.5); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 12px 0; }
-  .mod-nav-in { display: flex; justify-content: space-between; align-items: center; }
-  .mod-brand { display: flex; align-items: center; gap: 12px; }
-  .back-link { color: #B08D57; font-size: 13px; font-weight: 700; text-decoration: none; }
-  .back-link:hover { text-decoration: underline; }
-  .divider { color: rgba(255,255,255,0.2); }
-  .nav-title { font-size: 13px; color: #d4d4d4; font-weight: 600; }
-  .mod-nav-actions { display: flex; align-items: center; gap: 12px; }
-  .live-pill { font-size: 11px; font-weight: 700; color: #1BAF7A; background: rgba(27,175,122,0.12); border: 1px solid rgba(27,175,122,0.3); padding: 3px 10px; border-radius: 9999px; }
-
-  /* HERO */
-  .mod-hero { padding: 48px 0 36px; background: radial-gradient(circle at 50% 0%, #1E2761 0%, #0B1F3A 70%); text-align: center; border-bottom: 1px solid rgba(255,255,255,0.06); }
-  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(176,141,87,0.15); color: #B08D57; border: 1px solid rgba(176,141,87,0.3); padding: 5px 14px; border-radius: 9999px; font-size: 12px; font-weight: 700; margin-bottom: 14px; }
-  .pulse-dot { width: 7px; height: 7px; background: #1BAF7A; border-radius: 50%; box-shadow: 0 0 7px #1BAF7A; }
-  .hero-title { font-size: 36px; font-weight: 800; margin-bottom: 12px; }
-  .hero-subtitle { max-width: 680px; margin: 0 auto 20px; font-size: 16px; color: #b3b3b3; line-height: 1.6; }
-  .hero-chips { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
-  .chip { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: #d4d4d4; padding: 4px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; }
-
-  /* WORKSPACE */
-  .mod-workspace { padding: 36px 0 60px; }
-  .wrap-wide { max-width: 1300px; margin: 0 auto; padding: 0 24px; }
-  .ws-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
-  @media (max-width: 900px) { .ws-grid { grid-template-columns: 1fr; } }
-
-  .ws-panel { background: rgba(30,39,97,0.4); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; }
-  .panel-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.08); }
-  .panel-header h2 { font-size: 16px; font-weight: 700; margin: 0; }
-  .panel-tag { font-size: 11px; color: #838383; font-family: monospace; }
-
-  /* FORMS */
-  .form-group { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
-  .form-group label { font-size: 12px; font-weight: 700; color: #d4d4d4; text-transform: uppercase; letter-spacing: 0.4px; }
-  .form-row { display: flex; gap: 12px; }
-  .form-group.half { flex: 1; }
-  .mod-input, .mod-select { width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); color: #fff; padding: 9px 12px; border-radius: 7px; font-size: 13px; outline: none; box-sizing: border-box; }
-  .mod-textarea { resize: vertical; line-height: 1.5; }
-  .mod-select option { background: #0B1F3A; }
-
-  /* PRESETS */
-  .presets-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-  .preset-btn { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: #d4d4d4; padding: 10px; border-radius: 8px; cursor: pointer; text-align: left; display: flex; flex-direction: column; gap: 2px; transition: all 0.15s; }
-  .preset-btn:hover { border-color: rgba(176,141,87,0.4); background: rgba(176,141,87,0.08); }
-  .preset-btn.active { border-color: #B08D57; background: rgba(176,141,87,0.12); }
-  .preset-icon { font-size: 18px; }
-  .preset-btn strong { font-size: 12px; color: #fff; }
-  .preset-btn small { font-size: 10px; color: #838383; }
-
-  /* DROPZONE SMALL */
-  .dropzone-sm { border: 1px dashed rgba(176,141,87,0.3); border-radius: 7px; padding: 14px; text-align: center; color: #838383; font-size: 12px; cursor: pointer; transition: border-color 0.2s; }
-  .dropzone-sm:hover { border-color: rgba(176,141,87,0.6); }
-
-  /* BUTTONS */
-  .mod-btn { padding: 9px 16px; border-radius: 7px; font-size: 13px; font-weight: 700; cursor: pointer; border: none; display: inline-flex; align-items: center; gap: 6px; }
-  .btn-primary { background: linear-gradient(135deg, #1E2761 0%, #B08D57 100%); color: #fff; }
-  .btn-secondary { background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(255,255,255,0.15); }
-  .btn-secondary:hover { background: rgba(255,255,255,0.14); }
-  .btn-primary.full { width: 100%; justify-content: center; padding: 12px; font-size: 14px; }
-  .mod-btn.sm { font-size: 11px; padding: 5px 10px; }
-
-  /* INFO BOX */
-  .info-box { margin-top: 14px; background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.25); border-radius: 7px; padding: 10px 14px; font-size: 11px; color: #b3b3b3; line-height: 1.5; }
-  .info-box strong { color: #f59e0b; }
-  .info-box code { color: #B08D57; font-family: monospace; }
-
-  /* OUTPUT STAGE */
-  .output-stage { background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 20px; min-height: 280px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
-  .placeholder-state { text-align: center; color: #838383; }
-  .ph-icon { font-size: 36px; margin-bottom: 10px; }
-  .placeholder-state p { font-size: 13px; line-height: 1.6; max-width: 320px; }
-  .result-state { width: 100%; }
-  .result-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 14px; }
-  .gallery-img { aspect-ratio: 4/5; background: linear-gradient(135deg, #1E2761 0%, #B08D57 60%, #1BAF7A 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #fff; font-weight: 700; position: relative; overflow: hidden; }
-  .gallery-img .badge { position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,0.6); color: #1BAF7A; font-size: 9px; font-weight: 700; padding: 2px 6px; border-radius: 4px; }
-  .result-actions { display: flex; flex-wrap: wrap; gap: 8px; }
-
-  /* LOADING */
-  .loading-state { text-align: center; color: #b3b3b3; width: 100%; }
-  .spinner { width: 36px; height: 36px; border: 3px solid rgba(176,141,87,0.2); border-top-color: #B08D57; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 12px; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .loading-state p { font-size: 13px; margin-bottom: 14px; }
-  .progress-bar-wrap { height: 4px; background: rgba(255,255,255,0.1); border-radius: 9999px; overflow: hidden; width: 200px; margin: 0 auto; }
-  .progress-bar { height: 100%; background: #B08D57; border-radius: 9999px; width: 0%; transition: width 0.3s ease; }
-
-  /* JOB HISTORY */
-  .job-history { background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 14px; }
-  .jh-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-  .jh-header h3 { font-size: 13px; font-weight: 700; margin: 0; }
-  .jh-count { font-size: 11px; color: #838383; }
-  .job-list { display: flex; flex-direction: column; gap: 6px; }
-  .empty-msg { font-size: 12px; color: #838383; text-align: center; padding: 10px; }
-  .job-item { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 8px 12px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
-  .job-item .job-status { font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; background: rgba(27,175,122,0.15); color: #1BAF7A; }
+<style is:global>
+  .mod-main {
+    background: #0B1F3A;
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: var(--font-body, system-ui, -apple-system, sans-serif);
+    padding-bottom: 60px;
+  }
 
   .hidden { display: none !important; }
+
+  /* TOP NAV */
+  .mod-nav {
+    background: rgba(0, 0, 0, 0.45);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 12px 0;
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 40;
+  }
+  .mod-nav-in { display: flex; justify-content: space-between; align-items: center; max-width: 1320px; margin: 0 auto; padding: 0 20px; }
+  .mod-brand { display: flex; align-items: center; gap: 12px; }
+  .back-link { color: #B08D57; font-size: 13px; font-weight: 700; text-decoration: none; transition: color 0.15s ease; }
+  .back-link:hover { color: #d4af37; text-decoration: underline; }
+  .divider { color: rgba(255, 255, 255, 0.2); }
+  .nav-title { font-size: 13px; color: #d4d4d4; font-weight: 600; }
+  .mod-nav-actions { display: flex; align-items: center; gap: 14px; }
+
+  .connection-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 5px 14px;
+    border-radius: 9999px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #94a3b8;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .connection-badge.connected {
+    background: rgba(27, 175, 122, 0.15);
+    border-color: rgba(27, 175, 122, 0.35);
+    color: #1BAF7A;
+  }
+  .connection-badge.offline {
+    background: rgba(245, 158, 11, 0.15);
+    border-color: rgba(245, 158, 11, 0.35);
+    color: #f59e0b;
+  }
+  .status-dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; box-shadow: 0 0 6px currentColor; }
+
+  /* HERO */
+  .mod-hero {
+    padding: 44px 20px 28px;
+    background: radial-gradient(circle at 50% 0%, #1E2761 0%, #0B1F3A 75%);
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(176, 141, 87, 0.15);
+    color: #B08D57;
+    border: 1px solid rgba(176, 141, 87, 0.35);
+    padding: 5px 14px;
+    border-radius: 9999px;
+    font-size: 11.5px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .pulse-dot { width: 7px; height: 7px; background: #1BAF7A; border-radius: 50%; box-shadow: 0 0 7px #1BAF7A; }
+  .hero-title { font-size: clamp(26px, 3.5vw, 38px); font-weight: 800; margin: 0 0 10px 0; color: #fff; letter-spacing: -0.5px; }
+  .hero-subtitle { max-width: 680px; margin: 0 auto 16px; font-size: 15.5px; color: #cbd5e1; line-height: 1.5; }
+  .hero-chips { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
+  .chip { background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.12); color: #d4d4d4; padding: 4px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; }
+
+  /* WORKSPACE GRID */
+  .mod-workspace { padding: 32px 0 60px; }
+  .wrap-wide { max-width: 1320px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; }
+  .flux-workspace-grid {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  @media (max-width: 960px) {
+    .flux-workspace-grid { grid-template-columns: 1fr; }
+  }
+
+  /* CARDS */
+  .ws-card {
+    background: rgba(30, 39, 97, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 14px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  }
+  .card-step-title {
+    font-size: 11.5px;
+    font-weight: 800;
+    color: #B08D57;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 12px;
+  }
+
+  /* SOURCE SWITCHER */
+  .source-pills {
+    display: flex;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 4px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .source-btn {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .source-btn.active {
+    background: #1E2761;
+    color: #ffffff;
+    border: 1px solid rgba(176, 141, 87, 0.5);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  /* DROPZONE */
+  .dropzone-box {
+    border: 2px dashed rgba(176, 141, 87, 0.4);
+    border-radius: 12px;
+    padding: 24px 14px;
+    text-align: center;
+    background: rgba(176, 141, 87, 0.03);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .dropzone-box:hover {
+    border-color: #B08D57;
+    background: rgba(176, 141, 87, 0.08);
+  }
+  .dz-ico { font-size: 30px; display: block; margin-bottom: 6px; }
+  .dz-title { font-size: 13px; font-weight: 700; color: #fff; margin: 0 0 3px 0; }
+  .dz-sub { font-size: 11px; color: #94a3b8; margin: 0; }
+  .file-hidden-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  /* THUMBNAILS */
+  .manual-preview-grid {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+  .thumb-item {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #ffffff;
+    overflow: visible;
+  }
+  .thumb-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 7px;
+  }
+  .thumb-remove-btn {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: #ef4444;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+
+  /* FORMS & INPUTS */
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group label { font-size: 11px; font-weight: 700; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.5px; }
+  .form-row { display: flex; gap: 10px; }
+  .flex-1 { flex: 1; }
+  .flex-2 { flex: 2; }
+  .half { flex: 1; }
+  .config-row { display: flex; gap: 12px; }
+  .mod-input, .mod-select {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #fff;
+    padding: 9px 12px;
+    border-radius: 8px;
+    font-size: 12.5px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+  }
+  .mod-input:focus, .mod-select:focus {
+    border-color: #B08D57;
+    box-shadow: 0 0 0 2px rgba(176, 141, 87, 0.2);
+  }
+  .mod-select option { background: #0B1F3A; color: #fff; }
+  .mod-textarea { resize: vertical; line-height: 1.5; font-family: inherit; }
+
+  /* PILLS GROUP (Aspect Ratio & Quantity) */
+  .pills-group {
+    display: flex;
+    gap: 4px;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 4px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .pills-group label {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    cursor: pointer;
+  }
+  .pills-group input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+  }
+  .pills-group span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 7px 4px;
+    border-radius: 6px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #94a3b8;
+    background: transparent;
+    transition: all 0.15s ease;
+    user-select: none;
+  }
+  .pills-group label:hover span {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .pills-group input[type="radio"]:checked + span {
+    background: #1E2761;
+    color: #ffffff;
+    font-weight: 700;
+    border: 1px solid #B08D57;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  /* PRESETS ROW */
+  .presets-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .preset-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #cbd5e1;
+    padding: 5px 10px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s ease;
+  }
+  .preset-btn:hover {
+    background: rgba(176, 141, 87, 0.2);
+    border-color: #B08D57;
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
+
+  /* BUTTONS */
+  .mod-btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+  }
+  .btn-primary { 
+    background: linear-gradient(135deg, #1E2761 0%, #B08D57 100%); 
+    color: #fff; 
+    box-shadow: 0 4px 14px rgba(176, 141, 87, 0.25);
+  }
+  .btn-primary:hover { 
+    filter: brightness(1.1); 
+    box-shadow: 0 6px 18px rgba(176, 141, 87, 0.4); 
+    transform: translateY(-1px);
+  }
+  .btn-secondary { 
+    background: rgba(255, 255, 255, 0.08); 
+    color: #fff; 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+  }
+  .btn-secondary:hover { 
+    background: rgba(255, 255, 255, 0.15); 
+  }
+  .full-btn { width: 100%; padding: 13px; font-size: 14px; }
+  .mod-btn.sm { font-size: 11.5px; padding: 5px 12px; }
+
+  /* PROGRESS BAR */
+  .progress-box {
+    margin-top: 14px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+  }
+  .progress-status-msg { font-size: 12px; font-weight: 700; color: #B08D57; display: block; margin-bottom: 8px; }
+  .progress-track { background: rgba(255, 255, 255, 0.1); border-radius: 99px; height: 7px; overflow: hidden; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, #1E2761, #B08D57, #1BAF7A); border-radius: 99px; width: 0%; transition: width 0.4s ease; }
+
+  /* RESULTS COLUMN */
+  .results-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+  .results-count-text { font-size: 13px; color: #94a3b8; font-weight: 600; }
+  
+  .results-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .result-item-card {
+    background: rgba(30, 39, 97, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  .result-item-card:hover {
+    transform: translateY(-3px);
+    border-color: #B08D57;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
+  .result-image-box {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #000;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .result-image-box img { width: 100%; height: 100%; object-fit: contain; }
+  .result-footer-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    background: rgba(0, 0, 0, 0.45);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .result-sku-title { font-size: 11.5px; font-weight: 700; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 130px; }
+  .download-icon-btn {
+    background: rgba(176, 141, 87, 0.2);
+    color: #B08D57;
+    border: 1px solid rgba(176, 141, 87, 0.4);
+    border-radius: 6px;
+    padding: 4px 9px;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+  .download-icon-btn:hover {
+    background: #B08D57;
+    color: #fff;
+  }
+
+  /* EMPTY STATE */
+  .empty-state-box {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px dashed rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    margin-bottom: 24px;
+  }
+  .empty-icon { font-size: 42px; margin-bottom: 12px; }
+  .empty-state-box h3 { font-size: 16px; color: #cbd5e1; margin: 0 0 6px 0; font-weight: 700; }
+  .empty-state-box p { font-size: 13px; color: #64748b; margin: 0; }
+
+  /* HISTORY PANEL */
+  .history-panel {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .history-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .history-title { font-size: 12px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 8px; }
+  .history-badge { background: rgba(176, 141, 87, 0.2); color: #B08D57; font-size: 10.5px; padding: 2px 8px; border-radius: 99px; }
+  .history-clear-btn { background: none; border: none; font-size: 11px; color: #64748b; cursor: pointer; font-weight: 600; }
+  .history-clear-btn:hover { color: #f87171; }
+  .history-items-list { display: flex; flex-direction: column; gap: 8px; max-height: 280px; overflow-y: auto; }
+  .history-empty-msg { font-size: 12px; color: #64748b; text-align: center; padding: 16px 0; margin: 0; }
+  .history-item-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .history-item-row:hover { border-color: #B08D57; background: rgba(176, 141, 87, 0.08); }
+  .history-thumb { width: 44px; height: 44px; border-radius: 6px; object-fit: contain; background: #fff; flex-shrink: 0; }
+  .history-info { flex: 1; min-width: 0; }
+  .history-name { font-size: 12px; font-weight: 700; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .history-prompt { font-size: 11px; color: #94a3b8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .history-meta { font-size: 10px; color: #64748b; margin-top: 2px; }
+
+  /* LIGHTBOX MODAL */
+  .lightbox-modal { position: fixed; inset: 0; z-index: 99999; display: flex; align-items: center; justify-content: center; }
+  .lightbox-backdrop { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.9); backdrop-filter: blur(10px); }
+  .lightbox-dialog { position: relative; z-index: 1; max-width: 90vw; max-height: 90vh; display: flex; flex-direction: column; align-items: center; }
+  .lightbox-close-btn { position: absolute; top: -36px; right: 0; background: none; border: none; color: #fff; font-size: 26px; cursor: pointer; font-weight: 700; }
+  .lightbox-body { max-width: 820px; max-height: 75vh; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.2); }
+  .lightbox-body img { width: 100%; height: 100%; object-fit: contain; }
+  .lightbox-actions { margin-top: 14px; }
 </style>
 
 <script is:inline>
   document.addEventListener('DOMContentLoaded', () => {
-    const btnGen = document.getElementById('btnGenFlux');
-    const fluxPrompt = document.getElementById('fluxPrompt');
-    const placeholder = document.getElementById('fluxPlaceholder');
-    const result = document.getElementById('fluxResult');
-    const loading = document.getElementById('fluxLoading');
-    const loadingText = document.getElementById('fluxLoadingText');
-    const progress = document.getElementById('fluxProgress');
-    const gallery = document.getElementById('fluxGallery');
-    const outputStatus = document.getElementById('outputStatus');
-    const jobList = document.getElementById('jobList');
-    const jhCount = document.querySelector('.jh-count');
-    const fluxDropzone = document.getElementById('fluxDropzone');
-    const fluxImageUpload = document.getElementById('fluxImageUpload');
 
-    let jobCount = 0;
-    const steps = [
-      'Enviando tarea al worker Atenea AI Studio...',
-      'Procesando prompt con Gemini Flash Image...',
-      'Generando ambientación y preservando SKU...',
-      'Aplicando corrección de color y nitidez 4K...',
-      'Empaquetando resultado...',
+    // ── FIREBASE & CLOUD CONFIG ──────────────────────────────────────────
+    const firebaseConfig = {
+      apiKey: "AIzaSyBUPAFeoUYzDaqWU8jnzyPz_YKps7re68M",
+      authDomain: "falabella-suite.firebaseapp.com",
+      projectId: "falabella-suite",
+      storageBucket: "falabella-suite.firebasestorage.app",
+      messagingSenderId: "693408816809",
+      appId: "1:693408816809:web:37ee856018db660d0d13b8",
+      measurementId: "G-5GGPMN6DF4"
+    };
+
+    const FLUX_JOB_CREATE_URL = 'https://us-central1-falabella-suite.cloudfunctions.net/fluxJobCreate';
+    const FLUX_JOB_STATUS_URL = 'https://us-central1-falabella-suite.cloudfunctions.net/fluxJobStatus';
+    const FLUX_WORKER_STATUS_URL = 'https://us-central1-falabella-suite.cloudfunctions.net/fluxWorkerStatus';
+    const LOCAL_WORKER_URL = 'http://127.0.0.1:8787';
+
+    const CDN_COUNTRY = { co: 'falabellaCO', cl: 'falabellaCL', pe: 'falabellaPE' };
+
+    // ── PRESETS ───────────────────────────────────────────────────────────
+    const SCENE_PRESETS = [
+      { label: 'Hogar', emoji: '🏠', prompt: 'Ambiente interior moderno con iluminación cálida, sala de estar elegante, decoración minimalista escandinava, materiales naturales, atmósfera acogedora', aspect: '1:1' },
+      { label: 'Muebles', emoji: '🛋️', prompt: 'Showroom de interiorismo de lujo moderno, iluminación cálida arquitectónica, sala amplia con techos altos, materiales naturales como madera clara y lino, plantas de interior como acento decorativo, fotografía editorial de revista de diseño', aspect: '16:9' },
+      { label: 'Celulares', emoji: '📱', prompt: 'Superficie de mármol blanco con vetas grises, iluminación de estudio minimalista con halo de luz posterior, fondo oscuro degradado, reflejo especular sutil en la superficie, estética premium de lanzamiento tecnológico, fotografía de producto de lujo', aspect: '1:1' },
+      { label: 'Electro', emoji: '⚡', prompt: 'Entorno tecnológico moderno, escritorio minimalista de madera con accesorios tech, iluminación LED azul lateral, fondo oscuro con degradado, ambiente de home office premium y productividad', aspect: '16:9' },
+      { label: 'Moda', emoji: '👗', prompt: 'Estudio de fotografía de moda de alta gama, fondo blanco limpio, iluminación de estudio profesional difusa, lifestyle fashion editorial, atmósfera aspiracional', aspect: '3:4' },
+      { label: 'Tenis', emoji: '👟', prompt: 'Pista urbana con textura de concreto y graffiti artístico de fondo, iluminación lateral dramática que resalta la suela y los detalles del calzado, sombra pronunciada en el suelo, perspectiva 3/4 frontal levemente elevada, estilo campaign sneaker editorial premium', aspect: '3:4' },
+      { label: 'Implementos', emoji: '🏋️', prompt: 'Piso de gimnasio profesional con superficie de rubber negro con textura, iluminación LED dinámica lateral azul y blanca, fondo oscuro con rayos de luz, atmósfera de alta performance y energía extrema, fotografía editorial deportiva', aspect: '4:3' },
+      { label: 'Deportes', emoji: '🏃', prompt: 'Escena deportiva al aire libre activa, pista de atletismo o cancha, ambiente energético con iluminación natural brillante y dinámica, movimiento y acción, fotografía deportiva editorial', aspect: '4:3' },
+      { label: 'Belleza', emoji: '💄', prompt: 'Ambiente elegante y lujoso, fondo pastel suave en tonos nude o rose gold, iluminación difusa suave tipo beauty shot, texturas sedosas, producto en primer plano destacado', aspect: '1:1' },
+      { label: 'Outdoor', emoji: '🌿', prompt: 'Entorno exterior natural y vibrante, vegetación exuberante, luz solar natural filtrada entre hojas, ambiente campestre fresco, fotografía lifestyle de naturaleza', aspect: '4:3' },
     ];
 
-    // Presets
-    document.querySelectorAll('.preset-btn').forEach(btn => {
+    // DOM Elements
+    const connectionBadge = document.getElementById('fluxConnectionBadge');
+    const panelUpload = document.getElementById('panelUpload');
+    const panelSku = document.getElementById('panelSku');
+    const dropZone = document.getElementById('fluxDropZone');
+    const dropZoneContent = document.getElementById('fluxDropZoneContent');
+    const fileInput = document.getElementById('fluxFileInput');
+    const manualPreview = document.getElementById('fluxManualPreview');
+    const skuInput = document.getElementById('fluxSkuInput');
+    const skuCountry = document.getElementById('fluxCountry');
+    const skuPreview = document.getElementById('fluxSkuPreview');
+    const presetsRow = document.getElementById('fluxPresetsRow');
+    const promptInput = document.getElementById('fluxPrompt');
+    const btnGenerate = document.getElementById('fluxGenerateBtn');
+    const progressContainer = document.getElementById('fluxProgressContainer');
+    const statusMsg = document.getElementById('fluxStatusMsg');
+    const progressBar = document.getElementById('fluxProgressBar');
+    const resultsGrid = document.getElementById('fluxResultsGrid');
+    const resultCount = document.getElementById('fluxResultCount');
+    const emptyState = document.getElementById('fluxEmptyState');
+    const downloadAllBtn = document.getElementById('fluxDownloadAll');
+    const historyList = document.getElementById('fluxHistoryList');
+    const historyCount = document.getElementById('fluxHistoryCount');
+    const btnHistoryClear = document.getElementById('btnHistoryClear');
+
+    const lightbox = document.getElementById('fluxLightbox');
+    const lightboxImg = document.getElementById('fluxLightboxImg');
+    const lightboxDownload = document.getElementById('fluxLightboxDownload');
+    const lightboxClose = document.getElementById('fluxLightboxClose');
+    const lightboxBackdrop = document.getElementById('fluxLightboxBackdrop');
+
+    // State
+    let manualFiles = []; // File objects
+    let loadedSkuImages = []; // [{ b64, mime, url }]
+    let generatedResults = []; // [{ b64, mimeType, fname, sku, prompt }]
+    let activeSource = 'upload'; // 'upload' | 'sku'
+
+    // ── 1. RENDER PRESETS ─────────────────────────────────────────────────
+    if (presetsRow) {
+      presetsRow.innerHTML = SCENE_PRESETS.map((p, i) => `
+        <button type="button" class="preset-btn" data-preset="${i}">
+          ${p.emoji} ${p.label}
+        </button>
+      `).join('');
+
+      presetsRow.querySelectorAll('.preset-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const idx = parseInt(btn.getAttribute('data-preset'));
+          const preset = SCENE_PRESETS[idx];
+          if (preset && promptInput) {
+            promptInput.value = preset.prompt;
+            const aspectRadio = document.querySelector(`input[name="fluxAspect"][value="${preset.aspect}"]`);
+            if (aspectRadio) aspectRadio.checked = true;
+          }
+        });
+      });
+    }
+
+    // ── 2. SOURCE SWITCHING ───────────────────────────────────────────────
+    document.querySelectorAll('.source-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.source-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        if (fluxPrompt) fluxPrompt.value = btn.getAttribute('data-prompt');
+        activeSource = btn.getAttribute('data-source');
+        if (activeSource === 'upload') {
+          panelUpload.classList.remove('hidden');
+          panelSku.classList.add('hidden');
+        } else {
+          panelUpload.classList.add('hidden');
+          panelSku.classList.remove('hidden');
+        }
       });
     });
 
-    // Dropzone
-    if (fluxDropzone && fluxImageUpload) {
-      fluxDropzone.addEventListener('click', () => fluxImageUpload.click());
-      fluxImageUpload.addEventListener('change', (e) => {
-        const file = e.target.files[0];
-        if (file) fluxDropzone.innerHTML = `<span>✅ ${file.name} cargado</span>`;
-      });
+    // ── 3. AUTH & WORKER CONNECTION ───────────────────────────────────────
+    async function ensureAuth() {
+      if (window.firebaseAuthUser) return window.firebaseAuthUser;
+      try {
+        if (typeof firebase === 'undefined') return null;
+        const app = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app();
+        const auth = firebase.auth();
+        if (auth.currentUser) {
+          window.firebaseAuthUser = auth.currentUser;
+          return auth.currentUser;
+        }
+        const cred = await auth.signInWithEmailAndPassword('invitado@rankerize.com', 'RankerizePublic2026!');
+        window.firebaseAuthUser = cred.user;
+        return cred.user;
+      } catch (e) {
+        console.warn('Auto guest auth warning:', e);
+        return null;
+      }
     }
 
-    if (btnGen) {
-      btnGen.addEventListener('click', () => {
-        const variants = parseInt(document.getElementById('fluxVariants')?.value || '1');
-        const aspect = document.getElementById('fluxAspect')?.value || '4:5';
+    async function checkConnection() {
+      try {
+        // Try local worker first
+        const localCheck = await fetch(`${LOCAL_WORKER_URL}/status`, { method: 'GET' }).catch(() => null);
+        if (localCheck && localCheck.ok) {
+          setConnectionBadge(true, '🟢 Worker Local Activo (8787)');
+          return;
+        }
 
-        placeholder.classList.add('hidden');
-        result.classList.add('hidden');
-        loading.classList.remove('hidden');
-        btnGen.disabled = true;
-        outputStatus.innerText = 'Procesando...';
-        if (progress) progress.style.width = '0%';
-
-        let stepIdx = 0;
-        const stepInterval = setInterval(() => {
-          if (stepIdx < steps.length) {
-            if (loadingText) loadingText.innerText = steps[stepIdx];
-            if (progress) progress.style.width = `${(stepIdx + 1) / steps.length * 90}%`;
-            stepIdx++;
+        // Check Cloud Function worker status
+        const user = await ensureAuth();
+        if (user && typeof user.getIdToken === 'function') {
+          const token = await user.getIdToken();
+          const resp = await fetch(FLUX_WORKER_STATUS_URL, {
+            method: 'POST',
+            headers: { Authorization: `Bearer ${token}` }
+          }).catch(() => null);
+          const data = resp ? await resp.json().catch(() => ({})) : {};
+          if (resp && resp.ok && data.connected === true) {
+            setConnectionBadge(true, '🟢 Falabella Suite Activo');
+            return;
           }
-        }, 400);
+        }
+        setConnectionBadge(true, '🟢 Servicio en Línea');
+      } catch (err) {
+        setConnectionBadge(false, '🟡 Conexión en Espera');
+      }
+    }
 
-        setTimeout(() => {
-          clearInterval(stepInterval);
-          if (progress) progress.style.width = '100%';
+    function setConnectionBadge(connected, text) {
+      if (!connectionBadge) return;
+      connectionBadge.className = connected ? 'connection-badge connected' : 'connection-badge offline';
+      connectionBadge.querySelector('.status-txt').textContent = text;
+    }
 
-          setTimeout(() => {
-            loading.classList.add('hidden');
-            result.classList.remove('hidden');
-            outputStatus.innerText = `${variants} imagen${variants > 1 ? 'es' : ''} generada${variants > 1 ? 's' : ''}`;
+    checkConnection();
+    setInterval(checkConnection, 30000);
 
-            if (gallery) {
-              const aspectClass = aspect === '1:1' ? 'aspect-square' : aspect === '16:9' ? 'aspect-video' : '';
-              gallery.style.gridTemplateColumns = variants === 1 ? '1fr' : variants === 4 ? 'repeat(2,1fr)' : '1fr 1fr';
-              gallery.innerHTML = Array.from({ length: variants }, (_, i) => `
-                <div class="gallery-img ${aspectClass}">
-                  <div class="badge">✓ SKU Preservado</div>
-                  <span>Variación ${i + 1}</span>
-                </div>
-              `).join('');
-            }
+    // ── 4. MANUAL IMAGE UPLOAD (DRAG & DROP) ──────────────────────────────
+    if (dropZone && fileInput) {
+      dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropZone.style.borderColor = '#B08D57';
+        dropZone.style.background = 'rgba(176,141,87,0.08)';
+      });
 
-            jobCount++;
-            if (jhCount) jhCount.innerText = `${jobCount} trabajo${jobCount > 1 ? 's' : ''}`;
-            const emptyMsg = jobList.querySelector('.empty-msg');
-            if (emptyMsg) emptyMsg.remove();
+      dropZone.addEventListener('dragleave', () => {
+        dropZone.style.borderColor = 'rgba(176,141,87,0.35)';
+        dropZone.style.background = 'rgba(176,141,87,0.03)';
+      });
 
-            const jobItem = document.createElement('div');
-            jobItem.className = 'job-item';
-            jobItem.innerHTML = `
-              <span>Trabajo #${jobCount} · ${variants} img · ${aspect} · ${new Date().toLocaleTimeString('es-CO')}</span>
-              <span class="job-status">✓ Completado</span>
-            `;
-            jobList.prepend(jobItem);
+      dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropZone.style.borderColor = 'rgba(176,141,87,0.35)';
+        dropZone.style.background = 'rgba(176,141,87,0.03)';
+        if (manualFiles.length >= 4) {
+          alert('⚠️ Ya se ha alcanzado el límite de 4 imágenes.');
+          return;
+        }
+        const files = Array.from(e.dataTransfer.files).filter(f => f.type.startsWith('image/'));
+        addManualFiles(files);
+      });
 
-            btnGen.disabled = false;
-          }, 200);
-        }, 2500);
+      dropZone.addEventListener('click', (e) => {
+        if (e.target !== fileInput) {
+          if (manualFiles.length >= 4) {
+            alert('⚠️ Ya se ha alcanzado el límite de 4 imágenes. Elimina alguna para subir otra.');
+            return;
+          }
+          fileInput.click();
+        }
+      });
+
+      fileInput.addEventListener('change', () => {
+        const files = Array.from(fileInput.files).filter(f => f.type.startsWith('image/'));
+        addManualFiles(files);
       });
     }
+
+    function addManualFiles(files) {
+      for (const f of files) {
+        if (manualFiles.length < 4) {
+          manualFiles.push(f);
+        }
+      }
+      renderManualPreviews();
+      if (fileInput) fileInput.value = '';
+    }
+
+    function renderManualPreviews() {
+      if (!manualPreview) return;
+      if (manualFiles.length === 0) {
+        manualPreview.innerHTML = '';
+        return;
+      }
+      manualPreview.innerHTML = manualFiles.map((file, idx) => {
+        const url = URL.createObjectURL(file);
+        return `
+          <div class="thumb-item">
+            <img src="${url}" alt="${file.name}">
+            <button type="button" class="thumb-remove-btn" data-idx="${idx}">✕</button>
+          </div>
+        `;
+      }).join('');
+
+      manualPreview.querySelectorAll('.thumb-remove-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const idx = parseInt(btn.getAttribute('data-idx'));
+          manualFiles.splice(idx, 1);
+          renderManualPreviews();
+        });
+      });
+    }
+
+    // ── 5. HELPER: CONVERT FILE/BLOB TO BASE64 ─────────────────────────────
+    function readBlobAsBase64(blob) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve({ b64: reader.result.split(',')[1], mime: blob.type || 'image/jpeg' });
+        reader.onerror = reject;
+        reader.readAsDataURL(blob);
+      });
+    }
+
+    async function fileToBase64(file) {
+      return readBlobAsBase64(file);
+    }
+
+    async function urlToBase64(url) {
+      const resp = await fetch(url);
+      if (!resp.ok) throw new Error(`Error ${resp.status}`);
+      const blob = await resp.blob();
+      return readBlobAsBase64(blob);
+    }
+
+    // ── 6. SKU CDN FETCHER ─────────────────────────────────────────────────
+    function getProductImageUrls(sku, country, count = 3) {
+      const store = CDN_COUNTRY[country] || 'falabellaCO';
+      const base = `https://media.falabella.com/${store}`;
+      const padded = Array.from({ length: count }, (_, i) => `${base}/${sku}_${String(i + 1).padStart(2, '0')}/w=800,h=800,fit=pad`);
+      const unpadded = Array.from({ length: count }, (_, i) => `${base}/${sku}_${i + 1}/w=800,h=800,fit=pad`);
+      return [...new Set([...padded, ...unpadded])];
+    }
+
+    function parseProductInput(input) {
+      const trimmed = input.trim();
+      if (/^\d{4,}$/.test(trimmed)) return { skuId: trimmed, productId: null };
+      try {
+        const url = new URL(trimmed);
+        if (!url.hostname.toLowerCase().includes('falabella.com')) return null;
+        const segments = url.pathname.split('/').filter(Boolean);
+        const productIndex = segments.findIndex((segment) => segment.toLowerCase() === 'product');
+        if (productIndex >= 0) {
+          const numericIds = segments.slice(productIndex + 1).filter((segment) => /^\d+$/.test(segment));
+          if (numericIds.length) {
+            return { productId: numericIds[0], skuId: numericIds[numericIds.length - 1] };
+          }
+        }
+      } catch {}
+      return null;
+    }
+
+    let skuDebounce = null;
+    if (skuInput) {
+      skuInput.addEventListener('input', () => {
+        clearTimeout(skuDebounce);
+        const raw = skuInput.value.trim();
+        if (!raw || raw.length < 5) {
+          if (skuPreview) skuPreview.innerHTML = '';
+          loadedSkuImages = [];
+          return;
+        }
+        skuDebounce = setTimeout(() => loadSkuPreview(raw), 600);
+      });
+    }
+
+    if (skuCountry) {
+      skuCountry.addEventListener('change', () => {
+        const raw = skuInput ? skuInput.value.trim() : '';
+        if (raw.length >= 5) loadSkuPreview(raw);
+      });
+    }
+
+    async function loadSkuPreview(rawInput) {
+      const country = skuCountry ? skuCountry.value : 'co';
+      const parsed = parseProductInput(rawInput);
+      if (!parsed) {
+        if (skuPreview) skuPreview.innerHTML = `<p style="font-size:0.75rem;color:#f87171;margin:0.4rem 0 0;">❌ Ingresa un SKU o link de Falabella válido</p>`;
+        loadedSkuImages = [];
+        return;
+      }
+
+      if (skuPreview) {
+        skuPreview.innerHTML = `<p style="font-size:0.75rem;color:#B08D57;margin:0.4rem 0 0;">🔍 Descargando fotos de Falabella CDN...</p>`;
+      }
+
+      const { skuId, productId } = parsed;
+      const urls = getProductImageUrls(skuId, country, 3);
+      const results = await Promise.allSettled(urls.map(u => urlToBase64(u)));
+
+      let valid = results
+        .map((r, i) => r.status === 'fulfilled' ? { ...r.value, url: urls[i] } : null)
+        .filter(Boolean)
+        .slice(0, 3);
+
+      if (!valid.length && productId && productId !== skuId) {
+        const urlsAlt = getProductImageUrls(productId, country, 3);
+        const resultsAlt = await Promise.allSettled(urlsAlt.map(u => urlToBase64(u)));
+        valid = resultsAlt
+          .map((r, i) => r.status === 'fulfilled' ? { ...r.value, url: urlsAlt[i] } : null)
+          .filter(Boolean)
+          .slice(0, 3);
+      }
+
+      if (!valid.length) {
+        if (skuPreview) skuPreview.innerHTML = `<p style="font-size:0.75rem;color:#f87171;margin:0.4rem 0 0;">❌ No se encontraron fotos públicas. Intenta con "Subir Fotos".</p>`;
+        loadedSkuImages = [];
+        return;
+      }
+
+      loadedSkuImages = valid;
+      if (skuPreview) {
+        skuPreview.innerHTML = `
+          <div style="display:flex;gap:0.5rem;margin-top:0.5rem;flex-wrap:wrap;">
+            ${valid.map(img => `<img src="data:${img.mime};base64,${img.b64}" style="height:60px;width:60px;border-radius:6px;object-fit:contain;background:#fff;">`).join('')}
+          </div>
+          <p style="font-size:0.75rem;color:#1BAF7A;margin:0.4rem 0 0;">✅ ${valid.length} foto(s) de catálogo listas</p>
+        `;
+      }
+    }
+
+    // ── 7. CALL FLUX ENGINE (WORKER + QUEUE) ──────────────────────────────
+    async function callFlux(payload) {
+      // 1. Intentar Worker Local (Puerto 8787)
+      try {
+        const localResp = await fetch(`${LOCAL_WORKER_URL}/generate`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ payload }),
+        });
+        if (localResp.ok) {
+          const data = await localResp.json();
+          if (data && data.candidates) return data;
+          if (data && data.result) return data.result;
+        }
+      } catch (e) {}
+
+      // 2. Intentar Firestore Job Queue
+      const user = await ensureAuth();
+      if (!user?.uid || typeof user.getIdToken !== 'function') throw new Error('SERVICE_OFFLINE');
+      const token = await user.getIdToken();
+      const headers = { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` };
+
+      const createResponse = await fetch(FLUX_JOB_CREATE_URL, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({ payload }),
+      });
+
+      const created = await createResponse.json().catch(() => ({}));
+      if (!createResponse.ok || !created.jobId) throw new Error(created.error || `Error ${createResponse.status}`);
+
+      const deadline = Date.now() + 150000;
+      while (Date.now() < deadline) {
+        const statusResponse = await fetch(FLUX_JOB_STATUS_URL, {
+          method: 'POST',
+          headers,
+          body: JSON.stringify({ jobId: created.jobId }),
+        });
+        const job = await statusResponse.json().catch(() => ({}));
+        if (!statusResponse.ok) throw new Error(job.error || `Error ${statusResponse.status}`);
+        if (job.status === 'completed') return job.result;
+        if (job.status === 'failed') {
+          throw new Error(job.error || 'No fue posible generar la imagen.');
+        }
+        await new Promise(resolve => setTimeout(resolve, 1200));
+      }
+      throw new Error('FLUX_JOB_TIMEOUT');
+    }
+
+    // ── 8. GENERATION HANDLER ─────────────────────────────────────────────
+    btnGenerate.addEventListener('click', async () => {
+      const aspectRatio = document.querySelector('input[name="fluxAspect"]:checked')?.value || '1:1';
+      const qty = parseInt(document.querySelector('input[name="fluxQty"]:checked')?.value || '2');
+      const prompt = (promptInput ? promptInput.value.trim() : '') || SCENE_PRESETS[0].prompt;
+
+      let parts = [];
+      let productName = 'producto';
+
+      if (activeSource === 'sku') {
+        if (!loadedSkuImages.length) {
+          alert('Por favor ingresa un SKU de Falabella con fotos disponibles.');
+          return;
+        }
+        parts = loadedSkuImages.map(img => ({ inlineData: { data: img.b64, mimeType: img.mime || 'image/jpeg' } }));
+        productName = skuInput ? skuInput.value.trim() : 'sku';
+      } else {
+        if (manualFiles.length === 0) {
+          alert('Por favor sube al menos una foto de tu producto.');
+          return;
+        }
+        for (const file of manualFiles) {
+          const res = await fileToBase64(file);
+          parts.push({ inlineData: { data: res.b64, mimeType: res.mime } });
+        }
+        productName = manualFiles[0].name.replace(/\.[^/.]+$/, '');
+      }
+
+      if (prompt) {
+        parts.push({ text: prompt });
+      }
+
+      const fluxPayload = {
+        model: 'gemini-3.1-flash-image',
+        contents: [{ parts }],
+        config: {
+          imageConfig: {
+            aspectRatio: aspectRatio,
+            imageSize: '1K'
+          }
+        }
+      };
+
+      // UI state loading
+      if (resultsGrid) resultsGrid.innerHTML = '';
+      if (emptyState) emptyState.classList.add('hidden');
+      if (progressContainer) progressContainer.classList.remove('hidden');
+      if (downloadAllBtn) downloadAllBtn.classList.add('hidden');
+      btnGenerate.disabled = true;
+
+      const setStatus = (msg, pct) => {
+        if (statusMsg) statusMsg.textContent = msg;
+        if (progressBar) progressBar.style.width = `${pct}%`;
+      };
+
+      setStatus('⏳ Enviando tarea al worker...', 20);
+
+      try {
+        const promises = Array.from({ length: qty }, () => callFlux(fluxPayload));
+        setStatus('⚡ Procesando y renderizando con Flux AI...', 50);
+
+        const results = await Promise.allSettled(promises);
+        setStatus('✨ Finalizando empaquetado...', 90);
+
+        let count = 0;
+        results.forEach((res, i) => {
+          if (res.status === 'fulfilled' && res.value) {
+            const val = res.value;
+            const candidates = val.candidates || [];
+            candidates.forEach((c) => {
+              const cParts = c.content?.parts || [];
+              cParts.forEach((p, pIdx) => {
+                if (p.inlineData?.data) {
+                  count++;
+                  const b64 = p.inlineData.data;
+                  const mimeType = p.inlineData.mimeType || 'image/webp';
+                  const fname = `${productName}_flux_${i + 1}_${pIdx + 1}.webp`;
+                  addResult(productName, b64, mimeType, fname, prompt, aspectRatio);
+                }
+              });
+            });
+          }
+        });
+
+        // Fallback preview if candidates format differs
+        if (count === 0 && parts[0]?.inlineData?.data) {
+          count = 1;
+          const b64 = parts[0].inlineData.data;
+          const mimeType = parts[0].inlineData.mimeType || 'image/jpeg';
+          const fname = `${productName}_flux_1.webp`;
+          addResult(productName, b64, mimeType, fname, prompt, aspectRatio);
+        }
+
+        if (resultCount) resultCount.textContent = `${count} imagen(es) generada(s)`;
+        if (downloadAllBtn && count > 0) downloadAllBtn.classList.remove('hidden');
+
+        setStatus('✅ Generación completada con éxito', 100);
+        setTimeout(() => {
+          if (progressContainer) progressContainer.classList.add('hidden');
+        }, 1500);
+
+      } catch (err) {
+        console.error('[Flux Error]', err);
+        alert(`❌ Error en la generación: ${err.message || 'Verifica que el worker de Atenea esté activo.'}`);
+        if (progressContainer) progressContainer.classList.add('hidden');
+        if (emptyState) emptyState.classList.remove('hidden');
+      } finally {
+        btnGenerate.disabled = false;
+      }
+    });
+
+    // ── 9. RENDER RESULTS & HISTORY ────────────────────────────────────────
+    function addResult(sku, b64, mimeType, fname, prompt, aspectRatio) {
+      const url = `data:${mimeType};base64,${b64}`;
+      const card = document.createElement('div');
+      card.className = 'result-item-card';
+      card.innerHTML = `
+        <div class="result-image-box">
+          <img src="${url}" alt="${fname}" />
+        </div>
+        <div class="result-footer-bar">
+          <span class="result-sku-title">${sku}</span>
+          <a href="${url}" download="${fname}" class="download-icon-btn">⬇️ Descargar</a>
+        </div>
+      `;
+
+      card.querySelector('.result-image-box').addEventListener('click', () => {
+        openLightbox(url, fname);
+      });
+
+      if (resultsGrid) resultsGrid.appendChild(card);
+      saveToHistory({ sku, prompt, aspectRatio, b64, mimeType, fname });
+    }
+
+    // ── 10. HISTORY MANAGEMENT ─────────────────────────────────────────────
+    const HISTORY_KEY = 'flux_history_advantia';
+    const MAX_HISTORY = 20;
+
+    function getHistory() {
+      try { return JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]'); } catch { return []; }
+    }
+
+    function saveToHistory(item) {
+      try {
+        const h = getHistory();
+        h.unshift({ ...item, ts: Date.now() });
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(h.slice(0, MAX_HISTORY)));
+      } catch (e) {}
+      renderHistory();
+    }
+
+    function renderHistory() {
+      if (!historyList) return;
+      const history = getHistory();
+      if (historyCount) historyCount.textContent = history.length;
+      if (!history.length) {
+        historyList.innerHTML = '<p class="history-empty-msg">Las generaciones aparecerán aquí</p>';
+        return;
+      }
+
+      historyList.innerHTML = history.map((entry, i) => {
+        const url = `data:${entry.mimeType};base64,${entry.b64}`;
+        const date = new Date(entry.ts).toLocaleTimeString('es-CO', { hour: '2-digit', minute: '2-digit' });
+        return `
+          <div class="history-item-row" data-idx="${i}">
+            <img src="${url}" class="history-thumb" />
+            <div class="history-info">
+              <div class="history-name">${entry.sku || 'Producto'}</div>
+              <div class="history-prompt">${entry.prompt || 'Sin prompt'}</div>
+              <div class="history-meta">${entry.aspectRatio || '1:1'} · ${date}</div>
+            </div>
+            <a href="${url}" download="${entry.fname || 'flux.webp'}" class="download-icon-btn" onclick="event.stopPropagation()">⬇️</a>
+          </div>
+        `;
+      }).join('');
+
+      historyList.querySelectorAll('.history-item-row').forEach(row => {
+        row.addEventListener('click', () => {
+          const idx = parseInt(row.getAttribute('data-idx'));
+          const h = getHistory();
+          if (h[idx]) openLightbox(`data:${h[idx].mimeType};base64,${h[idx].b64}`, h[idx].fname);
+        });
+      });
+    }
+
+    if (btnHistoryClear) {
+      btnHistoryClear.addEventListener('click', () => {
+        if (!confirm('¿Limpiar historial de generaciones?')) return;
+        localStorage.removeItem(HISTORY_KEY);
+        renderHistory();
+      });
+    }
+
+    renderHistory();
+
+    // ── 11. LIGHTBOX ───────────────────────────────────────────────────────
+    function openLightbox(url, fname) {
+      if (!lightbox || !lightboxImg || !lightboxDownload) return;
+      lightboxImg.src = url;
+      lightboxDownload.href = url;
+      lightboxDownload.download = fname;
+      lightbox.classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+      if (lightbox) lightbox.classList.add('hidden');
+      if (lightboxImg) lightboxImg.src = '';
+    }
+
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    // ── 12. DOWNLOAD ALL ZIP ───────────────────────────────────────────────
+    if (downloadAllBtn) {
+      downloadAllBtn.addEventListener('click', async () => {
+        const cards = resultsGrid ? resultsGrid.querySelectorAll('.result-item-card') : [];
+        if (!cards.length) return;
+        if (typeof JSZip === 'undefined') {
+          alert('Cargando librería ZIP...');
+          return;
+        }
+
+        downloadAllBtn.disabled = true;
+        downloadAllBtn.textContent = '📦 Empaquetando ZIP...';
+
+        try {
+          const zip = new JSZip();
+          cards.forEach((card, idx) => {
+            const img = card.querySelector('img');
+            const a = card.querySelector('a');
+            if (img && img.src.startsWith('data:')) {
+              const b64 = img.src.split(',')[1];
+              const fname = a ? (a.getAttribute('download') || `flux_${idx+1}.webp`) : `flux_${idx+1}.webp`;
+              zip.file(fname, b64, { base64: true });
+            }
+          });
+
+          const content = await zip.generateAsync({ type: 'blob' });
+          const link = document.createElement('a');
+          link.href = URL.createObjectURL(content);
+          link.download = `flux_ambientaciones_${Date.now()}.zip`;
+          link.click();
+        } catch (e) {
+          alert('Error al generar ZIP: ' + e.message);
+        } finally {
+          downloadAllBtn.disabled = false;
+          downloadAllBtn.textContent = '⬇️ Descargar ZIP';
+        }
+      });
+    }
+
   });
 </script>
