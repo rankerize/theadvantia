@@ -177,6 +177,17 @@ h3{font-size:var(--text-subheading);font-weight:650;line-height:1.35;letter-spac
 .nav-item:hover{background:rgba(0,0,0,.04)}
 .nav-item.is-active{font-weight:700;color:var(--ink)}
 .nav-actions{display:flex;align-items:center;gap:var(--spacing-8);margin-left:var(--spacing-16)}
+/* Acceso al portal del equipo: en escritorio solo el candado (el texto queda para lectores
+   de pantalla y en el title) para no partir el menu; en el menu movil se ve completo */
+.nav-actions .nav-login{width:40px;height:40px;padding:0;flex:none}
+.nav-login svg{width:17px;height:17px}
+.nav-login-txt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+/* Entre 861 y 1080px el menu va justo: se reducen los espacios para que quepa el candado */
+@media (min-width:861px) and (max-width:1080px){
+  .nav-in{gap:var(--spacing-16)}
+  .nav-actions{margin-left:var(--spacing-8)}
+  .nav-item{padding-left:var(--spacing-8);padding-right:var(--spacing-8)}
+}
 .burger{display:none;margin-left:auto;width:40px;height:36px;padding:9px 8px;
   background:none;border:0;cursor:pointer;flex-direction:column;justify-content:space-between}
 .burger i{display:block;height:2px;background:var(--ink);border-radius:var(--radius-badges)}
@@ -550,6 +561,10 @@ h3{font-size:var(--text-subheading);font-weight:650;line-height:1.35;letter-spac
     -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
   .nav-menu.is-open .nav-item{padding:10px 12px}
   .nav-menu.is-open .btn{margin-top:var(--spacing-8);justify-content:center}
+  /* Menu movil abierto: se muestran los botones (portal y Diagnostico) a todo el ancho */
+  .nav-menu.is-open .nav-actions{display:flex;flex-direction:column;align-items:stretch;gap:0;margin:var(--spacing-8) 0 0}
+  .nav-menu.is-open .nav-login{width:auto;height:auto;padding:12px 20px}
+  .nav-menu.is-open .nav-login-txt{position:static;width:auto;height:auto;overflow:visible;clip:auto}
   .burger{display:flex}
 }
 @media (max-width:640px){

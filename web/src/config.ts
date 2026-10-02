@@ -1,6 +1,6 @@
 // Constantes del sitio. VERSION es el cache-buster de style.css y app.js.
 export const SITE = 'https://theadvantia.com';
-export const VERSION = '7.11';
+export const VERSION = '7.12';
 export const GA_ID = 'G-5B9KYRP50X';
 export const HUBSPOT_PORTAL = '51945405';
 export const FONTS =

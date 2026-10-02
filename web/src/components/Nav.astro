@@ -13,7 +13,11 @@ const cls = (href: string) => (href === active ? 'nav-item is-active' : 'nav-ite
       <a class={cls('/blog')} href="/blog"><b>Blog</b></a>
       <a class={cls('/nosotros')} href="/nosotros"><b>Nosotros</b></a>
       <a class={cls('/contacto')} href="/contacto"><b>Contacto</b></a>
-      <div class="nav-actions"><a class="btn btn-fill" href="/contacto">Agenda tu Diagnóstico</a></div>
+      <div class="nav-actions">
+        <!-- Acceso del equipo al portal: el servidor pide usuario y clave (.htaccess) -->
+        <a class="btn btn-ghost nav-login" href="/aplicativos" rel="nofollow" title="Ingresar al portal del equipo"><svg aria-hidden="true"><use href="#i-lock"></use></svg><span class="nav-login-txt">Ingresar al portal</span></a>
+        <a class="btn btn-fill" href="/contacto">Agenda tu Diagnóstico</a>
+      </div>
     </div>
     <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i><i></i></button>
   </div></nav>
