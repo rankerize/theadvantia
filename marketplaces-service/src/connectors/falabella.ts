@@ -5,7 +5,7 @@ import crypto from "crypto";
 // Base URL Colombia: https://sellercenter-api.linio.com.co/
 // Auth: HMAC-SHA256 por cada request
 
-const BASE_URL = "https://sellercenter-api.linio.com.co/";
+const BASE_URL = "https://sellercenter-api.falabella.com/";
 const VERSION = "1.0";
 const FORMAT = "JSON";
 
@@ -17,15 +17,9 @@ export interface FalabellaCredentials {
 
 // --- Firma HMAC-SHA256 -------------------------------------------------------
 
-function buildSignature(
-  params: Record<string, string>,
-  apiKey: string
-): string {
-  const sorted = Object.keys(params)
-    .sort()
-    .map((k) => `${k}=${params[k]}`)
-    .join("&");
-  return crypto.createHmac("sha256", apiKey).update(sorted).digest("hex");
+// Falabella espera ISO 8601 sin milisegundos y con offset +00:00 (no "Z")
+function isoTimestamp(): string {
+  return new Date().toISOString().replace(/\.\d{3}Z$/, "+00:00");
 }
 
 function buildUrl(
@@ -33,17 +27,24 @@ function buildUrl(
   creds: FalabellaCredentials,
   extra: Record<string, string> = {}
 ): string {
-  const timestamp = new Date().toISOString();
   const base: Record<string, string> = {
     Action: action,
     Format: FORMAT,
-    Timestamp: timestamp,
+    Timestamp: isoTimestamp(),
     UserID: creds.userId,
     Version: VERSION,
     ...extra,
   };
-  const signature = buildSignature(base, creds.apiKey);
-  const qs = new URLSearchParams({ ...base, Signature: signature }).toString();
+  // Falabella firma los valores ya URL-encoded (ej: @ → %40, : → %3A)
+  const signStr = Object.keys(base)
+    .sort()
+    .map((k) => `${k}=${encodeURIComponent(base[k])}`)
+    .join("&");
+  const signature = crypto
+    .createHmac("sha256", creds.apiKey)
+    .update(signStr)
+    .digest("hex");
+  const qs = `${signStr}&Signature=${signature}`;
   return `${BASE_URL}?${qs}`;
 }
 
