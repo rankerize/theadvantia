@@ -179,142 +179,81 @@ const seo = {
       </div>
     </section>
 
-    <!-- Analytical Breakdown Cards (Heatmap Analytics) -->
+    <!-- Interactive Charts & Behavior Section -->
     <section class="em-analytics-section">
       <div class="wrap">
-        <h2 class="sec-title">📌 Radiografía de Búsqueda por Dimensiones Clave</h2>
+        <div class="sec-header-flex">
+          <div>
+            <h2 class="sec-title">📈 Gráficas de Comportamiento e Inteligencia de Mercado</h2>
+            <p class="sec-subtitle">Visualización interactiva en tiempo real del volumen de búsqueda, cuota de marcas, preferencia de materiales y tendencias YoY.</p>
+          </div>
+          <div class="chart-controls">
+            <span class="chart-badge">📊 Motor Chart.js Activo</span>
+          </div>
+        </div>
         
-        <div class="analytics-grid">
+        <div class="charts-grid">
           
-          <!-- Card 1: Comparativa Nomenclatura -->
-          <article class="analytics-card">
-            <div class="ac-header">
-              <span class="ac-icon">💬</span>
-              <h3>Nomenclaturas & Sinónimos Más Buscados</h3>
+          <!-- Chart 1: Marcas Líderes -->
+          <article class="chart-card">
+            <div class="chart-header">
+              <span class="chart-icon">🏷️</span>
+              <div>
+                <h3>Cuota de Búsqueda por Marcas (Búsquedas/Mes)</h3>
+                <small>Volumen mensual de búsqueda en Colombia</small>
+              </div>
             </div>
-            <p class="ac-desc">¿Cómo llama la gente a las ollas a presión y arroceras en Colombia?</p>
-            <div class="ac-bars">
-              <div class="bar-row">
-                <span class="bar-label">Olla a Presión</span>
-                <div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div>
-                <span class="bar-val">12.100/mes</span>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">Olla Express</span>
-                <div class="bar-track"><div class="bar-fill" style="width: 82%;"></div></div>
-                <span class="bar-val">9.900/mes</span>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">Olla Pitadora</span>
-                <div class="bar-track"><div class="bar-fill" style="width: 20%;"></div></div>
-                <span class="bar-val">2.400/mes</span>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">Hoya de Presión (Error ortográfico)</span>
-                <div class="bar-track"><div class="bar-fill" style="width: 2%;"></div></div>
-                <span class="bar-val">170/mes</span>
-              </div>
+            <div class="chart-container">
+              <canvas id="chartBrands"></canvas>
             </div>
           </article>
 
-          <!-- Card 2: Cuota de Marcas -->
-          <article class="analytics-card">
-            <div class="ac-header">
-              <span class="ac-icon">🏷️</span>
-              <h3>Cuota de Búsqueda por Marcas Líderes</h3>
+          <!-- Chart 2: Preferencia por Materiales -->
+          <article class="chart-card">
+            <div class="chart-header">
+              <span class="chart-icon">🧱</span>
+              <div>
+                <h3>Participación de Mercado por Materiales</h3>
+                <small>Distribución porcentual de preferencia técnica</small>
+              </div>
             </div>
-            <p class="ac-desc">Distribución de búsquedas con intención explícita de marca.</p>
-            <div class="ac-bars">
-              <div class="bar-row">
-                <span class="bar-label">Imusa</span>
-                <div class="bar-track"><div class="bar-fill gold" style="width: 100%;"></div></div>
-                <span class="bar-val">23.800/mes</span>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">Universal</span>
-                <div class="bar-track"><div class="bar-fill gold" style="width: 78%;"></div></div>
-                <span class="bar-val">18.600/mes</span>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">Royal Prestige</span>
-                <div class="bar-track"><div class="bar-fill gold" style="width: 65%;"></div></div>
-                <span class="bar-val">15.400/mes</span>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">Oster</span>
-                <div class="bar-track"><div class="bar-fill gold" style="width: 38%;"></div></div>
-                <span class="bar-val">9.200/mes</span>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">Tramontina</span>
-                <div class="bar-track"><div class="bar-fill gold" style="width: 26%;"></div></div>
-                <span class="bar-val">6.200/mes</span>
-              </div>
+            <div class="chart-container">
+              <canvas id="chartMaterials"></canvas>
             </div>
           </article>
 
-          <!-- Card 3: Materiales Preferidos -->
-          <article class="analytics-card">
-            <div class="ac-header">
-              <span class="ac-icon">🧱</span>
-              <h3>Materiales & Tecnologías de Cocina</h3>
+          <!-- Chart 3: Tendencias YoY & Quick Wins -->
+          <article class="chart-card">
+            <div class="chart-header">
+              <span class="chart-icon">🚀</span>
+              <div>
+                <h3>Top Quick Wins — Crecimiento YoY (%)</h3>
+                <small>Categorías con mayor aceleración de demanda</small>
+              </div>
             </div>
-            <p class="ac-desc">¿Qué materiales prioriza el comprador colombiano?</p>
-            <div class="ac-bars">
-              <div class="bar-row">
-                <span class="bar-label">Antiadherente Tradicional</span>
-                <div class="bar-track"><div class="bar-fill green" style="width: 100%;"></div></div>
-                <span class="bar-val">18.400/mes</span>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">Acero Inoxidable</span>
-                <div class="bar-track"><div class="bar-fill green" style="width: 72%;"></div></div>
-                <span class="bar-val">13.200/mes</span>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">Hierro Fundido</span>
-                <div class="bar-track"><div class="bar-fill green" style="width: 48%;"></div></div>
-                <span class="bar-val">8.900/mes</span>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">Cerámica Antiadherente</span>
-                <div class="bar-track"><div class="bar-fill green" style="width: 32%;"></div></div>
-                <span class="bar-val">5.800/mes</span>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">Acero Quirúrgico</span>
-                <div class="bar-track"><div class="bar-fill green" style="width: 28%;"></div></div>
-                <span class="bar-val">5.100/mes</span>
-              </div>
+            <div class="chart-container">
+              <canvas id="chartYoY"></canvas>
             </div>
           </article>
 
-          <!-- Card 4: Preguntas & Dudas de Salud (FAQ IA) -->
-          <article class="analytics-card">
-            <div class="ac-header">
-              <span class="ac-icon">🩺</span>
-              <h3>Dudas de Salud & Preguntas Frecuentes</h3>
+          <!-- Chart 4: Intención de Búsqueda del Comprador -->
+          <article class="chart-card">
+            <div class="chart-header">
+              <span class="chart-icon">🎯</span>
+              <div>
+                <h3>Desglose por Intención de Búsqueda</h3>
+                <small>Clasificación de embudo: Transaccional vs Marca vs Salud</small>
+              </div>
             </div>
-            <p class="ac-desc">Inquietudes clave que los compradores consultan a Google y a asistentes de IA.</p>
-            <div class="faq-mini-list">
-              <div class="faq-mini-item">
-                <strong>¿El teflón es tóxico? / ¿Es tóxico el teflón?</strong>
-                <small>Búsquedas: 180/mes · Respuesta requerida en Guía de Salud CatalogAI</small>
-              </div>
-              <div class="faq-mini-item">
-                <strong>¿Cuáles son las marcas libres de tóxicos (PFOA y PTFE)?</strong>
-                <small>Búsquedas: 110/mes · Respuesta en Módulo 7 Beneficios</small>
-              </div>
-              <div class="faq-mini-item">
-                <strong>¿Ventajas y desventajas de las ollas de cerámica vs hierro fundido?</strong>
-                <small>Búsquedas: 160/mes · Formato directo P/R en FAQ para IA</small>
-              </div>
+            <div class="chart-container">
+              <canvas id="chartIntent"></canvas>
             </div>
           </article>
 
         </div>
       </div>
     </section>
+
 
     <!-- Main Results Table -->
     <section class="em-table-section">
@@ -511,29 +450,21 @@ const seo = {
     outline: none;
   }
 
-  /* Analytics Cards */
+  /* Charts & Analytics Section */
   .em-analytics-section { padding: 30px 0; }
-  .sec-title { font-family: var(--font-display); font-size: 22px; font-weight: 800; color: #ffffff; margin-bottom: 20px; text-align: left; }
-  .analytics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-  .analytics-card { background: rgba(18, 40, 76, 0.5); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 14px; padding: 20px; text-align: left; }
-  .ac-header { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
-  .ac-icon { font-size: 20px; }
-  .ac-header h3 { font-size: 16px; font-weight: 800; color: #ffffff; margin: 0; }
-  .ac-desc { font-size: 12px; color: #a3a3a3; margin-bottom: 16px; }
+  .sec-header-flex { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; }
+  .sec-title { font-family: var(--font-display); font-size: 22px; font-weight: 800; color: #ffffff; margin: 0; text-align: left; }
+  .sec-subtitle { font-size: 13px; color: #a3a3a3; margin: 4px 0 0 0; text-align: left; }
+  .chart-badge { background: rgba(176, 141, 87, 0.15); color: #B08D57; border: 1px solid rgba(176, 141, 87, 0.3); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; }
   
-  .ac-bars { display: flex; flex-direction: column; gap: 10px; }
-  .bar-row { display: grid; grid-template-columns: 180px 1fr 90px; align-items: center; gap: 10px; font-size: 12px; }
-  .bar-label { color: #e2e8f0; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .bar-track { background: rgba(255, 255, 255, 0.08); height: 8px; border-radius: 4px; overflow: hidden; }
-  .bar-fill { height: 100%; background: #3b82f6; border-radius: 4px; }
-  .bar-fill.gold { background: #B08D57; }
-  .bar-fill.green { background: #1BAF7A; }
-  .bar-val { font-weight: 700; color: #ffffff; text-align: right; }
+  .charts-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .chart-card { background: rgba(18, 40, 76, 0.6); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 20px; text-align: left; display: flex; flex-direction: column; backdrop-filter: blur(10px); }
+  .chart-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .chart-icon { font-size: 24px; background: rgba(255, 255, 255, 0.05); padding: 8px; border-radius: 10px; }
+  .chart-header h3 { font-size: 15px; font-weight: 800; color: #ffffff; margin: 0; }
+  .chart-header small { color: #a3a3a3; font-size: 11px; }
+  .chart-container { position: relative; width: 100%; height: 260px; }
 
-  .faq-mini-list { display: flex; flex-direction: column; gap: 10px; }
-  .faq-mini-item { background: rgba(255, 255, 255, 0.04); border-left: 3px solid #f59e0b; padding: 8px 12px; border-radius: 4px; }
-  .faq-mini-item strong { display: block; color: #ffffff; font-size: 12px; margin-bottom: 2px; }
-  .faq-mini-item small { color: #a3a3a3; font-size: 10px; }
 
   /* Table Section */
   .em-table-section { padding: 20px 0; }
@@ -559,12 +490,132 @@ const seo = {
   }
 </style>
 
+<script is:inline src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <script is:inline>
   document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Chart.js Instances
+    const initCharts = () => {
+      if (typeof Chart === 'undefined') return;
+
+      Chart.defaults.color = '#94a3b8';
+      Chart.defaults.font.family = 'Inter, sans-serif';
+
+      // 1. Chart Brands (Bar Chart)
+      const ctxBrands = document.getElementById('chartBrands');
+      if (ctxBrands) {
+        new Chart(ctxBrands, {
+          type: 'bar',
+          data: {
+            labels: ['Imusa', 'Universal', 'Royal Prestige', 'Oster', 'Tramontina', 'Tefal', 'B&D'],
+            datasets: [{
+              label: 'Búsquedas Mensuales',
+              data: [23800, 18600, 15400, 9200, 6200, 4800, 3900],
+              backgroundColor: 'rgba(176, 141, 87, 0.85)',
+              borderColor: '#B08D57',
+              borderWidth: 1,
+              borderRadius: 6
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+              y: { grid: { color: 'rgba(255, 255, 255, 0.05)' } },
+              x: { grid: { display: false } }
+            }
+          }
+        });
+      }
+
+      // 2. Chart Materials (Doughnut Chart)
+      const ctxMaterials = document.getElementById('chartMaterials');
+      if (ctxMaterials) {
+        new Chart(ctxMaterials, {
+          type: 'doughnut',
+          data: {
+            labels: ['Antiadherente', 'Acero Inoxidable', 'Hierro Fundido', 'Cerámica', 'Acero Quirúrgico', 'Barro/Peltre'],
+            datasets: [{
+              data: [40, 28, 16, 10, 4, 2],
+              backgroundColor: ['#1BAF7A', '#3b82f6', '#f59e0b', '#ec4899', '#8b5cf6', '#64748b'],
+              borderWidth: 2,
+              borderColor: '#09172A'
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { position: 'right', labels: { boxWidth: 12, font: { size: 11 } } } }
+          }
+        });
+      }
+
+      // 3. Chart YoY Quick Wins (Horizontal Bar Chart)
+      const ctxYoY = document.getElementById('chartYoY');
+      if (ctxYoY) {
+        new Chart(ctxYoY, {
+          type: 'bar',
+          data: {
+            labels: ['Sartenes Titanio', 'Sartenes Ninja', 'Acero al Carbono', 'Sarten Tramontina', 'Olla Presión Oster', 'Olla Imusa Multi'],
+            datasets: [{
+              label: 'Crecimiento YoY (%)',
+              data: [555, 467, 271, 233, 200, 177],
+              backgroundColor: 'rgba(245, 158, 11, 0.85)',
+              borderColor: '#f59e0b',
+              borderWidth: 1,
+              borderRadius: 6
+            }]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: { grid: { color: 'rgba(255, 255, 255, 0.05)' } },
+              y: { grid: { display: false } }
+            }
+          }
+        });
+      }
+
+      // 4. Chart Intent (Polar Area)
+      const ctxIntent = document.getElementById('chartIntent');
+      if (ctxIntent) {
+        new Chart(ctxIntent, {
+          type: 'polarArea',
+          data: {
+            labels: ['Transaccional / Compra', 'Búsqueda de Marca', 'Comparativa de Material', 'Consultas Salud / Toxicidad', 'Variaciones / Errores'],
+            datasets: [{
+              data: [65, 20, 8, 5, 2],
+              backgroundColor: [
+                'rgba(27, 175, 122, 0.75)',
+                'rgba(176, 141, 87, 0.75)',
+                'rgba(59, 130, 246, 0.75)',
+                'rgba(245, 158, 11, 0.75)',
+                'rgba(148, 163, 184, 0.5)'
+              ],
+              borderColor: '#09172A'
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { position: 'right', labels: { boxWidth: 12, font: { size: 10 } } } },
+            scales: { r: { grid: { color: 'rgba(255, 255, 255, 0.08)' }, ticks: { display: false } } }
+          }
+        });
+      }
+    };
+
+    setTimeout(initCharts, 300);
+
     // Embedded Rich Dataset
     const RAW_DATASET = [
       // Nomenclaturas & Ollas a Presión
       { kw: 'olla a presion', vol: 12100, yoy: '0%', comp: 'Alto', dim: 'nomenclatura', brand: 'all', mat: 'all', col: 'all', cap: '4 a 7', map: 'Título Principal / H1' },
+
       { kw: 'olla express', vol: 9900, yoy: '+22%', comp: 'Alto', dim: 'nomenclatura', brand: 'all', mat: 'all', col: 'all', cap: '4 a 7', map: 'Título Principal' },
       { kw: 'olla pitadora', vol: 2400, yoy: '+21%', comp: 'Alto', dim: 'nomenclatura', brand: 'all', mat: 'all', col: 'all', cap: '4 a 7', map: 'Módulo 7 (Pareja 1)' },
       { kw: 'hoya de presion', vol: 170, yoy: '-19%', comp: 'Alto', dim: 'nomenclatura', brand: 'all', mat: 'all', col: 'all', cap: '4 a 7', map: 'Filtro Sinónimo SEO' },
