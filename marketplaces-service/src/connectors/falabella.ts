@@ -209,9 +209,29 @@ export async function getCategorySuggestion(
   const body = await call<{ Categories: { Category: Array<{ CategoryId: string; CategoryName: string }> } }>(
     "GetCategorySuggestion",
     creds,
-    { Search: skuName, Name: skuName }
+    { Name: skuName }
   );
   return body.Categories.Category ?? [];
+}
+
+export async function getBrands(
+  creds: FalabellaCredentials
+): Promise<Array<{ BrandId: string; Name: string; GlobalIdentifier: string }>> {
+  const body = await call<{ Brands: { Brand: Array<{ BrandId: string; Name: string; GlobalIdentifier: string }> } }>(
+    "GetBrands",
+    creds
+  );
+  return body.Brands.Brand ?? [];
+}
+
+export async function getShipmentProviders(
+  creds: FalabellaCredentials
+): Promise<Array<{ Name: string; Default: string; ApiDefault: string }>> {
+  const body = await call<{ ShipmentProviders: { ShipmentProvider: Array<{ Name: string; Default: string; ApiDefault: string }> } }>(
+    "GetShipmentProviders",
+    creds
+  );
+  return body.ShipmentProviders.ShipmentProvider ?? [];
 }
 
 // --- Órdenes -----------------------------------------------------------------
@@ -319,17 +339,37 @@ export async function updateProduct(
   return body.FeedId;
 }
 
-// Consulta el estado de procesamiento de un feed (crear/actualizar producto).
+// Consulta el estado de un feed vía GetFeedRawInput.
+// GetFeedStatus/GetFeedList no existen en sellercenter-api.falabella.com (E008).
 export async function getFeedStatus(
   creds: FalabellaCredentials,
   feedId: string
 ): Promise<FalabellaFeedStatus> {
   const body = await call<{ FeedDetail: FalabellaFeedStatus }>(
-    "GetFeedStatus",
+    "GetFeedRawInput",
     creds,
-    { FeedId: feedId }
+    { FeedIdList: `[${feedId}]` }
   );
   return body.FeedDetail;
+}
+
+export interface FalabellaWarehouse {
+  WarehouseId: string;
+  Name: string;
+  AddressType: string;
+  IsDefault: string;
+}
+
+export async function getWarehouse(
+  creds: FalabellaCredentials
+): Promise<FalabellaWarehouse[]> {
+  const body = await call<{ Warehouses: { Warehouse: FalabellaWarehouse | FalabellaWarehouse[] } }>(
+    "GetWarehouse",
+    creds
+  );
+  const raw = body.Warehouses.Warehouse;
+  if (!raw) return [];
+  return Array.isArray(raw) ? raw : [raw];
 }
 
 // --- Compatibilidad con la interfaz base Listing ----------------------------

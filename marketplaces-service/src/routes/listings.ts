@@ -6,6 +6,9 @@ import {
   getCategoryTree,
   getCategoryAttributes,
   getCategorySuggestion,
+  getBrands,
+  getShipmentProviders,
+  getWarehouse,
   getOrders,
   createProduct,
   updateProduct,
@@ -84,6 +87,27 @@ listingsRouter.get("/falabella/categories/suggest", async (c) => {
   if (!q) return c.json({ error: "q query param required" }, 400);
   const suggestions = await getCategorySuggestion(creds, q);
   return c.json({ suggestions });
+});
+
+// GET /listings/falabella/brands
+listingsRouter.get("/falabella/brands", async (c) => {
+  const creds = falabellaCreds(c);
+  const brands = await getBrands(creds);
+  return c.json({ count: brands.length, brands });
+});
+
+// GET /listings/falabella/shipment-providers
+listingsRouter.get("/falabella/shipment-providers", async (c) => {
+  const creds = falabellaCreds(c);
+  const providers = await getShipmentProviders(creds);
+  return c.json({ providers });
+});
+
+// GET /listings/falabella/warehouse
+listingsRouter.get("/falabella/warehouse", async (c) => {
+  const creds = falabellaCreds(c);
+  const warehouses = await getWarehouse(creds);
+  return c.json({ warehouses });
 });
 
 // GET /listings/falabella/orders?createdAfter=2026-01-01T00:00:00Z&status=delivered
