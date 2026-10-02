@@ -40,43 +40,70 @@ const seo = {
           Desagrega la demanda real por <strong>variaciones de nombre</strong>, <strong>marcas</strong>, <strong>materiales</strong>, <strong>colores</strong>, <strong>capacidades</strong> y <strong>preguntas de salud</strong> para optimizar tu catálogo con el protocolo <strong>CatalogAI</strong>.
         </p>
 
-        <!-- Dynamic Category Selector -->
+        <!-- Dynamic Mundos & Category Hierarchy Selector -->
+        <div class="mundos-container">
+          <label class="picker-label">1. Selecciona el Mundo de Consumo:</label>
+          <div class="mundos-nav" id="mundosNav">
+            <button class="mundo-tab active" data-mundo="all">
+              <span class="m-icon">🌐</span>
+              <span class="m-name">Todos los Mundos</span>
+              <span class="m-badge">2.6M/mes</span>
+            </button>
+            <button class="mundo-tab" data-mundo="vestuario">
+              <span class="m-icon">👗</span>
+              <span class="m-name">Mundo Vestuario & Moda</span>
+              <span class="m-badge">1.8M/mes</span>
+            </button>
+            <button class="mundo-tab" data-mundo="hogar">
+              <span class="m-icon">🍲</span>
+              <span class="m-name">Mundo Hogar & Cocina</span>
+              <span class="m-badge">422K/mes</span>
+            </button>
+            <button class="mundo-tab" data-mundo="accesorios">
+              <span class="m-icon">⌚</span>
+              <span class="m-name">Mundo Accesorios & Relojería</span>
+              <span class="m-badge">370K/mes</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Category Buttons Filtered by Mundo -->
         <div class="cat-picker-container">
-          <label class="picker-label">Selecciona la Categoría de Estudio:</label>
+          <label class="picker-label">2. Selecciona la Categoría / Estudio Específico:</label>
           <div class="picker-buttons" id="catPicker">
-            <button class="picker-btn active" data-cat="ollas">
+            <button class="picker-btn active" data-cat="ollas" data-mundo="hogar">
               <span class="icon">🍲</span>
               <div class="txt">
                 <strong>Ollas & Cocina</strong>
                 <small>+422.840 búsquedas/mes</small>
               </div>
             </button>
-            <button class="picker-btn" data-cat="relojes">
-              <span class="icon">⌚</span>
+            <button class="picker-btn" data-cat="camisetas" data-mundo="vestuario">
+              <span class="icon">👕</span>
               <div class="txt">
-                <strong>Relojes & Accesorios</strong>
-                <small>+370.880 búsquedas/mes</small>
+                <strong>Camisetas & Deportiva</strong>
+                <small>+794.040 búsquedas/mes</small>
               </div>
             </button>
-            <button class="picker-btn" data-cat="lenceria">
+            <button class="picker-btn" data-cat="lenceria" data-mundo="vestuario">
               <span class="icon">👙</span>
               <div class="txt">
                 <strong>Lencería & Ropa Interior</strong>
                 <small>+569.840 búsquedas/mes</small>
               </div>
             </button>
-            <button class="picker-btn" data-cat="abrigos">
+            <button class="picker-btn" data-cat="abrigos" data-mundo="vestuario">
               <span class="icon">🧥</span>
               <div class="txt">
                 <strong>Abrigos & Chaquetas</strong>
                 <small>+459.470 búsquedas/mes</small>
               </div>
             </button>
-            <button class="picker-btn" data-cat="camisetas">
-              <span class="icon">👕</span>
+            <button class="picker-btn" data-cat="relojes" data-mundo="accesorios">
+              <span class="icon">⌚</span>
               <div class="txt">
-                <strong>Camisetas & Deportiva</strong>
-                <small>+794.040 búsquedas/mes</small>
+                <strong>Relojes & Accesorios</strong>
+                <small>+370.880 búsquedas/mes</small>
               </div>
             </button>
           </div>
@@ -408,8 +435,49 @@ const seo = {
     line-height: 1.6;
   }
 
+  /* Mundos Navigation */
+  .mundos-container { margin-bottom: 24px; }
+  .mundos-nav { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+  .mundo-tab {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 9999px;
+    padding: 9px 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #cbd5e1;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .mundo-tab:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+  .mundo-tab.active {
+    background: #B08D57;
+    color: #ffffff;
+    border-color: #B08D57;
+    box-shadow: 0 4px 14px rgba(176, 141, 87, 0.35);
+  }
+  .m-badge {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 2px 7px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #1BAF7A;
+  }
+  .mundo-tab.active .m-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+
   /* Picker */
-  .cat-picker-container { margin-top: 20px; }
+  .cat-picker-container { margin-top: 16px; }
   .picker-label { font-size: 12px; font-weight: 700; color: #a3a3a3; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 12px; }
   .picker-buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
   .picker-btn {
@@ -798,8 +866,37 @@ const seo = {
       }
     };
 
-    // Category Selector
+    // Mundos de Consumo Selector (Tier 1)
+    const mundoTabs = document.querySelectorAll('#mundosNav .mundo-tab');
     const catPickerBtns = document.querySelectorAll('#catPicker .picker-btn');
+
+    mundoTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        mundoTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const selectedMundo = tab.getAttribute('data-mundo') || 'all';
+
+        let firstVisibleBtn = null;
+
+        catPickerBtns.forEach(btn => {
+          const btnMundo = btn.getAttribute('data-mundo');
+          if (selectedMundo === 'all' || btnMundo === selectedMundo) {
+            btn.style.display = 'flex';
+            if (!firstVisibleBtn) firstVisibleBtn = btn;
+          } else {
+            btn.style.display = 'none';
+          }
+        });
+
+        // Auto select first visible category if current is hidden
+        const currentBtn = document.querySelector(`#catPicker .picker-btn[data-cat="${currentCat}"]`);
+        if (currentBtn && currentBtn.style.display === 'none' && firstVisibleBtn) {
+          firstVisibleBtn.click();
+        }
+      });
+    });
+
+    // Category / Estudio Selector (Tier 2)
     catPickerBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         catPickerBtns.forEach(b => b.classList.remove('active'));
