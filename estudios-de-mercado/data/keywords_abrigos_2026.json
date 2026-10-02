@@ -1,0 +1,3530 @@
+[
+  {
+    "keyword": "chaqueta",
+    "volume": 22200,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer mujer",
+    "volume": 14800,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para hombre",
+    "volume": 14800,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaleco",
+    "volume": 12100,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para mujer",
+    "volume": 12100,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta beisbolera",
+    "volume": 8100,
+    "yoy": "-45%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de cuero",
+    "volume": 8100,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas hombre",
+    "volume": 6600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas mujer",
+    "volume": 6600,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "gabardinas",
+    "volume": 6600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta columbia",
+    "volume": 5400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta reflectiva",
+    "volume": 5400,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de cuero hombre",
+    "volume": 4400,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de jean",
+    "volume": 4400,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de jeans",
+    "volume": 4400,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta impermeable",
+    "volume": 4400,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta north face",
+    "volume": 4400,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de jeans",
+    "volume": 4400,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas impermeables",
+    "volume": 4400,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chevignon chaquetas",
+    "volume": 4400,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "adidas chaqueta",
+    "volume": 3600,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta adidas",
+    "volume": 3600,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta para moto",
+    "volume": 3600,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta rompevientos",
+    "volume": 3600,
+    "yoy": "-17%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas adidas",
+    "volume": 3600,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para moto",
+    "volume": 3600,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de cuero mujer",
+    "volume": 2900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas prom",
+    "volume": 2900,
+    "yoy": "-21%",
+    "competition": "Bajo",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cortavientos",
+    "volume": 2900,
+    "yoy": "-17%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigos para mujer",
+    "volume": 2400,
+    "yoy": "-38%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta cortavientos",
+    "volume": 2400,
+    "yoy": "-16%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta cuero",
+    "volume": 2400,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de jean mujer",
+    "volume": 2400,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de jeans mujer",
+    "volume": 2400,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta jean mujer",
+    "volume": 2400,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta jeans mujer",
+    "volume": 2400,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta moto",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta motociclista",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta nike",
+    "volume": 2400,
+    "yoy": "-16%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas reflectivas para moto",
+    "volume": 2400,
+    "yoy": "21%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "gabardina hombre",
+    "volume": 2400,
+    "yoy": "-16%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "nike chaqueta",
+    "volume": 2400,
+    "yoy": "-16%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigo en ingles",
+    "volume": 1900,
+    "yoy": "-54%",
+    "competition": "Bajo",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigo en inglés",
+    "volume": 1900,
+    "yoy": "-54%",
+    "competition": "Bajo",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigo ingles",
+    "volume": 1900,
+    "yoy": "-54%",
+    "competition": "Bajo",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cardigan hombre",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta beisbolera hombre",
+    "volume": 1900,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta bomber",
+    "volume": 1900,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta columbia hombre",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta cuero hombre",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de jean hombre",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de jeans hombre",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta impermeable mujer",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta jean hombre",
+    "volume": 1900,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta jeans hombre",
+    "volume": 1900,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta negra",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta negra mujer",
+    "volume": 1900,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta tommy hilfiger hombre",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de jean hombre",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas totto",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "columbia chaqueta hombre",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cortavientos para moto",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "gabardina mujer",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "koaj chaquetas",
+    "volume": 1900,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigos mujer",
+    "volume": 1600,
+    "yoy": "-45%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "beisbolera hombre",
+    "volume": 1600,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "beisboleras hombre",
+    "volume": 1600,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer negra mujer",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta beisbolera mujer",
+    "volume": 1600,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta columbia mujer",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta cuero mujer",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta en ingles",
+    "volume": 1600,
+    "yoy": "21%",
+    "competition": "Bajo",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta impermeable hombre",
+    "volume": 1600,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta jean",
+    "volume": 1600,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta jeans",
+    "volume": 1600,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta north face hombre",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta rompevientos hombre",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta rompevientos mujer",
+    "volume": 1600,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de cuero para mujer",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para mujer de moda",
+    "volume": 1600,
+    "yoy": "-45%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas totto mujer",
+    "volume": 1600,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "koaj chaquetas hombre",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "koaj chaquetas mujer",
+    "volume": 1600,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigos",
+    "volume": 1300,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigos hombre",
+    "volume": 1300,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigos hombres",
+    "volume": 1300,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "acolchada",
+    "volume": 1300,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta acolchada hombre",
+    "volume": 1300,
+    "yoy": "-41%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta adidas hombre",
+    "volume": 1300,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta ferrari",
+    "volume": 1300,
+    "yoy": "-55%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta negra hombre",
+    "volume": 1300,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para dama",
+    "volume": 1300,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para mujer elegantes",
+    "volume": 1300,
+    "yoy": "-41%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigos para hombre",
+    "volume": 1000,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer blanca mujer",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer para mujer",
+    "volume": 1000,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta acolchada mujer",
+    "volume": 1000,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta adidas mujer",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta alpinestar",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta americanino",
+    "volume": 1000,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta bomber hombre",
+    "volume": 1000,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta deportiva mujer",
+    "volume": 1000,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta levis",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta moto hombre",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta mujer north face",
+    "volume": 1000,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta north face mujer",
+    "volume": 1000,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta ovejera hombre",
+    "volume": 1000,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta para moto hombre",
+    "volume": 1000,
+    "yoy": "39%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta reflectiva mujer",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de mujer modernas",
+    "volume": 1000,
+    "yoy": "-64%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas impermeables para hombre",
+    "volume": 1000,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas mujer falabella",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para niñas",
+    "volume": 1000,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "falabella chaquetas mujer",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "beisbolera mujer",
+    "volume": 880,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaleco mujer tejido",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta blanca",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta blanca mujer",
+    "volume": 880,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta bmw",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta bomber mujer",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta cortavientos hombre",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de motociclista",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta formula 1",
+    "volume": 880,
+    "yoy": "-64%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta levis ovejera",
+    "volume": 880,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta moto mujer",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta ovejera",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta ovejera mujer",
+    "volume": 880,
+    "yoy": "-45%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta para moto mujer",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta puffer",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta puma",
+    "volume": 880,
+    "yoy": "-41%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta zara",
+    "volume": 880,
+    "yoy": "14%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas chevignon mujer",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas dama",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de cuero para hombre",
+    "volume": 880,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de moto",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas en zara",
+    "volume": 880,
+    "yoy": "14%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas impermeables para mujer",
+    "volume": 880,
+    "yoy": "-45%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para el frio",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para hombre de moda",
+    "volume": 880,
+    "yoy": "-64%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "falabella chaquetas hombre",
+    "volume": 880,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "outfit con chaqueta de jean",
+    "volume": 880,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "zara chaquetas",
+    "volume": 880,
+    "yoy": "14%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "arturo calle chaquetas",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer corto mujer",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazers mujer zara",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "capa para la lluvia",
+    "volume": 720,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta acolchada",
+    "volume": 720,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta bershka",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta champion",
+    "volume": 720,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta corta viento mujer",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta cortavientos mujer",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta deportiva",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta hombre zara",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta militar hombre",
+    "volume": 720,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta oversize",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta polo",
+    "volume": 720,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta quechua",
+    "volume": 720,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta reflectiva hombre",
+    "volume": 720,
+    "yoy": "-85%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta superdry",
+    "volume": 720,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta termica",
+    "volume": 720,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta termica mujer",
+    "volume": 720,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta tommy",
+    "volume": 720,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta tommy hilfiger",
+    "volume": 720,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta tommy hilfiger mujer",
+    "volume": 720,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta verde",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de hombre",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de jean para mujer de moda",
+    "volume": 720,
+    "yoy": "-64%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de mujer",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas falabella",
+    "volume": 720,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para mujer economicas",
+    "volume": 720,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas tommy hilfiger",
+    "volume": 720,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cortaviento acerbis",
+    "volume": 720,
+    "yoy": "30%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cortavientos moto",
+    "volume": 720,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "kenzo chaquetas",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "parka hombre",
+    "volume": 720,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "parka mujer",
+    "volume": 720,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "rompeviento mujer",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "sacones de lana para mujer",
+    "volume": 720,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tommy hilfiger chaqueta",
+    "volume": 720,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer azules",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer mujer koaj",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaleco acolchado mujer",
+    "volume": 590,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta abercrombie",
+    "volume": 590,
+    "yoy": "-34%",
+    "competition": "Bajo",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta americanino hombre",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta blanca hombre",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta cafe",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de proteccion moto",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta denim",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta f1",
+    "volume": 590,
+    "yoy": "-64%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta la martina",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta militar",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta nautica",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta nike hombre",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta piloto",
+    "volume": 590,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta proteccion moto",
+    "volume": 590,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta red bull",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta roja",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta verde militar mujer",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de moda",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas deportivas para hombre",
+    "volume": 590,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas en jean para mujer",
+    "volume": 590,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas mujer zara",
+    "volume": 590,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para hombre koaj",
+    "volume": 590,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para hombres formales",
+    "volume": 590,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer para dama",
+    "volume": 480,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer para dama elegantes",
+    "volume": 480,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "estilo",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "burberry chaqueta",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaleco blanco",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaleco de jean",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "chaqueta azul",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta beige",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta beige mujer",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta burberry",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta cafe hombre",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta cafe mujer",
+    "volume": 480,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta corta",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta corta mujer",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de beisbol",
+    "volume": 480,
+    "yoy": "-58%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de cuero negra",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta denim mujer",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta deportiva hombre",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta doble faz",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta impermeable moto",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta invierno mujer",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta levis hombre",
+    "volume": 480,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta leñadora",
+    "volume": 480,
+    "yoy": "-57%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta leñadora hombre",
+    "volume": 480,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta leñadora mujer",
+    "volume": 480,
+    "yoy": "-64%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta peluda",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta piloto hombre",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta polo ralph lauren",
+    "volume": 480,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta pull and bear",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta puma bmw",
+    "volume": 480,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta roja hombre",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta roja mujer",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta tipo piloto",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas cortas para mujer",
+    "volume": 480,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de 11",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de invierno",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de jean para mujer",
+    "volume": 480,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas elegantes para dama",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas largas para mujer",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas leñadoras",
+    "volume": 480,
+    "yoy": "-57%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para hombre elegantes",
+    "volume": 480,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para hombre en promoción",
+    "volume": 480,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para hombre totto",
+    "volume": 480,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ela chaquetas",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "impermeable mujer",
+    "volume": 480,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "outfit chaqueta de jean",
+    "volume": 480,
+    "yoy": "-56%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tipos de chaqueta",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "vaqueras mujer",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigos para mujer elegantes",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer azul mujer",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer beige mujer",
+    "volume": 390,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer gris mujer",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer verde mujer",
+    "volume": 390,
+    "yoy": "-48%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cardigan largo mujer",
+    "volume": 390,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaleco para dama",
+    "volume": 390,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta aesthetic",
+    "volume": 390,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta alpha industries",
+    "volume": 390,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta americanino mujer",
+    "volume": 390,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta beige hombre",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta calvin klein",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta dainese",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de jean negra",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de jeans negra",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta decathlon",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta diesel",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta fox",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta hombre invierno",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta icon",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta lacoste",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta larga",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta militar mujer",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta nautica hombre",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta parka",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta puffer hombre",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta puffer mujer",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta puma ferrari",
+    "volume": 390,
+    "yoy": "-56%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta stradivarius",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta universitaria",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta verde hombre",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta verde mujer",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas calvin klein",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de marca",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas negras para hombre",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas negras para mujer",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para el frio hombre",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para mujer formales",
+    "volume": 390,
+    "yoy": "-72%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas termicas para hombre",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueton lacoste",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "fds chaquetas",
+    "volume": 390,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "gabardinas para mujer",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "h&m chaquetas mujer",
+    "volume": 390,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "impermeable decathlon",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "outfits con chaqueta de jean hombre",
+    "volume": 390,
+    "yoy": "-35%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "totto chaquetas hombre",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "velez chaquetas",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigo largo",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigo largo hombre",
+    "volume": 320,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigo largo mujer",
+    "volume": 320,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigos largos",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigos para niñas",
+    "volume": 320,
+    "yoy": "-36%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer chaqueta",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer roja mujer",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bomber chaqueta",
+    "volume": 320,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cazadora hombre",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cazadoras hombre",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaleco de mujer",
+    "volume": 320,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta azul hombre",
+    "volume": 320,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta azul mujer",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta bershka hombre",
+    "volume": 320,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta biker",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta blazer",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta cuerina mujer",
+    "volume": 320,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de cuero negra mujer",
+    "volume": 320,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de mezclilla",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de pana",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de plumas",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta esprit mujer",
+    "volume": 320,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta gris",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta invierno",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta jean negra",
+    "volume": 320,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta oversize hombre",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta oversize mujer",
+    "volume": 320,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta parka hombre",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta parka mujer",
+    "volume": 320,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta peluche mujer",
+    "volume": 320,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta reebok",
+    "volume": 320,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta rosa",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta sin mangas",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta top gun",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta verde militar hombre",
+    "volume": 320,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta versace",
+    "volume": 320,
+    "yoy": "-47%",
+    "competition": "Bajo",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta yamaha",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas acolchadas para hombre",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas adidas para hombre",
+    "volume": 320,
+    "yoy": "-36%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas corporativas",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de prom 11",
+    "volume": 320,
+    "yoy": "-55%",
+    "competition": "Bajo",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas deportivas para mujer",
+    "volume": 320,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas elegantes mujer",
+    "volume": 320,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas en jean para hombre",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para hombre arturo calle",
+    "volume": 320,
+    "yoy": "-58%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para mujer totto",
+    "volume": 320,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "gabardinas para hombre",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "levis ovejera",
+    "volume": 320,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "outfit chaqueta de cuero",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "outfit con chaqueta de jean mujer",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "sacones para mujer",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "superdry chaqueta",
+    "volume": 320,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "americana chaqueta",
+    "volume": 260,
+    "yoy": "-35%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer de mujer",
+    "volume": 260,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaketas",
+    "volume": 260,
+    "yoy": "-29%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaleco para niñas",
+    "volume": 260,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chamarra de cuero",
+    "volume": 260,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "chaqueta americana",
+    "volume": 260,
+    "yoy": "-35%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta biker mujer",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta cazadora hombre",
+    "volume": 260,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de cuadros mujer",
+    "volume": 260,
+    "yoy": "-22%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de cuero negra hombre",
+    "volume": 260,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta denim hombre",
+    "volume": 260,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta gamuza hombre",
+    "volume": 260,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta jean negra hombre",
+    "volume": 260,
+    "yoy": "-48%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta jordan",
+    "volume": 260,
+    "yoy": "88%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta kappa",
+    "volume": 260,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta larga hombre",
+    "volume": 260,
+    "yoy": "-48%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta larga mujer",
+    "volume": 260,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta nascar",
+    "volume": 260,
+    "yoy": "-22%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta nike mujer",
+    "volume": 260,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta retro",
+    "volume": 260,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta under armour",
+    "volume": 260,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta varsity",
+    "volume": 260,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas beisboleras para hombre",
+    "volume": 260,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para invierno",
+    "volume": 260,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para invierno mujer",
+    "volume": 260,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para mujer koaj",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas pintadas a mano",
+    "volume": 260,
+    "yoy": "-67%",
+    "competition": "Bajo",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "fuera de serie chaquetas",
+    "volume": 260,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "outfits con chaquetas de cuero hombre",
+    "volume": 260,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "parkas para hombre",
+    "volume": 260,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigos en zara",
+    "volume": 210,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "abrigos zara",
+    "volume": 210,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blazer fucsia mujer",
+    "volume": 210,
+    "yoy": "40%",
+    "competition": "Alto",
+    "cluster": "genero",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta de cuadros",
+    "volume": 210,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta desigual",
+    "volume": 210,
+    "yoy": "-36%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta nocta",
+    "volume": 210,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaqueta psg",
+    "volume": 210,
+    "yoy": "-55%",
+    "competition": "Medio",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas de jeans para mujer",
+    "volume": 210,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas para hombre falabella",
+    "volume": 210,
+    "yoy": "-36%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "zara abrigos",
+    "volume": 210,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "abrigos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "chaquetas beisboleras para mujer",
+    "volume": 170,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "chaquetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "impermeable para mujer",
+    "volume": 140,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  }
+]

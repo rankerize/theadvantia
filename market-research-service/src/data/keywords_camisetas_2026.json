@@ -1,0 +1,5339 @@
+[
+  {
+    "keyword": "camisa",
+    "volume": 33100,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta",
+    "volume": 33100,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta seleccion colombia",
+    "volume": 33100,
+    "yoy": "-71%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa blanca",
+    "volume": 18100,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisetas blancas",
+    "volume": 18100,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa elegante",
+    "volume": 12100,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas para hombre",
+    "volume": 12100,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas para hombres",
+    "volume": 12100,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta de la selección colombia",
+    "volume": 9900,
+    "yoy": "-56%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta oversize",
+    "volume": 9900,
+    "yoy": "-45%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "pantalon cargo mujer",
+    "volume": 9900,
+    "yoy": "-45%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa para dama",
+    "volume": 8100,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de nacional",
+    "volume": 8100,
+    "yoy": "-56%",
+    "competition": "Medio",
+    "cluster": "futbol_deporte",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camiseta de millonarios",
+    "volume": 8100,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta millonarios",
+    "volume": 8100,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas columbia",
+    "volume": 6600,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta america de cali",
+    "volume": 6600,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta negra",
+    "volume": 6600,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "guayabera",
+    "volume": 6600,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camibuso",
+    "volume": 5400,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa blanca mujer",
+    "volume": 5400,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa de roblox",
+    "volume": 5400,
+    "yoy": "-84%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas para mujer",
+    "volume": 5400,
+    "yoy": "-45%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta atletico nacional",
+    "volume": 5400,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de roblox",
+    "volume": 5400,
+    "yoy": "-84%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas oversize",
+    "volume": 5400,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "adidas camiseta",
+    "volume": 4400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa crochet",
+    "volume": 4400,
+    "yoy": "-45%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa en crochet",
+    "volume": 4400,
+    "yoy": "-45%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta manga larga",
+    "volume": 4400,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas adidas",
+    "volume": 4400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas navidad",
+    "volume": 4400,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas para hombre",
+    "volume": 4400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "estampado de camisetas",
+    "volume": 4400,
+    "yoy": "-34%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa blanca hombre",
+    "volume": 3600,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa guayabera",
+    "volume": 3600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa oversize hombre",
+    "volume": 3600,
+    "yoy": "-16%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa polo hombre",
+    "volume": 3600,
+    "yoy": "21%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas guayaberas",
+    "volume": 3600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas polo",
+    "volume": 3600,
+    "yoy": "-17%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas polo hombre",
+    "volume": 3600,
+    "yoy": "21%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas monastery",
+    "volume": 3600,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas mujer",
+    "volume": 3600,
+    "yoy": "-17%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas oversize hombre",
+    "volume": 3600,
+    "yoy": "-16%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "estampados para camisetas",
+    "volume": 3600,
+    "yoy": "-34%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "guayabera camisa",
+    "volume": 3600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "oversize hombre",
+    "volume": 3600,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "bayern munich camiseta",
+    "volume": 2900,
+    "yoy": "-64%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa juvenil",
+    "volume": 2900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa del junior",
+    "volume": 2900,
+    "yoy": "-16%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa oversize",
+    "volume": 2900,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa tipo polo",
+    "volume": 2900,
+    "yoy": "-17%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas tipo polo",
+    "volume": 2900,
+    "yoy": "-17%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas del bayern munich",
+    "volume": 2900,
+    "yoy": "-64%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas deportivas",
+    "volume": 2900,
+    "yoy": "-17%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas estampadas",
+    "volume": 2900,
+    "yoy": "-32%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas nike",
+    "volume": 2900,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas tipo polo",
+    "volume": 2900,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "nike camisetas",
+    "volume": 2900,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "arturo calle camisas",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "camisa america",
+    "volume": 2400,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa azul",
+    "volume": 2400,
+    "yoy": "-16%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa burberry",
+    "volume": 2400,
+    "yoy": "-32%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa del america",
+    "volume": 2400,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas arturo calle",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "camisas manga larga hombre",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta del tolima",
+    "volume": 2400,
+    "yoy": "-38%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta manchester united",
+    "volume": 2400,
+    "yoy": "-21%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta off white",
+    "volume": 2400,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas azules",
+    "volume": 2400,
+    "yoy": "-16%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas personalizadas",
+    "volume": 2400,
+    "yoy": "-47%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "off white camiseta",
+    "volume": 2400,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa blanca mujer",
+    "volume": 1900,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "blusa para mujer",
+    "volume": 1900,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa blanca manga larga",
+    "volume": 1900,
+    "yoy": "-16%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa negra hombre",
+    "volume": 1900,
+    "yoy": "-55%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa oversize mujer",
+    "volume": 1900,
+    "yoy": "-38%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisas de hombre",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas hombre",
+    "volume": 1900,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas manga larga mujer",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas oversize mujer",
+    "volume": 1900,
+    "yoy": "-38%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camiseta verde",
+    "volume": 1900,
+    "yoy": "-38%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas carnavaleras",
+    "volume": 1900,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de compresión",
+    "volume": 1900,
+    "yoy": "-16%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de navidad",
+    "volume": 1900,
+    "yoy": "-48%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas verdes",
+    "volume": 1900,
+    "yoy": "-38%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "guayabera blanca",
+    "volume": 1900,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "guayabera hombre",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "nueva camiseta selección colombia",
+    "volume": 1900,
+    "yoy": "-95%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa bonita",
+    "volume": 1600,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa beisbolera",
+    "volume": 1600,
+    "yoy": "-45%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa europea",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa manga corta",
+    "volume": 1600,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa negra manga larga",
+    "volume": 1600,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa negra mujer",
+    "volume": 1600,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa oxford",
+    "volume": 1600,
+    "yoy": "19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa polo mujer",
+    "volume": 1600,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas coach",
+    "volume": 1600,
+    "yoy": "-62%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas con estampados",
+    "volume": 1600,
+    "yoy": "-32%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de roblox",
+    "volume": 1600,
+    "yoy": "-83%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas estampadas",
+    "volume": 1600,
+    "yoy": "-32%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisas mujer",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta adidas hombre",
+    "volume": 1600,
+    "yoy": "-38%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta arsenal",
+    "volume": 1600,
+    "yoy": "-47%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta del arsenal",
+    "volume": 1600,
+    "yoy": "-47%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta manchester city",
+    "volume": 1600,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas basicas",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas beisboleras",
+    "volume": 1600,
+    "yoy": "-45%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas hugo boss",
+    "volume": 1600,
+    "yoy": "-23%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "estampar camisetas",
+    "volume": 1600,
+    "yoy": "-32%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "polos hombre",
+    "volume": 1600,
+    "yoy": "60%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa crop top",
+    "volume": 1300,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa calvin klein",
+    "volume": 1300,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa cuello neru",
+    "volume": 1300,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de lino",
+    "volume": 1300,
+    "yoy": "-16%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa polo blanca",
+    "volume": 1300,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa psycho bunny",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa tipo polo hombre",
+    "volume": 1300,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas aesthetic",
+    "volume": 1300,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de moda para hombre",
+    "volume": 1300,
+    "yoy": "-71%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas manga corta hombre",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas oversize hombre",
+    "volume": 1300,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisas para hombre de moda",
+    "volume": 1300,
+    "yoy": "-71%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas para hombre elegantes",
+    "volume": 1300,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta amarilla",
+    "volume": 1300,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta calvin klein",
+    "volume": 1300,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta louis vuitton",
+    "volume": 1300,
+    "yoy": "-32%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta nike hombre",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta roblox",
+    "volume": 1300,
+    "yoy": "-80%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta tipo polo mujer",
+    "volume": 1300,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de roblox aesthetic",
+    "volume": 1300,
+    "yoy": "-91%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas deportivas hombre",
+    "volume": 1300,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas para mujer",
+    "volume": 1300,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas psycho bunny",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas retro",
+    "volume": 1300,
+    "yoy": "-12%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "pantalones de mezclilla",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa blanca",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "blusa dama",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa de tiras",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa elegante para fiesta",
+    "volume": 1000,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa manga larga",
+    "volume": 1000,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa beige",
+    "volume": 1000,
+    "yoy": "-32%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa blanca png",
+    "volume": 1000,
+    "yoy": "-45%",
+    "competition": "Bajo",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa de carnaval",
+    "volume": 1000,
+    "yoy": "-35%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa leñadora",
+    "volume": 1000,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa leñadora hombre",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa lino hombre",
+    "volume": 1000,
+    "yoy": "14%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa roja",
+    "volume": 1000,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa versace",
+    "volume": 1000,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas boss",
+    "volume": 1000,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de mujer",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas para hombre manga corta",
+    "volume": 1000,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas para hombre manga larga",
+    "volume": 1000,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas para mujer de moda",
+    "volume": 1000,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas tommy hilfiger",
+    "volume": 1000,
+    "yoy": "30%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "camiseras para dama",
+    "volume": 1000,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta adidas mujer",
+    "volume": 1000,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta amiri",
+    "volume": 1000,
+    "yoy": "-41%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta del manchester city",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta gris",
+    "volume": 1000,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta morada",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta para roblox",
+    "volume": 1000,
+    "yoy": "-74%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta polo ralph lauren",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta sublimada",
+    "volume": 1000,
+    "yoy": "-28%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta tommy hilfiger hombre",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas basicas hombre",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas boss",
+    "volume": 1000,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas puma",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas tommy hilfiger hombre",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisillas",
+    "volume": 1000,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cuello neru",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "diseñar camisetas",
+    "volume": 1000,
+    "yoy": "-52%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "diseño de camisetas",
+    "volume": 1000,
+    "yoy": "-28%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "guayabera para hombre",
+    "volume": 1000,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "guayaberas para hombres",
+    "volume": 1000,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "manchester city camiseta",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "versace camisas",
+    "volume": 1000,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa brillante",
+    "volume": 880,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa cuello tortuga",
+    "volume": 880,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa encaje",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa transparente",
+    "volume": 880,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "borussia dortmund camiseta",
+    "volume": 880,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa blanca mujer elegante",
+    "volume": 880,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa de cuadros",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de jean mujer",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de jeans mujer",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa guayabera blanca",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa leñadora mujer",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa oxford hombre",
+    "volume": 880,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa ralph lauren",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "camisa roblox",
+    "volume": 880,
+    "yoy": "-80%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa rosa",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de navidad",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas elegantes para dama",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas gucci",
+    "volume": 880,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas para mujer elegantes",
+    "volume": 880,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas polo para hombre",
+    "volume": 880,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas slim fit hombre",
+    "volume": 880,
+    "yoy": "30%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta atletico nacional 2023",
+    "volume": 880,
+    "yoy": "-56%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta azul real madrid",
+    "volume": 880,
+    "yoy": "-75%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta borussia dortmund",
+    "volume": 880,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta de compresion hombre",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta de hombre",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta de juventus",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta de la juventus",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta del borussia dortmund",
+    "volume": 880,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta philipp plein",
+    "volume": 880,
+    "yoy": "84%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta river plate",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta sin mangas",
+    "volume": 880,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas al por mayor",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas basicas mujer",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de hombre",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de juventus",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de la juventus",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de mujer",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas diesel",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas manga larga hombre",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas para parejas",
+    "volume": 880,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas por mayor",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "pantalon jordan",
+    "volume": 880,
+    "yoy": "116%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "quickwin",
+    "mapping": "🚀 Quick Win / Módulo 7 (Pareja 1)"
+  },
+  {
+    "keyword": "philipp plein camiseta",
+    "volume": 880,
+    "yoy": "84%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "polos para hombre",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "polos para hombres",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "sobre camisas",
+    "volume": 880,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "arsenal camiseta",
+    "volume": 720,
+    "yoy": "-45%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "balenciaga camiseta",
+    "volume": 720,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bayern camiseta",
+    "volume": 720,
+    "yoy": "-45%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa aesthetic",
+    "volume": 720,
+    "yoy": "-50%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa de mujer",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa manga larga mujer",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa verde esmeralda",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa balenciaga",
+    "volume": 720,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa blanca manga corta",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa blanca manga larga hombre",
+    "volume": 720,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa cuello mao",
+    "volume": 720,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa guayabera hombre",
+    "volume": 720,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa guayabera para hombre",
+    "volume": 720,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa jean mujer",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa jeans mujer",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa negra png",
+    "volume": 720,
+    "yoy": "-46%",
+    "competition": "Bajo",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa verde hombre",
+    "volume": 720,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa verde militar",
+    "volume": 720,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas cuello mao",
+    "volume": 720,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de lino hombre",
+    "volume": 720,
+    "yoy": "49%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de moda",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas guayaberas hombre",
+    "volume": 720,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas para dama",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas para mujer juveniles",
+    "volume": 720,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas para roblox",
+    "volume": 720,
+    "yoy": "-87%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas tommy",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "camiseta bayern",
+    "volume": 720,
+    "yoy": "-45%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta cuello v",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta del tottenham",
+    "volume": 720,
+    "yoy": "-45%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta millonarios 2022",
+    "volume": 720,
+    "yoy": "-18%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta reebok",
+    "volume": 720,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta seleccion argentina",
+    "volume": 720,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta supreme",
+    "volume": 720,
+    "yoy": "22%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas balenciaga",
+    "volume": 720,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas manga larga mujer",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas navideñas personalizadas",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas neon",
+    "volume": 720,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas one piece",
+    "volume": 720,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas para estampar",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas stranger things",
+    "volume": 720,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas sublimadas",
+    "volume": 720,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas under armour",
+    "volume": 720,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "diseños para camisetas",
+    "volume": 720,
+    "yoy": "-46%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "estampados para camisetas de mujer",
+    "volume": 720,
+    "yoy": "-35%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "mancornas para camisa",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "outfit con camisa blanca",
+    "volume": 720,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "tottenham camiseta",
+    "volume": 720,
+    "yoy": "-45%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "adidas camiseta real madrid",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "amiri camisetas",
+    "volume": 590,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa campesina",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa con manga bombacha",
+    "volume": 590,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa de dama",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa dorada",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa fucsia",
+    "volume": 590,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa lentejuelas",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa negra mujer",
+    "volume": 590,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "blusa roja mujer",
+    "volume": 590,
+    "yoy": "-64%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa beisbolera hombre",
+    "volume": 590,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa blanca oversize",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa carolina herrera hombre",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa columbia hombre",
+    "volume": 590,
+    "yoy": "81%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa corta",
+    "volume": 590,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa cuadros",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de botones",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de jean",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de jean hombre",
+    "volume": 590,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de jeans hombre",
+    "volume": 590,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa dolce gabbana",
+    "volume": 590,
+    "yoy": "-56%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa hawaiana hombre",
+    "volume": 590,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa lino",
+    "volume": 590,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa negra hombre outfit",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa negra manga larga hombre",
+    "volume": 590,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa verde mujer",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas blancas para mujer",
+    "volume": 590,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisas carolina herrera hombre",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas cuello tortuga",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas formula 1",
+    "volume": 590,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas hawaianas",
+    "volume": 590,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas leñadoras",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas manga larga para mujer",
+    "volume": 590,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas mujer elegantes",
+    "volume": 590,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas tipo polo hombre",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseras",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta bmw",
+    "volume": 590,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta de",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta de la seleccion",
+    "volume": 590,
+    "yoy": "-47%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta essentials",
+    "volume": 590,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta jordan",
+    "volume": 590,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta juventus",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta moschino",
+    "volume": 590,
+    "yoy": "-35%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta naranja",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta palm angels",
+    "volume": 590,
+    "yoy": "-59%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta png",
+    "volume": 590,
+    "yoy": "-64%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas anime",
+    "volume": 590,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas bmw",
+    "volume": 590,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas cortas",
+    "volume": 590,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de algodon",
+    "volume": 590,
+    "yoy": "49%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas karl lagerfeld",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas rock",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas versace",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "carolina herrera camisas hombre",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cuello mao",
+    "volume": 590,
+    "yoy": "23%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "juventus camiseta",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "la martina camisas",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "leñadora hombre",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "leñadoras hombre",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "leñadoras mujer",
+    "volume": 590,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "moschino camiseta",
+    "volume": 590,
+    "yoy": "-35%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "moschino camisetas",
+    "volume": 590,
+    "yoy": "-35%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "outfit camisa blanca mujer",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "outfit camisa negra hombre",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "ajax camiseta",
+    "volume": 480,
+    "yoy": "-64%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa azul",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa azul rey",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa basica mujer",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "blusa blanca elegante",
+    "volume": 480,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "blusa de encaje",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa hombros descubiertos",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa manga corta",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa zara",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa azul mujer",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa azul rey",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa blanca manga corta hombre",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa bordada",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa crop top",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa dama",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de lino para hombre",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa denim mujer",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa elegante",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa elegante hombre",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa gucci",
+    "volume": 480,
+    "yoy": "-34%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa jean hombre",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa jeans hombre",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa negra manga corta",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa playera hombre",
+    "volume": 480,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa roja hombre",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa rosada",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa sin cuello",
+    "volume": 480,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa slim fit",
+    "volume": 480,
+    "yoy": "69%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas anchas",
+    "volume": 480,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas cortas",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas dama",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de lino para hombre",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de marca",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de parejas",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de rayas",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas elegantes",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas estampadas hombre",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisas estampadas para hombre",
+    "volume": 480,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisas polo club",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas polo ralph lauren hombre",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta ajax",
+    "volume": 480,
+    "yoy": "-64%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta compresion hombre",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta de river plate",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta del ajax",
+    "volume": 480,
+    "yoy": "-64%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta dsquared2",
+    "volume": 480,
+    "yoy": "-58%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta ferrari",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta guns and roses",
+    "volume": 480,
+    "yoy": "-81%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta nike mujer",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta nirvana",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta puma bmw",
+    "volume": 480,
+    "yoy": "-56%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta puma hombre",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta rayas",
+    "volume": 480,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta selección colombia 2022",
+    "volume": 480,
+    "yoy": "-64%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta shakira",
+    "volume": 480,
+    "yoy": "-85%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta sin manga hombre",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta spiderman",
+    "volume": 480,
+    "yoy": "631%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "quickwin",
+    "mapping": "🚀 Quick Win / Módulo 7 (Pareja 1)"
+  },
+  {
+    "keyword": "camisetas bordadas",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas cristianas",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas familiares",
+    "volume": 480,
+    "yoy": "-65%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas gym",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas metallica",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas running",
+    "volume": 480,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "la camiseta",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "leñadora",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "marca de camisas",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "nirvana camiseta",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "polos manga larga hombre",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa amarilla",
+    "volume": 390,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa cuello v",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa de lentejuelas",
+    "volume": 390,
+    "yoy": "-36%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa de seda",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa escotada",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa fucsia mujer",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa lino",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa manga bombacha",
+    "volume": 390,
+    "yoy": "-44%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa oversize",
+    "volume": 390,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "blusa oversize mujer",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "blusa satinada mujer",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa sin mangas",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa azul hombre",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa corta mujer",
+    "volume": 390,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de cuadros hombre",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de cuello",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de seda hombre",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa fucsia",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa polo manga larga",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa polo negra",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa rayada hombre",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa rayas hombre",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa red bull",
+    "volume": 390,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa roja mujer",
+    "volume": 390,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa rosa mujer",
+    "volume": 390,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa tipo polo blanca",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "polos",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa zara hombre",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas abercrombie",
+    "volume": 390,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas american eagle",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas anchas para mujer",
+    "volume": 390,
+    "yoy": "-50%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas blancas para hombre",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisas de marca para hombre",
+    "volume": 390,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de mujer de moda",
+    "volume": 390,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas guess",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas hawaianas para hombre",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas hombre zara",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas largas para mujer",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas leñadoras para hombre",
+    "volume": 390,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas para hombre elegantes manga larga",
+    "volume": 390,
+    "yoy": "-48%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas para niñas",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas playeras",
+    "volume": 390,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas playeras para hombre",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas vintage",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas zara hombre",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta america de cali 2022",
+    "volume": 390,
+    "yoy": "-86%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta bad bunny",
+    "volume": 390,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta de manchester city",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta guess",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta levis mujer",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta mario bros",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta michael kors",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta nike blanca",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta nike negra",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta rick y morty",
+    "volume": 390,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta tie dye",
+    "volume": 390,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas algodon",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas anchas",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas armani",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de goku",
+    "volume": 390,
+    "yoy": "-58%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de manchester united",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de rock",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de spiderman",
+    "volume": 390,
+    "yoy": "400%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "quickwin",
+    "mapping": "🚀 Quick Win / Módulo 7 (Pareja 1)"
+  },
+  {
+    "keyword": "camisetas de superheroes",
+    "volume": 390,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas estampadas hombre",
+    "volume": 390,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas iron maiden",
+    "volume": 390,
+    "yoy": "129%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "quickwin",
+    "mapping": "🚀 Quick Win / Módulo 7 (Pareja 1)"
+  },
+  {
+    "keyword": "camisetas vintage",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "mancuernillas para camisa",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "outfit camisa blanca",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "outfit con camisa blanca mujer",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "palm angels camiseta",
+    "volume": 390,
+    "yoy": "-47%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "playeras para hombre",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "zara camisas hombre",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "zara hombre camisas",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa blanca manga larga",
+    "volume": 320,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "blusa cuello alto",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa de crochet",
+    "volume": 320,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa espalda descubierta",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa larga",
+    "volume": 320,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa lila",
+    "volume": 320,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa naranja",
+    "volume": 320,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa negra manga larga",
+    "volume": 320,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa amarilla hombre",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa armani exchange",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa con corbata",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa cuadros hombre",
+    "volume": 320,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de leñador",
+    "volume": 320,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa formal",
+    "volume": 320,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa formal hombre",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa jean",
+    "volume": 320,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa morada hombre",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa negra manga corta hombre",
+    "volume": 320,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa oxford mujer",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa penguin",
+    "volume": 320,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa rayas mujer",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa rosa hombre",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas columbia originales",
+    "volume": 320,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas cortas de mujer",
+    "volume": 320,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de moda para jóvenes hombres",
+    "volume": 320,
+    "yoy": "-79%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas tommy hilfiger mujer",
+    "volume": 320,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "camiseta argentina mundial 2022",
+    "volume": 320,
+    "yoy": "25%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta atletico nacional 2022",
+    "volume": 320,
+    "yoy": "-55%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta brooklyn",
+    "volume": 320,
+    "yoy": "-57%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta de rayas",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta del inter",
+    "volume": 320,
+    "yoy": "-46%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta dior",
+    "volume": 320,
+    "yoy": "-48%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta fox",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta hellfire club",
+    "volume": 320,
+    "yoy": "-50%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta larga",
+    "volume": 320,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta lila",
+    "volume": 320,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta mickey mouse",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta puma mujer",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta sin manga",
+    "volume": 320,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta superman",
+    "volume": 320,
+    "yoy": "-58%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta termica",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas adidas originals",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas al por mayor baratas",
+    "volume": 320,
+    "yoy": "-48%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas bandas de rock",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de moda",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de naruto",
+    "volume": 320,
+    "yoy": "-57%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas estampadas personalizadas",
+    "volume": 320,
+    "yoy": "24%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas fox",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas nike originales",
+    "volume": 320,
+    "yoy": "-58%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas poliester",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas roblox aesthetic",
+    "volume": 320,
+    "yoy": "-87%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas star wars",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas vans",
+    "volume": 320,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cuello v",
+    "volume": 320,
+    "yoy": "-34%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "inter camiseta",
+    "volume": 320,
+    "yoy": "-46%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "marcas de camisetas",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "outfit camisa blanca hombre",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "outfit con camisa blanca hombre",
+    "volume": 320,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "outfit con camisa negra hombre",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "prada camiseta",
+    "volume": 320,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "psycho bunny camisas",
+    "volume": 320,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "vans camisetas",
+    "volume": 320,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa cruzada",
+    "volume": 260,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusa negra transparente",
+    "volume": 260,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camisa burberry hombre",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa cuello redondo",
+    "volume": 260,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de dama",
+    "volume": 260,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de dragon ball",
+    "volume": 260,
+    "yoy": "-36%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de flores",
+    "volume": 260,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de rayas hombre",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de sonic",
+    "volume": 260,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas aesthetic mujer",
+    "volume": 260,
+    "yoy": "-33%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de dama",
+    "volume": 260,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de flores",
+    "volume": 260,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de hombre manga corta",
+    "volume": 260,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de rayas hombre",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas leñadoras hombre",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas negras para mujer",
+    "volume": 260,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "camiseta batman",
+    "volume": 260,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta capitan america",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta de millonarios 2022",
+    "volume": 260,
+    "yoy": "-50%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta de river",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta transparente",
+    "volume": 260,
+    "yoy": "-36%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas anchas hombre",
+    "volume": 260,
+    "yoy": "-29%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas champion",
+    "volume": 260,
+    "yoy": "-21%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de bad bunny",
+    "volume": 260,
+    "yoy": "-50%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de dragon ball",
+    "volume": 260,
+    "yoy": "-36%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de metallica",
+    "volume": 260,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de mickey mouse",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de nirvana",
+    "volume": 260,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas personalizadas para parejas",
+    "volume": 260,
+    "yoy": "-55%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas serigrafiadas",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "fabrica de camisetas",
+    "volume": 260,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "falabella camisas hombre",
+    "volume": 260,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "hellfire club camiseta",
+    "volume": 260,
+    "yoy": "-36%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "jordan camiseta",
+    "volume": 260,
+    "yoy": "127%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "quickwin",
+    "mapping": "🚀 Quick Win / Módulo 7 (Pareja 1)"
+  },
+  {
+    "keyword": "la camiseria",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "serigrafia camisetas",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "serigrafiar camisetas",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa larga mujer",
+    "volume": 210,
+    "yoy": "-22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa versace hombre",
+    "volume": 210,
+    "yoy": "55%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de hombre de moda",
+    "volume": 210,
+    "yoy": "-22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de moda hombre",
+    "volume": 210,
+    "yoy": "-22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas en pareja",
+    "volume": 210,
+    "yoy": "-22%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas fendi",
+    "volume": 210,
+    "yoy": "-36%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas versace hombre",
+    "volume": 210,
+    "yoy": "55%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta fendi",
+    "volume": 210,
+    "yoy": "-36%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta larga mujer",
+    "volume": 210,
+    "yoy": "-22%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta pride",
+    "volume": 210,
+    "yoy": "-50%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas de stranger things",
+    "volume": 210,
+    "yoy": "29%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "guns n roses camiseta",
+    "volume": 210,
+    "yoy": "-65%",
+    "competition": "Bajo",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisa de bts",
+    "volume": 170,
+    "yoy": "189%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "quickwin",
+    "mapping": "🚀 Quick Win / Módulo 7 (Pareja 1)"
+  },
+  {
+    "keyword": "camisetas de bts",
+    "volume": 170,
+    "yoy": "189%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "quickwin",
+    "mapping": "🚀 Quick Win / Módulo 7 (Pareja 1)"
+  },
+  {
+    "keyword": "camisetas naruto",
+    "volume": 170,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camiseta manchester united 2022",
+    "volume": 140,
+    "yoy": "-56%",
+    "competition": "Medio",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisetas manga corta mujer",
+    "volume": 110,
+    "yoy": "-29%",
+    "competition": "Alto",
+    "cluster": "camisetas",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camisas de moda para mujer 2021",
+    "volume": 20,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  }
+]

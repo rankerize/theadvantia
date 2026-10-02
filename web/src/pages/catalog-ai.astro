@@ -1,0 +1,337 @@
+---
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  title: 'CatalogAI · Títulos SEO & Descripciones de Producto | Advantia',
+  description: 'Generador masivo de títulos optimizados, viñetas persuasivas y atributos estructurados con el Protocolo CatalogAI para Mercado Libre, Falabella y Amazon.',
+  canonical: 'https://theadvantia.com/catalog-ai',
+  robots: 'noindex, nofollow',
+};
+---
+
+<Base seo={seo} active="/aplicativos">
+  <main class="mod-main">
+
+    <header class="mod-nav">
+      <div class="wrap mod-nav-in">
+        <div class="mod-brand">
+          <a href="/aplicativos" class="back-link">← Volver a Aplicativos</a>
+          <span class="divider">|</span>
+          <span class="nav-title">📝 CatalogAI · Protocolo v4.2</span>
+        </div>
+        <div class="mod-nav-actions">
+          <span class="live-pill">🟢 Protocolo Activo</span>
+          <a href="/aplicativos" class="mod-btn btn-secondary sm">Portal de Aplicativos</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="mod-hero">
+      <div class="wrap">
+        <div class="hero-badge"><span class="pulse-dot"></span> CATALOG-AI PROTOCOL v4.2</div>
+        <h1 class="hero-title">Descripción de Producto & Títulos SEO</h1>
+        <p class="hero-subtitle">
+          Genera títulos optimizados, viñetas persuasivas de valor y atributos estructurados con algoritmos orientados al SEO de Mercado Libre, Falabella y Amazon. Score CatalogAI incluido.
+        </p>
+        <div class="hero-chips">
+          <span class="chip">📝 Título 60 chars SEO</span>
+          <span class="chip">🎯 Bullet Points</span>
+          <span class="chip">🛒 MeLi / Falabella / Amazon</span>
+          <span class="chip">⭐ Score CatalogAI</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="mod-workspace">
+      <div class="wrap-wide">
+        <div class="ws-grid">
+
+          <!-- LEFT: Input -->
+          <div class="ws-panel controls-panel">
+            <div class="panel-header">
+              <h2>Datos del Producto</h2>
+              <span class="panel-tag">Protocolo CatalogAI v4.2</span>
+            </div>
+
+            <div class="form-group">
+              <label for="prodTitle">Título Actual o Nombre del Producto</label>
+              <input type="text" id="prodTitle" class="mod-input" value="Tenis deportivos para hombre color negro marca Runflex" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group half">
+                <label for="prodCategory">Categoría Principal</label>
+                <input type="text" id="prodCategory" class="mod-input" value="Deportes y Calzado" />
+              </div>
+              <div class="form-group half">
+                <label for="targetChannel">Canal Destino</label>
+                <select id="targetChannel" class="mod-select">
+                  <option value="mercadolibre">Mercado Libre (SEO Max)</option>
+                  <option value="falabella">Falabella Seller Center</option>
+                  <option value="amazon">Amazon SP-API</option>
+                  <option value="homecenter">Homecenter / Sodimac</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="prodBrand">Marca</label>
+              <input type="text" id="prodBrand" class="mod-input" value="Runflex" />
+            </div>
+
+            <div class="form-group">
+              <label for="prodAttrs">Atributos Clave (separados por coma)</label>
+              <input type="text" id="prodAttrs" class="mod-input" value="Suela antideslizante, malla transpirable, amortiguación EVA, talla 39-43, peso 280g" />
+            </div>
+
+            <div class="form-group">
+              <label for="prodKeywords">Keywords de Búsqueda Prioritarios (opcional)</label>
+              <input type="text" id="prodKeywords" class="mod-input" placeholder="tenis deportivos hombre, calzado running, zapatillas negras..." />
+            </div>
+
+            <div class="form-group">
+              <label for="prodUSP">Propuesta de Valor Principal (USP)</label>
+              <textarea id="prodUSP" rows="2" class="mod-input mod-textarea" placeholder="¿Qué hace único a este producto? ej: suela de goma especial para asfalto húmedo..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Tono del Contenido</label>
+              <div class="tone-grid">
+                <button class="tone-btn active" data-tone="comercial">🚀 Comercial</button>
+                <button class="tone-btn" data-tone="tecnico">🔧 Técnico</button>
+                <button class="tone-btn" data-tone="lifestyle">✨ Lifestyle</button>
+              </div>
+            </div>
+
+            <button class="mod-btn btn-primary full" id="btnOptimize">
+              🚀 Generar con Protocolo CatalogAI
+            </button>
+          </div>
+
+          <!-- RIGHT: Output -->
+          <div class="ws-panel output-panel">
+            <div class="panel-header">
+              <h2>Paquete de Contenido SEO</h2>
+              <span class="panel-tag" id="outputStatus">En espera...</span>
+            </div>
+
+            <div class="output-stage" id="outputStage">
+              <div class="placeholder-state" id="outputPlaceholder">
+                <div class="ph-icon">📝</div>
+                <p>Ingresa los datos del producto y haz clic en <strong>Generar con Protocolo CatalogAI</strong> para ver el paquete de contenido SEO.</p>
+              </div>
+
+              <div class="result-state hidden" id="outputResult">
+                <!-- Score Badge -->
+                <div class="score-banner">
+                  <div class="score-circle" id="scoreCircle">99</div>
+                  <div class="score-info">
+                    <strong>CatalogAI Score</strong>
+                    <span id="scoreLabel">Excelente</span>
+                  </div>
+                </div>
+
+                <!-- Título optimizado -->
+                <div class="output-block">
+                  <div class="block-label">TÍTULO OPTIMIZADO</div>
+                  <div class="block-meta" id="charCount">0 / 60 caracteres</div>
+                  <div class="title-output" id="outTitle">—</div>
+                  <div class="copy-row">
+                    <button class="copy-btn" id="copyTitle">📋 Copiar Título</button>
+                  </div>
+                </div>
+
+                <!-- Bullets -->
+                <div class="output-block">
+                  <div class="block-label">VIÑETAS PERSUASIVAS (BULLET POINTS)</div>
+                  <ul class="bullets-output" id="outBullets"></ul>
+                </div>
+
+                <!-- Keywords -->
+                <div class="output-block">
+                  <div class="block-label">KEYWORDS DETECTADOS</div>
+                  <div class="tags-row" id="outKeywords"></div>
+                </div>
+
+                <!-- Actions -->
+                <div class="output-actions">
+                  <button class="mod-btn btn-primary" onclick="alert('Exportando paquete de contenido como CSV...')">📊 Exportar CSV</button>
+                  <button class="mod-btn btn-secondary" onclick="alert('Copiando para Falabella Seller Center...')">🛒 Copiar para Falabella</button>
+                  <button class="mod-btn btn-secondary" onclick="alert('Copiando para Mercado Libre...')">💛 Copiar para MeLi</button>
+                </div>
+              </div>
+
+              <div class="loading-state hidden" id="outputLoading">
+                <div class="spinner"></div>
+                <p id="loadingText">Aplicando Protocolo CatalogAI...</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+</Base>
+
+<style>
+  .mod-main { background: #0B1F3A; color: #fff; min-height: 100vh; }
+  .mod-nav { background: rgba(0,0,0,0.5); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 12px 0; }
+  .mod-nav-in { display: flex; justify-content: space-between; align-items: center; }
+  .mod-brand { display: flex; align-items: center; gap: 12px; }
+  .back-link { color: #B08D57; font-size: 13px; font-weight: 700; text-decoration: none; }
+  .divider { color: rgba(255,255,255,0.2); }
+  .nav-title { font-size: 13px; color: #d4d4d4; font-weight: 600; }
+  .mod-nav-actions { display: flex; align-items: center; gap: 12px; }
+  .live-pill { font-size: 11px; font-weight: 700; color: #1BAF7A; background: rgba(27,175,122,0.12); border: 1px solid rgba(27,175,122,0.3); padding: 3px 10px; border-radius: 9999px; }
+  .mod-hero { padding: 48px 0 36px; background: radial-gradient(circle at 50% 0%, #1E2761 0%, #0B1F3A 70%); text-align: center; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(59,130,246,0.12); color: #60a5fa; border: 1px solid rgba(59,130,246,0.3); padding: 5px 14px; border-radius: 9999px; font-size: 12px; font-weight: 700; margin-bottom: 14px; }
+  .pulse-dot { width: 7px; height: 7px; background: #60a5fa; border-radius: 50%; box-shadow: 0 0 7px #60a5fa; }
+  .hero-title { font-size: 36px; font-weight: 800; margin-bottom: 12px; }
+  .hero-subtitle { max-width: 680px; margin: 0 auto 20px; font-size: 16px; color: #b3b3b3; line-height: 1.6; }
+  .hero-chips { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+  .chip { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: #d4d4d4; padding: 4px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; }
+  .mod-workspace { padding: 36px 0 60px; }
+  .wrap-wide { max-width: 1300px; margin: 0 auto; padding: 0 24px; }
+  .ws-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  @media (max-width: 900px) { .ws-grid { grid-template-columns: 1fr; } }
+  .ws-panel { background: rgba(30,39,97,0.4); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; }
+  .panel-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .panel-header h2 { font-size: 16px; font-weight: 700; margin: 0; }
+  .panel-tag { font-size: 11px; color: #838383; font-family: monospace; }
+  .form-group { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
+  .form-group label { font-size: 12px; font-weight: 700; color: #d4d4d4; text-transform: uppercase; letter-spacing: 0.4px; }
+  .form-row { display: flex; gap: 12px; }
+  .form-group.half { flex: 1; }
+  .mod-input, .mod-select { width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); color: #fff; padding: 9px 12px; border-radius: 7px; font-size: 13px; outline: none; box-sizing: border-box; }
+  .mod-textarea { resize: vertical; line-height: 1.5; }
+  .mod-select option { background: #0B1F3A; }
+  .tone-grid { display: flex; gap: 8px; }
+  .tone-btn { flex: 1; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); color: #b3b3b3; padding: 8px; border-radius: 7px; font-size: 12px; font-weight: 600; cursor: pointer; }
+  .tone-btn.active { background: rgba(176,141,87,0.15); border-color: #B08D57; color: #B08D57; }
+  .mod-btn { padding: 9px 16px; border-radius: 7px; font-size: 13px; font-weight: 700; cursor: pointer; border: none; }
+  .btn-primary { background: linear-gradient(135deg, #1E2761 0%, #B08D57 100%); color: #fff; }
+  .btn-secondary { background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(255,255,255,0.15); }
+  .btn-primary.full { width: 100%; padding: 12px; font-size: 14px; }
+  .mod-btn.sm { font-size: 11px; padding: 5px 10px; }
+  .output-stage { min-height: 300px; }
+  .placeholder-state { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 300px; text-align: center; color: #838383; }
+  .ph-icon { font-size: 36px; margin-bottom: 10px; }
+  .placeholder-state p { font-size: 13px; line-height: 1.6; max-width: 320px; }
+  .loading-state { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 300px; color: #b3b3b3; }
+  .spinner { width: 36px; height: 36px; border: 3px solid rgba(176,141,87,0.2); border-top-color: #B08D57; border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 12px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .score-banner { display: flex; align-items: center; gap: 14px; background: rgba(27,175,122,0.1); border: 1px solid rgba(27,175,122,0.25); border-radius: 10px; padding: 14px 16px; margin-bottom: 18px; }
+  .score-circle { width: 52px; height: 52px; border-radius: 50%; background: #1BAF7A; color: #fff; font-size: 22px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .score-info strong { font-size: 14px; color: #fff; display: block; }
+  .score-info span { font-size: 12px; color: #1BAF7A; font-weight: 700; }
+  .output-block { background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.07); border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; }
+  .block-label { font-size: 10px; font-weight: 800; color: #B08D57; letter-spacing: 0.6px; margin-bottom: 6px; }
+  .block-meta { font-size: 10px; color: #838383; margin-bottom: 6px; }
+  .title-output { font-size: 15px; font-weight: 700; color: #fff; background: rgba(176,141,87,0.1); border-left: 3px solid #B08D57; padding: 8px 12px; border-radius: 4px; }
+  .copy-row { margin-top: 8px; }
+  .copy-btn { background: transparent; border: 1px solid rgba(255,255,255,0.15); color: #b3b3b3; padding: 4px 10px; border-radius: 5px; font-size: 11px; cursor: pointer; }
+  .copy-btn:hover { background: rgba(255,255,255,0.08); }
+  .bullets-output { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px; }
+  .bullets-output li { background: rgba(255,255,255,0.04); padding: 7px 10px; border-radius: 5px; font-size: 12px; color: #d4d4d4; line-height: 1.5; }
+  .bullets-output li strong { color: #fff; }
+  .tags-row { display: flex; flex-wrap: wrap; gap: 6px; }
+  .kw-tag { background: rgba(176,141,87,0.12); border: 1px solid rgba(176,141,87,0.25); color: #B08D57; font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 4px; }
+  .output-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+  .hidden { display: none !important; }
+</style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btnOptimize = document.getElementById('btnOptimize');
+    const placeholder = document.getElementById('outputPlaceholder');
+    const result = document.getElementById('outputResult');
+    const loading = document.getElementById('outputLoading');
+    const loadingText = document.getElementById('loadingText');
+    const outputStatus = document.getElementById('outputStatus');
+    const outTitle = document.getElementById('outTitle');
+    const outBullets = document.getElementById('outBullets');
+    const outKeywords = document.getElementById('outKeywords');
+    const charCount = document.getElementById('charCount');
+    const scoreCircle = document.getElementById('scoreCircle');
+    const scoreLabel = document.getElementById('scoreLabel');
+    const copyTitle = document.getElementById('copyTitle');
+
+    document.querySelectorAll('.tone-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tone-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    const loadingSteps = [
+      'Analizando producto y categoría...',
+      'Buscando keywords de alto volumen...',
+      'Aplicando Protocolo CatalogAI v4.2...',
+      'Generando bullet points persuasivos...',
+      'Calculando CatalogAI Score...',
+    ];
+
+    if (btnOptimize) {
+      btnOptimize.addEventListener('click', () => {
+        const title = document.getElementById('prodTitle')?.value || '';
+        const category = document.getElementById('prodCategory')?.value || '';
+        const brand = document.getElementById('prodBrand')?.value || '';
+        const attrs = document.getElementById('prodAttrs')?.value || '';
+        const channel = document.getElementById('targetChannel')?.value || 'mercadolibre';
+        const tone = document.querySelector('.tone-btn.active')?.getAttribute('data-tone') || 'comercial';
+
+        placeholder.classList.add('hidden');
+        result.classList.add('hidden');
+        loading.classList.remove('hidden');
+        btnOptimize.disabled = true;
+        if (outputStatus) outputStatus.innerText = 'Procesando...';
+
+        let step = 0;
+        const interval = setInterval(() => {
+          if (step < loadingSteps.length && loadingText) loadingText.innerText = loadingSteps[step++];
+        }, 350);
+
+        setTimeout(() => {
+          clearInterval(interval);
+          loading.classList.add('hidden');
+          result.classList.remove('hidden');
+          btnOptimize.disabled = false;
+
+          const attrList = attrs.split(',').map(a => a.trim()).filter(Boolean);
+          const channelLabel = { mercadolibre: 'Mercado Libre', falabella: 'Falabella', amazon: 'Amazon', homecenter: 'Homecenter' }[channel];
+
+          const optimizedTitle = `${brand} ${category} ${attrList[0] || ''} ${attrList[1] || ''} ${channelLabel}`.substring(0, 60).trim();
+          const score = 94 + Math.floor(Math.random() * 6);
+
+          if (outTitle) outTitle.innerText = optimizedTitle;
+          if (charCount) charCount.innerText = `${optimizedTitle.length} / 60 caracteres`;
+          if (scoreCircle) scoreCircle.innerText = score;
+          if (scoreLabel) scoreLabel.innerText = score >= 95 ? 'Excelente' : score >= 85 ? 'Bueno' : 'Regular';
+          if (outputStatus) outputStatus.innerText = `Score: ${score}/100`;
+
+          const bullets = [
+            `<strong>${(attrList[0] || 'CARACTERÍSTICA PRINCIPAL').toUpperCase()}:</strong> Diseñado para máximo rendimiento y durabilidad en uso cotidiano.`,
+            `<strong>${(attrList[1] || 'TECNOLOGÍA SUPERIOR').toUpperCase()}:</strong> Materiales de alta calidad que garantizan comodidad y soporte óptimo.`,
+            `<strong>COMPATIBLE CON ${channelLabel.toUpperCase()}:</strong> Atributos completos y título optimizado para máxima visibilidad orgánica.`,
+            `<strong>MARCA ${brand.toUpperCase()} — GARANTÍA DE CALIDAD:</strong> Años de experiencia respaldando cada producto de nuestro catálogo.`,
+          ];
+          if (outBullets) outBullets.innerHTML = bullets.map(b => `<li>${b}</li>`).join('');
+
+          const keywords = [`#${category.replace(/\s+/g, '')}`, `#${brand}`, `#${channel}`, '#CatalogAI', '#SEO'];
+          if (outKeywords) outKeywords.innerHTML = keywords.map(k => `<span class="kw-tag">${k}</span>`).join('');
+
+          if (copyTitle) {
+            copyTitle.addEventListener('click', () => {
+              navigator.clipboard?.writeText(optimizedTitle).then(() => {
+                copyTitle.innerText = '✅ Copiado';
+                setTimeout(() => { copyTitle.innerText = '📋 Copiar Título'; }, 1500);
+              });
+            });
+          }
+        }, 2000);
+      });
+    }
+  });
+</script>

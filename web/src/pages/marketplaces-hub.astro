@@ -1,0 +1,344 @@
+---
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  title: 'Marketplaces Hub · Sincronización de Canales | Advantia Vitrina',
+  description: 'Conexión directa con Mercado Libre, Falabella Seller Center, Amazon SP-API y Homecenter. Audita, sincroniza y publica atributos masivamente.',
+  canonical: 'https://theadvantia.com/marketplaces-hub',
+  robots: 'noindex, nofollow',
+};
+---
+
+<Base seo={seo} active="/aplicativos">
+  <main class="mod-main">
+
+    <header class="mod-nav">
+      <div class="wrap mod-nav-in">
+        <div class="mod-brand">
+          <a href="/aplicativos" class="back-link">← Volver a Aplicativos</a>
+          <span class="divider">|</span>
+          <span class="nav-title">🛒 Vitrina Hub · Marketplaces Connector</span>
+        </div>
+        <div class="mod-nav-actions">
+          <span class="live-pill">🟢 APIs en Línea (3001)</span>
+          <a href="/aplicativos" class="mod-btn btn-secondary sm">Portal de Aplicativos</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="mod-hero">
+      <div class="wrap">
+        <div class="hero-badge"><span class="pulse-dot"></span> VITRINA HUB CONNECTOR</div>
+        <h1 class="hero-title">Marketplaces Sync & Channel Connector</h1>
+        <p class="hero-subtitle">
+          Conexión directa con las APIs oficiales de Mercado Libre, Falabella Seller Center, Amazon SP-API y Homecenter. Audita publicaciones, sincroniza atributos y monitorea la salud SEO de tus listings.
+        </p>
+        <div class="hero-chips">
+          <span class="chip">💛 Mercado Libre</span>
+          <span class="chip">💚 Falabella</span>
+          <span class="chip">🧡 Amazon</span>
+          <span class="chip">💙 Homecenter</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="mod-workspace">
+      <div class="wrap-wide">
+
+        <!-- Channels Status Grid -->
+        <div class="channels-section">
+          <h2 class="section-title">Estado de Canales & Conexiones</h2>
+          <div class="channels-grid">
+            <div class="channel-card" data-channel="mercadolibre">
+              <div class="ch-header">
+                <div class="ch-icon" style="background:rgba(255,230,0,0.12)">💛</div>
+                <div class="ch-info">
+                  <strong>Mercado Libre Colombia</strong>
+                  <small>API REST v2 · OAuth2</small>
+                </div>
+                <span class="ch-status connected">● Conectado</span>
+              </div>
+              <div class="ch-stats">
+                <div class="ch-stat"><span>SKUs Activos</span><strong>24</strong></div>
+                <div class="ch-stat"><span>Salud SEO</span><strong style="color:#1BAF7A">96%</strong></div>
+                <div class="ch-stat"><span>Última Sync</span><strong>Hace 3 min</strong></div>
+              </div>
+              <button class="ch-btn" onclick="loadChannel('mercadolibre')">🔍 Auditar Listings</button>
+            </div>
+
+            <div class="channel-card" data-channel="falabella">
+              <div class="ch-header">
+                <div class="ch-icon" style="background:rgba(0,200,100,0.12)">💚</div>
+                <div class="ch-info">
+                  <strong>Falabella Seller Center</strong>
+                  <small>API HMAC-SHA256 · sellercenter-api.falabella.com</small>
+                </div>
+                <span class="ch-status connected">● Conectado</span>
+              </div>
+              <div class="ch-stats">
+                <div class="ch-stat"><span>SKUs Validados</span><strong>18</strong></div>
+                <div class="ch-stat"><span>Content Score</span><strong style="color:#1BAF7A">91%</strong></div>
+                <div class="ch-stat"><span>Última Sync</span><strong>Hace 8 min</strong></div>
+              </div>
+              <button class="ch-btn" onclick="loadChannel('falabella')">🔍 Auditar Listings</button>
+            </div>
+
+            <div class="channel-card" data-channel="amazon">
+              <div class="ch-header">
+                <div class="ch-icon" style="background:rgba(255,153,0,0.12)">🧡</div>
+                <div class="ch-info">
+                  <strong>Amazon SP-API</strong>
+                  <small>Selling Partner API · LWA Auth</small>
+                </div>
+                <span class="ch-status warning">⏳ En Cola</span>
+              </div>
+              <div class="ch-stats">
+                <div class="ch-stat"><span>Feeds Pendientes</span><strong>3</strong></div>
+                <div class="ch-stat"><span>Estado</span><strong style="color:#f59e0b">Sincronizando</strong></div>
+                <div class="ch-stat"><span>ETA</span><strong>~12 min</strong></div>
+              </div>
+              <button class="ch-btn" onclick="loadChannel('amazon')">📋 Ver Estado de Feeds</button>
+            </div>
+
+            <div class="channel-card" data-channel="homecenter">
+              <div class="ch-header">
+                <div class="ch-icon" style="background:rgba(59,130,246,0.12)">💙</div>
+                <div class="ch-info">
+                  <strong>Homecenter / Sodimac</strong>
+                  <small>API Catálogo v3</small>
+                </div>
+                <span class="ch-status connected">● Conectado</span>
+              </div>
+              <div class="ch-stats">
+                <div class="ch-stat"><span>Catálogo</span><strong>Actualizado</strong></div>
+                <div class="ch-stat"><span>Imágenes</span><strong>✓ 100%</strong></div>
+                <div class="ch-stat"><span>Última Sync</span><strong>Hace 1h</strong></div>
+              </div>
+              <button class="ch-btn" onclick="loadChannel('homecenter')">🔍 Auditar Listings</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SKU Auditor + Results -->
+        <div class="ws-grid mt-section">
+
+          <div class="ws-panel">
+            <div class="panel-header">
+              <h2>Auditor de Publicaciones por SKU</h2>
+              <span class="panel-tag">marketplaces-service:3001</span>
+            </div>
+
+            <div class="form-group">
+              <label for="channelSelect">Canal de Búsqueda</label>
+              <select id="channelSelect" class="mod-select">
+                <option value="mercadolibre">💛 Mercado Libre Colombia</option>
+                <option value="falabella">💚 Falabella Seller Center</option>
+                <option value="amazon">🧡 Amazon SP-API</option>
+                <option value="homecenter">💙 Homecenter / Sodimac</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="skuInput">SKU, Item ID o ASIN</label>
+              <div class="input-row">
+                <input type="text" id="skuInput" class="mod-input" value="MCO-984210492" />
+                <button class="mod-btn btn-primary" id="btnAudit">🔎 Auditar</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="batchSkus">Auditoría Masiva (un SKU por línea)</label>
+              <textarea id="batchSkus" rows="4" class="mod-input mod-textarea" placeholder="MCO-984210492&#10;MCO-123456789&#10;MCO-987654321"></textarea>
+              <button class="mod-btn btn-secondary mt-4" onclick="alert('Auditando lote masivo de SKUs...')">📊 Auditar Lote Completo</button>
+            </div>
+
+            <div class="quick-actions">
+              <span class="qa-label">Acciones Rápidas</span>
+              <button class="qa-btn" onclick="alert('Sincronizando todos los canales...')">🔄 Sincronizar Todo</button>
+              <button class="qa-btn" onclick="alert('Exportando reporte de salud SEO...')">📥 Reporte SEO</button>
+              <button class="qa-btn" onclick="alert('Actualizando precios masivamente...')">💰 Sync Precios</button>
+            </div>
+          </div>
+
+          <div class="ws-panel">
+            <div class="panel-header">
+              <h2>Resultado de Auditoría</h2>
+              <span class="panel-tag" id="auditStatus">En espera...</span>
+            </div>
+
+            <div id="auditResult" class="audit-placeholder">
+              <div class="ph-icon">🔍</div>
+              <p>Ingresa un SKU o Item ID y haz clic en <strong>Auditar</strong> para ver el estado completo de la publicación.</p>
+            </div>
+
+            <div class="audit-output hidden" id="auditOutput">
+              <div class="audit-score-bar">
+                <span class="audit-sku" id="auditSku">—</span>
+                <div class="health-pill" id="healthPill">96% Salud SEO</div>
+              </div>
+
+              <div class="audit-rows" id="auditRows"></div>
+
+              <div class="audit-actions mt-8">
+                <button class="mod-btn btn-primary" onclick="alert('Actualizando título en Marketplace...')">✏️ Actualizar Título</button>
+                <button class="mod-btn btn-secondary" onclick="alert('Viendo publicación en el marketplace...')">🔗 Ver en Marketplace</button>
+              </div>
+            </div>
+
+            <div class="loading-state hidden" id="auditLoading">
+              <div class="spinner"></div>
+              <p>Consultando marketplaces-service...</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+</Base>
+
+<style>
+  .mod-main { background: #0B1F3A; color: #fff; min-height: 100vh; }
+  .mod-nav { background: rgba(0,0,0,0.5); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 12px 0; }
+  .mod-nav-in { display: flex; justify-content: space-between; align-items: center; }
+  .mod-brand { display: flex; align-items: center; gap: 12px; }
+  .back-link { color: #B08D57; font-size: 13px; font-weight: 700; text-decoration: none; }
+  .divider { color: rgba(255,255,255,0.2); }
+  .nav-title { font-size: 13px; color: #d4d4d4; font-weight: 600; }
+  .mod-nav-actions { display: flex; align-items: center; gap: 12px; }
+  .live-pill { font-size: 11px; font-weight: 700; color: #1BAF7A; background: rgba(27,175,122,0.12); border: 1px solid rgba(27,175,122,0.3); padding: 3px 10px; border-radius: 9999px; }
+  .mod-hero { padding: 48px 0 36px; background: radial-gradient(circle at 50% 0%, #1E2761 0%, #0B1F3A 70%); text-align: center; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(138,43,226,0.12); color: #a78bfa; border: 1px solid rgba(138,43,226,0.3); padding: 5px 14px; border-radius: 9999px; font-size: 12px; font-weight: 700; margin-bottom: 14px; }
+  .pulse-dot { width: 7px; height: 7px; background: #a78bfa; border-radius: 50%; box-shadow: 0 0 7px #a78bfa; }
+  .hero-title { font-size: 36px; font-weight: 800; margin-bottom: 12px; }
+  .hero-subtitle { max-width: 680px; margin: 0 auto 20px; font-size: 16px; color: #b3b3b3; line-height: 1.6; }
+  .hero-chips { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+  .chip { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: #d4d4d4; padding: 4px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; }
+  .mod-workspace { padding: 36px 0 60px; }
+  .wrap-wide { max-width: 1300px; margin: 0 auto; padding: 0 24px; }
+  .section-title { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+  .channels-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 8px; }
+  @media (max-width: 900px) { .channels-grid { grid-template-columns: 1fr; } }
+  .channel-card { background: rgba(30,39,97,0.4); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 16px; }
+  .ch-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+  .ch-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+  .ch-info { flex: 1; }
+  .ch-info strong { font-size: 13px; display: block; }
+  .ch-info small { font-size: 10px; color: #838383; font-family: monospace; }
+  .ch-status { font-size: 11px; font-weight: 700; white-space: nowrap; }
+  .ch-status.connected { color: #1BAF7A; }
+  .ch-status.warning { color: #f59e0b; }
+  .ch-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 12px; }
+  .ch-stat { background: rgba(0,0,0,0.2); border-radius: 6px; padding: 6px 8px; text-align: center; }
+  .ch-stat span { font-size: 9px; color: #838383; display: block; text-transform: uppercase; }
+  .ch-stat strong { font-size: 12px; color: #fff; font-weight: 700; }
+  .ch-btn { width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: #d4d4d4; padding: 7px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; }
+  .ch-btn:hover { background: rgba(255,255,255,0.1); }
+  .mt-section { margin-top: 28px; }
+  .ws-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 900px) { .ws-grid { grid-template-columns: 1fr; } }
+  .ws-panel { background: rgba(30,39,97,0.4); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; }
+  .panel-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .panel-header h2 { font-size: 16px; font-weight: 700; margin: 0; }
+  .panel-tag { font-size: 11px; color: #838383; font-family: monospace; }
+  .form-group { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
+  .form-group label { font-size: 12px; font-weight: 700; color: #d4d4d4; text-transform: uppercase; letter-spacing: 0.4px; }
+  .mod-input, .mod-select { width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); color: #fff; padding: 9px 12px; border-radius: 7px; font-size: 13px; outline: none; box-sizing: border-box; }
+  .mod-textarea { resize: vertical; line-height: 1.5; }
+  .mod-select option { background: #0B1F3A; }
+  .input-row { display: flex; gap: 8px; }
+  .input-row .mod-input { flex: 1; }
+  .mod-btn { padding: 9px 16px; border-radius: 7px; font-size: 13px; font-weight: 700; cursor: pointer; border: none; }
+  .btn-primary { background: linear-gradient(135deg, #1E2761 0%, #a78bfa 100%); color: #fff; }
+  .btn-secondary { background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(255,255,255,0.15); }
+  .mod-btn.sm { font-size: 11px; padding: 5px 10px; }
+  .mt-4 { margin-top: 8px; }
+  .mt-8 { margin-top: 12px; }
+  .quick-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .qa-label { font-size: 11px; color: #838383; font-weight: 700; text-transform: uppercase; }
+  .qa-btn { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #d4d4d4; padding: 5px 10px; border-radius: 5px; font-size: 11px; font-weight: 600; cursor: pointer; }
+  .qa-btn:hover { background: rgba(255,255,255,0.1); }
+  .audit-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 200px; text-align: center; color: #838383; }
+  .ph-icon { font-size: 32px; margin-bottom: 10px; }
+  .audit-placeholder p { font-size: 13px; max-width: 280px; line-height: 1.5; }
+  .audit-score-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+  .audit-sku { font-size: 13px; font-weight: 700; color: #fff; }
+  .health-pill { background: rgba(27,175,122,0.15); border: 1px solid rgba(27,175,122,0.3); color: #1BAF7A; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 9999px; }
+  .audit-rows { display: flex; flex-direction: column; gap: 8px; }
+  .audit-row { display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.2); border-radius: 6px; padding: 8px 12px; font-size: 12px; }
+  .audit-row span { color: #b3b3b3; }
+  .audit-row strong { color: #fff; }
+  .tag-ok { background: rgba(27,175,122,0.15); color: #1BAF7A; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; }
+  .tag-warn { background: rgba(245,158,11,0.15); color: #f59e0b; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; }
+  .loading-state { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 200px; color: #b3b3b3; }
+  .spinner { width: 32px; height: 32px; border: 3px solid rgba(167,139,250,0.2); border-top-color: #a78bfa; border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 10px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .hidden { display: none !important; }
+  .channels-section { margin-bottom: 8px; }
+</style>
+
+<script is:inline>
+  window.loadChannel = function(channel) {
+    const labels = { mercadolibre: 'Mercado Libre Colombia', falabella: 'Falabella Seller Center', amazon: 'Amazon SP-API', homecenter: 'Homecenter / Sodimac' };
+    document.getElementById('channelSelect').value = channel;
+    alert(`Cargando listings de ${labels[channel]}... En producción, esto consulta marketplaces-service en :3001`);
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const btnAudit = document.getElementById('btnAudit');
+    const skuInput = document.getElementById('skuInput');
+    const auditResult = document.getElementById('auditResult');
+    const auditOutput = document.getElementById('auditOutput');
+    const auditLoading = document.getElementById('auditLoading');
+    const auditStatus = document.getElementById('auditStatus');
+    const auditSku = document.getElementById('auditSku');
+    const healthPill = document.getElementById('healthPill');
+    const auditRows = document.getElementById('auditRows');
+
+    if (btnAudit) {
+      btnAudit.addEventListener('click', () => {
+        const sku = skuInput?.value.trim() || 'MCO-000000';
+        const channel = document.getElementById('channelSelect')?.value || 'mercadolibre';
+
+        auditResult.classList.add('hidden');
+        auditOutput.classList.add('hidden');
+        auditLoading.classList.remove('hidden');
+        if (auditStatus) auditStatus.innerText = 'Consultando...';
+
+        setTimeout(() => {
+          auditLoading.classList.add('hidden');
+          auditOutput.classList.remove('hidden');
+          if (auditStatus) auditStatus.innerText = '✓ Auditoría completada';
+          if (auditSku) auditSku.innerText = `${sku} · ${channel}`;
+
+          const health = 92 + Math.floor(Math.random() * 8);
+          if (healthPill) healthPill.innerText = `${health}% Salud SEO`;
+
+          const rows = [
+            ['Título Publicado', 'Tenis Deportivos Hombre Runflex Transpirables', 'ok'],
+            ['Caracteres en Título', `${Math.floor(Math.random() * 5) + 56}/60`, 'ok'],
+            ['Atributos Requeridos', `${14 + Math.floor(Math.random() * 2)}/14 Completos`, 'ok'],
+            ['Imágenes Principales', 'Fondo Blanco #FFF ✓', 'ok'],
+            ['Content Score', `${health}%`, 'ok'],
+            ['Precio COP', `COP ${(89000 + Math.floor(Math.random() * 10000)).toLocaleString('es-CO')}`, 'ok'],
+            ['Stock Disponible', `${Math.floor(Math.random() * 50) + 10} unidades`, health > 95 ? 'ok' : 'warn'],
+          ];
+
+          if (auditRows) {
+            auditRows.innerHTML = rows.map(([label, value, status]) => `
+              <div class="audit-row">
+                <span>${label}</span>
+                <div style="display:flex;align-items:center;gap:8px">
+                  <strong>${value}</strong>
+                  <span class="${status === 'ok' ? 'tag-ok' : 'tag-warn'}">${status === 'ok' ? '✓ OK' : '⚠ Revisar'}</span>
+                </div>
+              </div>
+            `).join('');
+          }
+        }, 1500);
+      });
+    }
+  });
+</script>

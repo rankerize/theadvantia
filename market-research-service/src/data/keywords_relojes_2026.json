@@ -1,0 +1,2306 @@
+[
+  {
+    "keyword": "reloj invicta",
+    "volume": 22200,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "curren reloj",
+    "volume": 12100,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj para hombre",
+    "volume": 12100,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes para hombre",
+    "volume": 12100,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "casio reloj hombre",
+    "volume": 9900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj casio hombre",
+    "volume": 9900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj casio mujer",
+    "volume": 8100,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes casio mujer",
+    "volume": 8100,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj invicta hombre",
+    "volume": 6600,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj hombre",
+    "volume": 5400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes hombres",
+    "volume": 5400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "fossil hombre reloj",
+    "volume": 4400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "fossil reloj hombre",
+    "volume": 4400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "mulco relojes",
+    "volume": 4400,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj fossil hombre",
+    "volume": 4400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj hombre fossil",
+    "volume": 4400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj mujer",
+    "volume": 4400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes mujer",
+    "volume": 4400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes orient",
+    "volume": 4400,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "relojes para mujer",
+    "volume": 4400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "guess hombre reloj",
+    "volume": 3600,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj cartier mujer",
+    "volume": 3600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj guess hombre",
+    "volume": 3600,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj guess mujer",
+    "volume": 3600,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj patek philippe",
+    "volume": 3600,
+    "yoy": "50%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "diesel reloj",
+    "volume": 2900,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "reloj diésel",
+    "volume": 2900,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj fossil mujer",
+    "volume": 2900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj invicta mujer",
+    "volume": 2900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj q&q mujer",
+    "volume": 2900,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj tissot hombre",
+    "volume": 2900,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes de mano",
+    "volume": 2900,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tissot reloj hombre",
+    "volume": 2900,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cartier relojes hombre",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj bulova",
+    "volume": 2400,
+    "yoy": "-17%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj cartier hombre",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj curren precio",
+    "volume": 2400,
+    "yoy": "21%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj garmin mujer",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj q&q hombre",
+    "volume": 2400,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj swatch hombre",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj tommy hilfiger",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "relojes hombre cartier",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes hombre swatch",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes q&q hombre",
+    "volume": 2400,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "swatch reloj hombre",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "swatch relojes hombre",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "naviforce reloj",
+    "volume": 1900,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj garmin hombre",
+    "volume": 1900,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj hombre garmin",
+    "volume": 1900,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj inteligente mujer",
+    "volume": 1900,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj invicta precio",
+    "volume": 1900,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "reloj para dama",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj philippe patek precio",
+    "volume": 1900,
+    "yoy": "-47%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj swatch mujer",
+    "volume": 1900,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj technomarine hombre",
+    "volume": 1900,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes antiguos",
+    "volume": 1900,
+    "yoy": "-16%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes invicta originales",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "relojes patek philippe precios",
+    "volume": 1900,
+    "yoy": "-47%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes swatch mujer",
+    "volume": 1900,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj dama",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj de hombre",
+    "volume": 1600,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj de mujer",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj deportivo hombre",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj digital mujer",
+    "volume": 1600,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes de hombre",
+    "volume": 1600,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bulova reloj hombre",
+    "volume": 1300,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "diesel relojes hombre",
+    "volume": 1300,
+    "yoy": "30%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj bulova hombre",
+    "volume": 1300,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj curren original",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj d mario hombre",
+    "volume": 1300,
+    "yoy": "81%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj diesel hombre",
+    "volume": 1300,
+    "yoy": "30%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj inteligente para mujer",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj orient hombre",
+    "volume": 1300,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj para hombre elegante",
+    "volume": 1300,
+    "yoy": "30%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj tissot mujer",
+    "volume": 1300,
+    "yoy": "46%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj tommy hilfiger hombre",
+    "volume": 1300,
+    "yoy": "-23%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj tommy hilfiger mujer",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes deportivos para hombre",
+    "volume": 1300,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes tommy hilfiger mujer",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "casio reloj con calculadora",
+    "volume": 1000,
+    "yoy": "30%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "reloj bulova mujer",
+    "volume": 1000,
+    "yoy": "30%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj d mario mujer",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj deportivo mujer",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj digital hombre",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj festina hombre",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj inteligente para hombre",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj michael kors mujer",
+    "volume": 1000,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj militar",
+    "volume": 1000,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "estilo",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj mk mujer",
+    "volume": 1000,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj mulco mujer",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj technomarine mujer",
+    "volume": 1000,
+    "yoy": "30%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "falabella relojes mujer",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "marcas de relojes finos",
+    "volume": 880,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj casio hombre original",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj d mario precio",
+    "volume": 880,
+    "yoy": "-34%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj dorado mujer",
+    "volume": 880,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj hombre elegante",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj invicta pro diver",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "reloj mulco hombre",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj nautica hombre",
+    "volume": 880,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj philipp plein",
+    "volume": 880,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj rolex hombre",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj yess hombre",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj yess mujer",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes hombre rolex",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes originales para hombre",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "rolex relojes hombre",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lige reloj",
+    "volume": 720,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "marcas de relojes para hombre",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "michael kors reloj hombre",
+    "volume": 720,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "poedagar reloj",
+    "volume": 720,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "precio de reloj invicta",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "reloj casio para hombre",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj fossil hombre precio",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj hombre falabella",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj inteligente hombre",
+    "volume": 720,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj invicta hombre original",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj michael kors hombre",
+    "volume": 720,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj mujer rolex",
+    "volume": 720,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj orient mujer",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj poedagar",
+    "volume": 720,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj rolex mujer",
+    "volume": 720,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes casio para hombre",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes de marca para hombre",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes lige",
+    "volume": 720,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes para hombre casio",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes para hombre de marca",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "rolex mujer",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "casio mujer",
+    "volume": 590,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "curren relojes",
+    "volume": 590,
+    "yoy": "49%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "edifice reloj",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "invicta mujer",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lotus reloj",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "orient reloj antiguo",
+    "volume": 590,
+    "yoy": "-46%",
+    "competition": "Bajo",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "reloj armani exchange",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj automatico hombre",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj casio dama",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj casio dorado mujer",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj casio para mujer",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj curren hombre",
+    "volume": 590,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj d mario mujer precio",
+    "volume": 590,
+    "yoy": "-56%",
+    "competition": "Medio",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj de dama",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj de lujo",
+    "volume": 590,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "estilo",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj invicta hombre precio",
+    "volume": 590,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj jacob y co",
+    "volume": 590,
+    "yoy": "-41%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj para mujer de moda",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj stainless steel",
+    "volume": 590,
+    "yoy": "-56%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes curren hombre",
+    "volume": 590,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes d mario hombre originales",
+    "volume": 590,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes de pulsera",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "smartwatch",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "relojes digitales para hombre",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes para mujeres elegantes",
+    "volume": 590,
+    "yoy": "83%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes para parejas",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "technomarine reloj hombre",
+    "volume": 590,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tissot mujer",
+    "volume": 590,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj casio hombre deportivo",
+    "volume": 480,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj clasico hombre",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj d mario en oro precio",
+    "volume": 480,
+    "yoy": "-47%",
+    "competition": "Bajo",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "reloj de pulso para hombre",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj guess mujer original",
+    "volume": 480,
+    "yoy": "-65%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj inteligente samsung mujer",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj para dama elegante",
+    "volume": 480,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj parejas",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj polo assn",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj quartz mujer",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj totto mujer",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes digitales para mujer",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes para mujer de marca",
+    "volume": 480,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes plata",
+    "volume": 480,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "relojes rolex hombre precios",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes us polo assn",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "smartwatch mujer",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "smartwatch mujeres",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "festina relojes mujer",
+    "volume": 390,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "kenneth cole reloj",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "marca de relojes de hombre",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "marcas de relojes hombre",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "mujer reloj inteligente",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "pandora reloj",
+    "volume": 390,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "pulso apple watch",
+    "volume": 390,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj aviator invicta",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "reloj casio mujer original",
+    "volume": 390,
+    "yoy": "125%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "quickwin",
+    "mapping": "🚀 Quick Win / Módulo 7 (Pareja 1)"
+  },
+  {
+    "keyword": "reloj corum",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj cuadrado hombre",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj curren original precio",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj d mario dama",
+    "volume": 390,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj de bolsillo antiguo",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj de oro para hombre",
+    "volume": 390,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj festina mujer",
+    "volume": 390,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj finos",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj gucci mujer",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj invicta aviator",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "reloj invicta de mujer",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj orient 3 estrellas antiguo",
+    "volume": 390,
+    "yoy": "-46%",
+    "competition": "Bajo",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "reloj pandora",
+    "volume": 390,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj para hombre rolex",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj plateado hombre",
+    "volume": 390,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj q&q mujer original",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj sanda",
+    "volume": 390,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj smartwatch mujer",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj tempus hombre",
+    "volume": 390,
+    "yoy": "129%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "quickwin",
+    "mapping": "🚀 Quick Win / Módulo 7 (Pareja 1)"
+  },
+  {
+    "keyword": "reloj totto hombre",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes de hombre de marca",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes de marca hombre",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes de mujer invicta",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes deportivos para mujer",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes festina mujer",
+    "volume": 390,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes finos",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes invicta mujer",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes mujer festina",
+    "volume": 390,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes para hombre de oro",
+    "volume": 390,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes para hombre rolex",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes rolex para hombre",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes salco quartz",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes yess hombre",
+    "volume": 390,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "swatch reloj irony",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "technomarine mujer",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "adidas relojes hombre",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "d mario reloj hombre",
+    "volume": 320,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "dorado reloj casio mujer",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "invicta dorado",
+    "volume": 320,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "marca de relojes para hombre",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "movado reloj hombre",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj adidas hombre",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj casio digital hombre",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj casio digital mujer",
+    "volume": 320,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj casio para dama",
+    "volume": 320,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj d mario mujer pequeño",
+    "volume": 320,
+    "yoy": "-64%",
+    "competition": "Medio",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj deportivo para dama",
+    "volume": 320,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj dorado para hombre",
+    "volume": 320,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj g shock hombre",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj guess hombre original",
+    "volume": 320,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj guess hombre precio",
+    "volume": 320,
+    "yoy": "-47%",
+    "competition": "Medio",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj guess para mujer",
+    "volume": 320,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj hugo boss",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj inteligente xiaomi mujer",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj invicta dorado",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "reloj invicta para hombre",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj movado hombre",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj q&q dama",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj q&q mujer pequeño",
+    "volume": 320,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj q&q mujer precio",
+    "volume": 320,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj raymond weil",
+    "volume": 320,
+    "yoy": "-34%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes adidas hombre",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes guess para mujer",
+    "volume": 320,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes para dama casio",
+    "volume": 320,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes para hombre invicta",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "relojes para mujer guess",
+    "volume": 320,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "marcas de relojes de lujo",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "estilo",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj d mario hombre precio",
+    "volume": 260,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj de mano hombre",
+    "volume": 260,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "hombre",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "kenneth cole new york reloj",
+    "volume": 210,
+    "yoy": "56%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "kenneth cole reloj new york",
+    "volume": 210,
+    "yoy": "56%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj casio mujer rosa",
+    "volume": 210,
+    "yoy": "89%",
+    "competition": "Alto",
+    "cluster": "mujer",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj kenneth cole new york",
+    "volume": 210,
+    "yoy": "56%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "reloj tag hubert",
+    "volume": 10,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  }
+]

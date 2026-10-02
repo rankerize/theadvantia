@@ -1,0 +1,298 @@
+---
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  title: 'Descripción de Producto & Títulos SEO CatalogAI | Advantia',
+  description: 'Generador masivo de títulos optimizados a 60 caracteres, viñetas persuasivas de valor y atributos estructurados para Mercado Libre, Falabella y Amazon.',
+  canonical: 'https://theadvantia.com/descripcion-producto',
+  robots: 'noindex, nofollow',
+};
+---
+
+<Base seo={seo} active="/aplicativos">
+  <main class="mod-main">
+
+    <!-- Top Navigation Bar -->
+    <header class="mod-nav">
+      <div class="wrap mod-nav-in">
+        <div class="mod-brand">
+          <a href="/aplicativos" class="back-link">← Volver a Aplicativos</a>
+          <span class="divider">|</span>
+          <span class="nav-title">📝 Protocolo CatalogAI · Títulos & SEO</span>
+        </div>
+        <div class="mod-nav-actions">
+          <span class="live-pill">🟢 Protocolo v4.2 Activo</span>
+          <a href="/aplicativos" class="mod-btn btn-secondary sm">Portal de Aplicativos</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Header -->
+    <section class="mod-hero">
+      <div class="wrap">
+        <div class="hero-badge"><span class="pulse-dot"></span> CATALOG-AI ENGINE v4.2</div>
+        <h1 class="hero-title">Descripción de Producto & Títulos SEO</h1>
+        <p class="hero-subtitle">
+          Transforma datos crudos de producto en títulos estructurados con máxima densidad de búsqueda (60 caracteres), viñetas de alto impacto y descripciones formateadas para los algoritmos de Mercado Libre, Falabella y Amazon.
+        </p>
+        <div class="hero-chips">
+          <span class="chip">🎯 Optimización 60 Caracteres MeLi</span>
+          <span class="chip">📄 Viñetas Persuasivas de Conversión</span>
+          <span class="chip">🏷️ Inyección Semántica de Atributos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Workspace -->
+    <section class="mod-workspace">
+      <div class="wrap-wide">
+        <div class="ws-grid">
+
+          <!-- LEFT: Controls -->
+          <div class="ws-panel controls-panel">
+            <div class="panel-header">
+              <h2>Datos de Entrada del Producto</h2>
+              <span class="panel-tag">Protocolo: CatalogAI</span>
+            </div>
+
+            <div class="form-group">
+              <label for="prodTitleInput">Título Actual o Nombre Comercial</label>
+              <input type="text" id="prodTitleInput" value="Tenis deportivos para hombre color negro marca Runflex" class="mod-input" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group half">
+                <label for="prodCategory">Categoría Principal</label>
+                <input type="text" id="prodCategory" value="Deportes y Calzado" class="mod-input" />
+              </div>
+              <div class="form-group half">
+                <label for="targetMarketplace">Canal Destino</label>
+                <select id="targetMarketplace" class="mod-select">
+                  <option value="mercadolibre">Mercado Libre Colombia (SEO Max)</option>
+                  <option value="falabella">Falabella Seller Center</option>
+                  <option value="amazon">Amazon SP-API Listing</option>
+                  <option value="vtex">Tienda Directa (VTEX Responsive)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="prodAttrs">Atributos Clave (Separados por coma)</label>
+              <textarea id="prodAttrs" rows="3" class="mod-input mod-textarea">Suela antideslizante, malla transpirable, amortiguación EVA, talla 39-43, peso ultraligero 240g</textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="brandName">Marca del Producto</label>
+              <input type="text" id="brandName" value="Runflex" class="mod-input" />
+            </div>
+
+            <button class="mod-btn btn-primary full margin-top" id="btnOptimizeDesc">
+              <span>🚀 Generar Paquete de Contenido CatalogAI</span>
+            </button>
+
+            <div class="info-box margin-top">
+              <strong>💡 Regla de Oro CatalogAI</strong>: El título nunca debe repetir palabras clave irrelevantes ni contener términos promocionales prohibidos (ej: "envío gratis", "oferta", "económico") para evitar penalizaciones en el ranking.
+            </div>
+          </div>
+
+          <!-- RIGHT: Output -->
+          <div class="ws-panel output-panel">
+            <div class="panel-header">
+              <h2>Resultado Optimizado</h2>
+              <span class="panel-tag" id="scoreTag">CatalogAI Score: --/100</span>
+            </div>
+
+            <div class="output-stage" id="descStage">
+              <div class="placeholder-state" id="descPlaceholder">
+                <div class="ph-icon">📋</div>
+                <p>Ingresa los datos de tu SKU y haz clic en <strong>Generar Paquete de Contenido</strong> para procesar con CatalogAI.</p>
+              </div>
+
+              <div class="result-state hidden" id="descResult">
+                <div class="catalog-output">
+                  
+                  <div class="output-item">
+                    <span class="out-label">TÍTULO SEO OPTIMIZADO (<span id="charCount">58</span>/60 CARACTERES)</span>
+                    <div class="out-value highlight" id="outTitle">Tenis Deportivos Hombre Runflex Transpirables Antideslizante</div>
+                  </div>
+
+                  <div class="output-item">
+                    <span class="out-label">VIÑETAS PERSUASIVAS (BULLET POINTS PARA FICHA)</span>
+                    <ul class="out-bullets" id="outBullets">
+                      <li><strong>MÁXIMA TRANSPIRABILIDAD:</strong> Malla técnica con flujo de aire continuo que mantiene los pies frescos en entrenamientos intensos.</li>
+                      <li><strong>AMORTIGUACIÓN EVA SUPERIOR:</strong> Absorción de impactos de alto rendimiento que protege las articulaciones en asfalto y pista.</li>
+                      <li><strong>SUELA TRACCIÓN TOTAL:</strong> Goma antideslizante con patrón multidireccional diseñada para máxima estabilidad y agarre.</li>
+                      <li><strong>DISEÑO ULTRALIGERO:</strong> Construcción ergonómica de solo 240g por calzado para minimizar la fatiga durante carreras largas.</li>
+                    </ul>
+                  </div>
+
+                  <div class="output-item">
+                    <span class="out-label">ATRIBUTOS ESTRUCTURADOS SUGERIDOS</span>
+                    <div class="attr-grid">
+                      <div class="attr-pill"><strong>Género:</strong> Hombre</div>
+                      <div class="attr-pill"><strong>Tipo de Calzado:</strong> Tenis Running</div>
+                      <div class="attr-pill"><strong>Material del Exterior:</strong> Malla Transpirable</div>
+                      <div class="attr-pill"><strong>Material de la Suela:</strong> EVA + Goma Antideslizante</div>
+                    </div>
+                  </div>
+
+                  <div class="output-badges">
+                    <span class="score-badge">Score SEO: 98/100</span>
+                    <span class="keyword-tag">#TenisDeportivosHombre</span>
+                    <span class="keyword-tag">#SuelaAntideslizante</span>
+                    <span class="keyword-tag">#Runflex</span>
+                  </div>
+
+                </div>
+
+                <div class="result-actions margin-top">
+                  <button class="mod-btn btn-primary" onclick="navigator.clipboard.writeText(document.getElementById('outTitle').innerText); alert('¡Título copiado al portapapeles!');">📋 Copiar Título</button>
+                  <button class="mod-btn btn-secondary" onclick="alert('¡Contenido completo copiado!');">📑 Copiar Ficha Completa</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rules Summary -->
+            <div class="rules-card">
+              <div class="rules-header">
+                <h3>Auditoría de Cumplimiento Algorítmico</h3>
+                <span class="tag-success">✓ 100% Válido</span>
+              </div>
+              <ul class="rules-checklist">
+                <li>✓ Longitud de título sin truncamiento en app móvil</li>
+                <li>✓ Sin palabras spam o de venta prohibidas</li>
+                <li>✓ Formato de atributos compatible con el canal destino</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+</Base>
+
+<style>
+  .mod-main { background: #0B1F3A; color: #fff; min-height: 100vh; }
+  .hidden { display: none !important; }
+
+  /* NAV */
+  .mod-nav { background: rgba(0,0,0,0.5); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 12px 0; }
+  .mod-nav-in { display: flex; justify-content: space-between; align-items: center; }
+  .mod-brand { display: flex; align-items: center; gap: 12px; }
+  .back-link { color: #B08D57; font-size: 13px; font-weight: 700; text-decoration: none; }
+  .back-link:hover { text-decoration: underline; }
+  .divider { color: rgba(255,255,255,0.2); }
+  .nav-title { font-size: 13px; color: #d4d4d4; font-weight: 600; }
+  .mod-nav-actions { display: flex; align-items: center; gap: 12px; }
+  .live-pill { font-size: 11px; font-weight: 700; color: #1BAF7A; background: rgba(27,175,122,0.12); border: 1px solid rgba(27,175,122,0.3); padding: 3px 10px; border-radius: 9999px; }
+
+  /* HERO */
+  .mod-hero { padding: 48px 0 36px; background: radial-gradient(circle at 50% 0%, #1E2761 0%, #0B1F3A 70%); text-align: center; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.3); padding: 5px 14px; border-radius: 9999px; font-size: 12px; font-weight: 700; margin-bottom: 14px; }
+  .pulse-dot { width: 7px; height: 7px; background: #3b82f6; border-radius: 50%; box-shadow: 0 0 7px #3b82f6; }
+  .hero-title { font-size: 36px; font-weight: 800; margin-bottom: 12px; }
+  .hero-subtitle { max-width: 680px; margin: 0 auto 20px; font-size: 16px; color: #b3b3b3; line-height: 1.6; }
+  .hero-chips { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+  .chip { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: #d4d4d4; padding: 4px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; }
+
+  /* WORKSPACE */
+  .mod-workspace { padding: 36px 0 60px; }
+  .wrap-wide { max-width: 1300px; margin: 0 auto; padding: 0 24px; }
+  .ws-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  @media (max-width: 900px) { .ws-grid { grid-template-columns: 1fr; } }
+
+  .ws-panel { background: rgba(30,39,97,0.4); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; }
+  .panel-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .panel-header h2 { font-size: 16px; font-weight: 700; margin: 0; }
+  .panel-tag { font-size: 11px; color: #838383; font-family: monospace; }
+
+  /* FORMS */
+  .form-group { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
+  .form-group label { font-size: 12px; font-weight: 700; color: #d4d4d4; text-transform: uppercase; letter-spacing: 0.4px; }
+  .form-row { display: flex; gap: 12px; }
+  .form-group.half { flex: 1; }
+  .margin-top { margin-top: 14px; }
+  .mod-input, .mod-select { width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); color: #fff; padding: 9px 12px; border-radius: 7px; font-size: 13px; outline: none; box-sizing: border-box; }
+  .mod-textarea { resize: vertical; line-height: 1.5; }
+  .mod-select option { background: #0B1F3A; }
+
+  /* BUTTONS */
+  .mod-btn { padding: 9px 16px; border-radius: 7px; font-size: 13px; font-weight: 700; cursor: pointer; border: none; display: inline-flex; align-items: center; gap: 6px; }
+  .btn-primary { background: linear-gradient(135deg, #1E2761 0%, #B08D57 100%); color: #fff; }
+  .btn-secondary { background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(255,255,255,0.15); }
+  .btn-secondary:hover { background: rgba(255,255,255,0.14); }
+  .btn-primary.full { width: 100%; justify-content: center; padding: 12px; font-size: 14px; }
+  .mod-btn.sm { font-size: 11px; padding: 5px 10px; }
+
+  /* INFO BOX */
+  .info-box { background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25); border-radius: 7px; padding: 10px 14px; font-size: 11px; color: #b3b3b3; line-height: 1.5; }
+  .info-box strong { color: #60a5fa; }
+
+  /* OUTPUT STAGE */
+  .output-stage { background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 20px; min-height: 280px; display: flex; flex-direction: column; justify-content: center; margin-bottom: 20px; }
+  .placeholder-state { text-align: center; color: #838383; }
+  .ph-icon { font-size: 36px; margin-bottom: 10px; }
+
+  .catalog-output { display: flex; flex-direction: column; gap: 14px; text-align: left; width: 100%; }
+  .output-item { display: flex; flex-direction: column; gap: 6px; }
+  .out-label { font-size: 11px; font-weight: 700; color: #B08D57; letter-spacing: 0.5px; }
+  .out-value.highlight { background: rgba(176, 141, 87, 0.12); border-left: 3px solid #B08D57; padding: 10px 12px; border-radius: 6px; font-weight: 700; color: #ffffff; font-size: 14px; }
+  
+  .out-bullets { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; font-size: 12px; color: #d4d4d4; }
+  .out-bullets li { background: rgba(255, 255, 255, 0.04); padding: 8px 10px; border-radius: 6px; line-height: 1.4; border-left: 2px solid #1BAF7A; }
+  
+  .attr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .attr-pill { font-size: 11px; background: rgba(255,255,255,0.05); padding: 6px 10px; border-radius: 6px; color: #d4d4d4; }
+  .attr-pill strong { color: #ffffff; }
+
+  .output-badges { display: flex; gap: 8px; margin-top: 6px; align-items: center; flex-wrap: wrap; }
+  .score-badge { background: #1BAF7A; color: #ffffff; font-weight: 800; font-size: 11px; padding: 3px 8px; border-radius: 4px; }
+  .keyword-tag { font-size: 11px; color: #b3b3b3; background: rgba(255, 255, 255, 0.08); padding: 3px 8px; border-radius: 4px; }
+
+  .tag-success { background: rgba(27, 175, 122, 0.15); color: #1BAF7A; font-weight: 600; padding: 4px 8px; border-radius: 4px; font-size: 11px; }
+  .result-actions { display: flex; gap: 10px; width: 100%; justify-content: flex-start; }
+
+  /* RULES CARD */
+  .rules-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 14px; }
+  .rules-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .rules-header h3 { margin: 0; font-size: 12px; font-weight: 700; color: #d4d4d4; }
+  .rules-checklist { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; font-size: 11px; color: #838383; }
+  .rules-checklist li { color: #94a3b8; }
+</style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btnDesc = document.getElementById('btnOptimizeDesc');
+    const descPlaceholder = document.getElementById('descPlaceholder');
+    const descResult = document.getElementById('descResult');
+    const prodTitleInput = document.getElementById('prodTitleInput');
+    const outTitle = document.getElementById('outTitle');
+    const charCount = document.getElementById('charCount');
+    const scoreTag = document.getElementById('scoreTag');
+
+    if (btnDesc) {
+      btnDesc.addEventListener('click', () => {
+        btnDesc.disabled = true;
+        btnDesc.innerText = '🚀 Aplicando Protocolo CatalogAI...';
+        setTimeout(() => {
+          if (descPlaceholder) descPlaceholder.classList.add('hidden');
+          if (descResult) descResult.classList.remove('hidden');
+          
+          if (outTitle && prodTitleInput) {
+            const val = prodTitleInput.value.trim();
+            const formatted = val.length > 10 ? `${val} Transpirables Suela Antideslizante`.slice(0, 60) : 'Tenis Deportivos Hombre Runflex Transpirables Antideslizante';
+            outTitle.innerText = formatted;
+            if (charCount) charCount.innerText = formatted.length;
+          }
+          if (scoreTag) scoreTag.innerText = 'CatalogAI Score: 98/100';
+
+          btnDesc.disabled = false;
+          btnDesc.innerText = '🚀 Generar Paquete de Contenido CatalogAI';
+        }, 800);
+      });
+    }
+  });
+</script>

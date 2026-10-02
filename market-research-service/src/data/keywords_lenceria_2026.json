@@ -1,0 +1,3458 @@
+[
+  {
+    "keyword": "lenceria",
+    "volume": 33100,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lencerías",
+    "volume": 33100,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria mujer",
+    "volume": 27100,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias",
+    "volume": 22200,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de compresion",
+    "volume": 22200,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de compresión",
+    "volume": 22200,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier",
+    "volume": 9900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior mujer",
+    "volume": 9900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzones",
+    "volume": 8100,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas",
+    "volume": 8100,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bragas",
+    "volume": 6600,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cacheteros",
+    "volume": 6600,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "feria del brasier y solo kukos",
+    "volume": 6600,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias antideslizantes",
+    "volume": 6600,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias veladas",
+    "volume": 6600,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior",
+    "volume": 6600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropas interiores",
+    "volume": 6600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias antiembolicas",
+    "volume": 5400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias antiembólicas",
+    "volume": 5400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "en boxer hombre",
+    "volume": 4400,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "hombre en boxer",
+    "volume": 4400,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria para mujer",
+    "volume": 4400,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "media luna",
+    "volume": 4400,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias nike",
+    "volume": 4400,
+    "yoy": "-17%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria de encaje",
+    "volume": 3600,
+    "yoy": "-17%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "lenceria para hombre",
+    "volume": 3600,
+    "yoy": "-34%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias termicas",
+    "volume": 3600,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "mujer en ropa interior",
+    "volume": 3600,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior de encaje",
+    "volume": 3600,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "ropa interior de encajé",
+    "volume": 3600,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior para mujer sensual",
+    "volume": 3600,
+    "yoy": "-93%",
+    "competition": "Medio",
+    "cluster": "ocasiones",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior sensual para mujer",
+    "volume": 3600,
+    "yoy": "-93%",
+    "competition": "Medio",
+    "cluster": "ocasiones",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier invisible",
+    "volume": 2900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzoncillos",
+    "volume": 2900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "hilos ropa interior",
+    "volume": 2900,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria sexy",
+    "volume": 2900,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "suspensorios hombre",
+    "volume": 2900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga hilo",
+    "volume": 2900,
+    "yoy": "21%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas hilo",
+    "volume": 2900,
+    "yoy": "21%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas mujer",
+    "volume": 2900,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias veladas negras",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga brasileira",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga brasilera",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas para hombre",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangasparahombre",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanguitas para hombre",
+    "volume": 2400,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "boxer hombre",
+    "volume": 1900,
+    "yoy": "19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "boxer unico",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier leonisa",
+    "volume": 1900,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier postquirurgico",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cachetero con encaje",
+    "volume": 1900,
+    "yoy": "-32%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cacheteros de encaje",
+    "volume": 1900,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cacheteros en encaje",
+    "volume": 1900,
+    "yoy": "-32%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calcetín",
+    "volume": 1900,
+    "yoy": "-16%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "hombre ropa interior",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias compresion",
+    "volume": 1900,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias compresivas",
+    "volume": 1900,
+    "yoy": "-21%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de compresion para varices",
+    "volume": 1900,
+    "yoy": "-45%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior encaje",
+    "volume": 1900,
+    "yoy": "-16%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "ropa interior hombre",
+    "volume": 1900,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga narizona",
+    "volume": 1900,
+    "yoy": "-12%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier strapless",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "carol ropa interior",
+    "volume": 1600,
+    "yoy": "19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "carol ropa íntima",
+    "volume": 1600,
+    "yoy": "19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria roja",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria sexies para mujer",
+    "volume": 1600,
+    "yoy": "-50%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria victoria secret",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de compresión precio",
+    "volume": 1600,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de malla",
+    "volume": 1600,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias veladas termicas",
+    "volume": 1600,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior femenina",
+    "volume": 1600,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "boxer para hombre",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "braga ropa",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bóxer para hombre",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cacheteros mujer",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzoncillos para hombre",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "conjunto de faldas y blusas",
+    "volume": 1300,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "conjunto de pantalon y blusa",
+    "volume": 1300,
+    "yoy": "-32%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "la feria del brasier",
+    "volume": 1300,
+    "yoy": "-23%",
+    "competition": "Medio",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria fem",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria femenina",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria hombre",
+    "volume": 1300,
+    "yoy": "46%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria mujer encaje",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "lencería mujer encaje",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "medias calentadoras",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias tall",
+    "volume": 1300,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias tobilleras",
+    "volume": 1300,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "mujer en lencería",
+    "volume": 1300,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "mujer en ropa interior de encaje",
+    "volume": 1300,
+    "yoy": "33%",
+    "competition": "Bajo",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "pantimedias",
+    "volume": 1300,
+    "yoy": "-23%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior en victoria secret",
+    "volume": 1300,
+    "yoy": "30%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior victoria secret",
+    "volume": 1300,
+    "yoy": "30%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa intima victoria secret",
+    "volume": 1300,
+    "yoy": "30%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga narizona hombre",
+    "volume": 1300,
+    "yoy": "-21%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas de encaje",
+    "volume": 1300,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas de encajé",
+    "volume": 1300,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tania ropa interior",
+    "volume": 1300,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "victoria secret ropa intima",
+    "volume": 1300,
+    "yoy": "30%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "besame ropa interior",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "bodys en encaje",
+    "volume": 1000,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "brasier de lactancia",
+    "volume": 1000,
+    "yoy": "90%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier materno",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cacheteros para mujer",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "carol ropa intima",
+    "volume": 1000,
+    "yoy": "23%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria encaje",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "lenceria para gorditas",
+    "volume": 1000,
+    "yoy": "-46%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "leonisa ropa interior",
+    "volume": 1000,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "medias antideslizantes futbol",
+    "volume": 1000,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de abejita",
+    "volume": 1000,
+    "yoy": "-32%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de compresión media",
+    "volume": 1000,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de patas de pollo",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias deportivas",
+    "volume": 1000,
+    "yoy": "-28%",
+    "competition": "Alto",
+    "cluster": "ocasiones",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias veladas color piel",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior besame",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "ropa interior de algodon",
+    "volume": 1000,
+    "yoy": "19%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "ropa interior leonisa",
+    "volume": 1000,
+    "yoy": "-12%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "ropa interior para mujer",
+    "volume": 1000,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior sexy",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas para mujer",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanguita para mujer",
+    "volume": 1000,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier sin varilla",
+    "volume": 880,
+    "yoy": "81%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasilera ropa interior",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calvin klein mujer ropa interior",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calvin klein ropa interior mujer",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzones de encaje",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzones faja",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "feria del brasier y solo kukos catálogo",
+    "volume": 880,
+    "yoy": "-41%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria negra",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias blancas",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de compresion 15 20 mmhg",
+    "volume": 880,
+    "yoy": "60%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de compresión media para mujer",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias largas",
+    "volume": 880,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias malla",
+    "volume": 880,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias mallas",
+    "volume": 880,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias nike blancas",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias nike largas",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias para las varices",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias para varices",
+    "volume": 880,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias patas de pollo",
+    "volume": 880,
+    "yoy": "-45%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias punto blanco",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias termicas mujer",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior calvin klein mujer",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior de encaje sensual para mujer",
+    "volume": 880,
+    "yoy": "-99%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "ropa interior mujer calvin klein",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropas sexy",
+    "volume": 880,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "boxer de hombre",
+    "volume": 720,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "boxer ropa interior",
+    "volume": 720,
+    "yoy": "-41%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier corrector de postura",
+    "volume": 720,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier push up",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzones de abuelita",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzones levanta cola",
+    "volume": 720,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "camila ropa interior",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "encaje ropa interior para mujer sensual",
+    "volume": 720,
+    "yoy": "-100%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "gorditas en tanga",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "gorditas tanga",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "hilos lenceria",
+    "volume": 720,
+    "yoy": "-64%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria de hombre",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria exotica para mujer",
+    "volume": 720,
+    "yoy": "-96%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria malla",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lencería de encaje juvenil",
+    "volume": 720,
+    "yoy": "-35%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "media pantalon",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias antiembolicas precio",
+    "volume": 720,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias cachemir",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias con liguero",
+    "volume": 720,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de colores",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de compresion deportivas",
+    "volume": 720,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "ocasiones",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias negras",
+    "volume": 720,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias pantalon",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "mujer con ropa interior sexy",
+    "volume": 720,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "pantys mujer",
+    "volume": 720,
+    "yoy": "14%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior mujer encaje",
+    "volume": 720,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "ropa interior sexy mujer",
+    "volume": 720,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "suspensorio para hombre",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tamga calvin klein",
+    "volume": 720,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga calvin klein",
+    "volume": 720,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga encaje",
+    "volume": 720,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "unico ropa interior",
+    "volume": 720,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusas estampadas",
+    "volume": 590,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "boxer transparente hombre",
+    "volume": 590,
+    "yoy": "55%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "boxers para mujer",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bra para busto pesado",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bragas para hombre",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Medio",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier de silicona",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier deportivo",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier para busto pesado",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier transparente",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasieres de silicon",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "encaje ropa",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "feria del brasier y solo kukos sedes",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria transparente",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "lencería transparentes",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "media de compresion",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias antitromboticas",
+    "volume": 590,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias con dibujos",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias deportivas mujer",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "ocasiones",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias hombre",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias largas para mujer",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias para bebe",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias para bebes",
+    "volume": 590,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias running",
+    "volume": 590,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias termicas color piel",
+    "volume": 590,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "pantis de mujer",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "push up brasier",
+    "volume": 590,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa de interior de mujeres",
+    "volume": 590,
+    "yoy": "23%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior comestible",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior comestibles",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior de mujer",
+    "volume": 590,
+    "yoy": "23%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior mujer sensual",
+    "volume": 590,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "ocasiones",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior para mujer sensual transparente",
+    "volume": 590,
+    "yoy": "22%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "sin calzón",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga narizona para hombre",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanguitas",
+    "volume": 590,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tipos de tangas",
+    "volume": 590,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier adhesivo",
+    "volume": 480,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier de encaje",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier lactancia",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier lili pink",
+    "volume": 480,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bucaneras medias",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzoncillos calvin klein",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzones de algodon",
+    "volume": 480,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "hilos de tanga",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "hombre en ropa interior",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria blanca",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria colombiana",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria masculina",
+    "volume": 480,
+    "yoy": "23%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria masculino",
+    "volume": 480,
+    "yoy": "23%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria para dama",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lencería femenina para noche romántica",
+    "volume": 480,
+    "yoy": "-100%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "marca de ropa interior",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "marcas de ropa interior",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias bucaneras",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias canilleras",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de compresion 20 30 mmhg",
+    "volume": 480,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de compresión precio farmacia",
+    "volume": 480,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias para hombre",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias para hombres",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias tobilleras hombre",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias tobilleras para mujer",
+    "volume": 480,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias veladas con diseño",
+    "volume": 480,
+    "yoy": "-34%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior de encaje sensual",
+    "volume": 480,
+    "yoy": "-86%",
+    "competition": "Bajo",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "ropa interior de marca",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior hombre sexis",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior laura",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior masculina",
+    "volume": 480,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior mujer hilos",
+    "volume": 480,
+    "yoy": "23%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior para hombre",
+    "volume": 480,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa intima mujer",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga de hilo",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga mariposa",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas de hilo",
+    "volume": 480,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas narizonas",
+    "volume": 480,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "besame lenceria",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "marca",
+    "mapping": "🏷️ Competencia / Pareja 2"
+  },
+  {
+    "keyword": "blusas bordadas",
+    "volume": 390,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier con encajes",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier encaje",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier y solo kukos",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cacheteros calvin klein",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzon mujer",
+    "volume": 390,
+    "yoy": "52%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzones mujer",
+    "volume": 390,
+    "yoy": "52%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "colaless",
+    "volume": 390,
+    "yoy": "127%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "quickwin",
+    "mapping": "🚀 Quick Win / Módulo 7 (Pareja 1)"
+  },
+  {
+    "keyword": "conjunto lenceria mujer",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "conjuntos elegantes para mujer",
+    "volume": 390,
+    "yoy": "23%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "laura ropa interior catalogo",
+    "volume": 390,
+    "yoy": "40%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria de enfermera",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "media antiembolica",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "media nike",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias adidas mujer",
+    "volume": 390,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias animadas",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias blancas largas",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias con diseño",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de compresión locatel",
+    "volume": 390,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de compresión para hombre",
+    "volume": 390,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de descanso",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de malla negra",
+    "volume": 390,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias media caña",
+    "volume": 390,
+    "yoy": "22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias termicas efecto piel",
+    "volume": 390,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "panties para el periodo",
+    "volume": 390,
+    "yoy": "191%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "quickwin",
+    "mapping": "🚀 Quick Win / Módulo 7 (Pareja 1)"
+  },
+  {
+    "keyword": "ropa de encaje",
+    "volume": 390,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "ropa interior calvin klein",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior en ingles",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior en inglés",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior ingles",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior para dama",
+    "volume": 390,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior steven",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior tanga",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior tangas",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa intima",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "samsara medias",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga con perlas",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga de elefante",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga de elefantes",
+    "volume": 390,
+    "yoy": "-33%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga negra",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga ropa interior",
+    "volume": 390,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas negras",
+    "volume": 390,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tipos de pantys",
+    "volume": 390,
+    "yoy": "22%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "blusas con espalda descubierta",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bodys lenceria",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bra para escotes",
+    "volume": 320,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bra postoperatorio",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "braga de mujer",
+    "volume": 320,
+    "yoy": "-18%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "braga para mujer",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bragas de hombre",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bragas de hombres",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bragas de mujer",
+    "volume": 320,
+    "yoy": "-18%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bragas para mujer",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier espalda descubierta",
+    "volume": 320,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier invisible adhesivo",
+    "volume": 320,
+    "yoy": "21%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier para escote",
+    "volume": 320,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier postoperatorio",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier reductor de busto",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier victoria secret",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasieres de leonisa",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cachetero femenino",
+    "volume": 320,
+    "yoy": "-73%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cacheteros para dama",
+    "volume": 320,
+    "yoy": "-36%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cacheteros para damas",
+    "volume": 320,
+    "yoy": "-36%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzon faja para mujer",
+    "volume": 320,
+    "yoy": "-64%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzoncillo rotos",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "conjunto ropa interior mujer",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "en tangas",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "feria del brasier y solo kukos tiendas",
+    "volume": 320,
+    "yoy": "-56%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "geordi ropa interior",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "hombre calzoncillos",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "hombre con calzoncillo",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "interiores para hombre",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria mujer roja",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria roja encaje",
+    "volume": 320,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "medias de ciclismo",
+    "volume": 320,
+    "yoy": "-47%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de compresión donde comprar",
+    "volume": 320,
+    "yoy": "-48%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias mujer",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias negras largas",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias ortopedicas",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias pantalon termicas",
+    "volume": 320,
+    "yoy": "-18%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias para la circulacion",
+    "volume": 320,
+    "yoy": "-35%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias para niñas",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "narizona para hombre",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ninas en bragas",
+    "volume": 320,
+    "yoy": "-56%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior colombiana",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior geordi",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior leonisa mujer",
+    "volume": 320,
+    "yoy": "129%",
+    "competition": "Alto",
+    "cluster": "marcas",
+    "intent": "quickwin",
+    "mapping": "🚀 Quick Win / Módulo 7 (Pareja 1)"
+  },
+  {
+    "keyword": "ropa interior transparente",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "ropas sexis",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "strapless brasier",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "talla de sostenes",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga invisible",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas comestibles",
+    "volume": 320,
+    "yoy": "-65%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas invisibles",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas leonisa",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas sexis",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tiendas de lenceria",
+    "volume": 320,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tipos de brasier",
+    "volume": 320,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "bragas hombres",
+    "volume": 260,
+    "yoy": "-35%",
+    "competition": "Medio",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cacheteros de algodon",
+    "volume": 260,
+    "yoy": "50%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "cacheteros encaje para dama",
+    "volume": 260,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzon con relleno",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "calzon levanta gluteos",
+    "volume": 260,
+    "yoy": "-56%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "conjuntos de ropa interior",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "en tanga negra",
+    "volume": 260,
+    "yoy": "-46%",
+    "competition": "Bajo",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria roja para mujer",
+    "volume": 260,
+    "yoy": "24%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias al por mayor",
+    "volume": 260,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias largas de colores",
+    "volume": 260,
+    "yoy": "-22%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias para varices donde comprar",
+    "volume": 260,
+    "yoy": "-58%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias por mayor",
+    "volume": 260,
+    "yoy": "-33%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "mujeres en braga",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior de mujer de encaje",
+    "volume": 260,
+    "yoy": "27%",
+    "competition": "Alto",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "ropa interior para mujer sensual rojo",
+    "volume": 260,
+    "yoy": "-97%",
+    "competition": "Alto",
+    "cluster": "ocasiones",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "sin bra",
+    "volume": 260,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "sin braga",
+    "volume": 260,
+    "yoy": "-19%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tallas de medias",
+    "volume": 260,
+    "yoy": "-48%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tangas rojas",
+    "volume": 260,
+    "yoy": "-18%",
+    "competition": "Medio",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tiendas de ropa interior",
+    "volume": 260,
+    "yoy": "-19%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "vestidos con medias negras",
+    "volume": 260,
+    "yoy": "-64%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasier silicona adhesivo",
+    "volume": 210,
+    "yoy": "-48%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasieres leonisa para busto pesado",
+    "volume": 210,
+    "yoy": "-46%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "brasileñas ropa interior",
+    "volume": 210,
+    "yoy": "-57%",
+    "competition": "Alto",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias con orejitas",
+    "volume": 210,
+    "yoy": "-50%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias de red",
+    "volume": 210,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "medias para varices precio",
+    "volume": 210,
+    "yoy": "-50%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "no brasier",
+    "volume": 210,
+    "yoy": "0%",
+    "competition": "Bajo",
+    "cluster": "brasieres",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "ropa interior para hombre transparente",
+    "volume": 210,
+    "yoy": "56%",
+    "competition": "Medio",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "cacheteros leonisa",
+    "volume": 170,
+    "yoy": "27%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "normal mujeres ropa interior",
+    "volume": 140,
+    "yoy": "0%",
+    "competition": "Medio",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "lenceria femenina encaje",
+    "volume": 110,
+    "yoy": "-33%",
+    "competition": "Bajo",
+    "cluster": "materiales",
+    "intent": "especifico",
+    "mapping": "🧱 Módulo 7 (Materiales / Innovación)"
+  },
+  {
+    "keyword": "ropa intima calvin klein",
+    "volume": 90,
+    "yoy": "-29%",
+    "competition": "Alto",
+    "cluster": "general",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  },
+  {
+    "keyword": "tanga ck",
+    "volume": 10,
+    "yoy": "0%",
+    "competition": "Alto",
+    "cluster": "pantis",
+    "intent": "transaccional",
+    "mapping": "Módulo 7 (Ficha Técnica & Atributos)"
+  }
+]

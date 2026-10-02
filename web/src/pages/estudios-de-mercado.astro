@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import allStudiesData from '../data/market_studies_all.json';
 
 const seo = {
   title: 'Explorador de Mercado & Búsquedas SEO | Advantia CatalogAI',
@@ -46,29 +47,36 @@ const seo = {
             <button class="picker-btn active" data-cat="ollas">
               <span class="icon">🍲</span>
               <div class="txt">
-                <strong>Ollas, Sartenes & Baterías</strong>
-                <small>+254.800 búsquedas/mes</small>
+                <strong>Ollas & Cocina</strong>
+                <small>+422.840 búsquedas/mes</small>
               </div>
             </button>
-            <button class="picker-btn" data-cat="deportes">
-              <span class="icon">👟</span>
+            <button class="picker-btn" data-cat="relojes">
+              <span class="icon">⌚</span>
               <div class="txt">
-                <strong>Calzado Deportivo & Sneaker</strong>
-                <small>+180.000 búsquedas/mes</small>
+                <strong>Relojes & Accesorios</strong>
+                <small>+370.880 búsquedas/mes</small>
               </div>
             </button>
-            <button class="picker-btn" data-cat="hogar">
-              <span class="icon">🏠</span>
+            <button class="picker-btn" data-cat="lenceria">
+              <span class="icon">👙</span>
               <div class="txt">
-                <strong>Electrodomésticos & Hogar</strong>
-                <small>+140.000 búsquedas/mes</small>
+                <strong>Lencería & Ropa Interior</strong>
+                <small>+569.840 búsquedas/mes</small>
               </div>
             </button>
-            <button class="picker-btn" data-cat="tecnologia">
-              <span class="icon">📱</span>
+            <button class="picker-btn" data-cat="abrigos">
+              <span class="icon">🧥</span>
               <div class="txt">
-                <strong>Tecnología & Gadgets</strong>
-                <small>+210.000 búsquedas/mes</small>
+                <strong>Abrigos & Chaquetas</strong>
+                <small>+459.470 búsquedas/mes</small>
+              </div>
+            </button>
+            <button class="picker-btn" data-cat="camisetas">
+              <span class="icon">👕</span>
+              <div class="txt">
+                <strong>Camisetas & Deportiva</strong>
+                <small>+794.040 búsquedas/mes</small>
               </div>
             </button>
           </div>
@@ -796,51 +804,21 @@ const seo = {
 
     setTimeout(initCharts, 300);
 
-    // Embedded Rich Dataset
-    const RAW_DATASET = [
-      // Nomenclaturas & Ollas a Presión
-      { kw: 'olla a presion', vol: 12100, yoy: '0%', comp: 'Alto', dim: 'nomenclatura', brand: 'all', mat: 'all', col: 'all', cap: '4 a 7', map: 'Título Principal / H1' },
+    // Embedded Multi-Category Datasets
+    const STUDIES_BUNDLE = allStudiesData || {};
+    let currentCat = 'ollas';
+    let RAW_DATASET = STUDIES_BUNDLE['ollas'] || [];
 
-      { kw: 'olla express', vol: 9900, yoy: '+22%', comp: 'Alto', dim: 'nomenclatura', brand: 'all', mat: 'all', col: 'all', cap: '4 a 7', map: 'Título Principal' },
-      { kw: 'olla pitadora', vol: 2400, yoy: '+21%', comp: 'Alto', dim: 'nomenclatura', brand: 'all', mat: 'all', col: 'all', cap: '4 a 7', map: 'Módulo 7 (Pareja 1)' },
-      { kw: 'hoya de presion', vol: 170, yoy: '-19%', comp: 'Alto', dim: 'nomenclatura', brand: 'all', mat: 'all', col: 'all', cap: '4 a 7', map: 'Filtro Sinónimo SEO' },
-
-      // Marcas
-      { kw: 'imusa sarten', vol: 5400, yoy: '-19%', comp: 'Alto', dim: 'marcas', brand: 'imusa', mat: 'antiadherente', col: 'all', cap: 'all', map: 'Módulo 7 (Pareja 1)' },
-      { kw: 'sartenes imusa', vol: 5400, yoy: '-19%', comp: 'Alto', dim: 'marcas', brand: 'imusa', mat: 'antiadherente', col: 'all', cap: 'all', map: 'Módulo 7 (Pareja 1)' },
-      { kw: 'olla a presion universal', vol: 5400, yoy: '0%', comp: 'Alto', dim: 'marcas', brand: 'universal', mat: 'aluminio', col: 'all', cap: '4 a 7', map: 'Módulo 7 (Pareja 1)' },
-      { kw: 'universal ollas', vol: 4400, yoy: '0%', comp: 'Alto', dim: 'marcas', brand: 'universal', mat: 'all', col: 'all', cap: 'all', map: 'Título / Módulo 7' },
-      { kw: 'imusa ollas', vol: 3600, yoy: '0%', comp: 'Alto', dim: 'marcas', brand: 'imusa', mat: 'all', col: 'all', cap: 'all', map: 'Título / Módulo 7' },
-      { kw: 'olla a presion royal prestige', vol: 1900, yoy: '-34%', comp: 'Alto', dim: 'marcas', brand: 'royal prestige', mat: 'acero quirurgico', col: 'all', cap: '4 a 7', map: 'Módulo 7 (Pareja 2)' },
-      { kw: 'sarten tramontina', vol: 590, yoy: '+233%', comp: 'Alto', dim: 'quickwins', brand: 'tramontina', mat: 'acero inoxidable', col: 'all', cap: 'all', map: '🚀 Quick Win / Pareja 1' },
-      { kw: 'sartenes ninja', vol: 40, yoy: '+467%', comp: 'Alto', dim: 'quickwins', brand: 'ninja', mat: 'antiadherente', col: 'all', cap: 'all', map: '🚀 Quick Win / Pareja 2' },
-
-      // Materiales
-      { kw: 'sarten antiadherente', vol: 4400, yoy: '0%', comp: 'Alto', dim: 'materiales', brand: 'all', mat: 'antiadherente', col: 'all', cap: 'all', map: 'Módulo 7 (Pareja 1)' },
-      { kw: 'sarten de hierro fundido', vol: 3600, yoy: '+22%', comp: 'Alto', dim: 'materiales', brand: 'all', mat: 'hierro fundido', col: 'all', cap: 'all', map: 'Módulo 7 (Pareja 2)' },
-      { kw: 'sarten acero inoxidable', vol: 2400, yoy: '0%', comp: 'Alto', dim: 'materiales', brand: 'all', mat: 'acero inoxidable', col: 'all', cap: 'all', map: 'Módulo 7 (Pareja 2)' },
-      { kw: 'sarten de ceramica', vol: 1600, yoy: '-21%', comp: 'Alto', dim: 'materiales', brand: 'all', mat: 'ceramica', col: 'all', cap: 'all', map: 'Módulo 7 (Pareja 3)' },
-      { kw: 'olla de barro', vol: 880, yoy: '-18%', comp: 'Alto', dim: 'materiales', brand: 'all', mat: 'barro', col: 'all', cap: 'all', map: 'Sección Artesanal' },
-      { kw: 'sartenes de titanio', vol: 170, yoy: '+555%', comp: 'Alto', dim: 'quickwins', brand: 'all', mat: 'titanio', col: 'all', cap: 'all', map: '🚀 Quick Win / Pareja 1' },
-
-      // Capacidades & Medidas
-      { kw: 'olla a presion 6 litros', vol: 880, yoy: '0%', comp: 'Alto', dim: 'capacidades', brand: 'imusa', mat: 'aluminio', col: 'all', cap: '4 a 7', map: 'Módulo 7 (Pareja 1)' },
-      { kw: 'olla arrocera 1 libra', vol: 170, yoy: '0%', comp: 'Alto', dim: 'capacidades', brand: 'all', mat: 'all', col: 'all', cap: '1 a 3', map: 'Módulo 7 (Pareja 2)' },
-      { kw: 'sarten 24 cm', vol: 50, yoy: '-29%', comp: 'Alto', dim: 'capacidades', brand: 'all', mat: 'all', col: 'all', cap: '20 a 30 cm', map: 'Atributos SKU' },
-      { kw: 'olla 50 litros', vol: 50, yoy: '+133%', comp: 'Alto', dim: 'capacidades', brand: 'all', mat: 'aluminio', col: 'all', cap: '10 a 50', map: 'Línea Industrial' },
-
-      // Colores & Estética
-      { kw: 'ollas negras', vol: 70, yoy: '0%', comp: 'Alto', dim: 'colores', brand: 'all', mat: 'all', col: 'negro', cap: 'all', map: 'Variante Estética' },
-      { kw: 'ollas rosadas', vol: 210, yoy: '+50%', comp: 'Alto', dim: 'colores', brand: 'all', mat: 'all', col: 'rosa', cap: 'all', map: 'Variante Estética' },
-      { kw: 'olla blanca', vol: 50, yoy: '+40%', comp: 'Alto', dim: 'colores', brand: 'all', mat: 'all', col: 'blanco', cap: 'all', map: 'Variante Estética' },
-      { kw: 'olla cobre', vol: 70, yoy: '+40%', comp: 'Alto', dim: 'colores', brand: 'all', mat: 'cobre', col: 'cobre', cap: 'all', map: 'Variante Estética' },
-
-      // Salud & Preguntas
-      { kw: 'el teflon es toxico', vol: 90, yoy: '-56%', comp: 'Bajo', dim: 'salud', brand: 'all', mat: 'antiadherente', col: 'all', cap: 'all', map: '🩺 Guía Salud / FAQ IA' },
-      { kw: 'marcas de sartenes libres de toxicos', vol: 110, yoy: '-55%', comp: 'Alto', dim: 'salud', brand: 'all', mat: 'all', col: 'all', cap: 'all', map: '🩺 Guía Salud / FAQ IA' },
-      { kw: 'mejores materiales para ollas', vol: 90, yoy: '-44%', comp: 'Alto', dim: 'salud', brand: 'all', mat: 'all', col: 'all', cap: 'all', map: '🩺 Guía Salud' },
-      { kw: 'sartenes de cerámica ventajas y desventajas', vol: 110, yoy: '-36%', comp: 'Bajo', dim: 'salud', brand: 'all', mat: 'ceramica', col: 'all', cap: 'all', map: '🤖 FAQ para IA' }
-    ];
+    const catPickerBtns = document.querySelectorAll('#catPicker .picker-btn');
+    catPickerBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        catPickerBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCat = btn.getAttribute('data-cat') || 'ollas';
+        RAW_DATASET = STUDIES_BUNDLE[currentCat] || [];
+        renderTable();
+      });
+    });
 
     const emSearch = document.getElementById('emSearch');
     const btnClearSearch = document.getElementById('btnClearSearch');
@@ -865,7 +843,7 @@ const seo = {
       const capVal = subCapacity ? subCapacity.value : 'all';
 
       const filtered = RAW_DATASET.filter(item => {
-        const matchDim = activeDim === 'all' || item.dim === activeDim || (activeDim === 'quickwins' && item.dim === 'quickwins');
+        const matchDim = activeDim === 'all' || item.dim === activeDim || (activeDim === 'quickwins' && item.intent === 'quickwin');
         const matchSearch = !searchVal || item.kw.toLowerCase().includes(searchVal);
         const matchBrand = brandVal === 'all' || item.brand === brandVal;
         const matchMat = matVal === 'all' || item.mat === matVal;
@@ -890,15 +868,19 @@ const seo = {
         return;
       }
 
-      emTableBody.innerHTML = filtered.map(item => {
+      emTableBody.innerHTML = filtered.slice(0, 300).map(item => {
         let badgeClass = 'general';
         let badgeText = '💬 Nomenclatura';
-        if (item.dim === 'marcas') { badgeClass = 'especifico'; badgeText = '🏷️ Marca'; }
+        if (item.dim === 'marcas' || item.intent === 'marca') { badgeClass = 'especifico'; badgeText = '🏷️ Marca'; }
         else if (item.dim === 'materiales') { badgeClass = 'especifico'; badgeText = '🧱 Material'; }
         else if (item.dim === 'colores') { badgeClass = 'general'; badgeText = '🎨 Color'; }
         else if (item.dim === 'capacidades') { badgeClass = 'general'; badgeText = '📏 Medida'; }
-        else if (item.dim === 'salud') { badgeClass = 'informacional'; badgeText = '🩺 Salud / FAQ'; }
-        else if (item.dim === 'quickwins') { badgeClass = 'especifico'; badgeText = '🚀 Quick Win'; }
+        else if (item.dim === 'salud' || item.intent === 'informacional') { badgeClass = 'informacional'; badgeText = '🩺 Salud / FAQ'; }
+        else if (item.intent === 'quickwin') { badgeClass = 'especifico'; badgeText = '🚀 Quick Win'; }
+        else if (item.dim === 'brasieres' || item.dim === 'pantis' || item.dim === 'fajas') { badgeClass = 'especifico'; badgeText = `👙 ${item.dim}`; }
+        else if (item.dim === 'chaquetas' || item.dim === 'abrigos') { badgeClass = 'especifico'; badgeText = `🧥 ${item.dim}`; }
+        else if (item.dim === 'camisetas' || item.dim === 'polos' || item.dim === 'futbol_deporte') { badgeClass = 'especifico'; badgeText = `👕 ${item.dim}`; }
+        else if (item.dim === 'hombre' || item.dim === 'mujer' || item.dim === 'smartwatch') { badgeClass = 'especifico'; badgeText = `⌚ ${item.dim}`; }
 
         return `
           <tr>
@@ -939,7 +921,7 @@ const seo = {
 
     const btnExportCSVMain = document.getElementById('btnExportCSVMain');
     if (btnExportCSVMain) {
-      btnExportCSVMain.addEventListener('click', () => alert('📊 Exportando dataset completo en CSV... ¡Descarga iniciada!'));
+      btnExportCSVMain.addEventListener('click', () => alert(`📊 Exportando dataset de ${currentCat} completo en CSV... ¡Descarga iniciada!`));
     }
 
     const btnCopyCatalogMain = document.getElementById('btnCopyCatalogMain');

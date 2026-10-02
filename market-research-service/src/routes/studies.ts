@@ -1,5 +1,9 @@
 import { Hono } from 'hono';
 import ollasData from '../data/keywords_ollas_sartenes_2026.json' with { type: 'json' };
+import relojesData from '../data/keywords_relojes_2026.json' with { type: 'json' };
+import lenceriaData from '../data/keywords_lenceria_2026.json' with { type: 'json' };
+import abrigosData from '../data/keywords_abrigos_2026.json' with { type: 'json' };
+import camisetasData from '../data/keywords_camisetas_2026.json' with { type: 'json' };
 
 export const studiesRoute = new Hono();
 
@@ -10,92 +14,121 @@ export interface KeywordItem {
   competition: string;
   cluster?: string;
   intent?: string;
+  mapping?: string;
 }
+
+const CATEGORY_MAP: Record<string, { name: string; icon: string; data: KeywordItem[] }> = {
+  'ollas-sartenes-2026': { name: 'Ollas, Sartenes & Menaje de Cocina', icon: '🍲', data: ollasData as KeywordItem[] },
+  'ollas': { name: 'Ollas, Sartenes & Menaje de Cocina', icon: '🍲', data: ollasData as KeywordItem[] },
+  'relojes-2026': { name: 'Relojes & Accesorios Hombre/Mujer', icon: '⌚', data: relojesData as KeywordItem[] },
+  'relojes': { name: 'Relojes & Accesorios Hombre/Mujer', icon: '⌚', data: relojesData as KeywordItem[] },
+  'lenceria-2026': { name: 'Lencería, Brasieres & Ropa Interior', icon: '👙', data: lenceriaData as KeywordItem[] },
+  'lenceria': { name: 'Lencería, Brasieres & Ropa Interior', icon: '👙', data: lenceriaData as KeywordItem[] },
+  'abrigos-2026': { name: 'Abrigos, Chaquetas & Ropa de Invierno', icon: '🧥', data: abrigosData as KeywordItem[] },
+  'abrigos': { name: 'Abrigos, Chaquetas & Ropa de Invierno', icon: '🧥', data: abrigosData as KeywordItem[] },
+  'camisetas-2026': { name: 'Camisetas, Polos & Moda Deportiva', icon: '👕', data: camisetasData as KeywordItem[] },
+  'camisetas': { name: 'Camisetas, Polos & Moda Deportiva', icon: '👕', data: camisetasData as KeywordItem[] },
+};
 
 // 1. List available market studies
 studiesRoute.get('/', (c) => {
+  const studies = [
+    {
+      id: 'ollas-sartenes-2026',
+      category: 'Ollas, Sartenes & Menaje de Cocina',
+      icon: '🍲',
+      market: 'Colombia (COP)',
+      totalKeywords: ollasData.length,
+      totalVolume: ollasData.reduce((acc, item) => acc + item.volume, 0),
+      period: 'Sep 2022 - Ago 2026 (4 Años)',
+      lastUpdated: '2026-10-01'
+    },
+    {
+      id: 'relojes-2026',
+      category: 'Relojes & Accesorios Hombre/Mujer',
+      icon: '⌚',
+      market: 'Colombia (COP)',
+      totalKeywords: relojesData.length,
+      totalVolume: relojesData.reduce((acc, item) => acc + item.volume, 0),
+      period: 'Sep 2022 - Ago 2026 (4 Años)',
+      lastUpdated: '2026-10-01'
+    },
+    {
+      id: 'lenceria-2026',
+      category: 'Lencería, Brasieres & Ropa Interior',
+      icon: '👙',
+      market: 'Colombia (COP)',
+      totalKeywords: lenceriaData.length,
+      totalVolume: lenceriaData.reduce((acc, item) => acc + item.volume, 0),
+      period: 'Sep 2022 - Ago 2026 (4 Años)',
+      lastUpdated: '2026-10-01'
+    },
+    {
+      id: 'abrigos-2026',
+      category: 'Abrigos, Chaquetas & Ropa de Invierno',
+      icon: '🧥',
+      market: 'Colombia (COP)',
+      totalKeywords: abrigosData.length,
+      totalVolume: abrigosData.reduce((acc, item) => acc + item.volume, 0),
+      period: 'Sep 2022 - Ago 2026 (4 Años)',
+      lastUpdated: '2026-10-01'
+    },
+    {
+      id: 'camisetas-2026',
+      category: 'Camisetas, Polos & Moda Deportiva',
+      icon: '👕',
+      market: 'Colombia (COP)',
+      totalKeywords: camisetasData.length,
+      totalVolume: camisetasData.reduce((acc, item) => acc + item.volume, 0),
+      period: 'Sep 2022 - Ago 2026 (4 Años)',
+      lastUpdated: '2026-10-01'
+    }
+  ];
+
   return c.json({
     status: 'success',
-    studies: [
-      {
-        id: 'ollas-sartenes-2026',
-        category: 'Ollas, Sartenes & Menaje de Cocina',
-        market: 'Colombia (COP)',
-        totalKeywords: ollasData.length,
-        totalVolume: ollasData.reduce((acc, item) => acc + item.volume, 0),
-        lastUpdated: '2026-10-01'
-      }
-    ]
+    totalStudies: studies.length,
+    studies
   });
 });
 
 // 2. Query keywords by study category
 studiesRoute.get('/:categoryId', (c) => {
-  const categoryId = c.req.param('categoryId');
+  const categoryId = c.req.param('categoryId').toLowerCase();
   const search = c.req.query('search')?.toLowerCase().trim() || '';
   const cluster = c.req.query('cluster') || 'all';
-  const limit = parseInt(c.req.query('limit') || '500', 10);
+  const limit = parseInt(c.req.query('limit') || '1000', 10);
 
-  let dataset: KeywordItem[] = [];
-
-  if (categoryId === 'ollas-sartenes-2026' || categoryId === 'ollas') {
-    dataset = ollasData as KeywordItem[];
-  } else {
-    return c.json({ error: 'Estudio de mercado no encontrado' }, 404);
+  const entry = CATEGORY_MAP[categoryId];
+  if (!entry) {
+    return c.json({ error: 'Estudio de mercado no encontrado. Categorías válidas: ollas-sartenes-2026, relojes-2026, lenceria-2026, abrigos-2026, camisetas-2026' }, 404);
   }
 
-  // Enrich with cluster and intent logic
-  let filtered = dataset.map((item) => {
-    const kw = item.keyword.toLowerCase();
-    let itemCluster = 'sartenes';
-    let intent = 'general';
+  let filtered = entry.data;
 
-    if (kw.includes('presion') || kw.includes('presión') || kw.includes('express') || kw.includes('pitadora')) {
-      itemCluster = 'presion';
-    } else if (kw.includes('arrocera') || kw.includes('vaporera')) {
-      itemCluster = 'arroceras';
-    } else if (kw.includes('bateria') || kw.includes('batería')) {
-      itemCluster = 'baterias';
-    } else if (kw.includes('multifuncional') || kw.includes('multichef') || kw.includes('airfryer') || kw.includes('air fryer')) {
-      itemCluster = 'multifuncional';
-    } else if (kw.includes('hierro') || kw.includes('barro') || kw.includes('vidrio') || kw.includes('peltre')) {
-      itemCluster = 'hierro';
-    } else if (kw.includes('toxico') || kw.includes('tóxico') || kw.includes('pfoa') || kw.includes('materiales')) {
-      itemCluster = 'salud';
-      intent = 'informacional';
-    }
-
-    if (item.yoy.includes('+5') || item.yoy.includes('+2') || item.yoy.includes('+4')) {
-      intent = 'quickwin';
-    } else if (kw.includes('imusa') || kw.includes('universal') || kw.includes('oster') || kw.includes('royal prestige')) {
-      intent = 'especifico';
-    }
-
-    return {
-      ...item,
-      cluster: itemCluster,
-      intent
-    };
-  });
-
-  // Apply Filters
+  // Apply Cluster Filter
   if (cluster !== 'all') {
     filtered = filtered.filter(x => x.cluster === cluster || (cluster === 'quickwins' && x.intent === 'quickwin'));
   }
 
+  // Apply Search Filter
   if (search) {
     filtered = filtered.filter(x => x.keyword.toLowerCase().includes(search));
   }
 
   const resultList = filtered.slice(0, limit);
   const totalVol = resultList.reduce((acc, x) => acc + x.volume, 0);
+  const quickWins = resultList.filter(x => x.intent === 'quickwin');
 
   return c.json({
     status: 'success',
     categoryId,
+    categoryName: entry.name,
+    icon: entry.icon,
     totalResults: filtered.length,
     returnedResults: resultList.length,
     totalVolume: totalVol,
+    quickWinsCount: quickWins.length,
     data: resultList
   });
 });
@@ -108,14 +141,13 @@ studiesRoute.post('/analyze', async (c) => {
   }
 
   const lines = body.rawText.trim().split('\n');
-
   const items: KeywordItem[] = [];
 
   for (const line of lines) {
     const parts = line.split('\t');
     if (parts.length >= 4) {
       const kw = parts[0].trim();
-      if (!kw || kw.toLowerCase().startsWith('keyword') || kw.toLowerCase() === 'colombia') continue;
+      if (!kw || kw.toLowerCase().startsWith('keyword') || kw.toLowerCase() === 'colombia' || kw.toLowerCase() === 'todo') continue;
       const vol = parseInt(parts[3].replace(/,/g, ''), 10) || 0;
       const yoy = parts[5] ? parts[5].trim() : '0%';
       const comp = parts[6] ? parts[6].trim() : 'Alto';

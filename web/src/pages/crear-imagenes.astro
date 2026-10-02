@@ -1,0 +1,382 @@
+---
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  title: 'Crear Imágenes de Producto con Flux AI | Advantia',
+  description: 'Genera ambientaciones fotorrealistas, cambios de escena y fondos publicitarios de alta definición para tus SKUs con Flux y Falabella Atenea AI Studio.',
+  canonical: 'https://theadvantia.com/crear-imagenes',
+  robots: 'noindex, nofollow',
+};
+---
+
+<Base seo={seo} active="/aplicativos">
+  <main class="mod-main">
+
+    <!-- Top Nav -->
+    <header class="mod-nav">
+      <div class="wrap mod-nav-in">
+        <div class="mod-brand">
+          <a href="/aplicativos" class="back-link">← Volver a Aplicativos</a>
+          <span class="divider">|</span>
+          <span class="nav-title">🎨 Flux AI · Ambientación de Producto</span>
+        </div>
+        <div class="mod-nav-actions">
+          <span class="live-pill">🟢 Engine: Gemini Flash Image</span>
+          <a href="/aplicativos" class="mod-btn btn-secondary sm">Portal de Aplicativos</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="mod-hero">
+      <div class="wrap">
+        <div class="hero-badge"><span class="pulse-dot"></span> FLUX / ATENEA AI WORKER</div>
+        <h1 class="hero-title">Crear Imágenes de Producto (Flux AI)</h1>
+        <p class="hero-subtitle">
+          Genera ambientaciones fotorrealistas, cambios de escena y fondos publicitarios de alta definición para tus SKUs. El producto original se preserva al 100% — solo se reemplaza el entorno.
+        </p>
+        <div class="hero-chips">
+          <span class="chip">⚡ Gemini 3.1 Flash Image</span>
+          <span class="chip">🖼️ Resolución 4K</span>
+          <span class="chip">✅ Estándar Falabella/MeLi</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Workspace -->
+    <section class="mod-workspace">
+      <div class="wrap-wide">
+        <div class="ws-grid">
+
+          <!-- LEFT: Controls -->
+          <div class="ws-panel controls-panel">
+            <div class="panel-header">
+              <h2>Configuración de Ambientación</h2>
+              <span class="panel-tag">Motor: Flux v1.1 Pro</span>
+            </div>
+
+            <div class="form-group">
+              <label for="fluxPrompt">Prompt de Ambientación</label>
+              <textarea id="fluxPrompt" rows="3" class="mod-input mod-textarea" placeholder="Describe el ambiente: materiales, iluminación, estilo fotográfico...">Mesa de madera estilo nórdico con luz solar suave filtrada por plantas verdes, fotografía de producto 4K fotorrealista, bokeh background</textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group half">
+                <label>Relación de Aspecto</label>
+                <select id="fluxAspect" class="mod-select">
+                  <option value="1:1">1:1 Cuadrado (Catálogo)</option>
+                  <option value="4:5" selected>4:5 Móvil (Falabella/MeLi)</option>
+                  <option value="16:9">16:9 Banner Publicitario</option>
+                  <option value="9:16">9:16 Story/Reel</option>
+                </select>
+              </div>
+              <div class="form-group half">
+                <label>Número de Variaciones</label>
+                <select id="fluxVariants" class="mod-select">
+                  <option value="1" selected>1 imagen</option>
+                  <option value="2">2 variaciones</option>
+                  <option value="4">4 variaciones</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Presets de Escena Rápidos</label>
+              <div class="presets-grid" id="presetsGrid">
+                <button class="preset-btn active" data-prompt="Mesa de madera estilo nórdico, luz solar suave filtrada por plantas, 4K fotorrealista">
+                  <span class="preset-icon">🌿</span>
+                  <strong>Madera & Luz Natural</strong>
+                  <small>Estilo nórdico orgánico</small>
+                </button>
+                <button class="preset-btn" data-prompt="Superficie de mármol blanco con sombras botánicas suaves, estudio de fotografía profesional, minimalista 4K">
+                  <span class="preset-icon">🪨</span>
+                  <strong>Mármol & Botánica</strong>
+                  <small>Lujo minimalista</small>
+                </button>
+                <button class="preset-btn" data-prompt="Podio neutro gris claro, iluminación difusa de estudio, fondo blanco puro para catálogo, sombra suave">
+                  <span class="preset-icon">📦</span>
+                  <strong>Estudio Neutro</strong>
+                  <small>Catálogo estándar</small>
+                </button>
+                <button class="preset-btn" data-prompt="Escena publicitaria urbana, noche con luces de ciudad bokeh, producto en primer plano con contraste dramático">
+                  <span class="preset-icon">🌃</span>
+                  <strong>Urbano Nocturno</strong>
+                  <small>Impacto dramático</small>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="fluxImageUpload">Imagen del Producto (Opcional — para Preservar SKU)</label>
+              <div class="dropzone-sm" id="fluxDropzone">
+                <span>📸 Arrastra tu foto de producto o haz clic para cargar</span>
+                <input type="file" id="fluxImageUpload" accept="image/*" style="display:none" />
+              </div>
+            </div>
+
+            <button class="mod-btn btn-primary full" id="btnGenFlux">
+              ⚡ Generar Ambientación Flux AI
+            </button>
+
+            <div class="info-box">
+              <strong>⚠️ Modo Demo</strong> — Este workspace simula el flujo del worker. En producción, las solicitudes se envían al worker de Atenea AI Studio via <code>fluxImages.js</code> y los resultados se guardan en Firestore (<code>flux_jobs</code>).
+            </div>
+          </div>
+
+          <!-- RIGHT: Output -->
+          <div class="ws-panel output-panel">
+            <div class="panel-header">
+              <h2>Resultado de Ambientación</h2>
+              <span class="panel-tag" id="outputStatus">En espera...</span>
+            </div>
+
+            <div class="output-stage" id="fluxOutputStage">
+              <div class="placeholder-state" id="fluxPlaceholder">
+                <div class="ph-icon">✨</div>
+                <p>Configura el prompt y haz clic en <strong>Generar Ambientación</strong> para ver el resultado simulado del worker de Flux AI.</p>
+              </div>
+
+              <div class="result-state hidden" id="fluxResult">
+                <div class="result-gallery" id="fluxGallery">
+                  <!-- Populated by JS -->
+                </div>
+                <div class="result-actions">
+                  <button class="mod-btn btn-secondary" onclick="alert('Descargando imágenes HD en ZIP...')">📥 Descargar todas las imágenes</button>
+                  <button class="mod-btn btn-secondary" onclick="alert('Subiendo a Falabella Seller Center...')">🛒 Subir a Falabella</button>
+                  <button class="mod-btn btn-secondary" onclick="alert('Subiendo a Mercado Libre...')">💛 Subir a MeLi</button>
+                </div>
+              </div>
+
+              <div class="loading-state hidden" id="fluxLoading">
+                <div class="spinner"></div>
+                <p id="fluxLoadingText">Enviando tarea al worker Atenea AI Studio...</p>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" id="fluxProgress"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Job History -->
+            <div class="job-history">
+              <div class="jh-header">
+                <h3>Historial de Trabajos Recientes</h3>
+                <span class="jh-count">0 trabajos</span>
+              </div>
+              <div id="jobList" class="job-list">
+                <p class="empty-msg">No hay trabajos registrados en esta sesión.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+</Base>
+
+<style>
+  .mod-main { background: #0B1F3A; color: #fff; min-height: 100vh; }
+
+  /* NAV */
+  .mod-nav { background: rgba(0,0,0,0.5); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 12px 0; }
+  .mod-nav-in { display: flex; justify-content: space-between; align-items: center; }
+  .mod-brand { display: flex; align-items: center; gap: 12px; }
+  .back-link { color: #B08D57; font-size: 13px; font-weight: 700; text-decoration: none; }
+  .back-link:hover { text-decoration: underline; }
+  .divider { color: rgba(255,255,255,0.2); }
+  .nav-title { font-size: 13px; color: #d4d4d4; font-weight: 600; }
+  .mod-nav-actions { display: flex; align-items: center; gap: 12px; }
+  .live-pill { font-size: 11px; font-weight: 700; color: #1BAF7A; background: rgba(27,175,122,0.12); border: 1px solid rgba(27,175,122,0.3); padding: 3px 10px; border-radius: 9999px; }
+
+  /* HERO */
+  .mod-hero { padding: 48px 0 36px; background: radial-gradient(circle at 50% 0%, #1E2761 0%, #0B1F3A 70%); text-align: center; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(176,141,87,0.15); color: #B08D57; border: 1px solid rgba(176,141,87,0.3); padding: 5px 14px; border-radius: 9999px; font-size: 12px; font-weight: 700; margin-bottom: 14px; }
+  .pulse-dot { width: 7px; height: 7px; background: #1BAF7A; border-radius: 50%; box-shadow: 0 0 7px #1BAF7A; }
+  .hero-title { font-size: 36px; font-weight: 800; margin-bottom: 12px; }
+  .hero-subtitle { max-width: 680px; margin: 0 auto 20px; font-size: 16px; color: #b3b3b3; line-height: 1.6; }
+  .hero-chips { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+  .chip { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: #d4d4d4; padding: 4px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; }
+
+  /* WORKSPACE */
+  .mod-workspace { padding: 36px 0 60px; }
+  .wrap-wide { max-width: 1300px; margin: 0 auto; padding: 0 24px; }
+  .ws-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  @media (max-width: 900px) { .ws-grid { grid-template-columns: 1fr; } }
+
+  .ws-panel { background: rgba(30,39,97,0.4); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; }
+  .panel-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .panel-header h2 { font-size: 16px; font-weight: 700; margin: 0; }
+  .panel-tag { font-size: 11px; color: #838383; font-family: monospace; }
+
+  /* FORMS */
+  .form-group { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
+  .form-group label { font-size: 12px; font-weight: 700; color: #d4d4d4; text-transform: uppercase; letter-spacing: 0.4px; }
+  .form-row { display: flex; gap: 12px; }
+  .form-group.half { flex: 1; }
+  .mod-input, .mod-select { width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); color: #fff; padding: 9px 12px; border-radius: 7px; font-size: 13px; outline: none; box-sizing: border-box; }
+  .mod-textarea { resize: vertical; line-height: 1.5; }
+  .mod-select option { background: #0B1F3A; }
+
+  /* PRESETS */
+  .presets-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .preset-btn { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: #d4d4d4; padding: 10px; border-radius: 8px; cursor: pointer; text-align: left; display: flex; flex-direction: column; gap: 2px; transition: all 0.15s; }
+  .preset-btn:hover { border-color: rgba(176,141,87,0.4); background: rgba(176,141,87,0.08); }
+  .preset-btn.active { border-color: #B08D57; background: rgba(176,141,87,0.12); }
+  .preset-icon { font-size: 18px; }
+  .preset-btn strong { font-size: 12px; color: #fff; }
+  .preset-btn small { font-size: 10px; color: #838383; }
+
+  /* DROPZONE SMALL */
+  .dropzone-sm { border: 1px dashed rgba(176,141,87,0.3); border-radius: 7px; padding: 14px; text-align: center; color: #838383; font-size: 12px; cursor: pointer; transition: border-color 0.2s; }
+  .dropzone-sm:hover { border-color: rgba(176,141,87,0.6); }
+
+  /* BUTTONS */
+  .mod-btn { padding: 9px 16px; border-radius: 7px; font-size: 13px; font-weight: 700; cursor: pointer; border: none; display: inline-flex; align-items: center; gap: 6px; }
+  .btn-primary { background: linear-gradient(135deg, #1E2761 0%, #B08D57 100%); color: #fff; }
+  .btn-secondary { background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(255,255,255,0.15); }
+  .btn-secondary:hover { background: rgba(255,255,255,0.14); }
+  .btn-primary.full { width: 100%; justify-content: center; padding: 12px; font-size: 14px; }
+  .mod-btn.sm { font-size: 11px; padding: 5px 10px; }
+
+  /* INFO BOX */
+  .info-box { margin-top: 14px; background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.25); border-radius: 7px; padding: 10px 14px; font-size: 11px; color: #b3b3b3; line-height: 1.5; }
+  .info-box strong { color: #f59e0b; }
+  .info-box code { color: #B08D57; font-family: monospace; }
+
+  /* OUTPUT STAGE */
+  .output-stage { background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 20px; min-height: 280px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+  .placeholder-state { text-align: center; color: #838383; }
+  .ph-icon { font-size: 36px; margin-bottom: 10px; }
+  .placeholder-state p { font-size: 13px; line-height: 1.6; max-width: 320px; }
+  .result-state { width: 100%; }
+  .result-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 14px; }
+  .gallery-img { aspect-ratio: 4/5; background: linear-gradient(135deg, #1E2761 0%, #B08D57 60%, #1BAF7A 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #fff; font-weight: 700; position: relative; overflow: hidden; }
+  .gallery-img .badge { position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,0.6); color: #1BAF7A; font-size: 9px; font-weight: 700; padding: 2px 6px; border-radius: 4px; }
+  .result-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  /* LOADING */
+  .loading-state { text-align: center; color: #b3b3b3; width: 100%; }
+  .spinner { width: 36px; height: 36px; border: 3px solid rgba(176,141,87,0.2); border-top-color: #B08D57; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 12px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loading-state p { font-size: 13px; margin-bottom: 14px; }
+  .progress-bar-wrap { height: 4px; background: rgba(255,255,255,0.1); border-radius: 9999px; overflow: hidden; width: 200px; margin: 0 auto; }
+  .progress-bar { height: 100%; background: #B08D57; border-radius: 9999px; width: 0%; transition: width 0.3s ease; }
+
+  /* JOB HISTORY */
+  .job-history { background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 14px; }
+  .jh-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+  .jh-header h3 { font-size: 13px; font-weight: 700; margin: 0; }
+  .jh-count { font-size: 11px; color: #838383; }
+  .job-list { display: flex; flex-direction: column; gap: 6px; }
+  .empty-msg { font-size: 12px; color: #838383; text-align: center; padding: 10px; }
+  .job-item { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 8px 12px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
+  .job-item .job-status { font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; background: rgba(27,175,122,0.15); color: #1BAF7A; }
+
+  .hidden { display: none !important; }
+</style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btnGen = document.getElementById('btnGenFlux');
+    const fluxPrompt = document.getElementById('fluxPrompt');
+    const placeholder = document.getElementById('fluxPlaceholder');
+    const result = document.getElementById('fluxResult');
+    const loading = document.getElementById('fluxLoading');
+    const loadingText = document.getElementById('fluxLoadingText');
+    const progress = document.getElementById('fluxProgress');
+    const gallery = document.getElementById('fluxGallery');
+    const outputStatus = document.getElementById('outputStatus');
+    const jobList = document.getElementById('jobList');
+    const jhCount = document.querySelector('.jh-count');
+    const fluxDropzone = document.getElementById('fluxDropzone');
+    const fluxImageUpload = document.getElementById('fluxImageUpload');
+
+    let jobCount = 0;
+    const steps = [
+      'Enviando tarea al worker Atenea AI Studio...',
+      'Procesando prompt con Gemini Flash Image...',
+      'Generando ambientación y preservando SKU...',
+      'Aplicando corrección de color y nitidez 4K...',
+      'Empaquetando resultado...',
+    ];
+
+    // Presets
+    document.querySelectorAll('.preset-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        if (fluxPrompt) fluxPrompt.value = btn.getAttribute('data-prompt');
+      });
+    });
+
+    // Dropzone
+    if (fluxDropzone && fluxImageUpload) {
+      fluxDropzone.addEventListener('click', () => fluxImageUpload.click());
+      fluxImageUpload.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (file) fluxDropzone.innerHTML = `<span>✅ ${file.name} cargado</span>`;
+      });
+    }
+
+    if (btnGen) {
+      btnGen.addEventListener('click', () => {
+        const variants = parseInt(document.getElementById('fluxVariants')?.value || '1');
+        const aspect = document.getElementById('fluxAspect')?.value || '4:5';
+
+        placeholder.classList.add('hidden');
+        result.classList.add('hidden');
+        loading.classList.remove('hidden');
+        btnGen.disabled = true;
+        outputStatus.innerText = 'Procesando...';
+        if (progress) progress.style.width = '0%';
+
+        let stepIdx = 0;
+        const stepInterval = setInterval(() => {
+          if (stepIdx < steps.length) {
+            if (loadingText) loadingText.innerText = steps[stepIdx];
+            if (progress) progress.style.width = `${(stepIdx + 1) / steps.length * 90}%`;
+            stepIdx++;
+          }
+        }, 400);
+
+        setTimeout(() => {
+          clearInterval(stepInterval);
+          if (progress) progress.style.width = '100%';
+
+          setTimeout(() => {
+            loading.classList.add('hidden');
+            result.classList.remove('hidden');
+            outputStatus.innerText = `${variants} imagen${variants > 1 ? 'es' : ''} generada${variants > 1 ? 's' : ''}`;
+
+            if (gallery) {
+              const aspectClass = aspect === '1:1' ? 'aspect-square' : aspect === '16:9' ? 'aspect-video' : '';
+              gallery.style.gridTemplateColumns = variants === 1 ? '1fr' : variants === 4 ? 'repeat(2,1fr)' : '1fr 1fr';
+              gallery.innerHTML = Array.from({ length: variants }, (_, i) => `
+                <div class="gallery-img ${aspectClass}">
+                  <div class="badge">✓ SKU Preservado</div>
+                  <span>Variación ${i + 1}</span>
+                </div>
+              `).join('');
+            }
+
+            jobCount++;
+            if (jhCount) jhCount.innerText = `${jobCount} trabajo${jobCount > 1 ? 's' : ''}`;
+            const emptyMsg = jobList.querySelector('.empty-msg');
+            if (emptyMsg) emptyMsg.remove();
+
+            const jobItem = document.createElement('div');
+            jobItem.className = 'job-item';
+            jobItem.innerHTML = `
+              <span>Trabajo #${jobCount} · ${variants} img · ${aspect} · ${new Date().toLocaleTimeString('es-CO')}</span>
+              <span class="job-status">✓ Completado</span>
+            `;
+            jobList.prepend(jobItem);
+
+            btnGen.disabled = false;
+          }, 200);
+        }, 2500);
+      });
+    }
+  });
+</script>
