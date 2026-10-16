@@ -21,8 +21,12 @@ interface Props {
   jsonLd?: object[];
   active?: string;
   announce?: boolean;
+  /** Pagina privada del portal de clientes: se mueve a _portal/ al compilar y solo se entrega con sesion */
+  portal?: boolean;
+  /** Sin barra de anuncio, menu ni footer (pagina de acceso al portal) */
+  bare?: boolean;
 }
-const { seo, jsonLd = [], active, announce = false } = Astro.props;
+const { seo, jsonLd = [], active, announce = false, portal = false, bare = false } = Astro.props;
 const og = seo.og ?? {};
 const article = seo.article ?? {};
 const twitter = seo.twitter ?? {};
@@ -53,13 +57,14 @@ const gaInit = `window.dataLayer = window.dataLayer || [];
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href={FONTS} rel="stylesheet">
 <link rel="stylesheet" href={`/style.css?v=${VERSION}`}>
+{portal && <meta name="advantia-portal" content="1">}
 </head>
 <body>
 <Sprite />
-{announce && <Announce />}
-<Nav active={active} />
+{announce && !bare && <Announce />}
+{!bare && <Nav active={active} portal={portal} />}
 <slot />
-<Footer />
+{!bare && <Footer />}
 <script is:inline src={`/app.js?v=${VERSION}`}></script>
 <!-- Start of HubSpot Embed Code -->
 <script is:inline type="text/javascript" id="hs-script-loader" async defer src={`//js.hs-scripts.com/${HUBSPOT_PORTAL}.js`}></script>

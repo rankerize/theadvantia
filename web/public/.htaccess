@@ -18,6 +18,11 @@ DirectoryIndex index.html
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 
+  # --- Portal de clientes: archivos internos nunca se sirven por HTTP ---
+  # _portal/ guarda las paginas privadas; portal/_*.php son la libreria y las cuentas
+  RewriteRule ^_portal(/|$) - [F,L]
+  RewriteRule ^portal/_ - [F,L]
+
   # --- /index.html hacia la raiz ---
   RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
   RewriteRule ^ / [L,R=301]
@@ -38,6 +43,12 @@ DirectoryIndex index.html
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME}\.html -f
   RewriteRule ^(.+?)/?$ $1.html [L]
+
+  # --- Portal de clientes: cualquier otra URL limpia pasa por el control de sesion ---
+  # gate.php entrega la pagina de _portal/ solo con sesion valida; si no existe, responde 404
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^([a-z0-9-]+)/?$ portal/gate.php?p=$1 [L]
 </IfModule>
 
 ErrorDocument 404 /404.html
@@ -91,20 +102,3 @@ ErrorDocument 404 /404.html
   AddType font/woff2 .woff2
   AddType application/vnd.openxmlformats-officedocument.spreadsheetml.sheet .xlsx
 </IfModule>
-
-# --- Portal interno: /aplicativos y /estudios-de-mercado piden usuario y clave ---
-# La clave vive en .htpasswd (hash apr1). Fuera de buscadores y sin cache compartida.
-<FilesMatch "^(aplicativos|estudios-de-mercado)\.html$">
-  AuthType Basic
-  AuthName "Portal ADVANTIA"
-  AuthUserFile /home/u917794390/domains/theadvantia.com/public_html/.htpasswd
-  Require valid-user
-  <IfModule mod_headers.c>
-    Header set X-Robots-Tag "noindex, nofollow"
-    Header set Cache-Control "private, no-store"
-  </IfModule>
-</FilesMatch>
-
-<Files ".htpasswd">
-  Require all denied
-</Files>

@@ -1,0 +1,245 @@
+---
+// Acceso al portal de clientes. Pagina publica: el formulario envia a /portal/login.php,
+// que valida la cuenta en el servidor. Las paginas del portal nunca se entregan sin sesion.
+import Base from '../layouts/Base.astro';
+
+const seo = {
+  title: 'Portal de clientes | ADVANTIA',
+  description: 'Acceso privado al portal de clientes de ADVANTIA: herramientas de IA, estudios de mercado y sincronización de marketplaces incluidas en tu plan.',
+  canonical: 'https://theadvantia.com/acceso',
+  robots: 'noindex, follow',
+};
+
+const incluye = [
+  'Estudios de mercado con el comportamiento real de búsqueda en Colombia',
+  'Imágenes y ambientaciones de producto generadas con IA',
+  'Remoción de fondos para catálogo, directo en tu navegador',
+  'Títulos, descripciones y atributos optimizados con CatalogAI',
+  'Sincronización con Mercado Libre, Falabella, Amazon y Homecenter',
+];
+---
+<Base seo={seo} bare>
+<main class="acc">
+  <section class="acc-brand" aria-labelledby="acc-title">
+    <a class="acc-logo" href="/"><img src="/img/advantia-logo-nav-blanco.png" alt="ADVANTIA" width="137" height="32"></a>
+
+    <div class="acc-copy">
+      <span class="eyebrow">Portal de clientes · Acceso privado</span>
+      <h1 id="acc-title">Tu catálogo y tu operación, <span class="kw">en un solo lugar.</span></h1>
+      <p class="acc-lead">Las herramientas de IA y los estudios de mercado de tu plan, trabajando con tus datos.</p>
+      <ul class="acc-list">
+        {incluye.map((item) => (
+          <li><svg aria-hidden="true"><use href="#i-check"></use></svg><span>{item}</span></li>
+        ))}
+      </ul>
+    </div>
+
+    <p class="acc-plans">Exclusivo para clientes con plan <b>Esencial</b>, <b>Crecimiento</b>, <b>Catálogo</b> o <b>Enterprise</b>.</p>
+
+    <svg class="acc-mark" viewBox="0 0 420 420" aria-hidden="true">
+      <g fill="none" stroke-width="1.5">
+        <circle cx="210" cy="210" r="200" stroke="rgba(255,255,255,.08)"/>
+        <circle cx="210" cy="210" r="146" stroke="rgba(255,255,255,.08)"/>
+        <circle cx="210" cy="210" r="92" stroke="rgba(255,255,255,.12)"/>
+      </g>
+      <path d="M210 10a200 200 0 0 1 200 200" fill="none" stroke="#B08D57" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="210" cy="210" r="10" fill="#B08D57"/>
+    </svg>
+  </section>
+
+  <section class="acc-panel">
+    <div class="acc-card">
+      <a class="acc-back" href="/"><svg aria-hidden="true"><use href="#i-arrow"></use></svg>Volver al sitio</a>
+
+      <span class="status status-neutral acc-secure-pill"><svg width="12" height="12" aria-hidden="true"><use href="#i-shield"></use></svg>Acceso seguro</span>
+      <h2 class="acc-h2">Inicia sesión</h2>
+      <p class="acc-sub">Ingresa con el correo y la clave que te entregó el equipo de ADVANTIA.</p>
+
+      <div class="acc-alert" id="accAlert" role="alert" hidden></div>
+
+      <form method="post" action="/portal/login.php" id="accForm" novalidate>
+        <input type="hidden" name="next" id="accNext" value="">
+        <div class="acc-hp" aria-hidden="true">
+          <label for="accHp">Sitio web de tu empresa</label>
+          <input id="accHp" name="empresa_web" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="accEmail">Correo corporativo</label>
+          <input id="accEmail" name="email" type="email" autocomplete="username" placeholder="nombre@tuempresa.com" required>
+        </div>
+        <div class="field">
+          <label for="accPass">Clave</label>
+          <div class="acc-pass">
+            <input id="accPass" name="password" type="password" autocomplete="current-password" placeholder="Tu clave de acceso" required>
+            <button type="button" class="acc-toggle" id="accToggle" aria-controls="accPass" aria-pressed="false">Mostrar</button>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-fill btn-lg acc-submit" id="accSubmit">Ingresar al portal<svg aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+      </form>
+
+      <p class="acc-help">¿Olvidaste tu clave? <a href="mailto:nicolas.navarro@theadvantia.com?subject=Acceso%20al%20portal%20de%20clientes">Escríbenos</a> y te la restablecemos.</p>
+      <div class="acc-sep"><span>¿Aún no eres cliente?</span></div>
+      <a class="btn btn-ghost acc-cta" href="/contacto">Agenda tu Diagnóstico</a>
+
+      <p class="acc-foot"><svg aria-hidden="true"><use href="#i-lock"></use></svg>Conexión cifrada. Tu sesión se cierra tras 2 horas sin actividad.</p>
+    </div>
+  </section>
+</main>
+
+<script is:inline>
+  (function () {
+    var MSG = {
+      credenciales: ['err', 'El correo o la clave no coinciden. Revísalos e inténtalo de nuevo.'],
+      bloqueado: ['err', 'Hubo demasiados intentos fallidos. Por seguridad, espera 15 minutos antes de volver a intentarlo.'],
+      sesion: ['info', 'Tu sesión se cerró por inactividad. Ingresa de nuevo para continuar.'],
+      origen: ['err', 'No pudimos validar el formulario. Recarga la página e inténtalo de nuevo.'],
+      salida: ['ok', 'Cerraste sesión. Hasta pronto.']
+    };
+    var params = new URLSearchParams(location.search);
+    var next = params.get('next') || '';
+    if (/^[a-z0-9-]{1,60}$/.test(next)) document.getElementById('accNext').value = next;
+    var code = params.get('e');
+    var alertBox = document.getElementById('accAlert');
+    if (code && MSG[code]) {
+      alertBox.className = 'acc-alert acc-alert-' + MSG[code][0];
+      alertBox.textContent = MSG[code][1];
+      alertBox.hidden = false;
+    }
+
+    var pass = document.getElementById('accPass');
+    var toggle = document.getElementById('accToggle');
+    toggle.addEventListener('click', function () {
+      var show = pass.type === 'password';
+      pass.type = show ? 'text' : 'password';
+      toggle.textContent = show ? 'Ocultar' : 'Mostrar';
+      toggle.setAttribute('aria-pressed', show ? 'true' : 'false');
+      pass.focus();
+    });
+
+    var form = document.getElementById('accForm');
+    var email = document.getElementById('accEmail');
+    var submit = document.getElementById('accSubmit');
+    form.addEventListener('submit', function (e) {
+      if (!email.value.trim() || !pass.value) {
+        e.preventDefault();
+        alertBox.className = 'acc-alert acc-alert-err';
+        alertBox.textContent = 'Escribe tu correo y tu clave para ingresar.';
+        alertBox.hidden = false;
+        (email.value.trim() ? pass : email).focus();
+        return;
+      }
+      submit.disabled = true;
+      submit.firstChild.textContent = 'Ingresando…';
+    });
+    (code === 'credenciales' ? pass : email).focus();
+  })();
+</script>
+</Base>
+
+<style>
+  .acc {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  /* Panel de marca */
+  .acc-brand {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--spacing-40);
+    padding: var(--spacing-48) var(--spacing-56);
+    background: radial-gradient(120% 80% at 0% 0%, #2A3478 0%, transparent 60%), var(--gradient-dark);
+    color: var(--white);
+  }
+  .acc-logo img { height: 32px; width: auto; }
+  .acc-copy { position: relative; z-index: 1; max-width: 540px; }
+  .acc-copy .eyebrow { margin-bottom: var(--spacing-20); }
+  .acc-copy h1 {
+    color: var(--white);
+    font-size: clamp(34px, 3.6vw, 52px);
+    line-height: 1.08;
+    margin-bottom: var(--spacing-20);
+  }
+  .acc-lead { font-size: 18px; line-height: 1.6; color: rgba(255, 255, 255, .78); margin-bottom: var(--spacing-32); }
+  .acc-list { list-style: none; display: flex; flex-direction: column; gap: var(--spacing-16); }
+  .acc-list li { display: flex; align-items: flex-start; gap: var(--spacing-12); font-size: 16px; line-height: 1.5; color: rgba(255, 255, 255, .92); }
+  .acc-list svg { width: 20px; height: 20px; flex: none; margin-top: 2px; color: var(--gold); }
+  .acc-plans {
+    position: relative; z-index: 1;
+    font-size: 14px; line-height: 1.5; color: rgba(255, 255, 255, .7);
+    padding-top: var(--spacing-20); border-top: 1px solid rgba(255, 255, 255, .14); max-width: 540px;
+  }
+  .acc-plans b { color: var(--white); font-weight: 600; }
+  .acc-mark { position: absolute; right: -120px; bottom: -120px; width: 420px; height: 420px; pointer-events: none; }
+
+  /* Panel del formulario */
+  .acc-panel {
+    display: flex; align-items: center; justify-content: center;
+    padding: var(--spacing-48) var(--spacing-24);
+    background: var(--mist);
+  }
+  .acc-card {
+    width: 100%; max-width: 440px;
+    padding: var(--spacing-40);
+    background: var(--white);
+    border: 1px solid var(--bone);
+    border-radius: var(--radius-largecards);
+    box-shadow: 0 24px 60px rgba(30, 39, 97, .08);
+  }
+  .acc-back {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 13px; font-weight: 600; color: var(--slate);
+    margin-bottom: var(--spacing-28);
+    transition: color var(--dur-hover) ease-out;
+  }
+  .acc-back svg { width: 14px; height: 14px; transform: rotate(180deg); }
+  .acc-back:hover { color: var(--gold); }
+  .acc-secure-pill { margin-bottom: var(--spacing-16); }
+  .acc-secure-pill svg { color: var(--green); }
+  .acc-h2 { font-size: 30px; line-height: 1.15; letter-spacing: -.03em; margin-bottom: var(--spacing-8); }
+  .acc-sub { font-size: 15px; line-height: 1.55; color: var(--body-ink); margin-bottom: var(--spacing-24); }
+
+  .acc-alert { margin-bottom: var(--spacing-20); padding: 12px 14px; border-radius: var(--radius-inputs); font-size: 14px; line-height: 1.5; border: 1px solid; }
+  .acc-alert-err { background: #FDF2F2; border-color: #F1C9C9; color: #8A2626; }
+  .acc-alert-info { background: var(--gold-soft); border-color: var(--gold-line); color: #6B5330; }
+  .acc-alert-ok { background: var(--green-soft, #E6F7F0); border-color: #BDE8D6; color: #0F6B4C; }
+
+  .acc-hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+  .acc-pass { position: relative; }
+  .acc-pass input { padding-right: 88px; }
+  .acc-toggle {
+    position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+    padding: 6px 12px; border: 0; border-radius: var(--radius-buttons);
+    background: transparent; color: var(--ink); font-size: 13px; font-weight: 600; cursor: pointer;
+  }
+  .acc-toggle:hover { background: rgba(30, 39, 97, .06); }
+  .acc-submit { width: 100%; margin-top: var(--spacing-8); }
+  .acc-submit svg { width: 18px; height: 18px; }
+  .acc-submit[disabled] { opacity: .7; }
+
+  .acc-help { margin-top: var(--spacing-20); font-size: 14px; line-height: 1.5; color: var(--slate); text-align: center; }
+  .acc-help a { color: var(--ink); font-weight: 600; text-decoration: underline; text-decoration-color: var(--gold-line); text-underline-offset: 3px; }
+  .acc-help a:hover { color: var(--gold); }
+  .acc-sep { display: flex; align-items: center; gap: var(--spacing-12); margin: var(--spacing-24) 0 var(--spacing-16); font-size: 13px; color: var(--ash); }
+  .acc-sep::before, .acc-sep::after { content: ""; flex: 1; height: 1px; background: var(--bone); }
+  .acc-cta { width: 100%; }
+  .acc-foot { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: var(--spacing-28); font-size: 12px; color: var(--ash); text-align: center; }
+  .acc-foot svg { width: 14px; height: 14px; flex: none; }
+
+  @media (max-width: 960px) {
+    .acc { grid-template-columns: 1fr; }
+    .acc-brand { padding: var(--spacing-32) var(--spacing-24) var(--spacing-40); gap: var(--spacing-28); }
+    .acc-copy h1 { font-size: clamp(30px, 7vw, 40px); }
+    /* En celular el formulario va primero a la vista: el panel de marca queda compacto */
+    .acc-lead, .acc-list, .acc-plans { display: none; }
+    .acc-copy h1 { margin-bottom: 0; }
+    .acc-mark { width: 300px; height: 300px; right: -110px; bottom: -110px; }
+    .acc-panel { padding: var(--spacing-32) var(--spacing-16) var(--spacing-48); }
+    .acc-card { padding: var(--spacing-28) var(--spacing-24); }
+  }
+</style>

@@ -40,6 +40,30 @@ public/
 - **Caché:** al cambiar `public/style.css` o `public/app.js`, sube `VERSION` en `src/config.ts`.
 - **Nav activo:** cada página pasa `active="/ruta"` a `<Base>`.
 
+## Portal de clientes
+
+Acceso privado para clientes con plan recurrente (Esencial, Crecimiento, Catálogo, Enterprise) y para el equipo.
+
+- **Entrada:** `/acceso` (página pública, `src/pages/acceso.astro`). El formulario envía a `public/portal/login.php`.
+- **Sesión en el servidor (PHP en Hostinger):** cookie `adv_portal` con `Secure`, `HttpOnly` y `SameSite=Lax`; se cierra tras 2 horas sin actividad y a las 12 horas como máximo. Bloqueo de 15 minutos tras 5 intentos fallidos por cuenta (o 30 por IP). Verificación de origen del formulario y campo trampa contra robots.
+- **Páginas del portal:** se marcan con `<Base ... portal>`. Al compilar, `astro.config.mjs` las mueve a `dist/_portal/` (bloqueada por HTTP) y las quita del sitemap; `public/portal/gate.php` solo las entrega con sesión válida y, si no, redirige a `/acceso`. Las URL no cambian (`/aplicativos`, `/estudios-de-mercado`, etc.).
+- **Cerrado por defecto:** si una página usa `robots: 'noindex, nofollow'` sin la marca `portal`, la compilación falla.
+- **Nombre del cliente:** `%%PORTAL_USER%%` en cualquier página del portal se reemplaza en el servidor por el nombre de la cuenta.
+- **Nunca** poner claves de API, tokens ni datos de otros clientes en las páginas del portal: todo cliente con sesión puede ver el código de la página.
+
+### Cuentas
+
+Se administran con `scripts/portal-usuarios.mjs`. La fuente es `portal-usuarios.json` (solo hashes bcrypt) y cada cambio regenera `public/portal/_users.php`. Después: commit y desplegar.
+
+```bash
+node scripts/portal-usuarios.mjs agregar cliente@empresa.com "Empresa S.A.S." "Crecimiento"
+node scripts/portal-usuarios.mjs clave cliente@empresa.com
+node scripts/portal-usuarios.mjs desactivar cliente@empresa.com
+node scripts/portal-usuarios.mjs listar
+```
+
+La clave se muestra una sola vez en la terminal: entrégala al cliente por un canal privado. Al desactivar una cuenta, su sesión se corta en la siguiente página que abra.
+
 ## Reglas de contenido
 
 - Español de Colombia. Sin guion largo (—).

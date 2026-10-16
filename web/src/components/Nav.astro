@@ -1,7 +1,9 @@
 ---
 // Navegacion principal. `active` marca el item de la pagina actual.
-interface Props { active?: string }
-const { active } = Astro.props;
+// En el portal (`portal`) el menu muestra el nombre del cliente y el cierre de sesion;
+// %%PORTAL_USER%% lo reemplaza el servidor (portal/gate.php) con el nombre de la cuenta.
+interface Props { active?: string; portal?: boolean }
+const { active, portal = false } = Astro.props;
 const cls = (href: string) => (href === active ? 'nav-item is-active' : 'nav-item');
 ---
 <nav class="nav"><div class="wrap nav-in">
@@ -13,11 +15,19 @@ const cls = (href: string) => (href === active ? 'nav-item is-active' : 'nav-ite
       <a class={cls('/blog')} href="/blog"><b>Blog</b></a>
       <a class={cls('/nosotros')} href="/nosotros"><b>Nosotros</b></a>
       <a class={cls('/contacto')} href="/contacto"><b>Contacto</b></a>
-      <div class="nav-actions">
-        <!-- Acceso del equipo al portal: el servidor pide usuario y clave (.htaccess) -->
-        <a class="btn btn-ghost nav-login" href="/aplicativos" rel="nofollow" title="Ingresar al portal del equipo"><svg aria-hidden="true"><use href="#i-lock"></use></svg><span class="nav-login-txt">Ingresar al portal</span></a>
-        <a class="btn btn-fill" href="/contacto">Agenda tu Diagnóstico</a>
-      </div>
+      {portal ? (
+        <div class="nav-actions">
+          <span class="nav-user" title="Sesión activa"><svg aria-hidden="true"><use href="#i-shield"></use></svg><span>%%PORTAL_USER%%</span></span>
+          <form method="post" action="/portal/logout.php" class="nav-logout">
+            <button type="submit" class="btn btn-ghost">Cerrar sesión</button>
+          </form>
+        </div>
+      ) : (
+        <div class="nav-actions">
+          <a class="btn nav-portal" href="/aplicativos" rel="nofollow"><svg aria-hidden="true"><use href="#i-lock"></use></svg><span>Portal de clientes</span></a>
+          <a class="btn btn-fill" href="/contacto">Agenda tu Diagnóstico</a>
+        </div>
+      )}
     </div>
     <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i><i></i></button>
   </div></nav>

@@ -177,17 +177,19 @@ h3{font-size:var(--text-subheading);font-weight:650;line-height:1.35;letter-spac
 .nav-item:hover{background:rgba(0,0,0,.04)}
 .nav-item.is-active{font-weight:700;color:var(--ink)}
 .nav-actions{display:flex;align-items:center;gap:var(--spacing-8);margin-left:var(--spacing-16)}
-/* Acceso al portal del equipo: en escritorio solo el candado (el texto queda para lectores
-   de pantalla y en el title) para no partir el menu; en el menu movil se ve completo */
-.nav-actions .nav-login{width:40px;height:40px;padding:0;flex:none}
-.nav-login svg{width:17px;height:17px}
-.nav-login-txt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
-/* Entre 861 y 1080px el menu va justo: se reducen los espacios para que quepa el candado */
-@media (min-width:861px) and (max-width:1080px){
-  .nav-in{gap:var(--spacing-16)}
-  .nav-actions{margin-left:var(--spacing-8)}
-  .nav-item{padding-left:var(--spacing-8);padding-right:var(--spacing-8)}
-}
+/* Portal de clientes: boton premium (contorno navy, candado dorado) junto a la CTA */
+.btn.nav-portal{background:var(--white);color:var(--ink);border:1.5px solid var(--ink);padding:10px 16px;
+  white-space:nowrap;transition:background var(--dur-hover) ease-out,color var(--dur-hover) ease-out}
+.nav-portal svg{width:15px;height:15px;color:var(--gold)}
+.btn.nav-portal:hover{background:var(--ink);color:var(--white)}
+.btn-fill{white-space:nowrap}
+/* Dentro del portal: nombre del cliente y cierre de sesion */
+.nav-user{display:inline-flex;align-items:center;gap:8px;max-width:220px;padding:8px 14px;
+  border:1px solid var(--gold-line);border-radius:var(--radius-badges);background:var(--gold-soft);
+  font-size:var(--text-body-sm);font-weight:600;color:var(--ink)}
+.nav-user span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav-user svg{width:15px;height:15px;flex:none;color:var(--gold)}
+.nav-logout{margin:0}
 .burger{display:none;margin-left:auto;width:40px;height:36px;padding:9px 8px;
   background:none;border:0;cursor:pointer;flex-direction:column;justify-content:space-between}
 .burger i{display:block;height:2px;background:var(--ink);border-radius:var(--radius-badges)}
@@ -550,9 +552,13 @@ h3{font-size:var(--text-subheading);font-weight:650;line-height:1.35;letter-spac
   .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
   .dark-panel{padding:var(--spacing-56) var(--spacing-32)}
 }
-@media (max-width:860px){
-  :root{--section-gap:56px}
-  .grid-2,.grid-3,.dark-grid,.foot-in{grid-template-columns:1fr}
+/* Menu: con el boton "Portal de clientes" el menu completo necesita ancho.
+   En escritorio (desde 1101px) se ocultan los subtitulos (quedan Vitrina y Trastienda) y
+   hasta 1100px se usa el menu de hamburguesa, donde los subtitulos si se ven. */
+@media (min-width:1101px){
+  .nav-item i{display:none}
+}
+@media (max-width:1100px){
   .nav-menu,.nav-actions{display:none}
   .nav-menu.is-open{display:flex;position:absolute;top:64px;left:0;right:0;
     flex-direction:column;align-items:stretch;gap:var(--spacing-4);
@@ -563,9 +569,14 @@ h3{font-size:var(--text-subheading);font-weight:650;line-height:1.35;letter-spac
   .nav-menu.is-open .btn{margin-top:var(--spacing-8);justify-content:center}
   /* Menu movil abierto: se muestran los botones (portal y Diagnostico) a todo el ancho */
   .nav-menu.is-open .nav-actions{display:flex;flex-direction:column;align-items:stretch;gap:0;margin:var(--spacing-8) 0 0}
-  .nav-menu.is-open .nav-login{width:auto;height:auto;padding:12px 20px}
-  .nav-menu.is-open .nav-login-txt{position:static;width:auto;height:auto;overflow:visible;clip:auto}
+  .nav-menu.is-open .nav-user{justify-content:center;max-width:none;margin-top:var(--spacing-8)}
+  .nav-menu.is-open .nav-logout .btn{width:100%}
   .burger{display:flex}
+}
+
+@media (max-width:860px){
+  :root{--section-gap:56px}
+  .grid-2,.grid-3,.dark-grid,.foot-in{grid-template-columns:1fr}
 }
 @media (max-width:640px){
   .stats,.ladder{grid-template-columns:1fr}

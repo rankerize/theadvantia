@@ -57,7 +57,7 @@ El repositorio contiene los siguientes microservicios y módulos:
 6. **`06-quitar-fondo`**: Módulo de remoción masiva de fondo con WebGPU / WASM en el navegador.
 7. **`html-inpage-falabella`**: Módulo de especificación y generación de descripciones HTML **inPage** para Falabella y VTEX.
 8. **`estudios-de-mercado`**: Módulo de inteligencia SEO, datasets (CSV/JSON), clustering e informes.
-9. **`web`**: Sitio público theadvantia.com en Astro (HTML estático para Hostinger); ver `web/README.md`.
+9. **`web`**: Sitio público theadvantia.com en Astro (HTML estático para Hostinger) con portal de clientes privado (login en PHP). Toda herramienta nueva del portal usa `<Base ... portal>` (si no, la compilación falla) y nunca lleva claves de API en la página, porque todo cliente con sesión puede ver su código. Ver `web/README.md`, sección "Portal de clientes".
 
 
 Ver `README.md` para más detalles de arquitectura y ejecución.

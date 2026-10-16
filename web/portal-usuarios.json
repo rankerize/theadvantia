@@ -1,0 +1,23 @@
+{
+  "cesar@grovi-studio.com": {
+    "name": "César Jiménez",
+    "plan": "Equipo ADVANTIA",
+    "hash": "$2y$12$bOMjPdV/oSLjop.TvgoB7OIFUgAjNIHZPRAcDkaq9axaR2X0IjKb6",
+    "active": true,
+    "created": "2026-10-16"
+  },
+  "jp.pardo135@gmail.com": {
+    "name": "Juan Pablo Pardo",
+    "plan": "Equipo ADVANTIA",
+    "hash": "$2y$12$f0HFrCzzSeal9AVowyxir.tbX0fWPFfobV5lVo1C5M9NKRa7aNntO",
+    "active": true,
+    "created": "2026-10-16"
+  },
+  "nicolas.navarro@plurall.com": {
+    "name": "Nicolás Navarro",
+    "plan": "Equipo ADVANTIA",
+    "hash": "$2y$12$/lrcM4Sfdu.0SUjRWLQ7aOlHyor9No1UhqdNE3P.IHEXFduiXY6qa",
+    "active": true,
+    "created": "2026-10-16"
+  }
+}

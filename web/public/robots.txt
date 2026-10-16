@@ -9,6 +9,7 @@ Allow: /
 Disallow: /gracias
 Disallow: /404
 Disallow: /aplicativos
+Disallow: /portal/
 Disallow: /estudios-de-mercado
 
 # --- Motores de respuesta IA (GEO) — se permiten ✅ ----------

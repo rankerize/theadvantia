@@ -77,14 +77,14 @@ const modules = [
 ];
 ---
 
-<Base seo={seo} active="/aplicativos">
+<Base seo={seo} active="/aplicativos" portal>
   <main class="portal-main">
 
     <!-- Top Session Bar -->
     <div class="session-bar">
       <div class="wrap session-in">
         <div class="session-info">
-          <span class="user-badge">👤 Usuario Autorizado: <strong>equipo@advantia.com</strong></span>
+          <span class="user-badge">👤 Usuario Autorizado: <strong>%%PORTAL_USER%%</strong></span>
           <span class="status-pill active">🟢 Sesión Activa</span>
         </div>
         <div class="session-actions">
