@@ -8,15 +8,37 @@ Se ejecutan dentro de esta carpeta (`cd web`).
 
 | Comando | Qué hace |
 |---|---|
-| `npm install` | Instala dependencias (Node 20 o superior) |
+| `npm ci` | Instala dependencias exactas del `package-lock.json` (Node 22.12 o superior) |
 | `npm run dev` | Servidor local en `http://localhost:4321` |
 | `npm run build` | Genera el sitio en `dist/` |
 | `npm run preview` | Sirve `dist/` para revisarlo antes de publicar |
 
 ## Publicar en Hostinger
 
-1. `npm run build`
-2. Sube el **contenido** de `dist/` a `public_html` (incluye `.htaccess`, que es un archivo oculto).
+El sitio se despliega solo. El workflow `.github/workflows/desplegar-web.yml` corre en cada push a `main` que toque `web/**` (por ejemplo, al hacer merge de un artículo nuevo): ejecuta `npm ci` y `npm run build` dentro de `web/` y sube por FTP el **contenido** de `dist/` a `public_html` (incluye `.htaccess`, que es un archivo oculto). También se puede lanzar a mano en GitHub: Actions > "Desplegar web a Hostinger" > Run workflow. Marca "Simulacro" para ver qué subiría sin subir nada.
+
+**Configuración (una vez)**, en GitHub: Settings > Secrets and variables > Actions.
+
+| Tipo | Nombre | Valor |
+|---|---|---|
+| Secret | `FTP_SERVER` | Servidor FTP de Hostinger (hPanel > Archivos > Cuentas FTP) |
+| Secret | `FTP_USERNAME` | Usuario FTP |
+| Secret | `FTP_PASSWORD` | Contraseña FTP |
+| Variable (opcional) | `FTP_SERVER_DIR` | Carpeta destino. Por defecto `public_html/`. Si la cuenta FTP ya entra directo a `public_html`, usa `./` |
+| Variable (opcional) | `FTP_PROTOCOL` | `ftps` (por defecto) o `ftp` si Hostinger rechaza FTPS |
+
+Primer despliegue: córrelo a mano con "Simulacro" y revisa el registro antes de la corrida real.
+
+**Qué protege el despliegue**
+
+- Nunca vacía el servidor (`dangerous-clean-slate` desactivado). Solo sube lo que hay en `dist/`; los archivos que existan en `public_html` y no vengan de `dist/` no se tocan ni se borran.
+- Excluye de la subida `.well-known/`, `cgi-bin/` y `error_log`.
+- Los contadores de intentos del portal viven en `portal_data/`, una carpeta hermana de `public_html` (ver `adv_data_dir()` en `public/portal/_lib.php`). El despliegue no llega a ella, así que los bloqueos activos sobreviven.
+- Las cuentas del portal (`public/portal/_users.php`) sí viajan con el repo: al cambiar una cuenta con `scripts/portal-usuarios.mjs`, haz commit a `main` y se despliega solo. Las sesiones PHP no están en `public_html`.
+- La acción guarda en el servidor el registro `.ftp-deploy-sync-state.json` (lista de archivos subidos; `.htaccess` impide servirlo) y solo borra archivos que ella misma subió antes y que ya no existen en `dist/`, por ejemplo un artículo eliminado.
+- Si faltan los secrets, el workflow falla de inmediato con un mensaje claro y no sube nada.
+
+Para publicar a mano (emergencia): `npm run build` y sube el contenido de `dist/` a `public_html`.
 
 El build usa salida plana (`marketplaces.html`, `blog/<slug>.html`) y el `.htaccess` sirve las URL limpias (`/marketplaces`, `/blog/<slug>`), redirige `www` y `http` al dominio raíz con HTTPS, y redirige el antiguo `/sitemap.xml` a `/sitemap-index.xml`.
 

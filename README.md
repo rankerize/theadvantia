@@ -78,7 +78,7 @@ Módulo de investigación de palabras clave, análisis de tendencias de búsqued
 Sitio público y comercial de [theadvantia.com](https://theadvantia.com), construido con **Astro** como HTML estático.
 - Páginas de Vitrina, Trastienda, planes, blog, contacto y legales, con SEO, JSON-LD, GA4 y HubSpot.
 - Sitemap automático, `robots.txt` y `llms.txt`.
-- Se publica en Hostinger: `npm run build` dentro de `web/` y se sube el contenido de `web/dist/` a `public_html`. Ver `web/README.md`.
+- Se publica en Hostinger de forma automática: cada push a `main` que toque `web/**` compila y sube `web/dist/` a `public_html` por FTP (`.github/workflows/desplegar-web.yml`). Ver `web/README.md`.
 
 
 

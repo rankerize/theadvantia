@@ -22,6 +22,8 @@ DirectoryIndex index.html
   # _portal/ guarda las paginas privadas; portal/_*.php son la libreria y las cuentas
   RewriteRule ^_portal(/|$) - [F,L]
   RewriteRule ^portal/_ - [F,L]
+  # Registro interno del despliegue por FTP (lista de archivos subidos): no se sirve
+  RewriteRule ^\.ftp-deploy-sync-state\.json$ - [F,L]
 
   # --- /index.html hacia la raiz ---
   RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
