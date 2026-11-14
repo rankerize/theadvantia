@@ -1,0 +1,20 @@
+name: Validar contenido
+
+on:
+  pull_request:
+    paths:
+      - "contenido/posts/**"
+      - "web/src/pages/blog/**"
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - run: python scripts/validar_contenido.py --cambiados

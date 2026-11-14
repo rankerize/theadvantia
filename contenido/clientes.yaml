@@ -1,0 +1,23 @@
+# Autorización para nombrar clientes en contenido público.
+# Solo Nicolás cambia este archivo. Si autorizacion_escrita es false, el agente anonimiza
+# usando la descripcion_anonima y no menciona marcas, ciudades ni personas del cliente.
+
+clientes:
+  meyer:
+    nombre_publico: "Meyer Colombia"
+    marcas: ["KitchenAid", "Farberware", "Circulon"]
+    autorizacion_escrita: false   # autorizada de palabra el 11-nov-2026; pendiente confirmación por escrito
+    descripcion_anonima: "una marca de menaje y utensilios de cocina que vende en Falabella, Homecenter y VTEX"
+    hechos_publicables:
+      - "28 fichas de producto reescritas en la categoría de sartenes (el plan contemplaba 20)"
+      - "Las descripciones ya están publicadas en Falabella y en VTEX"
+      - "Se entregan dos versiones de HTML por producto porque Falabella y VTEX no aceptan la misma"
+
+  gio_home:
+    nombre_publico: "Gio Home"
+    marcas: []
+    autorizacion_escrita: false   # aceptó ser caso de éxito; contrato y pago sin confirmar
+    descripcion_anonima: "una importadora de decoración navideña y hogar que vende en varios marketplaces"
+    hechos_publicables:
+      - "Sprint de temporada navideña de 20 productos en Falabella"
+      - "Llegó por referido"
