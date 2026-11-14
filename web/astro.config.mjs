@@ -12,6 +12,7 @@ const PRIORITY = {
   '/distribuidoras': 0.9,
   '/blog': 0.8,
   '/contacto': 0.7,
+  '/blog/titulo-producto-falabella-google': 0.7,
   '/blog/errores-al-publicar-en-mercado-libre': 0.7,
   '/blog/ahorro-de-tiempo-con-ia-en-pymes': 0.7,
   '/blog/como-vender-en-amazon-desde-colombia': 0.7,

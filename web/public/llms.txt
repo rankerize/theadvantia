@@ -19,6 +19,7 @@ Detalle de cada plan: https://theadvantia.com/#planes
 
 ## Artículos del blog
 
+- [Título de producto en Falabella: cómo lograr que Google lo encuentre](https://theadvantia.com/blog/titulo-producto-falabella-google): Estructura del título (término general, dato técnico, marca, diferenciador), errores comunes y checklist para ganar Alcance SEO.
 - [Los 5 errores al publicar en Mercado Libre que le cuestan dinero a tu empresa](https://theadvantia.com/blog/errores-al-publicar-en-mercado-libre): Títulos sin keywords, ficha técnica incompleta, inventario desincronizado, margen sin calcular y reputación descuidada.
 - [Calculadora de ahorro de horas con IA para tu PyME](https://theadvantia.com/blog/ahorro-de-tiempo-con-ia-en-pymes): Fórmula horas × personas × costo por hora × 52 semanas, con calculadora interactiva descargable.
 - [Cómo vender en Amazon desde Colombia paso a paso](https://theadvantia.com/blog/como-vender-en-amazon-desde-colombia): Registro, FBA vs FBM, logística de exportación, impuestos y optimización de fichas para el mercado estadounidense.
