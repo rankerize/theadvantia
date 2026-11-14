@@ -1,5 +1,5 @@
 # Configuración del agente publicador. La llena Nicolás al activar Upload-Post.
-usuario_upload_post: ""      # nombre del perfil creado en app.upload-post.com (ej. "nicolas-advantia")
-linkedin_page_id: ""         # id de la página de ADVANTIA; el agente lo obtiene con get_linkedin_pages
+usuario_upload_post: default   # perfil de Upload-Post con el LinkedIn personal de Nicolás Esteban Navarro Salas
+linkedin_page_id: "urn:li:organization:146649568"   # página ADVANTIA (vanity: theadvantia), tal como la devuelve get_linkedin_pages. Parte numérica: 146649568
 cupo_mensual: 10             # plan Free de Upload-Post
 zona_horaria: America/Bogota
