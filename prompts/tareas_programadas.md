@@ -5,9 +5,11 @@ Las tres corren sobre el repositorio `rankerize/theadvantia`. Horas en America/B
 ## 1. Editorial · lunes 6:40 am
 
 ```
-Usa la skill agente-contenido-editorial del repositorio rankerize/theadvantia.
-Prepara el contenido de la semana que empieza el próximo lunes y abre el pull request
-siguiendo exactamente la skill.
+Antes de empezar, corre pip install pyyaml weasyprint. Usa la skill
+agente-contenido-editorial del repositorio rankerize/theadvantia. Prepara la
+semana objetivo según la regla de la skill y abre el pull request siguiendo
+exactamente la skill. Si la skill indica que no hay nada que hacer, termina
+explicando por qué.
 ```
 
 ## 2. Publicador · viernes 4:20 pm
