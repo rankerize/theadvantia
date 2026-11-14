@@ -1,29 +1,45 @@
 # Calendario editorial ADVANTIA
-# El agente editorial lee la semana siguiente, redacta y abre el PR.
+# El agente editorial toma la primera semana sin preparar (ver skill, sección Semana objetivo), redacta y abre el PR.
 # Los temas son propuestas: el agente puede ajustar el ángulo, no el pilar ni la cuenta.
 # Horas en America/Bogota.
 
 semanas:
-  - semana: 2026-W48
-    lunes: 2026-11-23
+  - semana: 2026-W47
+    lunes: 2026-11-16
     articulo:
       slug: titulo-producto-falabella-google
       titulo_tentativo: "Cómo escribir el título de un producto en Falabella para que Google lo encuentre"
       pilar: P1
-      publicar: 2026-11-14
+      publicar: 2026-11-14   # ya publicado
+    posts:
+      - id: 2026-W47-1
+        cuenta: perfil
+        fecha: 2026-11-17 07:30
+        pilar: P2
+        formato: texto
+        tema: "Por qué en ADVANTIA nunca estimamos un volumen de búsqueda (caso scooter: la estimación se equivocó por 524%)"
+      - id: 2026-W47-2
+        cuenta: pagina
+        fecha: 2026-11-19 12:00
+        pilar: P1
+        formato: articulo
+        tema: "Promoción del artículo sobre títulos en Falabella (ya publicado)"
+
+  - semana: 2026-W48
+    lunes: 2026-11-23
     posts:
       - id: 2026-W48-1
         cuenta: perfil
         fecha: 2026-11-24 07:30
-        pilar: P2
+        pilar: P5
         formato: texto
-        tema: "Por qué en ADVANTIA nunca estimamos un volumen de búsqueda (caso scooter: la estimación se equivocó por 524%)"
+        tema: "Por qué en ADVANTIA no pedimos permanencia mínima: si el contenido funciona el cliente se queda, y si no funciona no debería quedarse atado (vender un servicio B2B sin amarrar al cliente)"
       - id: 2026-W48-2
         cuenta: pagina
         fecha: 2026-11-26 12:00
         pilar: P1
-        formato: articulo
-        tema: "Promoción del artículo sobre títulos en Falabella"
+        formato: texto
+        tema: "Una ficha técnica incompleta te saca de los filtros: cómo un atributo vacío hace invisible tu producto en Mercado Libre y Falabella, aunque tenga buen título"
 
   - semana: 2026-W49
     lunes: 2026-11-30
