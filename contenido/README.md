@@ -7,7 +7,7 @@ Dos agentes en modo copiloto que mantienen activa la presencia de ADVANTIA:
 | `agente-contenido-editorial` | Redacta 2 posts por semana (perfil de Nicolás y página ADVANTIA) y 2 artículos al mes para theadvantia.com. Lo entrega en un pull request. | Lunes |
 | `agente-linkedin-publicador` | Programa en Upload-Post lo aprobado (merge), cuida el cupo de 10 al mes y hace el reporte mensual. | Viernes y día 2 de cada mes |
 
-Flujo semanal: **lunes** el agente abre el PR de la semana siguiente → **martes a jueves** Nicolás revisa, ajusta y hace merge → se despliega el sitio si hay artículo → **viernes** se programan los posts → **martes y jueves** salen en LinkedIn.
+Flujo semanal: **lunes** el agente abre el PR de la semana objetivo (la primera del calendario que aún no tiene contenido; puede quedar una semana adelantada) → **martes a jueves** Nicolás revisa, ajusta y hace merge → se despliega el sitio si hay artículo → **viernes** se programan los posts → **martes y jueves** salen en LinkedIn.
 
 ## Contenido del paquete
 
@@ -34,7 +34,7 @@ scripts/validar_contenido.py
 3. **Conector en Claude.** En la cuenta de Claude de ADVANTIA: Personalizar > Conectores > busca Upload-Post > Conectar. Si no aparece en el directorio, agrégalo como conector personalizado con la URL `https://mcp.upload-post.com/mcp`.
 4. **Primer prueba manual.** En Claude Code (cuenta ADVANTIA) sobre el repo, pide: "usa agente-linkedin-publicador para obtener el id de la página de ADVANTIA y guárdalo en upload_post.yaml en un PR". Eso confirma que el conector funciona.
 5. **Tareas programadas.** Crea las 3 tareas de `prompts/tareas_programadas.md`.
-6. **Primer ciclo.** Lanza a mano la tarea editorial el lunes 16 de noviembre para que prepare la semana del 23.
+6. **Primer ciclo.** Lanza a mano la tarea editorial: la primera corrida manual prepara la 2026-W48 (semana del 23 de noviembre) y el lunes 16 la tarea sigue con la 2026-W49, sin duplicar.
 
 ## Despliegue de artículos
 
