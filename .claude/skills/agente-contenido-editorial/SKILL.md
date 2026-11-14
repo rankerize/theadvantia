@@ -19,7 +19,9 @@ Modo copiloto: propones, Nicolás aprueba. Nunca publicas nada tú mismo. Tu ún
 
 ## Semana objetivo
 
-La semana objetivo es la primera semana de `calendario.yaml` cuyo lunes es posterior a hoy y que todavía no tiene posts en `main` ni una rama `contenido/<semana>` o un PR abierto. Si esa semana empieza en más de 15 días, no hagas nada y termina diciendo que ya estás adelantado. Si no queda ninguna semana en el calendario, propón las 4 siguientes como dice la sección del calendario nuevo.
+La semana objetivo es la primera semana de `calendario.yaml` cuyo lunes es posterior a hoy y que no está hecha ni en preparación. Una semana solo cuenta como **hecha** si en `main` existen TODOS sus posts del calendario (`contenido/posts/<id>.md`) y, si tiene artículo, el archivo `web/src/pages/blog/<slug>.astro`. Una semana con solo parte de sus archivos está incompleta, no hecha. Una semana está **en preparación** si ya existe una rama `contenido/<semana>` o un PR abierto para ella; en ese caso salta a la siguiente. Si esa semana empieza en más de 15 días, no hagas nada y termina diciendo que ya estás adelantado. Si no queda ninguna semana en el calendario, propón las 4 siguientes como dice la sección del calendario nuevo.
+
+**Semana incompleta.** Si la semana objetivo ya tiene algunos de sus archivos en `main`, prepara solo lo que falta (los posts y el artículo ausentes) y no toques, edites ni reemplaces los archivos que ya existen. Di en el PR qué faltaba y qué se dejó intacto.
 
 **Calendario nuevo.** Si no queda ninguna semana en el calendario, propón tú las 4 semanas siguientes en `calendario.yaml` dentro del mismo PR, respetando la rotación de pilares y el ritmo, y marca el PR con `[calendario nuevo]`.
 
