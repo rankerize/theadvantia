@@ -38,7 +38,7 @@ scripts/validar_contenido.py
 
 ## Despliegue de artículos
 
-Hostinger despliega `main` automáticamente al hacer merge, así que el artículo queda al aire antes del viernes. Si algún día el despliegue falla, el publicador no programa el post cuyo enlace no responde y lo avisa.
+Al hacer merge a `main`, el workflow `.github/workflows/desplegar-web.yml` compila `web/` y sube `web/dist/` a Hostinger por FTP (ver `web/README.md`, sección "Publicar en Hostinger"). Tarda unos minutos; revisa que el run termine en verde en la pestaña Actions de GitHub. Si el despliegue falla o aún no corrió, el publicador no programa el post cuyo enlace no responde y lo avisa; en ese caso lanza el workflow a mano.
 
 ## Límites conocidos
 

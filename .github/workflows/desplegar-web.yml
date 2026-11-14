@@ -1,0 +1,99 @@
+name: Desplegar web a Hostinger
+
+# Compila web/ y sube el CONTENIDO de web/dist/ a public_html por FTP.
+# Corre en cada push a main que toque web/** y también a mano (Actions > Desplegar web a Hostinger > Run workflow).
+#
+# Seguridad del servidor (portal de clientes en PHP):
+# - NO usa dangerous-clean-slate: el servidor nunca se vacía.
+# - Solo sube lo que está en web/dist/. Lo que exista en public_html y no venga de dist/ no se toca
+#   (por ejemplo .well-known/, cgi-bin/, error_log o cualquier archivo creado en el servidor).
+# - Los contadores de intentos del portal viven en ../portal_data, FUERA de public_html: este
+#   despliegue no llega a esa carpeta.
+# - La acción lleva un registro (.ftp-deploy-sync-state.json) y solo borra del servidor archivos que
+#   ella misma subió antes y que ya no existen en dist/ (por ejemplo un artículo eliminado).
+#
+# Configuración en GitHub (Settings > Secrets and variables > Actions):
+#   Secrets:    FTP_SERVER, FTP_USERNAME, FTP_PASSWORD
+#   Variables (opcionales): FTP_SERVER_DIR (por defecto public_html/), FTP_PROTOCOL (por defecto ftps; usa ftp si Hostinger rechaza ftps)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "web/**"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Simulacro: muestra qué subiría, sin subir nada"
+        type: boolean
+        default: false
+
+concurrency:
+  group: desplegar-web
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  desplegar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Verificar secrets
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          faltan=""
+          [ -z "$FTP_SERVER" ] && faltan="$faltan FTP_SERVER"
+          [ -z "$FTP_USERNAME" ] && faltan="$faltan FTP_USERNAME"
+          [ -z "$FTP_PASSWORD" ] && faltan="$faltan FTP_PASSWORD"
+          if [ -n "$faltan" ]; then
+            echo "::error::Faltan los secrets:$faltan. Cárgalos en Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Instalar dependencias
+        working-directory: web
+        run: npm ci
+
+      - name: Compilar
+        working-directory: web
+        run: npm run build
+
+      - name: Revisar que dist/ es publicable
+        working-directory: web
+        run: |
+          test -f dist/index.html || { echo "::error::dist/index.html no existe"; exit 1; }
+          test -f dist/.htaccess || { echo "::error::dist/.htaccess no existe (el sitio depende de él)"; exit 1; }
+          test -f dist/portal/gate.php || { echo "::error::dist/portal/gate.php no existe"; exit 1; }
+          echo "Archivos en dist/: $(find dist -type f | wc -l)"
+
+      - name: Subir dist/ a Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ${{ vars.FTP_PROTOCOL || 'ftps' }}
+          local-dir: ./web/dist/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}
+          dry-run: ${{ inputs.dry_run == true }}
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            .well-known/**
+            cgi-bin/**
+            **/error_log
