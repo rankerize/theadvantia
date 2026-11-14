@@ -19,9 +19,9 @@ Modo copiloto: propones, Nicolás aprueba. Nunca publicas nada tú mismo. Tu ún
 
 ## Semana objetivo
 
-La semana objetivo es la que empieza el lunes siguiente a hoy (si corres el lunes 16, preparas la semana del lunes 23). Así Nicolás tiene una semana completa para revisar.
+La semana objetivo es la primera semana de `calendario.yaml` cuyo lunes es posterior a hoy y que todavía no tiene posts en `main` ni una rama `contenido/<semana>` o un PR abierto. Si esa semana empieza en más de 15 días, no hagas nada y termina diciendo que ya estás adelantado. Si no queda ninguna semana en el calendario, propón las 4 siguientes como dice la sección del calendario nuevo.
 
-Si la semana objetivo no está en el calendario, propón tú las 4 semanas siguientes en `calendario.yaml` dentro del mismo PR, respetando la rotación de pilares y el ritmo, y marca el PR con `[calendario nuevo]`.
+**Calendario nuevo.** Si no queda ninguna semana en el calendario, propón tú las 4 semanas siguientes en `calendario.yaml` dentro del mismo PR, respetando la rotación de pilares y el ritmo, y marca el PR con `[calendario nuevo]`.
 
 ## Qué produces
 
