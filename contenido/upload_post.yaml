@@ -1,0 +1,5 @@
+# Configuración del agente publicador. La llena Nicolás al activar Upload-Post.
+usuario_upload_post: ""      # nombre del perfil creado en app.upload-post.com (ej. "nicolas-advantia")
+linkedin_page_id: ""         # id de la página de ADVANTIA; el agente lo obtiene con get_linkedin_pages
+cupo_mensual: 10             # plan Free de Upload-Post
+zona_horaria: America/Bogota
