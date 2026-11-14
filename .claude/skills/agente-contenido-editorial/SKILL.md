@@ -13,7 +13,7 @@ Modo copiloto: propones, Nicolás aprueba. Nunca publicas nada tú mismo. Tu ún
 2. `contenido/calendario.yaml`: qué toca la semana objetivo.
 3. `contenido/datos_verificados.md`: las únicas cifras que puedes usar.
 4. `contenido/clientes.yaml`: a quién puedes nombrar.
-5. `ADVANTIA_OVERRIDE.md` y `REFERENCIA_ESTILO.md` (raíz del repo): marca y diseño. Si no existen, usa como fuente de marca los tokens de `web/public/style.css` (navy `--ink` #1E2761, dorado `--gold` #B08D57, verde `--green` #1BAF7A) y avisa en el PR que faltan.
+5. `contenido/marca.md`: colores, tipografías, tono, copy colombiano y uso del logo (la fuente visual es `web/public/style.css`).
 6. `contenido/reportes/` (el más reciente, si existe): qué funcionó y qué no.
 7. Los posts de las últimas 4 semanas en `contenido/posts/` para no repetir ganchos ni ideas.
 
@@ -60,8 +60,9 @@ El blog es parte del sitio Astro en `web/`. **Copia la estructura de `web/src/pa
 ### C. Carrusel PDF (solo posts con `formato: documento`)
 
 - 4 a 8 láminas de 1080x1350 px, una idea por lámina, poco texto.
-- Colores y tipografías de `ADVANTIA_OVERRIDE.md` (o, si falta, `web/public/style.css`) (navy #1E2761, dorado #B08D57, verde #1BAF7A; títulos en Georgia).
-- Construye el HTML en `web/public/assets/linkedin/<id>.html` y renderízalo con WeasyPrint a `web/public/assets/linkedin/<id>.pdf` (Astro publica `web/public/` tal cual: queda en `https://theadvantia.com/assets/linkedin/<id>.pdf`). Si WeasyPrint no está instalado, `pip install weasyprint` primero. Última lámina: logo (`web/public/img/advantia-logo-completo.png`) y theadvantia.com.
+- Sigue `contenido/marca.md`: colores (navy #1E2761 en titulares y CTA, dorado #B08D57 solo como acento entre 8 y 12%, nunca relleno ni fondo; verde #1BAF7A para estado positivo; #0B1F3A solo en gradientes oscuros), Plus Jakarta Sans en títulos e Inter en texto, con las fuentes embebidas de `contenido/fuentes/` mediante `@font-face` (usa el bloque de `marca.md`).
+- Construye el HTML en `web/public/assets/linkedin/<id>.html` y renderízalo con WeasyPrint a `web/public/assets/linkedin/<id>.pdf` (Astro publica `web/public/` tal cual: queda en `https://theadvantia.com/assets/linkedin/<id>.pdf`). Si WeasyPrint no está instalado, `pip install weasyprint` primero.
+- Logo según `marca.md`: portada (fondo navy) con `advantia-logo-nav-blanco.png`; última lámina (fondo claro) con `advantia-logo-completo.png` a máximo 400 px de ancho y el texto "theadvantia.com"; láminas intermedias solo `advantia-favicon-512.png` a unos 48 px en una esquina, o nada. Nunca estirarlo ni recolorearlo.
 - Antes de abrir el PR, borra el `<id>.html` de `web/public/assets/linkedin/` si no quieres que se publique (basta con el PDF), o déjalo fuera del commit.
 - En el post, agrega `documento_url: https://theadvantia.com/assets/linkedin/<id>.pdf` y `documento_titulo:` (máximo 400 caracteres).
 
