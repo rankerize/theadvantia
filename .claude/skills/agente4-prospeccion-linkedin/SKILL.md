@@ -176,7 +176,7 @@ Según la sección de fuentes: CSV de Harvey o Clay, exclusiones y decisor con C
 ### Paso 3 · Verificar marketplace y gancho
 Para cada empresa:
 1. Localizar sus publicaciones en el marketplace donde más vende (la tienda oficial o el vendedor) y revisar 1 a 3. Si **no vende en ningún marketplace, se descarta**.
-2. Leer cada publicación con Falabella por `curl` o la API de Mercado Libre (ver Conectores) y anotar hallazgos verificables: el título no incluye el término de mayor volumen de la categoría; el título está en inglés; la descripción está vacía, es de una sola línea o repite la ficha técnica; las imágenes no muestran el producto en uso; el modelo exacto no aparece escrito.
+2. Leer cada publicación: Falabella y Homecenter por `curl` (descripción, fotos, título); Mercado Libre por la tienda oficial (título) o por la API si hay token (ver Conectores) y anotar hallazgos verificables: el título no incluye el término de mayor volumen de la categoría; el título está en inglés; la descripción está vacía, es de una sola línea o repite la ficha técnica; las imágenes no muestran el producto en uso; el modelo exacto no aparece escrito.
 3. Volúmenes: Semrush base `co`, consultando el término central de la categoría y sus variantes de género por separado. Citar solo lo leído, con fuente y fecha. Sin dato real, gancho cualitativo.
 4. Formato del gancho: **un hallazgo, una frase, verificable con un clic.** Sin hallazgo sólido, se descarta el prospecto.
 
@@ -288,6 +288,7 @@ Se crea solo después del merge de este PR, con `create_trigger`:
 - [x] ICP validado; se excluyen solo Meyer Colombia y Gio Home (no hay regla de excluir competidores de clientes)
 - [x] `hs_lead_status`: los 6 valores existen en el portal
 - [x] Falabella legible por `curl` (descripción e imágenes reales), verificado
+- [x] Primera corrida con la lista de Clay del 2026-11-14: 8 fríos cargados en HubSpot (con aprobación), 4 en reserva, 2 descartadas
 - [ ] Token de aplicación de Mercado Libre (sin token la API responde 403; la tienda por `curl` sirve solo para títulos)
 - [ ] Recargar unidades de la API de Semrush (el 2026-11-15 el saldo estaba en cero)
 - [ ] Confirmar créditos y acceso de Clay desde la tarea programada
