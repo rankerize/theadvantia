@@ -193,7 +193,7 @@ Si el pipeline no tiene deals nuevos en la semana, decirlo en la primera línea.
 
 ## INTEGRACIÓN CON OTROS AGENTES
 
-- **Agente 4 (Prospección LinkedIn):** sus prospectos llegan con `canal_de_origen` = Prospección LinkedIn. El Agente 5 valida que traigan decisor antes de proponer el paso a etapa 2.
+- **Agente 4 v3 (Prospección LinkedIn):** flujo Harvey (descubre empresas) → Clay (decisor, sin correos) → Agente 4 → envío manual de Nicolás en LinkedIn. El Agente 4 carga en HubSpot empresa, contacto, nota del gancho y tareas con prefijo `[A4]`, y marca el estado con `hs_lead_status` (`NEW`, `ATTEMPTED_TO_CONTACT`, `CONNECTED`, `OPEN_DEAL`, `BAD_TIMING`, `UNQUALIFIED`). Solo crea deals en etapa 1, y solo cuando el prospecto mostró interés, con `canal_de_origen` = Prospección LinkedIn y `linea_negocio` = Marketplaces. El Agente 5 valida que traigan decisor antes de proponer el paso a etapa 2, lee las tareas `[A4]` vencidas como alertas y no cambia los estados `hs_lead_status` que el Agente 4 propone y Nicolás aprueba. Fuente de verdad: `.claude/skills/agente4-prospeccion-linkedin/SKILL.md`.
 - **Agente de ventas por WhatsApp (en diseño):** conversa con leads que ya existen en HubSpot. No cambia su canal de origen.
 - El Agente 5 es la única fuente de verdad del pipeline. Ningún agente mueve etapas sin pasar por su cola.
 

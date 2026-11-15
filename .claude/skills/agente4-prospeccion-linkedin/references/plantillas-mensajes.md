@@ -1,11 +1,12 @@
-# Plantillas de mensajes · Agente 4 · ADVANTIA (v2.0)
+# Plantillas de mensajes · Agente 4 · ADVANTIA (v3.0)
 
 Leer siempre antes de redactar. Son una base: se adaptan a la persona y al hallazgo, no se copian tal cual.
 
 Reglas transversales:
+- **Trato de usted** con todos los prospectos, fríos y tibios.
 - Un solo hallazgo por mensaje, verificable con un clic.
 - Una sola pregunta por mensaje.
-- Sin precios ni porcentajes de mejora. Meyer y sus marcas se nombran solo como dice la regla 5 del SKILL.md.
+- Sin precios ni porcentajes de mejora. Meyer no se nombra por defecto: se usa "una marca de menaje de cocina" (regla 5 del SKILL.md).
 - Sin guion largo, sin emojis, montos completos si llegan a aparecer.
 - Ningún corchete sin reemplazar en un texto aprobado.
 - El objetivo de los primeros intercambios es DESCUBRIR, no vender. La falla conocida es saltar al pitch.
@@ -15,48 +16,48 @@ Reglas transversales:
 ## 1. TIBIO · Mensaje 1 (ya son contactos en LinkedIn)
 
 ```
-Hola [nombre], ¿cómo vas?
+Hola [nombre], ¿cómo está?
 
 Estuve revisando cómo aparece [marca] en [marketplace] y me llamó la atención algo: [hallazgo en una frase].
 
-Hoy estoy dedicado a esto con ADVANTIA: ayudamos a marcas a que las encuentren en los marketplaces con contenido basado en cómo busca la gente en Colombia. Por ejemplo, trabajamos el contenido de Meyer Colombia para marcas como KitchenAid y Farberware.
+Hoy estoy dedicado a esto con ADVANTIA: ayudamos a marcas a que las encuentren en los marketplaces con contenido basado en cómo busca la gente en Colombia. Trabajamos, por ejemplo, con una marca de menaje de cocina.
 
 ¿Quién lleva hoy los marketplaces en [empresa]?
 ```
 
-Variante si Nicolás tiene historia con la persona: abrir con la referencia real ("Desde que coincidimos en [lugar]…") y mantener el resto.
+Variante si Nicolás tiene historia con la persona: abrir con la referencia real ("Desde que coincidimos en [lugar]…") y mantener el resto, siempre de usted.
 
 ---
 
-## 2. FRÍO · Solicitud de conexión (máximo 200 caracteres)
+## 2. FRÍO · Invitación de conexión
 
-```
-Hola [nombre], trabajo en contenido para marketplaces y estuve revisando las publicaciones de [marca] en [marketplace]. Me gustaría conectar.
-```
-
-Si la cuenta de Nicolás ya agotó las notas personalizadas del mes, enviar la solicitud sin nota. El mensaje 1 va al aceptar.
+**Va sin nota.** No se redacta ni se pega texto: Nicolás envía la invitación con el botón de conectar. La tarea `[A4] Invitar sin nota · [nombre]` lleva solo la URL de LinkedIn de la persona y el recordatorio "sin nota".
 
 ---
 
 ## 3. FRÍO · Mensaje 1 (al aceptar la conexión)
 
-Con volumen real de Keyword Surfer:
-```
-Gracias por conectar, [nombre].
+Va listo para pegar en el cuerpo de la tarea `[A4] Enviar mensaje al aceptar · [nombre]`. Nicolás lo envía cuando la persona acepta.
 
-Te cuento por qué te escribí: revisé [producto] de [marca] en [marketplace] y el título no incluye "[término]", que en Google tiene [volumen] búsquedas al mes en Colombia.
+Con volumen real de Semrush base Colombia:
+```
+Gracias por aceptar, [nombre].
+
+Le cuento por qué me conecté con usted: revisé [producto] de [marca] en [marketplace] y el título no incluye "[término]", que en Google tiene [volumen] búsquedas al mes en Colombia.
 
 ¿El contenido de los marketplaces lo manejan internamente o con alguien externo?
 ```
 
-Sin volumen real (hook cualitativo):
+Sin volumen real (gancho cualitativo):
 ```
-Gracias por conectar, [nombre].
+Gracias por aceptar, [nombre].
 
-Te cuento por qué te escribí: revisé [producto] de [marca] en [marketplace] y [hallazgo: por ejemplo, el título está en inglés y el consumidor colombiano busca esa categoría en español].
+Le cuento por qué me conecté con usted: revisé [producto] de [marca] en [marketplace] y [hallazgo: por ejemplo, la descripción tiene una sola línea y no incluye las palabras con que el consumidor colombiano busca esa categoría].
 
 ¿El contenido de los marketplaces lo manejan internamente o con alguien externo?
 ```
+
+Si es una invitación sin nota, el mensaje 1 es la primera vez que la persona sabe quién escribe: presentarse en una frase solo si el hallazgo no lo hace evidente ("Soy Nicolás, de ADVANTIA: trabajamos contenido para marketplaces").
 
 ---
 
@@ -74,7 +75,7 @@ Aporta un hallazgo distinto. No repite el anterior ni presiona.
 ## 5. Seguimiento 2 (mensaje 1 + 10 días hábiles). Último toque
 
 ```
-[nombre], te dejo esto acá para no llenarte la bandeja. Si en algún momento quieren revisar cómo los encuentra la gente en [marketplace], me escribes y lo miramos.
+[nombre], se lo dejo acá para no llenarle la bandeja. Si en algún momento quieren revisar cómo los encuentra la gente en [marketplace], me escribe y lo miramos.
 ```
 
 Fin de la secuencia. Nunca un cuarto toque.
@@ -93,19 +94,19 @@ Elegir una pregunta por mensaje, según lo que haya dicho:
 
 ### Decisor (regla Jon/Ibox), antes de cualquier propuesta
 ```
-Para no hacerte perder tiempo: si esto les interesara, ¿quién más participa en la decisión además de ti?
+Para no hacerle perder tiempo: si esto les interesara, ¿quién más participa en la decisión además de usted?
 ```
-Si no es el decisor: pedir que presente a quien decide, o que esté en la siguiente conversación. No avanzar con quien no decide.
+Si no es el decisor: pedir que lo presente con quien decide, o que esa persona esté en la siguiente conversación. No avanzar con quien no decide.
 
 ### Propuesta de pasar a WhatsApp (solo con interés real y decisor identificado)
 ```
-Para mostrarte con calma lo que encontré en [marca], ¿te parece si seguimos por WhatsApp? Si me compartes tu número y me autorizas, te escribo desde el WhatsApp de ADVANTIA.
+Para mostrarle con calma lo que encontré en [marca], ¿le parece si seguimos por WhatsApp? Si me comparte su número y me autoriza, le escribo desde el WhatsApp de ADVANTIA.
 ```
 Cuando acepte, registrar la autorización como dice la sección de consentimiento del SKILL.md.
 
 ### CTA alternativo (mientras el número de ADVANTIA esté [PENDIENTE])
 ```
-Para mostrarte con calma lo que encontré en [marca], ¿te parece una llamada de 20 minutos? Acá puedes escoger el horario que te sirva: [enlace de HubSpot Meetings].
+Para mostrarle con calma lo que encontré en [marca], ¿le parece una llamada de 20 minutos? Acá puede escoger el horario que le sirva: [enlace de HubSpot Meetings].
 ```
 
 ---
@@ -114,13 +115,13 @@ Para mostrarte con calma lo que encontré en [marca], ¿te parece una llamada de
 
 **"¿Cuánto cuesta?"**
 ```
-Los planes están publicados en theadvantia.com y arrancan en $1.725.000 al mes. Antes de recomendarte alguno quisiera entender bien tu catálogo: [pregunta de descubrimiento].
+Los planes están publicados en theadvantia.com y arrancan en $1.725.000 al mes. Antes de recomendarle alguno quisiera entender bien su catálogo: [pregunta de descubrimiento].
 ```
 
-**"Mándame el análisis completo" o "¿me haces una auditoría?"**
-La revisión gratuita se limita a lo que ya está en el hook o a 2 o 3 productos en la conversación. El análisis completo es el Diagnóstico:
+**"Mándeme el análisis completo" o "¿me hace una auditoría?"**
+La revisión gratuita se limita a lo que ya está en el gancho o a 2 o 3 productos en la conversación. El análisis completo es el Diagnóstico:
 ```
-Con gusto. El análisis completo es nuestro Diagnóstico: cuesta $1.200.000 y se abona si después siguen con un plan. Si quieres, primero lo hablamos y te cuento qué incluye.
+Con gusto. El análisis completo es nuestro Diagnóstico: cuesta $1.200.000 y se abona si después siguen con un plan. Si quiere, primero lo hablamos y le cuento qué incluye.
 ```
 
 **"Ya tenemos agencia" o "lo hacemos internamente"**
@@ -131,7 +132,7 @@ Si la respuesta no muestra datos de búsqueda reales, ahí está la conversació
 
 **"No es el momento"**
 ```
-Entendido, gracias por decirme. ¿Te parece si te escribo en [mes] para ver cómo va?
+Entendido, gracias por decírmelo. ¿Le parece si le escribo en [mes] para ver cómo va?
 ```
 Registrar `BAD_TIMING` y una tarea [A4] para esa fecha.
 

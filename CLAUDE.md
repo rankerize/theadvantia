@@ -45,6 +45,37 @@ Endpoints que **no existen** (`E008: Invalid Action`):
 - El piloto Trastienda dura **14 días**; la arquitectura debe soportar onboarding/offboarding de tenants sin downtime.
 - Los reportes de Vitrina son **mensuales** e incluyen mapas de posicionamiento competitivo por SKU.
 
+## Sistemas comerciales (agentes de ventas y marketing de ADVANTIA)
+
+Además del producto, el repo contiene dos sistemas que llenan el pipeline de ADVANTIA. Ambos operan en **modo copiloto**: los agentes proponen y Nicolás aprueba; ningún agente publica ni envía mensajes por su cuenta. Cada sistema tiene una fuente de verdad: ante cualquier duda de reglas o formato, se lee ahí y no en este resumen.
+
+### 1. Contenido (LinkedIn + blog)
+
+Dos agentes mantienen la presencia de ADVANTIA: el editorial redacta los posts de la semana y los artículos del blog y los entrega en un pull request; el publicador programa en Upload-Post lo que ya se aprobó con el merge.
+
+Fuentes de verdad:
+- Skills: `.claude/skills/agente-contenido-editorial/SKILL.md` y `.claude/skills/agente-linkedin-publicador/SKILL.md`.
+- Flujo, activación y límites: `contenido/README.md` (estrategia, calendario, cifras permitidas y registro de publicaciones viven en `contenido/`).
+- Despliegue de artículos: `.github/workflows/desplegar-web.yml` (cada merge a `main` que toque `web/**` compila y sube `web/dist/` a Hostinger).
+
+### 2. Prospección (LinkedIn)
+
+Flujo de punta a punta:
+
+1. **Harvey** (local): descubre empresas y deja el archivo de empresas.
+2. **Clay**: identifica al decisor de mercadeo, e-commerce o comercial de cada empresa. Solo nombre, cargo y perfil; sin correos ni teléfonos.
+3. **Agente 4 v3** (`agente4-prospeccion-linkedin`): verifica el listado público de la empresa para armar un gancho verificable, redacta las invitaciones y los mensajes (trato de usted) y deja todo en una cola de aprobación; registra en HubSpot (portal 51945405) y lleva los seguimientos como tareas.
+4. **Envío manual en LinkedIn**: Nicolás envía a mano. Ningún agente escribe ni navega LinkedIn.
+
+El **Agente 5** (`agente5-crm-hubspot`) es la única fuente de verdad del pipeline: recibe los deals del Agente 4 y valida el decisor antes de avanzar la etapa.
+
+Fuentes de verdad:
+- Agente 4 v3: `.claude/skills/agente4-prospeccion-linkedin/SKILL.md` y `references/plantillas-mensajes.md`.
+- Agente 5: `.claude/skills/agente5-crm-hubspot/SKILL.md`.
+- Logs de cada corrida: `agentes/agente4-prospeccion-linkedin/logs/` y `agentes/agente5-crm-hubspot/logs/`. Los logs llevan solo IDs de HubSpot, nombres de empresa y conteos; nunca nombres de personas ni URLs de perfiles.
+
+Regla del repo: ningún archivo (documentación, logs, plantillas, CSV) incluye nombres de prospectos ni URLs de perfiles de LinkedIn.
+
 ## Arquitectura de Microservicios
 
 El repositorio contiene los siguientes microservicios y módulos:
