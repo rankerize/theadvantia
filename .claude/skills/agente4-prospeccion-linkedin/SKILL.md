@@ -117,12 +117,14 @@ Buscar la empresa y el contacto en HubSpot. Si ya existe, no duplicar: reportar 
 | Decisores | Clay `search-contacts` | Por dominio, máximo 2 por empresa, sin correos |
 | Mercado Libre | `api.mercadolibre.com/items/{ID}` y `/items/{ID}/description` | Ver nota de acceso abajo |
 | Falabella | `curl` a la página del producto y lectura del JSON `__NEXT_DATA__` | Ver detalle abajo |
-| Volúmenes de búsqueda | Conector de Semrush, base de datos `co` | Fuente válida según la regla 3 |
+| Volúmenes de búsqueda | Conector de Semrush, base de datos `co` | Fuente válida según la regla 3. Si responde `API UNITS BALANCE IS ZERO`, los ganchos van cualitativos y se avisa en la cola |
 | Navegación | Claude en Chrome | **Opcional.** Solo Google y marketplaces; nunca LinkedIn |
 
 **Falabella (verificado el 2026-11-15):** `curl -s <URL del producto>` devuelve el HTML con un `<script id="__NEXT_DATA__">`. Dentro, en `props.pageProps.productData`: `name`, `brandName`, `description` y `longDescription` (HTML de la descripción; es lo que hay que leer, la herramienta de lectura web resumida no la trae), `attributes`, y el vendedor en `sellerInfo.sellerName` o `variants[].offerings[].sellerName`. **Las imágenes reales están en `productData.variants[].medias`**; `productData.medias` trae solo el marcador `NoImage` y no debe leerse como "sin fotos". El stock y el precio salen de `variants[].offerings`. Un producto sin stock puede traer menos datos: preferir publicaciones con stock.
 
-**Mercado Libre:** `GET https://api.mercadolibre.com/items/{ID}` (título, atributos, fotos en `pictures`, vendedor) y `/items/{ID}/description` (`plain_text`). Verificado el 2026-11-15: **sin token de acceso responde 403** (`PolicyAgent`), tanto en `/items` como en `/sites/MCO/search`. Si hay un token de aplicación de ADVANTIA en la sesión, usarlo en `Authorization: Bearer`. Sin token, la verificación en Mercado Libre queda **sin hacer** y se dice en la cola: nunca se supone el contenido de un listado que no se pudo leer. El ID se saca de la URL de la publicación (`MCO` seguido de dígitos).
+**Mercado Libre por `curl` (verificado el 2026-11-15):** la página de tienda oficial (`https://www.mercadolibre.com.co/tienda/<slug>`) carga con `curl` y trae títulos, precios y enlaces de las publicaciones (clase `poly-component__title`); la página de un producto (`/p/MCO...`) responde 200 pero con una pantalla de "tráfico sospechoso", sin título ni descripción. No se intenta saltar ese bloqueo. Resultado: en Mercado Libre se verifica **el título** (y que exista tienda oficial), no la descripción ni las fotos. El gancho en Mercado Libre se limita al título; para descripción y fotos se usa Falabella u Homecenter, o Chrome si está.
+
+**Mercado Libre por API:** `GET https://api.mercadolibre.com/items/{ID}` (título, atributos, fotos en `pictures`, vendedor) y `/items/{ID}/description` (`plain_text`). Verificado el 2026-11-15: **sin token de acceso responde 403** (`PolicyAgent`), tanto en `/items` como en `/sites/MCO/search`. Si hay un token de aplicación de ADVANTIA en la sesión, usarlo en `Authorization: Bearer`. Sin token, la verificación en Mercado Libre queda **sin hacer** y se dice en la cola: nunca se supone el contenido de un listado que no se pudo leer. El ID se saca de la URL de la publicación (`MCO` seguido de dígitos).
 
 **Sin Chrome ni lectura de listados:** si algún listado no se puede leer, el prospecto no pasa a la cola con gancho. Nunca estimar.
 
@@ -287,7 +289,8 @@ Se crea solo después del merge de este PR, con `create_trigger`:
 - [x] ICP validado, con exclusión de competidores de Meyer, Meyer y Gio Home
 - [x] `hs_lead_status`: los 6 valores existen en el portal
 - [x] Falabella legible por `curl` (descripción e imágenes reales), verificado
-- [ ] Token de aplicación de Mercado Libre (sin token la API responde 403)
+- [ ] Token de aplicación de Mercado Libre (sin token la API responde 403; la tienda por `curl` sirve solo para títulos)
+- [ ] Recargar unidades de la API de Semrush (el 2026-11-15 el saldo estaba en cero)
 - [ ] Confirmar créditos y acceso de Clay desde la tarea programada
 - [ ] Exportar `Connections.csv` de LinkedIn de Nicolás (para tibios)
 - [ ] Confirmar autorización de Meyer para nombrarlo (por defecto no se nombra)
