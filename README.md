@@ -8,6 +8,21 @@ El sistema combina dos soluciones integradas:
 
 ---
 
+## 🧭 Sistemas comerciales
+
+Además del producto, el repo contiene los dos sistemas con los que ADVANTIA genera demanda. Ambos son **copiloto**: los agentes proponen y Nicolás aprueba; ningún agente publica ni envía mensajes por su cuenta.
+
+### Contenido (LinkedIn + blog)
+Un agente editorial redacta los posts de la semana y los artículos del blog en un pull request; un agente publicador programa en Upload-Post lo aprobado. Al hacer merge a `main`, los artículos se despliegan solos a Hostinger.
+- **Fuentes de verdad:** skills `agente-contenido-editorial` y `agente-linkedin-publicador` (`.claude/skills/`), `contenido/README.md` y `.github/workflows/desplegar-web.yml`.
+
+### Prospección (LinkedIn)
+Flujo: **Harvey** (local, descubre empresas) → **Clay** (decisor de mercadeo, e-commerce o comercial, sin correos) → **Agente 4 v3** (gancho verificable, mensajes de usted, cola de aprobación y registro en HubSpot, portal 51945405) → **envío manual en LinkedIn**. El **Agente 5** mantiene el pipeline de HubSpot.
+- **Fuentes de verdad:** `.claude/skills/agente4-prospeccion-linkedin/SKILL.md` (con `references/plantillas-mensajes.md`), `.claude/skills/agente5-crm-hubspot/SKILL.md` y los logs en `agentes/`.
+- Ningún archivo del repo incluye nombres de prospectos ni URLs de perfiles.
+
+---
+
 ## 🏗️ Estructura del Repositorio
 
 El proyecto está estructurado en microservicios modulares y utilidades de procesamiento multimedia con Inteligencia Artificial:
@@ -23,6 +38,9 @@ El proyecto está estructurado en microservicios modulares y utilidades de proce
 ├── html-inpage-falabella/    # 📄 Módulo de Descripciones HTML inPage Falabella & VTEX (CatalogAI)
 ├── estudios-de-mercado/     # 📊 Datasets de Estudios de Mercado & Informes SEO (CatalogAI)
 ├── web/                      # 🌐 Sitio público theadvantia.com (Astro, HTML estático para Hostinger)
+├── agentes/                  # 🧾 Logs de las corridas de los agentes 4 (prospección) y 5 (CRM)
+├── contenido/                # ✍️ Sistema de contenido LinkedIn + blog (ver contenido/README.md)
+├── .claude/skills/           # 🧠 Skills de los agentes comerciales (contenido, Agente 4, Agente 5)
 ├── CLAUDE.md                 # 📄 Guía de arquitectura y convenciones del sistema
 └── README.md                 # 📖 Documentación principal del repositorio
 ```
