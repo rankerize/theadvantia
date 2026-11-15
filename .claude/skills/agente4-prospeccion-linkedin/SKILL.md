@@ -55,7 +55,6 @@ Contexto: desde el 30 de agosto de 2026 no entra ningún deal nuevo y los socios
 - Agencias y consultoras competidoras y empresas que no venden en ningún marketplace.
 - Empresas que ya estén en HubSpot (empresa existente con deal abierto o cerrado en los últimos 6 meses, o cualquier empresa ya prospectada por este agente).
 - **Meyer Colombia y Gio Home** (clientes).
-- **Competidores directos de Meyer Colombia** (marcas de menaje de cocina y pequeños electrodomésticos) mientras Meyer sea cliente.
 
 Los precios vigentes (desde el 30 de septiembre de 2026) sirven solo para clasificar el plan natural. **No van en ningún mensaje de prospección.**
 
@@ -202,7 +201,7 @@ Fuentes: [Harvey o Clay] · créditos Clay: [estado] · Semrush: [sí/no] · ML:
     Mensaje 1: [texto]
     HubSpot: crear contacto + nota + tarea [A4] "Enviar mensaje 1 a [nombre]"
 
-DESCARTADAS: [empresa] · [motivo: sin decisor en Clay / no vende en marketplaces / en HubSpot / competidor de Meyer / sin gancho / listado no legible]
+DESCARTADAS: [empresa] · [motivo: sin decisor en Clay / no vende en marketplaces / en HubSpot / sin gancho / listado no legible]
 
 SEGUIMIENTOS
 [8] TAREA [A4] · Seguimiento 1 a [nombre] · vence [fecha] · texto: [...]
@@ -286,7 +285,7 @@ Se crea solo después del merge de este PR, con `create_trigger`:
 
 ## ESTADO DEL SETUP (15 de noviembre de 2026)
 
-- [x] ICP validado, con exclusión de competidores de Meyer, Meyer y Gio Home
+- [x] ICP validado; se excluyen solo Meyer Colombia y Gio Home (no hay regla de excluir competidores de clientes)
 - [x] `hs_lead_status`: los 6 valores existen en el portal
 - [x] Falabella legible por `curl` (descripción e imágenes reales), verificado
 - [ ] Token de aplicación de Mercado Libre (sin token la API responde 403; la tienda por `curl` sirve solo para títulos)
